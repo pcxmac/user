@@ -28,6 +28,17 @@ Bundle 'honza/vim-snippets'
 
 Bundle 'jmcantrell/vim-virtualenv'
 
+Bundle 'Valloric/YouCompleteMe'
+
+Bundle 'sjl/gundo'
+
+Bundle 'kien/ctrlp'
+
+Bundle 'tpope/vim-repeat'
+
+Bundle 'plasticboy/vim-markdown'
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set rtp+=~/.powerline/powerline/bindings/vim/
