@@ -11,6 +11,7 @@ export LANG=en_US.UTF-8
 export USER=$(/usr/bin/whoami)
 export SHELL=/usr/bin/bash
 export EDITOR=vim
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:PATH$
 
 ############################################### SHELL #####################################
 
