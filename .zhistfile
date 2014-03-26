@@ -1,0 +1,4610 @@
+: 1391366978:1;locate kshrc
+: 1391367016:0;cat .zshrc > .kshrc
+: 1391367196:25;nano .kshrc
+: 1391367271:0;echo $HOST
+: 1391367589:0;cp .kshrc /etc/skel/.kshrc
+: 1391367594:0;sudo cp .kshrc /etc/skel/.kshrc
+: 1391367605:0;sudo cp .kshrc /root/.kshrc
+: 1391367611:3;ksh
+: 1391367818:0;date > loggit.txt
+: 1391367826:0;date >> loggit.txt
+: 1391367829:0;cat loggit.txt
+: 1391367976:0;nUser=sysop
+: 1391367997:0;sudo -u $nUser powerline-daemon --kill
+: 1391368161:0;cat .zhistfile
+: 1391368175:0;ls -ail .zhistfile
+: 1391368187:0;sudo chown sysop.users *
+: 1391368191:0;sudo chown sysop.users .??*
+: 1391368390:0;echo $IFS
+: 1391368399:0;echo "**$IFS**"
+: 1391368525:0;echo -n "$IFS" | hexdump
+: 1391368933:0;for nUser in "${<(echo $difu)}" do; echo "this $nUser ..."; done;
+: 1391368936:0;for nUser in "${<(echo $difu)}" do; echo "this $nUser ..."; done
+: 1391368940:0;for nUser in "${<(echo $difu)}" do echo "this $nUser ..."; done
+: 1391368960:0;for nUser in "${<(echo $difu)}"; do; echo "this $nUser ..."; done;
+: 1391368968:0;for nUser in "<(echo $difu)"; do; echo "this $nUser ..."; done;
+: 1391368995:0;for nUser in "$difu"; do; echo "this $nUser ..."; done;
+: 1391369027:0;cat <($difu)
+: 1391369045:0;cat "<($difu)"
+: 1391369061:0;cat "<(echo $difu)"
+: 1391369064:0;cat <(echo $difu)
+: 1391369219:0;difu="root\nsysop"
+: 1391369272:0;while read line; do a=$(($a+1)); echo $a; done < "<(echo $difu)"
+: 1391369291:0;while read line; do a=$(($a+1)); echo $a; done <(echo $difu)
+: 1391369299:0;while read line; do a=$(($a+1)); echo $a; done < <(echo $difu)
+: 1391369317:0;while read line; do a=$(($a+1)); echo $line; done < <(echo $difu)
+: 1391369324:0;while read line; do a=$(($a+1)); echo $line; done < <(echo $difu)
+: 1391369332:0;while read line; do a=$(($a+1)); echo "shit ... $line"; done < <(echo $difu)
+: 1391369346:0;nano .logout
+: 1391369407:0;while read nUser; do a=$(($a+1)); echo "shit ... $nUser"; done < <(echo $difu)
+: 1391369635:0;ps aux | grep powerline-dae
+: 1391369658:0;ps aux
+: 1391366817:0;sudo usermod -s /usr/bin/zsh root
+: 1391369889:0;cat .bash_logout
+: 1391369987:0;nano .bash_logout
+: 1391372652:0;difu=$(diff <(echo $usli) <(echo $uwpdr));
+: 1391371402:0;difu=$(diff <(echo $usli) <(echo $uwpdr) | sed -n '1!p' | awk '{print $2}' | sed '/^$/d');
+: 1391371416:0;echo usli
+: 1391372652:0;echo $usli
+: 1391372652:0;uwpdr=$(ps aux | grep powerline-daemon | grep -v "grep" | awk '{print $1}');
+: 1391372652:0;uwpdr=ps aux | grep powerline-daemon
+: 1391372652:0;uwpdr=$(ps aux | grep powerline-daemon);
+: 1391372652:0;echo $uwpdr
+: 1391372652:0;uwpdr="$(ps aux | grep powerline-daemon)";
+: 1391372652:0;echo "$uwpdr"
+: 1391372652:0;uwpdr=$(ps aux | grep powerline-daemon | grep -v "grep");
+: 1391372652:0;echo "$difu"
+: 1391372652:0;while read nUser; do; echo $nUser; done < "<(echo $difu)";
+: 1391372652:0;while read nUser; do; echo $nUser; done < <(echo $difu)\;
+: 1391372652:0;while read nUser do; echo $nUser; done < <(echo $difu);
+: 1391372652:0;while read nUser; do; echo $nUser; done < <(echo $difu);
+: 1391372652:0;while read nUser; do; echo $nUser; done < <(echo $difu)
+: 1391372652:0;while read nUser; do; echo $nUser done < <(echo $difu)
+: 1391372652:0;while read nUser; do echo $nUser done < <(echo $difu); 
+: 1391372652:0;while read nUser; do echo $nUser; done < "<(echo $difu)"; 
+: 1391372652:0;while read nUser; do echo $nUser; done < "$(<(echo $difu))"; 
+: 1391372652:0;while read nUser; do; echo $nUser; done < "<(echo $difu)"
+: 1391372652:0;while read nUser; do echo $nUser; done < "${<(echo $difu)}"; 
+: 1391372652:0;while read nUser; do echo $nUser; done < <(echo $difu); 
+: 1391372652:0;while read nUser; do echo $nUser; done < <(echo "$difu"); 
+: 1391372652:0;nano .bash_logout 
+: 1391372645:0;cat /etc/passwd | grep sysop
+: 1391372652:0;nano .zlogout 
+: 1391372972:0;rm jb011*
+: 1391372980:0;rm jb012014.mp3
+: 1391372983:0;rm jb012114.mp3
+: 1391372994:0;rm jb012314.mp3
+: 1391373091:0;sudo -u root powerline-daemon
+: 1391373204:0;cat .zlogout
+: 1391373214:0;usli="$(who | awk '{print $1}' | uniq | grep -v $USER)";
+: 1391373220:0;uwpdr=$(ps aux | grep powerline-daemon | grep -v "grep" | awk '{print $1}' | uniq);
+: 1391373227:0;difu=$(diff <(echo "$usli") <(echo "$uwpdr") | sed -n '1!p' | awk '{print $2}' | sed '/^$/d');
+: 1391373234:0;echo $difu
+: 1391373264:0;while read nUser; do; echo "$nUser"; done < <(echo "$difu")
+: 1391373273:0;while read nUser; do; echo "shyte ... $nUser"; done < <(echo "$difu")
+: 1391373789:0;ps aux | grep
+: 1391374696:0;yaourt xfwm
+: 1391374766:0;yaourt compiz
+: 1391374839:0;yaourt
+: 1391374842:0;yaourt ==> ^C
+: 1391374848:0;yaourt xcompmgr
+: 1391374893:0;yaourt -R xcompmgr
+: 1391374897:0;yaourt compton-git
+: 1391374955:0;systemctl list-unit-files | grep compton
+: 1391375065:0;cd .config
+: 1391375069:0;cd .i3
+: 1391375113:0;compton -CGb
+: 1391377423:0;sudo cp .i3/config /etc/skel/.i3/config
+: 1391377429:0;sudo cp .i3/config /root/.i3/config
+: 1391377443:0;sudo cp .zlogout /root/.zlogout
+: 1391377454:0;sudo cp .bash_logout /root/.bash_logout
+: 1391377469:0;sudo cp .bash_logout /etc/skel/.bash_logout
+: 1391377480:0;sudo cp .zlogout /etc/skel/.zlogout
+: 1391377506:0;cd /etc/skel
+: 1391378186:0;mplayer jb012814.mp3
+: 1391378283:0;yaourt conky-lua
+: 1391382557:0;cd Battlestar\ Galactica\ \[1978\]\ \(35TH\ ANNIVERSARY\)\ 1080p\ BluRay\ AAC\ x264-tomcat12\[ETRG\]
+: 1391382993:0;glxgears
+: 1391383077:0;nano .i3/config
+: 1391383089:0;sudo nano /etc/skel/.i3/config
+: 1391383100:0;sudo nano /root/.i3/config
+: 1391383111:0;sudo nano /root/Desktop/ie
+: 1391383114:0;sudo nano /root/Desktop/i3
+: 1391383124:0;ps aux | grep compton
+: 1391383131:0;kill 23713
+: 1391389795:0;sudo git clone git://anongit.freedesktop.org/wayland/wayland
+: 1391390104:0;sudo git clone git://anongit.freedesktop.org/wayland/libinput
+: 1391390135:0;sudo git clone git://anongit.freedesktop.org/wayland/wayland-web
+: 1391390156:0;sudo git clone git://anongit.freedesktop.org/wayland/weston
+: 1391390186:0;mkdir wayland
+: 1391390211:0;sudo mkdir WAYLAND
+: 1391390219:0;mv wayland* WAYLAND
+: 1391390223:0;sudo mv wayland* WAYLAND
+: 1391390233:0;sudo mv weston WAYLAND
+: 1391390239:0;sudo mv libinput WAYLAND
+: 1391390248:0;mkdir POWERLINE
+: 1391390252:0;sudo mkdir POWERLINE
+: 1391390263:0;sudo mv powerline* POWERLINE
+: 1391390292:0;mkdir AUFS
+: 1391390296:0;sudo mkdir AUFS
+: 1391390304:0;sudo mv aufs* AUFS
+: 1391393639:0;mkdir LINUX
+: 1391393643:0;sudo mkdir LINUX
+: 1391393650:0;sudo mv linux* LINUX
+: 1391393667:0;sudo mkdir ZSH
+: 1391393672:0;sudo mv oh-my-zsh ZSH
+: 1391393678:0;sudo mv zsh* ZSH
+: 1391393695:0;sudo mkdir URXVT
+: 1391393703:0;mv rxvt-unicode URXVT
+: 1391393707:0;sudo mv rxvt-unicode URXVT
+: 1391393713:0;sudo mv urxvt-perls URXVT
+: 1391393725:0;nano scripts
+: 1391393738:0;ls /root/Desktop/scr
+: 1391393739:0;ls /root/Desktop/scripts
+: 1391393743:0;sudo ls /root/Desktop/scripts
+: 1391393745:0;sudo ls /root/Desktop/script
+: 1391393748:0;sudo ls /root/Desktop/
+: 1391393760:0;sudo ls /root/
+: 1391393764:0;sudo ls /root/scripts
+: 1391393769:0;rm scripts -R
+: 1391393773:0;sudo rm scripts -R
+: 1391396731:0;mkdir GIT
+: 1391396735:0;sudo mkdir GIT
+: 1391396738:0;sudo mkdir CVS
+: 1391396743:0;sudo mkdir SVN
+: 1391396750:0;mv POWERLINE GIT
+: 1391396754:0;sudo mv POWERLINE GIT
+: 1391396780:0;sudo mv linux-3.10.27-1-lts ../
+: 1391396785:0;sudo mv linux-3.12.9-2-ARCH ../
+: 1391396795:0;mv LINUX GIT
+: 1391396798:0;sudo mv LINUX GIT
+: 1391396804:0;cd AUFS
+: 1391396807:0;cd aufs-util
+: 1391396887:0;sudo git checkout FETCH_HEAD
+: 1391396891:0;sudo git checkout HEAD
+: 1391396916:0;sudo git pull origin origin/master
+: 1391396947:0;sudo git pull origin origin/aufs3.12
+: 1391396955:0;sudo git pull origin/aufs3.12
+: 1391396965:0;sudo rm aufs3-standalone -R
+: 1391396999:0;sudo git clone https://github.com/morfoh/aufs3-standalone.git
+: 1391397007:0;cd aufs3-standalone
+: 1391397024:0;sudo mv AUFS GIT
+: 1391397198:0;sudo git pull origin master-1.5
+: 1391397207:0;cd kmscon
+: 1391397221:0;sudo mv kmscon GIT
+: 1391397239:0;sudo mv nftables GIT
+: 1391397258:0;mv ruby GIT
+: 1391397262:0;sudo mv ruby GIT
+: 1391397270:0;sudo cd mplayer
+: 1391397310:0;sudo git pull origin 2.32.2
+: 1391397318:0;sudo mv file-roller GIT
+: 1391397339:0;sudo mv ipython GIT
+: 1391397362:0;sudo chmod 755 *
+: 1391397414:0;sudo mv mplayer SVN
+: 1391397428:0;sudo mv solarized GIT
+: 1391397445:0;sudo mv unionfs GIT
+: 1391397450:0;cd URXVT
+: 1391397460:0;sudo cvs update
+: 1391397528:0;sudo mv urxvt-perls ../GIT
+: 1391397536:0;sudo mv rxvt-unicode ../CVS
+: 1391397540:0;rmdir URXVT
+: 1391397543:0;sudo rmdir URXVT
+: 1391397613:0;ls -ail | less
+: 1391397622:0;mkdir MERCURIAL
+: 1391397625:0;sudo mkdir MERCURIAL
+: 1391397651:0;sudo mkdir HG
+: 1391397657:0;sudo mv vim HG
+: 1391397662:0;sudo rmdir MERCURIAL
+: 1391397673:0;sudo hg update
+: 1391397705:0;sudo mv tmux-tmux-code GIT
+: 1391397878:0;cd gitorious
+: 1391397890:0;sudo mv gitorious GIT
+: 1391397895:0;cd dtrace
+: 1391397906:0;sudo mv dtrace GIT
+: 1391397960:0;sudo mv ZSH GIT
+: 1391397964:0;cd WAYLAND
+: 1391397966:0;cd libinput
+: 1391397974:0;sudo mv WAYLAND GIT
+: 1391398020:0;yaourt tree
+: 1391398039:0;tree
+: 1391398054:0;tree | most
+: 1391398060:0;man tree
+: 1391398089:0;tree -L 3
+: 1391398102:0;tree -L 2 | most
+: 1391398163:0;sudo mkdir /home/sysop/src
+: 1391398176:0;sudo mv CVS /home/sysop/src
+: 1391398181:0;sudo mv SVN /home/sysop/src
+: 1391398192:0;sudo mv GIT /home/sysop/src
+: 1391398319:0;sudo mv HG /home/sysop/src
+: 1391400712:0;sudo nano /root/Desktop/login.txt
+: 1391400787:0;xot
+: 1391400788:0;exot
+: 1391401313:0;ps aux | gre links
+: 1391401319:0;ps aux | grep links
+: 1391401331:0;kill 18273
+: 1391401336:0;kill 18422
+: 1391401350:0;cd 1978
+: 1391401358:0;mplayer Battlestar.Galactica.S01E04.\(1978\).mkv
+: 1391407010:0;rm 1978 -R
+: 1391407020:0;rm Battlestar\ Galactica\ \[1978\]\ \(35TH\ ANNIVERSARY\)\ 1080p\ BluRay\ AAC\ x264-tomcat12\[ETRG\] -R
+: 1391407026:0;sudo rm Battlestar\ Galactica\ \[1978\]\ \(35TH\ ANNIVERSARY\)\ 1080p\ BluRay\ AAC\ x264-tomcat12\[ETRG\] -R
+: 1391408532:0;ezxit
+: 1391416118:0;tar cfvz home.tar.gz home
+: 1391416330:0;mv jb* /mnt
+: 1391416380:0;tar cfvz src.tar.gz src
+: 1391416387:0;sudo tar cfvz src.tar.gz src
+: 1391416741:0;du -sh src.tar.gz
+: 1391416747:0;du -sh src
+: 1391416757:0;sudo rm src -R
+: 1391416780:0;sudo mv src.tar.gz /mnt
+: 1391416852:0;du -su /home
+: 1391416880:0;mv The The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] /mnt
+: 1391416887:0;sudo mv The The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] /mnt
+: 1391416904:0;sudo mv The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] /mnt
+: 1391416918:0;sudo cp -Rpf The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] /mnt
+: 1391416990:0;rm The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] -R
+: 1391416996:0;sudo rm The.Hospital.1971.iNTERNAL.DVDRip.XviD-EXViDiNT\[rarbg\] -R
+: 1391417001:0;sudo rm Bass_Infektion__July_2006____mixed_by_Tek_Fox.mp3
+: 1391417048:0;cd mozilla
+: 1391417052:0;cd firefox
+: 1391417061:0;cd b7zks3x4.default-1390500851936
+: 1391417073:0;du -sh home
+: 1391417142:0;du -sh home.tar.gz
+: 1391417148:0;mv home.tar.gz /mnt
+: 1391417155:0;sudo mv home.tar.gz /mnt
+: 1391417226:0;du -sh 1978
+: 1391417234:0;sudo rm /root/1978 -R
+: 1391417258:0;sudo du -sh .??* * | sort -h
+: 1391417272:0;sudo rm .dogecoin -R
+: 1391417287:0;sudo tar cfvz root.tar.gz root
+: 1391417378:0;sudo rm .terracoin -R
+: 1391417390:0;sudo cp /etc/skel/.dogecoin ./
+: 1391417397:0;sudo cp /etc/skel/.terracoin ./
+: 1391417440:0;sudo cp -d /etc/skel/.terracoin ./
+: 1391417446:0;sudo cp -d /etc/skel/.dogecoin ./
+: 1391417633:0;sudo mv root.tar.gz /mnt
+: 1391417675:0;cd SAVE
+: 1391417720:0;cd SAVU2
+: 1391417860:0;cd SAVU
+: 1391417928:0;sudo rm Battlestar.Galactica-All.In.One-720p.bluray.x264.AC3-5.1-PeN -R
+: 1391417934:0;sudo rm 1978 -R
+: 1391417963:0;tar cfvz opt.tar.gz opt
+: 1391419745:0;rm opt.tar.gz
+: 1391419751:0;sudo rm opt.tar.gz
+: 1391419789:0;sudo tar cfvz /mnt/opt.tar.gz opt
+: 1391445597:0;sudo tar cfvz src2.tar.gz src
+: 1391446322:0;sudo mc src2.tar.gz /mnt
+: 1391446332:0;sudo mv src2.tar.gz /mnt
+: 1391446353:0;sudo umount home
+: 1391446358:0;sudo umount root
+: 1391446362:0;sudo umount usr/src
+: 1391446371:0;lsof /opt
+: 1391446386:0;sudo umount /opt
+: 1391446394:0;lsof /home
+: 1391451121:0;mkdir ARCHIVE
+: 1391451129:0;mv opt.tar.gz ARCHIVE
+: 1391451136:0;mv root* ARCHIVE
+: 1391451145:0;mv src* ARCHIVE
+: 1391451155:0;mv home.tar.gz ARCHIVE
+: 1391451181:0;mkdir 20140203
+: 1391451185:0;mv *.gz 20140203
+: 1391466707:0;cd /var/lib/libvirt
+: 1391466730:0;yaourt virt manager
+: 1391466911:0;yaourt pigz
+: 1391467140:0;echo $(date +"%Y%m%d")
+: 1391467155:0;mkdir "$(date +"%Y%m%d")"
+: 1391467213:0;mkdir '/mnt/ARCHIVE/$(date +"%Y%m%d")'
+: 1391467233:0;sudo mkdir /mnt/ARCHIVE/$(date +"%Y%m%d")
+: 1391467301:0;gnome-disks
+: 1391467409:0;sudo kill 910
+: 1391467469:0;mount -l | grep sdsc
+: 1391467471:0;mount -l | grep sdc
+: 1391467846:0;mount /dev/disk/by-label/spare /mnt
+: 1391467850:0;sudo mount /dev/disk/by-label/spare /mnt
+: 1391467890:0;rmdir ~/20140203
+: 1391467904:0;mv 20140203 20140202
+: 1391467916:0;mkdir /mnt/ARCHIVE/$(date +"%Y%m%d")
+: 1391468651:0;cd 20140203
+: 1391569668:0;cd /usr/src/GIT/unionfs
+: 1391575315:0;nano shells 
+: 1391569802:0;sudo git checkout 2_0_0
+: 1391569842:0;sudo git checkout Master
+: 1391569855:0;sudo git checkout trunk
+: 1391569865:0;sudo git pull origin/trunk
+: 1391569872:0;sudo git pull origin trunk
+: 1391569889:0;sudo git checkout origin/2_0_0
+: 1391569900:0;sudo git checkout origin/ruby_2_0_0
+: 1391569909:0;nano README.EXT
+: 1391569958:0;sh autogen.sh
+: 1391570002:0;sudo nano /root/Desktop/zsh-urxvt-powerline-tmux.txt
+: 1391570093:0;./configure --with-baseruby
+: 1391570117:0;sudo ./configure --with-baseruby
+: 1391570750:0;yaourt glib
+: 1391570833:0;find ./ | grep mozilla
+: 1391570849:0;yaourt calc
+: 1391570922:0;mv .mozilla .mozilla-old
+: 1391571101:0;ls -ail | grep moz
+: 1391571104:0;ls -ail | grep fire
+: 1391571121:0;find ./ | grep firefox | most
+: 1391571129:0;rm .cache/mozilla
+: 1391571131:0;rm .cache/mozilla -R
+: 1391571147:0;rm .mozilla-old -R
+: 1391571158:0;rm .mozilla -R
+: 1391571160:0;find ./ | grep moz
+: 1391571170:0;find ./ | grep firefox
+: 1391571241:0;yaourt -S firefox-nightly
+: 1391571404:0;yaourt -S setuptools
+: 1391571422:0;yaourt setuptools
+: 1391571448:0;sudo python setup.py powerline
+: 1391571471:0;setup.py
+: 1391571475:0;./setup.py
+: 1391571499:0;sudo python setup.py
+: 1391571531:0;firefox-nightly
+: 1391571534:0;firefox-nightly&
+: 1391571542:0;sudo firefox-nightly
+: 1391571549:0;sudo -u sysop firefox-nightly
+: 1391571556:0;yaourt -R firefox-nightly
+: 1391575333:0;sudo systemctl enable netctl
+: 1391575455:0;rm a.txt
+: 1391575457:0;rm b.txt
+: 1391576002:0;sudo telinit 1
+: 1391590372:0;yaourt -S swig
+: 1391590398:0;sudo hg pull
+: 1391590407:0;sudo ./configure --prefix=/usr --with-features=big --enable-rubyinterp --enable-python3interp --with-python-config-dir=/usr/lib/python3.3/config --enable-perlinterp --enable-luainterp
+: 1391590420:0;sudo make VIMRUNTIMEDIR=/usr/share/vim/vim74
+: 1391590555:0;cd sr
+: 1391590588:0;sudo sh autogen.sh
+: 1391590606:0;yaourt -S libevent
+: 1391590614:0;yaourt -S python
+: 1391590722:0;sudo autoconf
+: 1391590820:0;yaourt -S ruby-docs
+: 1391590950:0;yaourt -R ruby ruby-doc
+: 1391590954:0;yaourt -R ruby
+: 1391590962:0;yaourt -R ruby-doc
+: 1391590968:0;yaourt -R ruby-docs
+: 1391591103:0;yaourt -S ruby
+: 1391591112:0;sudo ./configure --prefix=/usr --enable-shared --enable-pthread --disable-rpath --with-baseruby
+: 1391591124:0;sudo ./configure --prefix=/usr --enable-shared --enable-pthread --disable-rpath
+: 1391591910:0;rm powerline -R
+: 1391591927:0;sudo git clone https://github.com/Lokaltog/powerline.git
+: 1391591986:0;yaourt python-setuptools
+: 1391592058:0;gcc -O3 powerline-client.c -o powerline-client
+: 1391592086:0;sudo make powerline-client
+: 1391592091:0;makd powerline-daemon
+: 1391592098:0;sudo make powerline-daemon
+: 1391592132:0;sudo python setup.py install
+: 1391594532:0;sudo svn update
+: 1391594546:0;sudo ./configure --enable-menu --prefix=/usr --disable-vdpau
+: 1391595280:0;cd mplayer/ls
+: 1391595282:0;cd mplayer/
+: 1391596150:0;eXT8
+: 1391596306:0;sudo ifconfig
+: 1391596390:0;cd /proc
+: 1391624133:0;cd /root/scripts/
+: 1391617452:0;mplayer p240.mp4.part
+: 1391620552:0;yaourt flash
+: 1391620664:0;cd /sc
+: 1391620673:0;sudo nano backup.sh
+: 1391621075:0;sudo mv backup.sh backup
+: 1391621076:0;sudo ln - /root/scripts/backup /usr/sbin/backup
+: 1391621085:0;sudo ln -s /root/scripts/backup /usr/sbin/backup
+: 1391621101:0;sudo ln -s /root/scripts/coincheck-qt /usr/sbin/coincheck-qt
+: 1391621113:0;sudo ln -s /root/scripts/grub-redo /usr/sbin/grub-redo
+: 1391621122:0;sudo ln -s /root/scripts/julian /usr/sbin/julian
+: 1391621131:0;sudo ln -s /root/scripts/listmods /usr/sbin/listmods
+: 1391621140:0;sudo ln -s /root/scripts/sleepy /usr/sbin/sleepy
+: 1391621150:0;sudo ln -s /root/scripts/wallpaper /usr/sbin/wallpaper
+: 1391621156:0;sudo mv wallpaper.sh wallpaper
+: 1391624133:0;nano backup.sh 
+: 1391621335:0;cd ARCHIVE/20140205
+: 1391621616:0;cd /mnt/ARCHIVE
+: 1391621647:0;cd 20140203/
+: 1391621661:0;sudo rm boot -R
+: 1391621665:0;sudo rm etc -R
+: 1391621675:0;sudo rm lib -R
+: 1391621706:0;sudo rm var -R
+: 1391621725:0;gdisk
+: 1391621729:0;man sgdisk
+: 1391621799:0;sgdisk -b /dev/sda prime.gpt
+: 1391621811:0;sgdisk -b prime.gpt /dev/sda
+: 1391621816:0;sudo sgdisk -b prime.gpt /dev/sda
+: 1391621839:0;sudo rm prime.gpt
+: 1391623305:0;du -sh /var/lib/libvirt/images
+: 1391623444:0;nano /root/scripts/backup
+: 1391624002:0;du -sh 20140205
+: 1391624009:0;cd 20140205
+: 1391624312:0;yaourt -S cmake icmake
+: 1391625336:0;sudo kill 15528
+: 1391625480:0;mount -o defaults,subvolid=0 /dev/sda3 /mnt
+: 1391625485:0;sudo mount -o defaults,subvolid=0 /dev/sda3 /mnt
+: 1391626336:0;btrfs subvolume snapshot ./rootfs ./rootfs-20140205
+: 1391626336:0;btrfs subvolume snapshot ./usr ./usr-20140205
+: 1391626336:0;btrfs subvolume snapshot ./usr/src ./usr/src-20140205
+: 1391626336:0;btrfs subvolume snapshot ./libvirt ./libvirt-20140205
+: 1391626336:0;btrfs subvolume snapshot ./root ./root-20140205
+: 1391626336:0;mv *.Sol /opt
+: 1391626336:0;mv green-agenda.com/ /opt
+: 1391626336:0;du -sh sysop/
+: 1391626336:0;btrfs subvolume snapshot ./home ./home-20140205
+: 1391626336:0;yaourt snapper gui
+: 1391626285:0;locate /bin/powerline
+: 1391626313:0;sudo rm /usr/bin/powerline
+: 1391626322:0;sudo rm /usr/bin/powerline-lint
+: 1391626556:0;mkdir Projects
+: 1391626562:0;mkdir Projects/Powerline
+: 1391626574:0;mv .powerline Projects/Powerline
+: 1391626590:0;cd Projects/Powerline
+: 1391626618:0;sudo cp /usr/src/GIT/POWERLINE/powerline ./.powerline -R
+: 1391626671:0;cp .bash* ~/Projects/Powerline
+: 1391626694:0;cp .z* ~/Projects/Powerline
+: 1391632297:0;cd /root/Desktop/
+: 1391632297:0;mkdir /home/sysop/Projects/notes
+: 1391632297:0;cp * /home/sysop/Projects/notes
+: 1391632297:0;sudo chown sysop.users /home/sysop/Projects/notes/ -R
+: 1391629656:0;rm powerline-daemon
+: 1391629728:0;rm powerline-client
+: 1391629732:0;sudo rm powerline-client
+: 1391629841:0;n
+: 1391629947:0;yaourt -S chrome dev
+: 1391629952:0;yaourt chrome dev
+: 1391632268:0;google-chrome-unstable
+: 1391632461:0;whereis firefox
+: 1391632467:0;ls -ail /usr/bin/firefox
+: 1391632477:0;ls -ail /usr/lib/firefox
+: 1391632497:0;yaourt -R firefox
+: 1391632514:0;cd firefox-29.0a1
+: 1391632517:0;cd updated
+: 1391632529:0;./firefox
+: 1391632623:0;nano Projects/notes/zsh-urxvt-powerline-tmux.txt
+: 1391632695:0;sudo gcc -O3 powerline-client.c -o powerline-client
+: 1391632786:0;whereis powerline-daemon
+: 1391633177:0;ln -s /opt/firefox-29.0a1/updated/firefox /usr/sbin
+: 1391633183:0;sudo ln -s /opt/firefox-29.0a1/updated/firefox /usr/sbin
+: 1391667159:0;passwd
+: 1391667159:0;passwd sysop
+: 1391645811:0;nano powerline-client
+: 1391667145:0;grep 'feh'
+: 1391667151:0;grep 'feh' .??*
+: 1391668139:0;cd GIT/POWERLINE
+: 1391668168:0;nano setup.py
+: 1391668338:0;cd /usr/lib/python3.3
+: 1391668368:0;nano powerline
+: 1391668384:0;locate powerline
+: 1391668398:0;wheris powerline
+: 1391668459:0;cd bindings/ls
+: 1391668491:0;cd site-packages
+: 1391668504:0;mv Powerline-beta-py3.3.egg /home/sysop
+: 1391668509:0;sudo mv Powerline-beta-py3.3.egg /home/sysop
+: 1391668520:0;sudo cp -Rpf Powerline-beta-py3.3.egg /home/sysop
+: 1391668530:0;sudo rm Powerline-beta-py3.3.egg -R
+: 1391668561:0;locate bin/powerline
+: 1391670355:0;find ./ | mos
+: 1391670362:0;find ..
+: 1391670367:0;yaourt most
+: 1391670371:0;yaourt -S most
+: 1391670436:0;cd EGG-INFO
+: 1391670448:0;nano powerline-lint
+: 1391670474:0;grep module
+: 1391670477:0;grep module*
+: 1391670481:0;grep module *
+: 1391670492:0;grep module * | most
+: 1391670535:0;whereis powerline
+: 1391671405:0;nano lib/__init__.py
+: 1391671427:0;find ./ | grep powerline
+: 1391671447:0;yaourt -Rcc
+: 1391671535:0;yaourt -S tcsh
+: 1391671668:0;cat .bashrc > .tcshrc
+: 1391671976:0;nano .tcshrc
+: 1391672043:0;cd tcsh
+: 1391672055:0;cd !
+: 1391672290:0;yaourt fish
+: 1391672706:0;cd Powerline-beta-py3.3.egg
+: 1391672722:0;grep *.py
+: 1391672731:0;find ./ | grep .py
+: 1391672758:0;nano shell.py
+: 1391672836:0;sudo cp powerline /usr/lib/python3.3/site-packages -Rpf
+: 1391672845:0;cd /usr/lib/python3.3/site-packages
+: 1391672851:0;python
+: 1391672999:0;cd ~/Powerline-beta-py3.3.egg
+: 1391673002:0;cd pow
+: 1391673065:0;vim __init__.py
+: 1391673139:0;nano __init__.py
+: 1391673184:0;vim setup.py
+: 1391716193:0;cd /home/sysop/
+: 1391716193:0;cd Downloads/
+: 1391716193:0;yaourt libvpx
+: 1391716193:0;yaourt ogg
+: 1391716193:0;mplayer pchick-alarm.wav 
+: 1391716193:0;sleepy
+: 1391716193:0;sleep 20m;sleepy 4:55AM;mplayer pchick-alarm.wav -loop 12
+: 1391716193:0;sleep 20s;sleepy 11:33AM;mplayer pchick-alarm.wav -loop 3
+: 1391716193:0;mplayer -loop 5 pchick-alarm.wav 
+: 1391716193:0;ping kickass.to
+: 1391716193:0;yaourt deluge
+: 1391716193:0;yaourt -R google-chrome-dev
+: 1391716193:0;yaourt -S deluge
+: 1391716352:0;yaourt -S libdbus
+: 1391716352:0;yaourt libdbus glib
+: 1391716352:0;yaourt libdbus
+: 1391716352:0;yaourt dbus-glib
+: 1391716345:0;firefox
+: 1391716669:0;yaourt gobject
+: 1391716703:0;yaourt gtk
+: 1391716735:0;yaourt gtk python
+: 1391716745:0;deluge
+: 1391718032:0;yaourt -S ttf-google-fonts-git
+: 1391718766:0;yaourt sqlite
+: 1391719569:0;sudo git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+: 1391720477:0;sudo git checkout v3.13.2
+: 1391721028:0;sudo chown root.users openarena * -R
+: 1391721056:0;sudo chown sysop.users openarena -R
+: 1391721098:0;cd openarena
+: 1391721124:0;chmod 777 * -R
+: 1391721192:0;yaourt -S openarena
+: 1391721276:0;yaourt gdb
+: 1391721320:0;yaourg g++
+: 1391721324:0;yaourt g++
+: 1391721474:0;yaourt clang
+: 1391721589:0;yaourt gnu g++
+: 1391721680:0;yaourt gimp
+: 1391723333:0;yaourt yaourt -Syua
+: 1391723532:0;chown root.users google -R
+: 1391723536:0;sudo chown root.users google -R
+: 1391723567:0;cd google
+: 1391723570:0;cd chrome
+: 1391723588:0;sudo chmod 4755 chrome-sandbox
+: 1391723595:0;google-chrome-sandbox
+: 1391723600:0;google-chrome-stable
+: 1391723828:0;yaourt clang complete
+: 1391723920:0;mkdir VIM
+: 1391723923:0;sudo mkdir VIM
+: 1391723930:0;sudo git clone https://github.com/Rip-Rip/clang_complete.git
+: 1391723962:0;cd clang_complete
+: 1391724008:0;cp clang_complete.vmb ~/.vim
+: 1391724059:0;cd Pictures
+: 1391724063:0;feh linux_arch_desktop_1920x1200_hd-wallpaper-942629.png
+: 1391724067:0;yaourt -S feh
+: 1391724217:0;sudo mkdir /usr/share/background-images
+: 1391724234:0;cp linux_arch_desktop_1920x1200_hd-wallpaper-942629.png /usr/share/background-images
+: 1391724243:0;sudo cp linux_arch_desktop_1920x1200_hd-wallpaper-942629.png /usr/share/background-images
+: 1391724253:0;feh /usr/share/background-images/linux_arch_desktop_1920x1200_hd-wallpaper-942629.png
+: 1391724292:0;cd /usr/share/background-images
+: 1391724309:0;sudo mv linux_arch_desktop_1920x1200_hd-wallpaper-942629.png arch_dtbg.png
+: 1391724352:0;cat ~/.xinitrc
+: 1391724422:0;sudo mv /usr/share/background-images /usr/local/share
+: 1391724429:0;nano ~/.xinitrc
+: 1391725268:0;f
+: 1391725283:0;rm yaourt-tmp-root/*
+: 1391725290:0;sudo rm yaourt* -R
+: 1391725322:0;sudo nano /etc/yaourtrc
+: 1391725339:0;yaourt -S openarena-data
+: 1391726055:0;t
+: 1391729980:0;yaourt zenity
+: 1391731216:0;yaourt qemu
+: 1391731282:0;yaourt nftables
+: 1391731319:0;yaourt numactl
+: 1391731324:0;yaourt bridge
+: 1391731407:0;yaourt -S qt4 qt5
+: 1391731557:0;yaourt -S qt5-doc
+: 1391731564:0;yaourt blender
+: 1391731660:0;yaourt -S qt4-doc blender
+: 1391732311:0;yaourt arch wiki
+: 1391739884:0;systemctl list-unit-files | grep virt
+: 1391739893:0;yaourt virtualbox
+: 1391739987:0;sudo chown sysop.users *.Sol -R
+: 1391740236:0;cd Jupiter.Sol
+: 1391740267:0;mv jupiter.vdi ../
+: 1391740270:0;sudo mv jupiter.vdi ../
+: 1391740281:0;cd Mars.Sol
+: 1391740286:0;sudo mv mars.vdi ../
+: 1391740300:0;cd Mercury.Sol
+: 1391740309:0;sudo mv mercury.vdi ../
+: 1391740318:0;cd Venus.Sol
+: 1391740323:0;sudo mv venus.vdi
+: 1391740326:0;sudo mv venus.vdi ../
+: 1391743775:0;yaourt -S terminator
+: 1391746041:0;yaourt -S lm-sensors
+: 1391746046:0;yaourt lm sensors
+: 1391746791:0;tar cfvz tar.tar.gz ./
+: 1391746808:0;mv tar.tar.gz test
+: 1391746813:0;tar xfvz tar.tar.gz
+: 1391746843:0;sudo rm *
+: 1391746876:0;tar home.tar.gz /home/sysop --exclude='./home.tar.gz'
+: 1391746915:0;tar home.tar.gz /home/sysop -exclude='./home.tar.gz'
+: 1391746952:0;sudo tar home.tar.gz --exclude='./home.tar.gz' /home/sysop
+: 1391746975:0;sudo tar cfvz home.tar.gz --exclude='./home.tar.gz' /home/sysop
+: 1391747130:0;sudo tar cfvz home.tar.gz --exclude='/home/sysop/Desktop/home.tar.gz' /home/sysop/Desktop
+: 1391749959:0;yaourt -S pureftp
+: 1391749964:0;yaourt -S pureftpd
+: 1391749969:0;yaourt -S pure-ftpd
+: 1391750054:0;yaourt -S openssh
+: 1391750067:0;sudo systemctl enable pure-ftpd.service
+: 1391750073:0;sudo systemctl start pure-ftpd.service
+: 1391761401:0;cd Quaoar.Sol
+: 1391761408:0;sudo mv quaoar.vdi /opt
+: 1391762210:0;lxc-create
+: 1391762258:0;lxc-create -n deb -t debian
+: 1391762293:0;yaourt debootstrap
+: 1391762329:0;yaourt -S debian-archive-keyring
+: 1391762345:0;yaourt -S gnupg1
+: 1391762521:0;yaourt dpkg
+: 1391762949:0;yaourt rsync
+: 1391763049:0;yaourt debian keyring
+: 1391763077:0;sudo lxc-create -n deb -t debian
+: 1391764261:0;yaourt install script
+: 1391764365:0;cd deb
+: 1391764375:0;yaourt lsof
+: 1391764381:0;yaourt fuser
+: 1391764386:0;lsof rootfs
+: 1391764779:0;lxc-destroy deb
+: 1391764779:0;lxc-destroy -n deb
+: 1391764779:0;ps aux | grep 12380
+: 1391764779:0;kill 12380
+: 1391764816:0;sudo mount /mnt
+: 1391764839:0;du -sh (
+: 1391764891:0;btrfs subvolume delete lxc
+: 1391764898:0;sudo btrfs subvolume delete lxc
+: 1391764901:0;lsof lxc
+: 1391765584:0;btrfs subvolume delete /var/lib/lxc/deb/rootfs
+: 1391765642:0;sudo btrfs subvolume delete /var/lib/lxc/deb/rootfs
+: 1391765647:0;sudo btrfs subvolume list /mnt
+: 1391765658:0;rm deb -R
+: 1391765668:0;sudo rm deb -R
+: 1391796940:0;sleep 15m;sleepy 5:15AM;mplayer /home/sysop/pchick-alarm.wav -loop 20
+: 1391800063:0;cd /etc/snapper/
+: 1391800063:0;snapper -c root create-config /
+: 1391800063:0;cd configs
+: 1391800063:0;nano root 
+: 1391800063:0;snapper list
+: 1391800063:0;locate .snapshots
+: 1391800063:0;yaourt -R snapper
+: 1391800063:0;mkdir /home-old
+: 1391800063:0;mount -o defaults,subvolid=318 /dev/sda3 /home-old/
+: 1391800063:0;cd /home-old/
+: 1391800063:0;find /home | wc -l
+: 1391800063:0;cd sysop/
+: 1391800063:0;cd Desktop/
+: 1391800063:0;ls /home/sysop/
+: 1391800063:0;umount home-old/
+: 1391800063:0;btrfs subvolume list /mnt
+: 1391800063:0;umount /mnt
+: 1391800063:0;mkdir /media
+: 1391800063:0;cd /media/
+: 1391800063:0;mkdir btrfs_pool
+: 1391800063:0;mount btrfs_pool/
+: 1391800063:0;cd btrfs_pool/
+: 1391800063:0;tree 
+: 1391800063:0;yaourt -S tree
+: 1391800063:0;tree -L 2
+: 1391800063:0;tree -L 1
+: 1391800063:0;btrfs subvolume snapshot rootfs ./rootfs-20140207
+: 1391800063:0;btrfs subvolume snapshot home ./home-20140207
+: 1391800063:0;cd /usr/
+: 1391800063:0;cd /media/btrfs_pool/
+: 1391800063:0;cd usr/
+: 1391800063:0;btrfs subvolume snapshot src ./src-20140207
+: 1391800063:0;btrfs subvolume snapshot libvirt ./libvirt-20140207
+: 1391800063:0;btrfs subvolume destroy lib/libvirt-20140207
+: 1391800063:0;btrfs subvolume delete lib/libvirt-20140207
+: 1391797993:0;sudo rm *.Sol
+: 1391797995:0;sudo rm *.Sol -R
+: 1391798028:0;sudo rm 2013-10-28 -R
+: 1391798046:0;sudo rm 2013-08-18 -R
+: 1391798095:0;cd 2013-08-04
+: 1391798098:0;cd VM-SYS
+: 1391798114:0;sudo rm Sol.\ 2001QR322 -R
+: 1391798136:0;sudo rm Watch -R
+: 1391798164:0;cd Infrastructure
+: 1391798173:0;sudo rm Quaoar.Sol -R
+: 1391798179:0;sudo rm Jupiter.Sol -R
+: 1391798187:0;sudo rm Microsoft\ Servers -R
+: 1391798194:0;sudo rm Mercury.Sol -R
+: 1391798197:0;sudo rm Venus.Sol -R
+: 1391798201:0;sudo rm Mars -R
+: 1391798214:0;sudo rm Mars.Sol -R
+: 1391798298:0;sudo rm Sol.Jupiter -R
+: 1391798325:0;sudo mv Infrastructure/* ./
+: 1391798331:0;sudo rm Infrastructure -R
+: 1391798373:0;sudo cp .bitcoin /opt
+: 1391798376:0;sudo cp .bitcoin /opt -R
+: 1391799818:0;sudo cp .litecoin /opt -R
+: 1391799846:0;yaourt dogecoin
+: 1391799885:0;yaourt -S bitcoin-qt
+: 1391799900:0;yaourt -S litecoin-15
+: 1391799903:0;yaourt -S litecoin-qt
+: 1391800148:0;sudo kill 23701
+: 1391800150:0;sudo kill 23707
+: 1391800156:0;sudo kill 23708
+: 1391800162:0;sudo kill 23727
+: 1391800172:0;sudo kill 23301
+: 1391800185:0;sudo kill
+: 1391800193:0;sudo kill -s 7 23301
+: 1391800196:0;ps aux | grep chrom
+: 1391800619:0;yaourt -S automoc4 boost perl-io-string perl-timedate
+: 1391800651:0;du -sh yaourt-tmp-sysop
+: 1391800658:0;sudo du -sh yaourt-tmp-sysop
+: 1391800709:0;mplayer jb013014.mp3
+: 1391800786:0;mkdir CCOINS
+: 1391800790:0;sudo mkdir CCOINS
+: 1391800918:0;sudo git coin https://github.com/terracoin/terracoin.git
+: 1391800980:0;nano fileroller.txt
+: 1391801009:0;yaourt -S yelp-tools intltool gnome-common gnome-doc-utils
+: 1391801024:0;./autogensh --prefix=/usr
+: 1391801036:0;./autogen.sh --prefix=/usr
+: 1391801043:0;sudo ./autogen.sh --prefix=/usr
+: 1391801129:0;cd /run/media/sysop/spare/SAVU/HOLD
+: 1391801143:0;find ./ | grep coin
+: 1391801164:0;cd HOLD
+: 1391801281:0;sudo git clone https://github.com/FeatherCoin/Feathercoin-0.6.4.4.git
+: 1391801327:0;sudo git clone Resolving deltas: 100% (223/223), done.
+: 1391801338:0;sudo git clone https://github.com/namecoin/namecoin.git
+: 1391801364:0;sudo git clone https://github.com/primecoin/primecoin.git
+: 1391801429:0;sudo git clone https://github.com/MaxGuevara/quark.git
+: 1391810519:0;fileroller
+: 1391810522:0;file-roller
+: 1391810547:0;locate file-roller
+: 1391810553:0;locate bin/file-roller
+: 1391810595:0;sudo nano backup
+: 1391810878:0;mv rootfs.tar.gz ../
+: 1391810884:0;sudo mv rootfs.tar.gz ../
+: 1391810913:0;sudo rm *.tar.gz
+: 1391810921:0;sudo rm primary.gpt
+: 1391811872:0;cd 20140207
+: 1391811893:0;du -sh /home-old
+: 1391811901:0;rmdir /home-old
+: 1391811905:0;sudo rmdir /home-old
+: 1391811937:0;cd run/media/sysop/spare
+: 1391811944:0;ls /home/sysop
+: 1391811963:0;du -sh /home/sysop/*
+: 1391811966:0;du -sh /home/sysop/* | sort -h
+: 1391811972:0;ls /home/sysop/Desktop
+: 1391812027:0;sudo mkdir /opt/archives
+: 1391812043:0;sudo mv *.tar /opt/archives
+: 1391812078:0;sudo ifconfig eth0 up
+: 1391812096:0;sudo dhcpcp
+: 1391812214:0;sudo mv *.gz /opt/archives
+: 1391812237:0;du -sh /home
+: 1391812246:0;du -sh /opt
+: 1391812395:0;sudo mv Open* /opt/archives
+: 1391813683:0;backup
+: 1391813721:0;sudo nano /root/scripts/backup
+: 1391813847:0;sudo rm 20140207 -R
+: 1391813867:0;sudo gitpull origin master
+: 1391813951:0;sudo ./configuer
+: 1391813972:0;yaourt bdb
+: 1391813980:0;yaourt berkely db
+: 1391813989:0;yaourt berkely
+: 1391813998:0;bdb
+: 1391814020:0;yaourt db
+: 1391814106:0;Âƒ€sudo ./configure --with-incompatible-bdb
+: 1391814110:0;sudo ./configure --with-incompatible-bdb
+: 1391814151:0;nano /home/sysop/Projects/notes/coins.txt
+: 1391814179:0;sudo make -j2
+: 1391816008:0;sudo bitcoin-qt
+: 1391816155:0;sudo chown root.users .bitcoin -R
+: 1391816163:0;sudo chmod 775 .bitcoin -R
+: 1391816196:0;cat /etc/group
+: 1391816299:0;sudo usermod -a -G root,bin,daemon,sys,adm,tty,disk,lp,mem,kmem,ftp,mail,log,locate,rfkill,http,games,lock,uuidd,dbus,network,video,audio,optical,floppy,storage,scanner,power,nobody,users,systemd-journal,git,avahi,sysop,polkitd,wireshark,clamav,deluge,kvm,vboxusers sysop
+: 1391816365:0;sudo chmod 775 .litecoin -R
+: 1391816384:0;sudo chown root.users .litecoin -R
+: 1391816450:0;nano doc/build-unix.md
+: 1391816731:0;cd Feathercoin-0.6.4.4
+: 1391816789:0;nano INSTALL
+: 1391816862:0;yaourt qmake
+: 1391819761:0;find ./ | grep dogecoin-qt
+: 1391819769:0;nano dogecoin-qt.pro
+: 1391820028:0;qmake-qt4 dogecoin-qt.pro
+: 1391820085:0;sudo rm dogecoin -R
+: 1391820099:0;sudo git clone °sudo git clone https://github.com/dogecoin/dogecoin.git
+: 1391820108:0;sudo git clone git clone https://github.com/dogecoin/dogecoin.git
+: 1391820277:0;sudo mkdir /opt/.feathercoin
+: 1391820289:0;sudo chown root.users /opt/.feathercoin
+: 1391820311:0;sudo chmod 775 /opt/.feathercoin
+: 1391820320:0;ls /opt | grep coin
+: 1391820328:0;ls /opt -ail | grep coin
+: 1391820346:0;sudo rmdir /opt/.feathercoin
+: 1391820354:0;sudo rm ~/.feathercoin
+: 1391820434:0;iftop
+: 1391820497:0;rm ~/.dogecoin
+: 1391821248:0;sudo git pull origin master-0.8
+: 1391821294:0;nano build-unix.md
+: 1391821322:0;make -f makefile.unix
+: 1391828333:0;cd home/HOLD
+: 1391828423:0;qmake-qt4 bitcoin-qt.pro
+: 1391828427:0;sudo qmake-qt4 bitcoin-qt.pro
+: 1391828490:0;yaourt upnp
+: 1391828554:0;yaourt pnp
+: 1391828702:0;sudo qmake "UPNP=0"
+: 1391832639:0;nano run_qmake.bat
+: 1391836353:0;qmake-qt4 namecoin-qt.pro
+: 1391836967:0;yaout qt4
+: 1391836970:0;yaourt qt4
+: 1391837047:0;sudo qtcreator
+: 1391837082:0;qtcreator
+: 1391837207:0;cd namecoin
+: 1391837402:0;sudo qmake-qt4 namecoin-qt.pro
+: 1391837432:0;sudo qmake-qt4 namecoin-qt.pro "USE_UPNP=0"
+: 1391837477:0;sudo qmake "USE_UPNP=0"
+: 1391837540:0;sudo qmake "USE_UPNP=-"
+: 1391842116:0;sudo qmake "USE_UPNPN=-"
+: 1391842135:0;sudo qmake "USE_UPNPN=-" bitcoin-qt.pro
+: 1391842147:0;sudo qmake-qt4 "USE_UPNPN=-" bitcoin-qt.pro
+: 1391842166:0;sudo qmake-qt4 bitcoin-qt.pro "USE_UPNP=-"
+: 1391842606:0;cd /usr/src/GIT/CCOINS/primecoin
+: 1391842630:0;sudo qmake bitcoin-qt.pro "USE_UPNPN=-"
+: 1391842737:0;sudo make -f build-unix.md
+: 1391842773:0;yaourt qapplication
+: 1391842815:0;sh ./autogen.sh
+: 1391842843:0;nano readme-qt.rst
+: 1391842856:0;sudo qmake
+: 1391842870:0;nano doc/readme-qt.rst
+: 1391843012:0;yaourt primecoin-qt
+: 1391843022:0;yaourt miniupnpc
+: 1391843031:0;yaourt boost-libs
+: 1391843043:0;yaourt -S boost
+: 1391843047:0;yaourt gmp
+: 1391843113:0;make USE_UPNP=1 USE_SSL=1 CXXFLAGS="-O3 -march=native" -f Makefile
+: 1391843140:0;make USE_UPNP=1 USE_SSL=1 CXXFLAGS="-O3 -march=native" -f makefile.unix
+: 1391843523:0;sudo git clone git://github.com/bitcoin/bitcoin.git&
+: 1391843630:0;sudo ./configure --prefix=/usr
+: 1391844005:0;sudo make -j3
+: 1391844924:0;sudo git clone https://github.com/dogecoin/dogecoin.git
+: 1391844974:0;sudo qmake-qt4 dogecoin-qt.pro
+: 1391845831:0;sudo make -f makefile.unix
+: 1391845854:0;sudo make -f makefile.unix dogecoind
+: 1391846410:0;sudo make -f makefile.unix dogeminer
+: 1391846584:0;sudo make bitcoind bitcoin-cli
+: 1391846620:0;sudo git clone https://github.com/FeatherCoin/FeatherCoin.git
+: 1391847246:0;sudo make -f makefile.unix feathercoind
+: 1391847684:0;sudo git clone https://github.com/litecoin-project/litecoin.git
+: 1391848496:0;sudo make -f makefile.unix litecoind
+: 1391848652:0;sudo git clone git://github.com/namecoinq/namecoinq.git
+: 1391848664:0;sudo git clone https://github.com/ppcoin/ppcoin.git
+: 1391848721:0;sudo git clone https://github.com/terracoin/terracoin.git
+: 1391848745:0;sudo rm primecoin -R
+: 1391848750:0;sudo git clone https://github.com/thbaumbach/primecoin.git
+: 1391849908:0;nano DESIGN-namecoin.md
+: 1391850533:0;sudo make -f makefile.unix ppcoind
+: 1391851597:0;sudo make -f makefile.unix terracoind
+: 1391852211:0;sudo make -f makefile.unix primecoind primeminer
+: 1391852445:0;sudo ./configure
+: 1391852967:0;sudo qmake-qt4 "USE_UPNP=-"
+: 1391853007:0;sudo qmake-qt4 "USE_UPNP=-" bitcoin-qt.pro
+: 1391853192:0;mplayer -loop 10 pchick-alarm.wav
+: 1391853202:0;sleep 4h;mplayer -loop 10 pchick-alarm.wav
+: 1391880491:0;ps aux | grep bitcoicn
+: 1391880500:0;sudo bitcoind
+: 1391880564:0;bitcoin-cli
+: 1391880584:0;bitcoin-cli -datadir=/opt
+: 1391880591:0;bitcoin-cli -datadir=/opt/.bitcoin
+: 1391880603:0;bitcoin-cli -?
+: 1391880630:0;groups sysop
+: 1391880739:0;./dogecoin-qt&
+: 1391880753:0;./feathercoin-qt
+: 1391880883:0;ls /home/sysop -ail | grep coin
+: 1391880898:0;sudo rm /home/sysop/.namecoin
+: 1391880951:0;./ppcoin-qt
+: 1391881210:0;sudo rm /home/sysop/.ppcoin
+: 1391881214:0;sudo rm /home/sysop/.ppcoin -R
+: 1391883054:0;ls -ailph | grep coin
+: 1391883384:0;mplayer jb013114.mp3
+: 1391883920:0;sudo rm .primecoin
+: 1391883924:0;sudo rm .quarkcoin
+: 1391883928:0;sudo rm .terracoin
+: 1391887194:0;du -sh /opt/.??* | sort -h | grep coin
+: 1391889819:0;mplayer jb020314.mp3
+: 1391890956:0;openarena
+: 1391894944:0;man history
+: 1391894963:0;man history | grep date
+: 1391897751:0;sudo lxc-create -n debian -t debian
+: 1391897797:0;lxc-start debian
+: 1391897903:0;chroot
+: 1391897906:0;chroot --help
+: 1391898304:0;lxc-create -n arch -t arch
+: 1391898309:0;sudo lxc-create -n arch -t arch
+: 1391898386:0;nano /usr/share/lxc/templates/lxc-archlinux
+: 1391898406:0;cd examples
+: 1391898412:0;cp bridge ../br0
+: 1391898415:0;sudo cp bridge ../br0
+: 1391898438:0;sudo nectl start br0
+: 1391898479:0;ps aux | grep dhcpcd
+: 1391898484:0;sudo kill 1755
+: 1391898486:0;sudo dhcpcd
+: 1391898524:0;sudo lxc-create -n arch -t archlinux
+: 1391898859:0;btrfs subvolume list /media/btrfs_pool
+: 1391898880:0;cd btrfs_pool
+: 1391898920:0;sudo btrfs subvolume snapshot ./arch ./arch-default-20140208
+: 1391898936:0;sudo btrfs subvolume snapshot ./arch/rootfs ./arch/rootfs-default-20140208
+: 1391898958:0;ls /var/lib/lxc/arch
+: 1391899120:0;sudo btrfs subvolume snapshot ./rootfs ./rootfs-default-20140208
+: 1391903842:0;du -sh .??* /opt
+: 1391903863:0;du -sh /home/sysop/.??*
+: 1391903882:0;du -sh /opt/.??* | sort -h
+: 1391905831:0;cd /usr/src/GIT/CCOINS/litecoin
+: 1391909242:0;zshexpn
+: 1391909246:0;yaourt zshexpn
+: 1391909566:0;/
+: 1391909717:0;cd LINUX/linux-stable
+: 1391911815:0;./terracoin-qt&
+: 1391912438:0;du -sh .??* | grep coin
+: 1391912571:0;ls /opt
+: 1391912609:0;yaourt -S vlc
+: 1391912662:0;ps aux | grep nautilus
+: 1391912668:0;kill 18776
+: 1391912676:0;nautilus&
+: 1391912681:0;vlc
+: 1391914216:0;du -sh /home/sysop/.??* | sort -h
+: 1391914590:0;man bitcoind
+: 1391915833:0;du -sh .??* | sort -h | grep coin
+: 1391916424:0;sudo qmake clean
+: 1391916447:0;./namecoin-qt&
+: 1391916473:0;ps aux | grep namecoin
+: 1391916480:0;sudo kill 3772
+: 1391916487:0;sudo ./namecoin-qt
+: 1391916522:0;ps aux | grep coin
+: 1391916692:0;sudo iftop
+: 1391916973:0;cd .bitcoin
+: 1391916981:0;nano bitcoin.conf
+: 1391917017:0;bitcoind -stop
+: 1391917036:0;bitcoind | grep stop
+: 1391917042:0;bitcoind --help | grep stop
+: 1391917045:0;bitcoind --help | grep halt
+: 1391917048:0;bitcoind --help | grep kill
+: 1391917113:0;bitcoind listtransactions
+: 1391917322:0;make -f makefile.unix bitcoind
+: 1391917345:0;sudo make -f makefile.unix bitcoind
+: 1391917366:0;nano build-unix.txt
+: 1391917419:0;cd ../src
+: 1391919325:0;wxit
+: 1391924420:0;yaourt crypto
+: 1391924534:0;yaourt openssl
+: 1391924583:0;yaourt libqrencode
+: 1391924592:0;yaourt qren
+: 1391924691:0;yaourt libcrypto
+: 1391924828:0;ld
+: 1391924839:0;nano Makefile
+: 1391924963:0;sudo make -f Makefile "USE_SSL=-" namecoind namecoin
+: 1391924970:0;sudo make -f Makefile namecoind namecoin
+: 1391924978:0;sudo make -f Makefile namecoind namecoin
+: 1391925001:0;yaourt Qdt
+: 1391925019:0;yaourt namecoin
+: 1391925119:0;nano Projects/notes/coins.txt
+: 1391925197:0;yaourt -S namecoind
+: 1391925278:0;sudo git checkout -f -q 5b00e68860
+: 1391925342:0;sls
+: 1391925402:0;sudo git fetch -q
+: 1391925404:0;sudo git reset -q --hard origin/master
+: 1391925462:0;sudo sed -i '24s|Bstatic|Bdynamic|' Makefile
+: 1391925769:0;./namecoind
+: 1391925806:0;cd /usr/src/GIT/CCOINS/namecoinq
+: 1391925809:0;./namecoin-qt
+: 1391925897:0;cd /~
+: 1391925924:0;sudo mv .dogecoin /opt
+: 1391926003:0;sudo mv .feathercoin /opt
+: 1391926031:0;sudo mv .ppcoin /opt
+: 1391926044:0;sudo mv .primecoin /opt
+: 1391926055:0;sudo mv .terracoin /opt
+: 1391926085:0;ln -s /opt/.dogecoin .dogecoin
+: 1391926093:0;ln -s /opt/.feathercoin .feathercoin
+: 1391926104:0;ln -s /opt/.ppcoin .ppcoin
+: 1391926113:0;ln -s /opt/.primecoin .primecoin
+: 1391926121:0;ln -s /opt/.terracoin .terracoin
+: 1391926124:0;du -sh .??* | grep coin | sort -h
+: 1391926133:0;cd
+: 1391926136:0;/opt
+: 1391926200:0;ls -ail | grep coin | du -sh
+: 1391926235:0;sudo chmod 775 .??*coin
+: 1391926243:0;sudo chown root.users .??*coin
+: 1391926245:0;ls -ail | grep coin | sort -h
+: 1391926322:0;cd database
+: 1391926372:0;cd /opt/.dogecoin
+: 1391926399:0;sudo chmod 775 .??*coin -R
+: 1391926407:0;sudo chown root.users .??*coin -R
+: 1391926445:0;litecoin-qt
+: 1391926452:0;./litecoin-qt
+: 1391926486:0;sudo chmod 777 .??*coin -R
+: 1391926562:0;/usr/src
+: 1391926566:0;cd GIT/CCOINS
+: 1391926573:0;./dogecoin-qt
+: 1391926703:0;./feathercoin-qt&
+: 1391926727:0;./litecoin-qt&
+: 1391926740:0;./ppcoin-qt&
+: 1391926751:0;./primecoin-qt&
+: 1391926768:0;./terracoin-qt
+: 1391927880:0;ps aux | grep bitcoind
+: 1391927897:0;sudo kill 9707
+: 1391927904:0;bitcoind server
+: 1391927907:0;bitcoind -server
+: 1391927940:0;bitcoind -server&
+: 1391927956:0;kill 10252
+: 1391927958:0;ps aux | grep bitcoin
+: 1391928025:0;bitcoind daemon
+: 1391928038:0;bitcoind --help | grep daemon
+: 1391928043:0;bitcoind -daemon
+: 1391928047:0;bitcoind getinfo
+: 1391928138:0;bitcoind getblockcount 2>1
+: 1391928150:0;bitcoind getblockcount 2>&1
+: 1391928153:0;bitcoind getblockcount
+: 1391928184:0;bitcoind stop
+: 1391928195:0;bitcoind --help
+: 1391928283:0;cd /usr/src/GIT/CCOINS
+: 1391928314:0;ln -s /usr/src/GIT/CCOINS/dogecoin/dogecoin-qt /usr/sbin/dogecoin-qt
+: 1391928320:0;sudo ln -s /usr/src/GIT/CCOINS/dogecoin/dogecoin-qt /usr/sbin/dogecoin-qt
+: 1391928330:0;sudo ln -s /usr/src/GIT/CCOINS/dogecoin/src/dogecoind /usr/sbin/dogecoind
+: 1391928341:0;cd FeatherCoin
+: 1391928361:0;sudo ln -s /usr/src/GIT/CCOINS/FeatherCoin/feathercoin-qt /usr/sbin/feathercoin-qt
+: 1391928372:0;sudo ln -s /usr/src/GIT/CCOINS/FeatherCoin/src/feathercoind /usr/sbin/feathercoind
+: 1391928376:0;cd litecoin
+: 1391928393:0;sudo ln -s /usr/src/GIT/CCOINS/litecoin/litecoin-qt /usr/sbin/litecoin-qt
+: 1391928401:0;sudo ln -s /usr/src/GIT/CCOINS/litecoin/src/litecoind /usr/sbin/litecoind
+: 1391928405:0;cd namecoinq
+: 1391928434:0;sudo ln -s /usr/src/GIT/CCOINS/namecoinq/namecoin-qt /usr/sbin/namecoin-qt
+: 1391928449:0;sudo ln -s /usr/src/GIT/CCOINS/namecoinq/src/namecoind /usr/sbin/namecoind
+: 1391928491:0;sudo ln -s /usr/src/GIT/CCOINS/ppcoin/ppcoin-qt /usr/sbin/ppcoin-qt
+: 1391928498:0;sudo ln -s /usr/src/GIT/CCOINS/ppcoin/src/ppcoind /usr/sbin/ppcoind
+: 1391928503:0;cd primecoin
+: 1391928520:0;sudo ln -s /usr/src/GIT/CCOINS/primecoin/primecoin-qt /usr/sbin/primecoin-qt
+: 1391928531:0;sudo ln -s /usr/src/GIT/CCOINS/primecoin/src/primecoind /usr/sbin/primecoind
+: 1391928536:0;cd terracoin
+: 1391928553:0;sudo ln -s /usr/src/GIT/CCOINS/terracoin/terracoin-qt /usr/sbin/terracoin-qt
+: 1391928561:0;sudo ln -s /usr/src/GIT/CCOINS/terracoin/src/terracoind /usr/sbin/terracoind
+: 1391928571:0;terracoind
+: 1391928618:0;sudo cp .bitcoin/bitcoin.conf .dogecoin/dogecoin.conf
+: 1391928627:0;sudo cp .bitcoin/bitcoin.conf .feathercoin/feathercoin.conf
+: 1391928635:0;sudo cp .bitcoin/bitcoin.conf .litecoin/litecoin.conf
+: 1391928643:0;sudo cp .bitcoin/bitcoin.conf .ppcoin/ppcoin.conf
+: 1391928650:0;sudo cp .bitcoin/bitcoin.conf .primecoin/primecoin.conf
+: 1391928657:0;sudo cp .bitcoin/bitcoin.conf .terracoin/terracoin.conf
+: 1391928668:0;primecoind getblockcount
+: 1391928704:0;ps aux | grep primecoin
+: 1391928711:0;terracoind -server
+: 1391928738:0;terracoind -daemon
+: 1391928746:0;terracoind getblockinfo
+: 1391928755:0;terracoind --help
+: 1391928772:0;terracoind getblockcount
+: 1391928793:0;terracoind -stop
+: 1391928813:0;ps aux | grep terracoin
+: 1391928819:0;kill 15841
+: 1391928999:0;mkdir media
+: 1391929002:0;sudo mkdir media
+: 1391929083:0;sudo btrfs subvolume create dump
+: 1391929152:0;mkdir dump
+: 1391929156:0;sudo mkdir dump
+: 1391929159:0;sudo mount dump
+: 1391929185:0;sudo mv Season* /media/dump
+: 1391929468:0;sudo mv green-agenda.com /media/dump
+: 1391929594:0;cd sysop/spare
+: 1391929608:0;find ./ | grep Venus
+: 1391929629:0;sudo find ./ | grep Venus
+: 1391929751:0;lsof shows
+: 1391929759:0;umount shows
+: 1391929770:0;fuset shows
+: 1391929773:0;fuser shows
+: 1391929797:0;cd shows
+: 1391929807:0;cd X-Files
+: 1391929809:0;cd Films
+: 1391930591:0;du -sh sysop
+: 1391930605:0;du -sh * .??* | sort -h
+: 1391930653:0;sudo mv archlinux-2014.02.01-dual.iso /var/lib/libvirt/images
+: 1391930680:0;rm jb013014.mp3
+: 1391930688:0;rm jb013114.mp3
+: 1391930713:0;rm ./[*
+: 1391930722:0;rm ./*.torrent
+: 1391930728:0;rm ruby-2.0.0-p353.tar.gz
+: 1391930739:0;rm p24*
+: 1391930759:0;cd cache
+: 1391930761:0;cd .cache
+: 1391930876:0;cd b/root
+: 1391930931:0;sudo du -sh * .??* | sort -h
+: 1391931177:0;man urxvt | less -p letterSpace
+: 1391931206:0;man urxvt | grep letterSpace
+: 1391931304:0;man urxvt
+: 1391931413:0;urxvt -fn
+: 1391931483:0;cd Projects/notes/dotfiles.Xresources
+: 1391931488:0;nano Projects/notes/dotfiles.Xresources
+: 1391931964:0;echo asdfasdf
+: 1391931967:0;echo $SD
+: 1391931970:0;asdf;jlk
+: 1391932289:0;fc-list | grep gnu
+: 1391932295:0;fc-list | grep bd
+: 1391932319:0;fc-list | grep GNU
+: 1391932348:0;yaourt unifont
+: 1391932434:0;fc-list | grep -i uni
+: 1391932450:0;fc-list | grep -i lucida
+: 1391932456:0;yaourt microsoft unicode
+: 1391932498:0;yaourt -S ttf-win7-fonts
+: 1391932589:0;yaourt -S ttf-mfs-fonts
+: 1391932599:0;yaourt ttf-ms-fonts
+: 1391932715:0;yaourt -S ttf-vista-fonts ttf-tahoma ttf-microfot-tahoma
+: 1391932724:0;yaourt -S ttf-vista-fonts ttf-tahoma ttf-microsoft-tahoma
+: 1391932851:0;yaourt ttf ms
+: 1391932929:0;yaourt ttf mac
+: 1391933070:0;yaourt google ttf
+: 1391933094:0;yaourt ttf
+: 1391933319:0;yaourt ms unicode
+: 1391933336:0;yaourt unicode microsoft
+: 1391933376:0;yaourt arial
+: 1391933394:0;yaourt libreoffice
+: 1391933416:0;yaourt -S libreoffice
+: 1391934082:0;cd GIT/ruby
+: 1391934307:0;yaourt -S libwpg
+: 1391934349:0;fc-list | most
+: 1391934474:0;fc-list | grep -i gnu
+: 1391934479:0;fc-list | grep -i uni-font
+: 1391934483:0;fc-list | grep -i unifont
+: 1391935014:0;xit
+: 1391935339:0;fc-list | grep -i unicode
+: 1391935527:0;fc-list | grep -i powerline
+: 1391935582:0;fc-list | grep -i powerline | grep -i ttf
+: 1391935833:0;cd ppcoin
+: 1391936611:0;cat .Xdefaults | grep font
+: 1391936665:0;urxvt -fn Inconsolata for Powerline, Unifont, Ubuntu Mono derivative Powerline
+: 1391936928:0;cd Season\ 4
+: 1391936963:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 03\ -\ Day\ Of\ Honor.avi
+: 1391937164:0;nano 1
+: 1391937166:0;rm 1
+: 1391937182:0;du -sh opt
+: 1391937247:0;nano backup
+: 1391937297:0;sudo mv *.vdi /run/media/sysop/spare/SAVU
+: 1391940390:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 05\ -\ Revulsion.avi
+: 1391940397:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 06\ -\ The\ Raven.avi
+: 1391941116:0;cd ARCHIVE
+: 1391941346:0;bitcoin-qt&
+: 1391941383:0;whereis dogecoin-qt
+: 1391941394:0;dogecoin-qt&
+: 1391941408:0;feathercoin-qt&
+: 1391941414:0;ls /usr/src/GIT/CCOINS
+: 1391941420:0;litecoin-qt&
+: 1391941428:0;namecoin-qt&
+: 1391941439:0;ppcoin-qt&
+: 1391941447:0;primecoin-qt&
+: 1391941460:0;terracoin-qt&
+: 1391941932:0;cp .bitcoin/bitcoin.conf /home/sysop/.namecoin/namecoin.conf
+: 1391942011:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 07\ -\ The\ Raven.avi
+: 1391942047:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 07\ -\ Scientific\ Method.avi
+: 1391942099:0;sudo mv .namecoin /opt
+: 1391942138:0;sudo ln -s ~/.namecoin /opt/.namecoin
+: 1391942151:0;cd /opt/.namecoin
+: 1391942157:0;ls -ail | grep coin
+: 1391942169:0;ln -s .namecoin /opt/.namecoin
+: 1391942188:0;ln -s /opt/.namecoin .namecoin
+: 1391942190:0;cd .namecoin
+: 1391942194:0;rm .namecoin
+: 1391942201:0;namecoin-qt
+: 1391942271:0;sudo backup
+: 1391942392:0;sudo rm 20140209 -R
+: 1391942442:0;sudo backup;sudo sleepy 6:30AM; mplayer /home/sysop/pchick-alarm.wav -loop 5
+: 1391944872:0;mplayer Star\ Trek\ Voyager\ Season\ 04\ Episode\ 08\ -\ Year\ Of\ Hell\ \(Part\ 1\).avi
+: 1391966039:0;cd 20140209
+: 1391966123:0;whereis virtualbox
+: 1391966158:0;cd /usr/local/sbin
+: 1391966172:0;nano virtualbox
+: 1391966198:0;lsmod | grep kvm | wc -l
+: 1391966347:0;echo $kvm | wc -l
+: 1391970047:0;echo $kvm
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]] then echo "h" fi
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]] then; echo "h" fi
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]]; then; echo "h" fi
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]]; then; echo "h" fi;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]]; then; echo "h"; fi;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]] then; echo "h"; fi;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]] echo "h"; fi;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]]; echo "h"; fi;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" > 1 ]]; echo "h"; ;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" -gt 1 ]]; echo "h"; ;
+: 1391970047:0;if [[ "$(echo kvm | wc -l)" -gt 1 ]]; echo "h";
+: 1391970047:0;echo "$(echo kvm | wc -l)"
+: 1391970047:0;echo "$('echo kvm' | wc -l)"
+: 1391970047:0;echo "$('echo $kvm' | wc -l)"
+: 1391970047:0;echo "$(echo $kvm | wc -l)"
+: 1391970047:0;$("echo $kvm" | wc -l)
+: 1391970047:0;$(echo "$kvm" | wc -l)
+: 1391970047:0;chmod 755 vbox 
+: 1391967141:0;echo $(echo "$kvm" | wc -l)
+: 1391967211:0;echo "$kvm" | cut -d
+: 1391967214:0;echo "$kvm" | cut -d,
+: 1391967217:0;echo "$kvm" | cut -d, -f2
+: 1391967218:0;echo "$kvm" | cut -d, -f1
+: 1391967225:0;echo "$kvm" | cut -d, -f1 -
+: 1391967231:0;echo "$kvm" > cut -d, -f1
+: 1391967251:0;echo "$kvm" | cut -d' '
+: 1391967257:0;echo "$kvm" | cut -d' ' -f1
+: 1391967419:0;nano cut
+: 1391967422:0;rm cut
+: 1391967429:0;nano unicode.test
+: 1391967644:0;nano kanji2200.text
+: 1391967724:0;nano backup.sh
+: 1391967855:0;find "while read line;" /root
+: 1391967914:0;grep /root "while read nUser;" -R
+: 1391968397:0;nano ./vbox
+: 1391970047:0;./vbox 
+: 1391968535:0;kvm="$(lsmod | grep kvm)"
+: 1391968539:0;echo "$kvm"
+: 1391968569:0;while read line; do; echo $line; done < <(echo "$kvm")
+: 1391968595:0;while read line; do; echo $line; done < <(echo "$kvm");
+: 1391968630:0;vbox
+: 1391968743:0;nano vbox
+: 1391969016:0;./vbox
+: 1391969023:0;ps aux | grep kvm
+: 1391970086:0;sudo kill 7738
+: 1391970104:0;kill 13475
+: 1391970112:0;kill 13210
+: 1391970123:0;mplayer jb020414.mp3
+: 1391974708:0;find ./ | grep color
+: 1391974711:0;find ./ | grep color | most
+: 1391975043:0;kill 8048
+: 1391975084:0;nano bindings/zsh/powerline.zsh
+: 1391975161:0;kill 9138
+: 1391975174:0;kill 9176
+: 1391975185:0;powerline-client
+: 1391975213:0;powerline-client shell left -r zsh_prompt
+: 1391975219:0;powerline-client shell left -r
+: 1391975244:0;powerline-client shell right
+: 1391975248:0;powerline-client shell
+: 1391975333:0;powerline-client shell left
+: 1391977069:0;mplayer jb020514.mp3
+: 1391977281:0;powerline-client shell left;powerline-client shell left
+: 1391977400:0;kill 9270
+: 1391977414:0;kill 9770
+: 1391977838:0;kill 9810
+: 1391979307:0;kill 10571
+: 1391979832:0;kill 10795
+: 1391979832:0;cd powerline/bindings/bash/
+: 1391979654:0;cd powerline/bindings/zsh
+: 1391980608:0;yaourt -S gedit
+: 1391980623:0;gedit
+: 1391980642:0;gedit&
+: 1391980660:0;resolving dependencies...
+: 1391980660:0;looking for inter-conflicts...
+: 1391980660:0;Packages (3): gtksourceview3-3.10.2-1 libpeas-1.9.0-1 gedit-3.10.4-1
+: 1391980660:0;Total Download Size: 3.06 MiB
+: 1391980660:0;Total Installed Size: 22.21 MiB
+: 1391980660:0;:: Proceed with installation? [Y/n] Y
+: 1391980660:0;:: Retrieving packages ...
+: 1391980671:0;echo $PS1
+: 1391980692:0;echo $PS1 > ps1
+: 1391984133:0;yaourt cups pdf
+: 1391984192:0;sudo systemctl list-unit-files | grep cpus
+: 1391984194:0;sudo systemctl list-unit-files | grep cups
+: 1391984203:0;sudo systemctl enable cups
+: 1391984207:0;sudo systemctl start cups
+: 1391984238:0;nano cups-printing.txt
+: 1391984254:0;sudo systemctl enable avahi-daemon.service
+: 1391984261:0;sudo systemctl start avahi-daemon.service
+: 1391984273:0;systemctl status avahi-daemon.service
+: 1391984287:0;cd cups
+: 1391984329:0;yaourt -S libcups gsfonts ghostscript
+: 1391984351:0;sudo nano client.conf
+: 1391984388:0;nano cups-pdf.conf
+: 1391984447:0;sudo nano cups-pdf.conf
+: 1391984484:0;sudo systemctl restart cups
+: 1391984506:0;a
+: 1391984669:0;ls ~/Printer
+: 1391984686:0;cd ~/Printer
+: 1391984697:0;tar printer.tar.gz *
+: 1391984701:0;tar printer.tar.gz ./\\
+: 1391984728:0;tar cfvz print.tar.gz *
+: 1391984735:0;rm *.pdf
+: 1391984791:0;lpstat -p -d
+: 1391984809:0;cd Printer
+: 1391984822:0;yaourt acrobat
+: 1391984866:0;yaourt -S acroread
+: 1391985038:0;yaourt -S teamviewer
+: 1391985146:0;yaourt skype
+: 1391985162:0;yaourt -R teamviewer
+: 1391985180:0;yaourt -S unzizp
+: 1391985183:0;yaourt -S unziz
+: 1391985186:0;yaourt -S unzip
+: 1391985193:0;yaourt -S unrar
+: 1391985231:0;rm _PDF_Printer_-_CUPS_1_7_1__g_non-Linux-generated_files.pdf
+: 1391985235:0;mv print.tar.gz ../
+: 1391985247:0;mv print.tar.gz /media/dump
+: 1391985251:0;sudo mv print.tar.gz /media/dump
+: 1391987309:0;yaourt remmina
+: 1391987322:0;yaourt xrdp
+: 1392008169:0;sudo mkdir arch-default
+: 1392008208:0;sudo rm arch-default -R
+: 1392008267:0;sudo mkdir ../arch-default
+: 1392008273:0;sudo cp config ../arch-default
+: 1392008280:0;sudo cp fstab ../arch-default
+: 1392008284:0;nano rootfs.hold
+: 1392008349:0;sudo btrfs subvolume snapshot ./rootfs ../arch--default/rootfs
+: 1392008355:0;sudo btrfs subvolume snapshot ./rootfs ../arch-default/rootfs
+: 1392008376:0;sudo lxc-start arch-default
+: 1392008411:0;sudo btrfs subvolume delete rootfs-default-20140208
+: 1392008462:0;sudo mkdir ../debian-default
+: 1392008469:0;sudo cp config ../debian-default
+: 1392008492:0;sudo btrfs subvolume snapshot rootfs ../debian--default/rootfs
+: 1392008495:0;sudo btrfs subvolume snapshot rootfs ../debian-default/rootfs
+: 1392008507:0;lxc-start -n debian-default
+: 1392008514:0;sudo lxc-start -n debian-default
+: 1392008696:0;du -s /arch-default
+: 1392008703:0;sudo du -s /arch-default
+: 1392008722:0;sudo du -s *
+: 1392008752:0;ls /media/btrfs_pool/var/lib/lxc
+: 1392008820:0;sudo mkdir debian-test
+: 1392008829:0;sudo cp config ../debian-test
+: 1392008870:0;sudo btrfs subvolume snapshot rootfs ../debian-test/
+: 1392009111:0;sudo btrfs subvolume snapshot rootfs ../debian-test/rootfs
+: 1392009153:0;cd debian-test
+: 1392009173:0;sudo rm debian-test -R
+: 1392009223:0;arch-chroot arch/rootfs
+: 1392009229:0;sudo arch-chroot arch/rootfs
+: 1392009364:0;cd /var/lib/lxc/arch/rootfs
+: 1392009369:0;nano exit
+: 1392014223:0;sudo arch-chroot rootfs
+: 1392014237:0;sudo chroot rootfs
+: 1392014482:0;nano etc/hostname
+: 1392014495:0;sudo nano etc/hostname
+: 1392014992:0;chroot rootfs
+: 1392017604:0;mplayer jb020614.mp3
+: 1392021602:0;lxc-start -n debian
+: 1392023043:0;ssh root@192.168.1.204
+: 1392023289:0;du -sh debian*
+: 1392023294:0;sudo du -sh debian*
+: 1392024802:0;ls\\
+: 1392024833:0;rm jb*
+: 1392046852:0;sleep 30m; mplayer /home/sysop/pchick-alarm.wav
+: 1392049211:0;sleep 20m; mplayer /home/sysop/pchick-alarm.wav
+: 1392058473:0;kill 20899
+: 1392058539:0;cd /usr/src/GIT/ruby
+: 1392058663:0;cp .zhsrc .zshrc-bu
+: 1392058672:0;cp .zshrc .zshrc-bu
+: 1392059163:0;echo $PATH
+: 1392059163:0;ps aux | grep bash
+: 1392059313:0;deluser test
+: 1392059313:0;userdel test
+: 1392059313:0;adduser test
+: 1392059785:0;locale
+: 1392059809:0;nano loggit.txt
+: 1392059825:0;rm loggit.txt
+: 1392059837:0;nano .zlogin
+: 1392060066:0;chown test.users .powerline -R
+: 1392060066:0;cd .powerline/
+: 1392060066:0;cd powerline/bindings/
+: 1392077887:0;urxvt
+: 1392078892:0;sudo ls -ail
+: 1392078905:0;sudo chmod test.users .zshrc
+: 1392078914:0;sudo chmod test.users /home/test/.zshrc
+: 1392078925:0;sudo chown test.users /home/test/.zshrc
+: 1392078942:0;sudo find ./ | grep root
+: 1392082571:0;zsh -f
+: 1392083472:0;diff .zshrc .zshrc-bu
+: 1392083550:0;sudo git checkout origin/master
+: 1392083585:0;cd .git
+: 1392083655:0;sudo cp /usr/src/GIT/POWERLINE/powerline ./.powerline
+: 1392083682:0;sudo cp /usr/src/GIT/POWERLINE/powerline .powerline -R
+: 1392083689:0;ls -ail | grep power
+: 1392083759:0;sudo git checkout origin/develop
+: 1392084608:0;cp powerline-client ~/.powerline/scripts
+: 1392084614:0;cp powerline-daemon ~/.powerline/scripts
+: 1392084631:0;sudo git checkout develop
+: 1392086256:0;sudo rm testing -R
+: 1392087010:0;sudo cp powerline pd
+: 1392087012:0;sudo cp powerline pd =R
+: 1392087013:0;sudo cp powerline pd -R
+: 1392087015:0;cd pd
+: 1392087076:0;nano powerline-render
+: 1392087335:0;cd tools
+: 1392087347:0;nano source
+: 1392087365:0;cd client
+: 1392087407:0;rm /home/sysop/.powerline -R
+: 1392087424:0;cp pd /home/sysop/.powerline
+: 1392087443:0;rm pd -R
+: 1392087447:0;sudo rm pd -R
+: 1392087487:0;cp /usr/src/GIT/POWERLINE/powerline ./powerline -R
+: 1392087498:0;sudo mv powerline .powerline
+: 1392087536:0;git checkout origin/feature/daemon
+: 1392087580:0;ln -s ../client/powerline ./powerline
+: 1392087598:0;ps aux | grep powerline-daemon
+: 1392087606:0;kill 9167
+: 1392087701:0;powerline-render
+: 1392087739:0;git checkout develop
+: 1392087763:0;sudo cp /root/.powerline/scripts/powerline-client ./
+: 1392087769:0;sudo cp /root/.powerline/scripts/powerline-daemon ./
+: 1392087784:0;sudo chown sysop.sysop *
+: 1392090827:0;netctl
+: 1392090842:0;lsmod | grep 25
+: 1392090863:0;yaourt ax25
+: 1392090948:0;sudo nano rose.conf
+: 1392090962:0;modprobe -r ax25
+: 1392090966:0;sudo modprobe -r ax25
+: 1392090974:0;lsmod | grep ax25
+: 1392091004:0;yaourt netrom
+: 1392091092:0;sudo nano netrom.conf
+: 1392091267:0;nano lxc.txt
+: 1392091281:0;nano container-notes.txt
+: 1392091293:0;nano instructions.txt
+: 1392091306:0;grep "lxc"
+: 1392091309:0;grep "lxc" *
+: 1392093437:0;nano config 
+: 1392092744:0;sudo systemctl | grep dhcp
+: 1392092753:0;sudo systemctl list-unit-files | grep dhcp
+: 1392092822:0;man dhclient
+: 1392092835:0;systemctl disable dhcpcd
+: 1392092845:0;sudo systemctl stop dhcpcd
+: 1392092862:0;dhclient br0
+: 1392092898:0;sudo systemctl list-unit-files | grep dhc
+: 1392093061:0;yaourt -R dhcpcd
+: 1392093070:0;systemctl list-unit-files | grep dh
+: 1392093100:0;dhclient
+: 1392093105:0;sudo dhclient
+: 1392093231:0;yaourt -S dhcpcd
+: 1392093245:0;systemctl list-unit-files | grep dhcp
+: 1392093251:0;systemctl enable dhcpcd
+: 1392093255:0;sudo systemctl enable dhcpcd
+: 1392093285:0;sudo lxc-kill -n arch
+: 1392093437:0;umount dev
+: 1392093437:0;ps aux | grep chroot
+: 1392094505:0;mount
+: 1392094375:0;cd Projects/
+: 1392094483:0;find ./ | grep ip_forward
+: 1392094749:0;cd /var/run/media/sysop/spare/home/HOLD
+: 1392094766:0;sudo cp projects ~/Desktop -R
+: 1392096435:0;sudo chown sysop.sysop projects -R
+: 1392096455:0;cd projects
+: 1392096483:0;tar xfvz lxc.tar.gz
+: 1392096604:0;cd ARCHLINUX
+: 1392096618:0;nano run
+: 1392096631:0;cd LXC-TEMPLATES
+: 1392096637:0;cd LXC-CANDIDATES
+: 1392096642:0;tar xfvz archlinux.tar.gz
+: 1392096681:0;cd tmp
+: 1392096730:0;sudo cp -R /var/lib/lxc/arch fs-1
+: 1392096742:0;cd fs-1
+: 1392096766:0;sudo rm arch -R
+: 1392096807:0;sudo cp ./fs-1 /var/lib/lxc/arch/ -R
+: 1392096907:0;sudo mv rootfs rootfs-real
+: 1392096925:0;sudo mv fs-1 rootfs
+: 1392096999:0;rm ~/Desktop/Projects -R
+: 1392097005:0;sudo rm ~/Desktop/Projects -R
+: 1392097024:0;sudo rm ~/Desktop/projects -R
+: 1392097088:0;sudo rm rootfs -R
+: 1392097098:0;sudo mv rootfs-real rootfs
+: 1392099672:0;alsamixer 
+: 1392099960:0;mplayer Bass_Infektion__July_2006____mixed_by_Tek_Fox.mp3
+: 1392103765:0;cd debian
+: 1392103800:0;sudo cp * /var/lib/lxc/arch/rootfs/usr/src/ -R
+: 1392105387:0;cd debian/rootfs
+: 1392105399:0;nano locale.conf
+: 1392105412:0;sudo nano locale.conf
+: 1392108034:0;tar -xfvz mars.tar.gz
+: 1392108040:0;tar xfvzz mars.tar.gz
+: 1392108047:0;sudo tar xfvz mars.tar.gz
+: 1392108105:0;;s
+: 1392108113:0;sudo mv mnt mars
+: 1392108129:0;tar xfvz xfz quaoar.tar.gz
+: 1392108134:0;sudo tar xfvz xfz quaoar.tar.gz
+: 1392108140:0;sudo tar xfz quaoar.tar.gz
+: 1392108225:0;sudo mv mnt quaoar
+: 1392108240:0;sudo tar xfz mercury.tar.gz
+: 1392108281:0;sudo mv mnt mercury
+: 1392108291:0;sudo tar xfz venus.tar.gz
+: 1392108373:0;sudo mv mnt venus
+: 1392108386:0;nano sources.list
+: 1392139503:0;nano lxc-setup-arch.txt
+: 1392144603:0;cd debian/
+: 1392144616:0;cd default
+: 1392144621:0;nano locale
+: 1392144632:0;sudo nano locale
+: 1392145505:0;nano sshd_config
+: 1392145963:0;cd apt
+: 1392145973:0;sudo nano sources.list
+: 1392146268:0;sudo cp * /var/lib/lxc/debian/rootfs/usr/share/terminfo -R
+: 1392146574:0;lxc-console -n arch
+: 1392146578:0;sudo lxc-console -n arch
+: 1392149257:0;rmdir Powerline
+: 1392149260:0;cd Powerline
+: 1392150348:0;ssh root@192.168.1.237
+: 1392151523:0;mplayer jb021014.mp3
+: 1392151620:0;sudo du -sh debian
+: 1392163229:0;cp * /var/lib/lxc/debian/rootfs/home/sysop/ -Rf
+: 1392163229:0;cp .??* /var/lib/lxc/debian/rootfs/home/sysop/ -Rf
+: 1392163229:0;cp .??* /var/lib/lxc/debian/rootfs/root/ -Rf
+: 1392163229:0;cp * /var/lib/lxc/debian/rootfs/root/ -Rf
+: 1392163229:0;cp * /var/lib/lxc/arch/rootfs/root/ -Rf
+: 1392163229:0;cp * /var/lib/lxc/arch/rootfs/home/sysop/ -Rf
+: 1392163229:0;cp .??* /var/lib/lxc/arch/rootfs/root/ -Rf
+: 1392163229:0;cp .??* /var/lib/lxc/arch/rootfs/home/sysop/ -Rf
+: 1392163229:0;cd /var/lib/lxc/arch
+: 1392161454:0;ssh sysop@192.168.1.209
+: 1392162482:0;cd /etc/modules-load.d
+: 1392162500:0;nano beep.conf
+: 1392162509:0;sudo nano beep.conf
+: 1392162522:0;sudo modprobe -r pcspkr
+: 1392163158:0;sudo cp /var/lib/lxc/arch/rootfs/home/sysop/.powerline ./ -R
+: 1392163179:0;mv .zshrc .zshrc-old
+: 1392163190:0;sudo cp /var/lib/lxc/arch/rootfs/home/sysop/.zshrc ./ -R
+: 1392168174:0;locate bin/zsh
+: 1392168187:0;locate zsh
+: 1392168381:0;ssh root@192.168.1.209
+: 1392168410:0;cd /ussr
+: 1392168419:0;cd GIIT
+: 1392168454:0;whereis zsh
+: 1392168585:0;./configure --prefix=/usr --mandir=/usr/share/man --bindir=/bin --infodir=/usr/share/info --enable-maildir-support --enable-max-jobtable-size=256 --enable-etcdir=/etc/zsh --enable-function-subdirs --enable-site-fndir=/usr/local/share/zsh/site-functions --enable-fndir=/usr/share/zsh/functions --with-tcsetpgrp --with-term-lib="ncursesw" --enable-cap --enable-pcre --enable-readnullcmd=pager LDFLAGS="-Wl,--as-needed -g"
+: 1392169089:0;make install
+: 1392169191:0;cd ZSH/zsh
+: 1392169427:0;sudo chown sysop.sysop .zshrc
+: 1392169469:0;sudo rm /usr/share/zsh -R
+: 1392169475:0;yaourt -S zsh
+: 1392169836:0;nano
+: 1392169950:0;cd GIT/ZSH/zsh
+: 1392169961:0;yaourt -R zsh
+: 1392170031:0;nano TO_INSTALL.notes
+: 1392170060:0;nano ls
+: 1392170400:0;man zsh
+: 1392170487:0;cd /usr/src/GIT/ZSH/zsh
+: 1392170731:0;sudo git checkout zsh-5.0.5
+: 1392170741:0;sudo git pull origin zsh-5.0.5
+: 1392170759:0;./Util/preconfig
+: 1392171476:0;sudo make chekc
+: 1392171478:0;sudo make check
+: 1392171538:0;sudo make install.info
+: 1392171579:0;cd /usr/src/GIT/ZSH
+: 1392172049:0;rm jb021014.mp3
+: 1392175504:0;kill 27036
+: 1392175513:0;sudo kill 27036
+: 1392175521:0;sudo kill 876
+: 1392175899:0;echo $HOSTNAME
+: 1392175939:0;cp arch/rootfs/home/sysop/.zshrc debian/rootfs/home/sysop
+: 1392175947:0;sudo cp arch/rootfs/home/sysop/.zshrc debian/rootfs/home/sysop
+: 1392175954:0;sudo cp arch/rootfs/home/sysop/.zshrc debian/rootfs/root
+: 1392176988:0;rm ./.cache/google-chrome -R
+: 1392177012:0;rm .cache/google-chrome-unstable -R
+: 1392177014:0;yaourt -R chromium
+: 1392177030:0;rm .config/goole* -R
+: 1392177034:0;rm .config/google* -R
+: 1392177050:0;rm .config/google-chrome -R
+: 1392177057:0;rm .config/google-chrome -Rf
+: 1392177068:0;rm .config/chromium -Rf
+: 1392177071:0;find ./ | grep google
+: 1392178288:0;ssh sysop@192.168.1.247
+: 1392179077:0;nano sudoers
+: 1392189176:0;ruby
+: 1392189214:0;yaourt gitsh
+: 1392189325:0;ls --block-size
+: 1392189364:0;ls --all
+: 1392190011:0;sudo nano hostname
+: 1392190029:0;whereis hostname
+: 1392190036:0;nano /usr/bin/hostname
+: 1392190113:0;sysctl
+: 1392190122:0;sysctl kernel/hostname=one
+: 1392190126:0;sudo sysctl kernel/hostname=one
+: 1392190132:0;sudo sysctl kernel/hostname=one.hypokrites.me
+: 1392190142:0;cat /etc/hostname
+: 1392190148:0;man sysctl
+: 1392193634:0;ssh root@192.168.1.221
+: 1392193747:0;ssh root@192.168.1.228
+: 1392194561:0;kill 852
+: 1392194651:0;sudo nano /home/sysop/.zshrc
+: 1392194678:0;sudo nano /root/.bashrc
+: 1392194772:0;ssh root@192.168.1.202
+: 1392194926:0;cd notes/
+: 1392194943:0;grep "locale" *
+: 1392194952:0;nano lxc-setup-debian.txt
+: 1392195100:0;ssh root@192.168.1.247
+: 1392196200:0;ls -ail | grep .zsh
+: 1392196209:0;ls -ail | grep .bash
+: 1392201538:0;sudo lxc-stop -n debian
+: 1392201699:0;nano /home/sysop/.zshrc
+: 1392226298:0;grep "POWERLINE_COMMAND" * -R
+: 1392226298:0;grep "POWERLINE_COMMAND" .??* -R
+: 1392226298:0;cp .zshrc ~/
+: 1392226298:0;cp .bashrc ~/
+: 1392226298:0;cp .bashrc /home/test
+: 1392226298:0;cp .zshrc /home/test
+: 1392226298:0;ls /home/test -ail
+: 1392226171:0;sudo cp .zshrc /root/.zshrc
+: 1392226180:0;sudo cp .bashrc /root/.bashrc
+: 1392226205:0;sudo cp .bashrc /home/test/.bashrc
+: 1392226210:0;sudo cp .zshrc /home/test/.zshrc
+: 1392226298:0;sudo kill 22475
+: 1392226298:0;echo $SHELL
+: 1392232473:0;nano .zshr
+: 1392232350:0;man si
+: 1392232353:0;man su
+: 1392234060:0;env | sort > env.txt
+: 1392232541:0;env | sort > sysop.txt
+: 1392232543:0;nano sysop.txt
+: 1392233305:0;su -
+: 1392234060:0;nano env.txt 
+: 1392235459:0;ssh root@192.168.1.215
+: 1392248762:0;ssh sysop@192.168.1.227
+: 1392248801:0;ssh root@192.168.1.227
+: 1392249353:0;echo $POWERLINE_COMMAND
+: 1392249394:0;grep "powerline-client" .??* -R | most
+: 1392252331:0;sudo nano .zshrc
+: 1392252411:0;sudo nano /root/.zshrc
+: 1392263000:0;tmux -L
+: 1392263020:0;tmux list-session
+: 1392263205:0;find ./ | grep tmux
+: 1392263252:0;cat /etc/group | grep tmux
+: 1392263307:0;tmux new-session -s shared
+: 1392264000:0;sudo du -sh arch
+: 1392264016:0;sudo du -sh arch-default
+: 1392264040:0;find ../arch/rootfs | wc -l
+: 1392264044:0;sudo find ../arch/rootfs | wc -l
+: 1392264053:0;sudo find rootfs | wc -l
+: 1392264110:0;cd debian-default
+: 1392264162:0;mkdir arch-standard
+: 1392264166:0;sudo mkdir arch-standard
+: 1392264171:0;sudo mkdir debian-standard
+: 1392264198:0;sudo btrfs subvolume snapshot arch/rootfs arch-standard/rootfs
+: 1392264255:0;sudo btrfs subvolume snapshot debian/rootfs debian-standard/rootfs
+: 1392264260:0;sudo mv arch arch-current
+: 1392264267:0;sudo mv debian debian-current
+: 1392264429:0;cp config ../debian-standard
+: 1392264433:0;sudo cp config ../debian-standard
+: 1392265734:0;cd .tmux
+: 1392265806:0;cd /tmp/tmux-0
+: 1392265817:0;cd tmux-0
+: 1392265822:0;sudo cd tmux-0
+: 1392266293:0;lsof -U | grep '^tmux'
+: 1392266306:0;rm default
+: 1392266408:0;man .tmux.conf
+: 1392266411:0;man tmux.conf
+: 1392266484:0;sudo usermod -a -G sysop test
+: 1392266506:0;sudo chmod 777 default
+: 1392266560:0;sudo chown sysop.users default
+: 1392267090:0;rm fstab
+: 1392267093:0;sudo rm fstab
+: 1392267115:0;cp ../arch-current/fstab ./
+: 1392267120:0;sudo cp ../arch-current/fstab ./
+: 1392267187:0;arch-chroot rootfs /bin/bash
+: 1392267375:0;sudo lxc-start -n debian
+: 1392267407:0;sudo nano arch-default/config
+: 1392267462:0;sudo cp fstab ../arch-standard
+: 1392267471:0;sudo lxc-start -n arch-default
+: 1392271107:0;rm arch-standard -R
+: 1392271114:0;cd arch-standard
+: 1392271122:0;cd debian-standard
+: 1392271360:0;ssh sysop@192.168.1.249
+: 1392271540:0;ssh test@localhost
+: 1392271621:0;ssh root@127.0.0.1
+: 1392271694:0;ssh -v sysop@localhost
+: 1392271724:0;ssh -v test@localhost
+: 1392271776:0;cd /etc/ssh
+: 1392271780:0;nano ssh_config
+: 1392271811:0;sudo nano sshd_config
+: 1392271826:0;sudo systemctl restart sshd
+: 1392271944:0;cat faillog
+: 1392271948:0;sudo cat faillog
+: 1392271968:0;_POWERLINE_MODE=vins
+: 1392271977:0;_POWERLINE_MODE=BITCh
+: 1392272087:0;sudo nano shells
+: 1392272095:0;sudo nano /etc/shells
+: 1392273399:0;apt-get install tmux
+: 1392273420:0;yaourt -S tmux
+: 1392273618:0;locate tmux
+: 1392273622:0;find / | grep tmux
+: 1392273629:0;sudo find / | grep tmux
+: 1392273636:0;sudo find / | grep tmux | most
+: 1392273726:0;cd /usr/src/GIT/tmux-tmux-code
+: 1392273733:0;sudo make uninstall
+: 1392273745:0;sudo udpatedb
+: 1392273757:0;whereis tmux
+: 1392273822:0;sudo make install
+: 1392274107:0;sudo lxc-create -n arch-test -t archlinux
+: 1392274185:0;sudo arch-chroot rootfs /bin/bash
+: 1392274212:0;sudo lxc-start -n arch-test
+: 1392274430:0;kill 19871
+: 1392274438:0;kill 19873
+: 1392274440:0;ps aux | grep tmux
+: 1392278433:0;tcsh
+: 1392281083:0;cd ~/.powerline/powerline/bindings
+: 1392324899:0;tmux\\
+: 1392324949:0;env | grep TMUX | most
+: 1392325152:0;rm .powerline -R
+: 1392325157:0;sudo rm .powerline -R
+: 1392325172:0;cp /usr/src/GIT/POWERLINE/powerline ./.powerline -R
+: 1392325478:0;cd /usr/src/GIT/POWERLINE/powerline/powerline/bindings/zsh
+: 1392325607:0;sudo cp powerline /var/lib/lxc/arch-current/rootfS /home/sysop/.powerline -Rf
+: 1392325616:0;sudo cp powerline /var/lib/lxc/arch-current/rootfS/home/sysop/.powerline -Rf
+: 1392325641:0;ls /var/lib/lxc/arch-current
+: 1392325648:0;ls /var/lib/lxc/arch-current/rootfs/home
+: 1392325652:0;ls /var/lib/lxc/arch-current/rootfs/home/sysop
+: 1392325670:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/home/sysop -Rf
+: 1392325679:0;_POWERLINE_COMMAND=viins
+: 1392325689:0;_POWERLINE_COMMAND=emacs
+: 1392325715:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/home/sysop -Rf
+: 1392325722:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/rot -Rf
+: 1392325725:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/root -Rf
+: 1392325741:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/root -Rf
+: 1392325759:0;rm rot -R
+: 1392325763:0;sudo rm rot -R
+: 1392326144:0;sudo usermod -s /bin/bash test
+: 1392326148:0;sudo usermod -s /bin/bash sysop
+: 1392326604:0;sudo cp powerline /home/sysop/.powerline -Rf
+: 1392326609:0;sudo cp powerline /home/test/.powerline -Rf
+: 1392326614:0;sudo cp powerline /root/.powerline -Rf
+: 1392326674:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/home/sysop/.powerline -Rf
+: 1392326680:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/root/.powerline -Rf
+: 1392326688:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/root/.powerline -Rf
+: 1392326696:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/home/sysop/.powerline -Rf
+: 1392326714:0;cd /var/lib/lxc/debian-current/rootfs
+: 1392326734:0;ls -ail | grep sys
+: 1392326851:0;sudo nano bash/powerline.sh
+: 1392326874:0;sudo rm /home/test/.powerline
+: 1392326982:0;ls -ail | grep pow
+: 1392327004:0;sudo ls -ail | grep pow
+: 1392327056:0;cd powerline/powerline/bindings
+: 1392327165:0;sudo rm /root/.powerline
+: 1392327310:0;sudo usermod -s /usr/bin/zsh sysop
+: 1392327500:0;cd .powerline/powerline/bindings/bash
+: 1392327738:0;sudo nano powerline.zsh
+: 1392327750:0;cd power
+: 1392327758:0;sudo nano powerline.sh
+: 1392327905:0;sudo chown sysop.users /home/sysop/.powerline -R
+: 1392327914:0;sudo chown test.users /home/test/.powerline -R
+: 1392327927:0;cat /etc/passwd | grep zsh
+: 1392327942:0;sudo usermod -s /usr/bin/zsh test
+: 1392328939:0;nano /home/test/.tmux.conf
+: 1392328950:0;sudo nano /home/test/.tmux.conf
+: 1392345175:0;nano .powerline
+: 1392345278:0;env | grep $TMUX
+: 1392345298:0;env | grep TMUX
+: 1392345321:0;if [[ ! -n "$TMUX" ]]; then echo "hello" fi;
+: 1392345325:0;if [[ ! -n "$TMUX" ]]; then; echo "hello" fi;
+: 1392345331:0;if [[ ! -n "$TMUX" ]] then; echo "hello" fi;
+: 1392345337:0;if [[ ! -n "$TMUX" ]] then; echo "hello"; fi;
+: 1392345468:0;if [[ -n "$TMUX" ]] then; echo "hello"; fi;
+: 1392345518:0;cd .powerline/powerline/bindings/zsh
+: 1392346910:0;[wd
+: 1392347066:0;cd .powerline/powerline/bindings
+: 1392347122:0;cd .powerline/powerline
+: 1392347128:0;cd bindings/zsh
+: 1392347144:0;cd ./
+: 1392347267:0;cd tmux-1000
+: 1392347309:0;test default
+: 1392347329:0;test -G default
+: 1392347367:0;stat -c %U
+: 1392347370:0;stat -c %U default
+: 1392347459:0;echo $TMUX | sed 's//,/'
+: 1392347629:0;echo $TMUX | sed 's/?,/'
+: 1392347636:0;echo $TMUX | sed '/?,/'
+: 1392347645:0;echo $TMUX | sed '//?,/'
+: 1392347650:0;echo $TMUX | sed '//,/'
+: 1392347653:0;echo $TMUX | sed '//'
+: 1392347655:0;echo $TMUX | sed ''
+: 1392347673:0;echo $TMUX | sed '^/*,/'
+: 1392347680:0;echo $TMUX | sed '^//*,/'
+: 1392347685:0;echo $TMUX | sed '^\/*,/'
+: 1392347688:0;echo $TMUX | sed '^/\*,/'
+: 1392347691:0;echo $TMUX | sed '^\*,/'
+: 1392347695:0;echo $TMUX | sed '*,/'
+: 1392347707:0;echo $TMUX | sed 'a*b'
+: 1392347711:0;echo $TMUX | sed '/*b'
+: 1392347715:0;echo $TMUX | sed '\\/\*b'
+: 1392347725:0;echo $TMUX | sed '/\/*b'
+: 1392347732:0;echo $TMUX | sed '/\/*,'
+: 1392348150:0;if [[ $USER == $(stat -c %U $(^/* 
+: 1392348544:0;stat -c %U $()
+: 1392348560:0;cut -d, -f1 $TMUX
+: 1392348567:0;cut -d, $TMUX
+: 1392349301:0;cd /home/sysop/.powerline/powerline/bindings
+: 1392349782:0;echo *o*
+: 1392349871:0;bash -v
+: 1392351862:0;bash --version
+: 1392350316:0;echo ${TMUX%%t*,}
+: 1392350502:0;echo ${TMUX%%}
+: 1392350506:0;echo ${TMUX%,}
+: 1392350509:0;echo ${TMUX%,*}
+: 1392351862:0;echo $TMUX
+: 1392351862:0;stat -c %U /tmp/tmux-1000/default 
+: 1392351862:0;stat -c %U /tmp/tmux-1000/default
+: 1392351862:0;echo ${TMUX%%,*}
+: 1392351862:0;stat -c %U ${TMUX%%,*}
+: 1392351862:0;if [[ $USER == stat -c %U ${TMUX%%,*} ]]; then; echo "shit yes
+: 1392351862:0;if [[ $USER == stat -c %U ${TMUX%%,*} ]]; then; echo "shit yes"; fi;
+: 1392351862:0;stat -c %U "/tmp/tmux-1000/default" 
+: 1392351862:0;if [[ "$USER" == "stat -c %U ${TMUX%%,*}" ]]; then; echo "shit yes
+: 1392351862:0;if [[ "$USER" == "stat -c %U ${TMUX%%,*}" ]] then; echo "shit yes
+: 1392351862:0;if [[ "$USER" == "stat -c %U ${TMUX%%,*}" ]] then; echo "shit yes"; fi;
+: 1392351862:0;if [[ "$USER" == "stat -c %U ${TMUX%%,*}" ]] then echo "shit yes"; fi;
+: 1392351862:0;if [[ "X" == "X" ]] then echo "hell yes" fi
+: 1392351862:0;if [[ "X" == "X" ]]; then; echo "hell yes" fi
+: 1392351862:0;if [[ "X" == "X" ]]; then; echo "hell yes"; fi;
+: 1392351862:0;if [[ "X" == "X" ]] then; echo "hell yes"; fi;
+: 1392351862:0;if [[ "X" == "X" ]]; then echo "hell yes"; fi;
+: 1392351862:0;if [[ "$USER" == "stat -c %U ${TMUX%%,*}" ]]; then echo "shit yes"; fi;
+: 1392351862:0;echo $USER
+: 1392351862:0;echo "))$USER(("
+: 1392351862:0;if [[ "$USER" == "$(stat -c %U ${TMUX%%,*})" ]]; then echo "shit yes"; fi;
+: 1392351862:0;cd /tmp/
+: 1392351862:0;echo *
+: 1392351862:0;echo * -ail
+: 1392351862:0;cd ~/.powerline/powerline/
+: 1392351862:0;cd bindings/bash
+: 1392351862:0;nano powerline.zsh 
+: 1392358202:0;stat -c %U /tmp/tmux-1001/default
+: 1392358202:0;cd /tmp/tmux-1001/default
+: 1392358202:0;stat -c %U /tmp/tmux-1001/default 2>&1
+: 1392358202:0;nano powerline.sh 
+: 1392358202:0;$(stat -c %U $(TMUX%%,*})"
+: 1392358202:0;"$(stat -c %U $(TMUX%%,*})"
+: 1392358202:0;$(stat -c %U $(TMUX%%,*})
+: 1392358202:0;echo $(stat -c %U $(TMUX%%,*})
+: 1392358202:0;echo "$(stat -c %U $(TMUX%%,*})"
+: 1392358202:0;echo "$(stat -c %U ${TMUX%%,*})"
+: 1392358202:0;echo "$(stat -c %U ${TMUX%%,*})" 2>&1
+: 1392358202:0;argvz=$("$(stat -c %U ${TMUX%%,*})" 2>&1)
+: 1392358202:0;echo $argvz
+: 1392358202:0;echo "$(stat -c %U ${TMUX%%,*})" 1>&2
+: 1392358202:0;echo "$(stat -c %U ${TMUX%%,*})" 2>1
+: 1392358202:0;xcl=$(echo "$(stat -c %U ${TMUX%%,*})" 2>1)
+: 1392358202:0;echo $xcl
+: 1392358202:0;$(echo "$(stat -c %U ${TMUX%%,*})" 2>1) 2> $ERRO
+: 1392358202:0;$(stat -c %U ${TMUX%%,*})" 2>1) 2> $ERRO
+: 1392358202:0;ERROR=$(<stat -c %U ${TMUX%%,*})")
+: 1392358202:0;ERROR=$(<stat -c %U ${TMUX%%,*}")
+: 1392358202:0;;
+: 1392358202:0;ERROR=$(<stat -c %U "${TMUX%%,*}")
+: 1392358202:0;echo $ERROR
+: 1392358202:0;echo $(stat -c %U "${TMUX%%,*}")
+: 1392358202:0;echo $(stat -c %U "${TMUX%%,*}") 2>&1 > /dev/null
+: 1392358202:0;echo $(stat -c %U "${TMUX%%,*}") 2> /dev/null
+: 1392358202:0;echo $(stat -c %U "${TMUX%%,*}") 2>&1 1> /dev/null
+: 1392358202:0;ERDOT=$(echo $(stat -c %U "${TMUX%%,*}") 2>&1 1> /dev/null)
+: 1392358202:0;ERDOT=$(stat -c %U "${TMUX%%,*}" 2>&1 1> /dev/null)
+: 1392358202:0;echo $ERDOT
+: 1392358258:0;sudo cp .powerline /usr/src/GIT/POWERLINE/powerline -Rf
+: 1392358389:0;sudo rm powerline -R
+: 1392358401:0;cp /home/sysop/.powerline powerline -R
+: 1392358411:0;cd powerline/bindings
+: 1392358424:0;cd bash
+: 1392358426:0;nano powerline.sh
+: 1392358446:0;su tar cfvz powerline.tar.gz powerline
+: 1392358523:0;sudo rm /root/.powerline -R
+: 1392358528:0;sudo rm /home/test/.powerline -R
+: 1392358532:0;sudo rm /home/sysop/.powerline -R
+: 1392358544:0;sudo cp powerline /root/.powerline -R
+: 1392358552:0;sudo cp powerline /home/test/.powerline -R
+: 1392358556:0;sudo cp powerline /home/sysop/.powerline -R
+: 1392358575:0;sudo chown test.users .powerline -R
+: 1392358585:0;sudo chown sysop.users .powerline -R
+: 1392365691:0;lsl
+: 1392365882:0;sudo cp powerline-daemon ~/.powerline/scripts
+: 1392365888:0;sudo cp powerline-client ~/.powerline/scripts
+: 1392368162:0;env | grep POWER
+: 1392368324:0;sudo lxc-start -n arch
+: 1392369632:0;sudo rm /var/lib/lxc/debian-current/rootfs/root/.powerline -R
+: 1392369643:0;sudo rm /var/lib/lxc/debian-current/rootfs/home/sysop/.powerline -R
+: 1392369666:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/home/sysop/.powerline -R
+: 1392369672:0;sudo cp powerline /var/lib/lxc/debian-current/rootfs/root/.powerline -R
+: 1392370040:0;cd /usr/src/GIT/POWERLINE
+: 1392370082:0;cp powerline /var/lib/lxc/arch-current/rootfs/root/.powerline -R
+: 1392370100:0;sudo rm /var/lib/lxc/arch-current/rootfs/root/.powerline -R
+: 1392370106:0;sudo rm /var/lib/lxc/arch-current/home/sysop/root/.powerline -R
+: 1392370118:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/root/.powerline -R
+: 1392370126:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/home/sysop/.powerline -R
+: 1392408471:0;echo $_POWERLINE_MODE
+: 1392408574:0;_POWERLINE_MODE=viins
+: 1392408818:0;bindkey
+: 1392408825:0;bindkey -lL
+: 1392408861:0;echo ${(Q)${${(z)${"$(bindkey -lL main)"}\
+
+: 1392408877:0;echo ${${(Q)${${(z)${"$(bindkey -lL main)"}}\
+
+: 1392408977:0;echo (Q)${${(z)${"$(bindkey -lL main)"\
+
+: 1392410940:0;sudo cp .zshrc /home/test
+: 1392410946:0;sudo cp .zshrc /root
+: 1392410963:0;sudo chown test.users .zshrc
+: 1392411008:0;sudo cp .zshrc /var/lib/lxc/arch-current/rootfs/root
+: 1392411013:0;sudo cp .zshrc /var/lib/lxc/arch-current/rootfs/home/sysop
+: 1392411019:0;sudo cp .zshrc /var/lib/lxc/debian-current/rootfs/root
+: 1392411024:0;sudo cp .zshrc /var/lib/lxc/debian-current/rootfs/home/sysop
+: 1392411173:0;ssh root@192.168.1.249
+: 1392411391:0;rm Powerline-beta-py3.3.egg -R
+: 1392411497:0;POWERLINE_COMMAND=powerline-client
+: 1392411523:0;env | grep SH
+: 1392411572:0;env | grep POW
+: 1392414119:0;kill 13031
+: 1392414585:0;sudo cp .powerline /var/lib/lxc/arch-current/rootfs/home/sysop -R
+: 1392416163:0;lxc -ls
+: 1392416171:0;cd arch-test
+: 1392416182:0;sudo btrfs subvolume delete rootfs
+: 1392416186:0;rm arch-test -R
+: 1392416191:0;sudo rm arch-test -R
+: 1392416454:0;sudo du -sh * | sort -h
+: 1392419768:0;btrfs --help
+: 1392421230:0;pacman-key -r 0EE7A126
+: 1392421235:0;sudo pacman-key -r 0EE7A126
+: 1392421243:0;sudo pacman-key --lsign-key 0EE7A126
+: 1392421433:0;yaourt archzfs
+: 1392422581:0;yaourt zfs-utils
+: 1392422592:0;yaourt zfs
+: 1392422609:0;sudo nano pacman.conf
+: 1392442475:0;ls /root/.powerline/scripts
+: 1392442492:0;sudo cp powerline-client /root/.powerline/scripts
+: 1392442498:0;sudo cp powerline-daemon /root/.powerline/scripts
+: 1392442509:0;sudo cp powerline-daemon /home/sysop/.powerline/scripts
+: 1392442518:0;sudo cp powerline-client /home/sysop/.powerline/scripts
+: 1392442531:0;sudo cp powerline-client /home/test/.powerline/scripts
+: 1392442540:0;sudo cp powerline-daemon /home/test/.powerline/scripts
+: 1392442564:0;sudo cp powerline-daemon /var/lib/lxc/arch-current/rootfs/home/sysop/.powerline/scripts
+: 1392442572:0;sudo cp powerline-client /var/lib/lxc/arch-current/rootfs/home/sysop/.powerline/scripts
+: 1392442585:0;sudo cp powerline-daemon /var/lib/lxc/debian-current/rootfs/home/sysop/.powerline/scripts
+: 1392442593:0;sudo cp powerline-client /var/lib/lxc/debian-current/rootfs/home/sysop/.powerline/scripts
+: 1392442600:0;sudo cp powerline-client /var/lib/lxc/debian-current/rootfs/root/.powerline/scripts
+: 1392442607:0;sudo cp powerline-daemon /var/lib/lxc/debian-current/rootfs/root/.powerline/scripts
+: 1392442616:0;sudo cp powerline-daemon /var/lib/lxc/arch-current/rootfs/root/.powerline/scripts
+: 1392442625:0;sudo cp powerline-client /var/lib/lxc/arch-current/rootfs/root/.powerline/scripts
+: 1392442832:0;ssh root@192.168.1.226
+: 1392443185:0;yaourt zsh completion | most
+: 1392443198:0;yaourt zsh completion
+: 1392443651:0;yaourt setup.py
+: 1392443752:0;\ls
+: 1392443794:0;sudo aur
+: 1392443799:0;sudo ./aur
+: 1392443835:0;nano zsh-completion.txt
+: 1392443967:0;cd .zsh
+: 1392443974:0;mkdir functions
+: 1392443977:0;cd functions
+: 1392443983:0;nano _yaourt
+: 1392444036:0;env | grep path
+: 1392444131:0;grep fpath
+: 1392444184:0;kill 13276
+: 1392444457:0;locate aur-mirror.git
+: 1392444467:0;find / | grep aur-mirror
+: 1392444472:0;sudo find / | grep aur-mirror
+: 1392444566:0;sudo rm -aur
+: 1392444600:0;yaourt aur-mirror
+: 1392444605:0;yaourt aur-git
+: 1392444612:0;sudo git clone git://github.com/keenerd/aur.git
+: 1392444618:0;nano aur
+: 1392444622:0;cd /var
+: 1392444626:0;cd aur
+: 1392444650:0;rm aur -R
+: 1392444654:0;sudo rm aur -R
+: 1392445157:0;sudo modprobe ip_tables
+: 1392445162:0;lsmod | grep ip_tables
+: 1392445166:0;lsmod | grep nf
+: 1392445173:0;modprobe nf_tables
+: 1392445210:0;cd /usr/lib/modules-load.d
+: 1392445214:0;cd modules
+: 1392445220:0;cd extramodules-3.12-ARCH
+: 1392445225:0;cd 3.12.9-2-ARCH
+: 1392445232:0;find ./ | grep ip_tables
+: 1392445238:0;cd kernel/net
+: 1392445241:0;cd ipv4
+: 1392445243:0;cd netfilter
+: 1392445459:0;systemctl enable iptables
+: 1392445463:0;sudo systemctl enable iptables
+: 1392445474:0;cd iptables
+: 1392445481:0;mv empty.rules iptables.rules
+: 1392445488:0;sudo mv empty.rules iptables.rules
+: 1392445492:0;sudo systemctl start iptables
+: 1392445500:0;sudo iptables -L
+: 1392452332:0;yaourt index.HTML
+: 1392452381:0;yaourt -S netbeans
+: 1392490194:0;cd /usr/src/GIT/POWERLINE/powerline-daemon
+: 1392490207:0;cd powerline_daemon.egg-info
+: 1392490213:0;nano top_level.txt
+: 1392490218:0;nano SOURCES.txt
+: 1392490224:0;nano PKG-INFO
+: 1392490229:0;nano dependency_links.txt
+: 1392490240:0;nano build
+: 1392490242:0;cd build
+: 1392490253:0;find ./\\
+: 1392490291:0;cd bdist.linux-x86_64
+: 1392490294:0;unzip egg
+: 1392490306:0;mv egg egg.zip
+: 1392490309:0;unzip egg.zip
+: 1392490315:0;mv egg.zip egg
+: 1392490320:0;cd scripts-3.3
+: 1392490323:0;nano powerline-daemon
+: 1392490326:0;vim powerline-daemon
+: 1392491458:0;nano powerline-client.py
+: 1392491479:0;nano powerline-client.c
+: 1392491497:0;vi powerline-client.c
+: 1392491829:0;man test
+: 1392491936:0;rm powerline.tar.gz
+: 1392491940:0;sudo rm powerline.tar.gz
+: 1392491948:0;sudo tar cfvz powerline.tar.gz powerline
+: 1392491985:0;gitsh
+: 1392492094:0;sudo git stash apply
+: 1392492150:0;cd bindings
+: 1392492174:0;nano powerline.zsh
+: 1392493366:0;ps aux | grep dhcp
+: 1392493375:0;yaourt -R dhclient
+: 1392493379:0;yaourt dhclient
+: 1392493434:0;ps aux | grep dhc
+: 1392493688:0;sudo netctl disable br0
+: 1392493696:0;sudo netctl enable br0
+: 1392493699:0;sudo netctl start br0
+: 1392493725:0;sudo systemctl restart netctl
+: 1392493804:0;nano br0
+: 1392493813:0;sudo nano br0
+: 1392493902:0;sudo netctl restart
+: 1392494096:0;sudo rm debian-standard
+: 1392494098:0;sudo rm debian-standard -R
+: 1392494102:0;sudo rm arch-standard -R
+: 1392494997:0;ssh root@192.168.1.219
+: 1392495059:0;ssh root@192.168.1.212
+: 1392495389:0;kill 2276
+: 1392495396:0;kill 6849
+: 1392495475:0;sudo lxc-stop -n arch-current
+: 1392495483:0;sudo lxc-kill -n arch-current
+: 1392496369:0;ip link
+: 1392496408:0;netctl list
+: 1392503084:0;cd etc/sysctl.d
+: 1392503101:0;sudo find ./ | grep network
+: 1392503145:0;yaourt ip
+: 1392503174:0;ip
+: 1392503185:0;systemctl list-unit-files | grep ip
+: 1392503295:0;yaourt static ip
+: 1392503383:0;cd etc/conf.d
+: 1392503385:0;cat svnserve
+: 1392503422:0;cd ../
+: 1392503426:0;cd systemd
+: 1392503481:0;systemctl list-unit-files | grep network
+: 1392503505:0;find ./ | grep network
+: 1392503511:0;nano network.target
+: 1392503527:0;nano network-online.target
+: 1392504414:0;sudo nano network@eth0
+: 1392504442:0;sudo mv network@.service lxc-net@.service
+: 1392504446:0;sudo nano lxc-net@.service
+: 1392504574:0;sudo cp lxc-net@.service /var/lib/lxc/arch-current/rootfs/etc/systemd/system
+: 1392504613:0;man ip
+: 1392504675:0;resolvconf
+: 1392504722:0;nano resolvconf.conf
+: 1392504745:0;sudo nano resolvconf.conf
+: 1392504833:0;sudo systemctl disable dhcpcd
+: 1392504871:0;sudo cp lxc-net@.service network@.service
+: 1392504874:0;sudo nano network@.service
+: 1392504905:0;sudo systemctl enable network@eth0
+: 1392504914:0;nano network@eth0
+: 1392504935:0;sudo systemctl disable network@eth0
+: 1392504953:0;systemctl | grep eth0
+: 1392506388:0;yaourt wireshark
+: 1392506414:0;sudo wireshark
+: 1392506420:0;wireshark
+: 1392510231:0;yaourt -S xephyr
+: 1392510379:0;yaourt xephyr
+: 1392512058:0;ear
+: 1392512539:0;yaourt x over ssh
+: 1392512546:0;yaourt vnc
+: 1392512684:0;yaourt -S tk
+: 1392514175:0;nmap 192.168.1.160
+: 1392523639:0;cd /var/lib/lxc/arch-current
+: 1392525382:0;rm debian-current.tar.gz
+: 1392525573:0;ssh root@192.168.1.160
+: 1392526227:0;sudo du -sh debian-current
+: 1392526309:0;sudo tar cfvz debian.tar.gz debian-current
+: 1392526514:0;sudo tar cfvz debian-default.tar.gz debian-default
+: 1392526573:0;sudo tar cfvz arch-default.tar.gz arch-default
+: 1392526621:0;sudo du -sh * -L 1 | sort -h
+: 1392526634:0;sudo du -sh *.gz
+: 1392526773:0;sudo tar cfvz arch.tar.gz arch-current
+: 1392526842:0;du -sh home-20140207
+: 1392526866:0;cd home-20140207
+: 1392526871:0;su du -sh *
+: 1392526907:0;cd media/btrfs_pool
+: 1392526934:0;rm Season* -R
+: 1392526939:0;sudo rm Season* -R
+: 1392526954:0;sudo tar cfvz dump.tar.gz dump
+: 1392526961:0;mv dump.tar.gz /root
+: 1392526965:0;sudo mv dump.tar.gz /root
+: 1392526994:0;sudo tar cfvz opt.tar.gz opt
+: 1392527005:0;mv *.gz /root
+: 1392527008:0;sudo mv *.gz /root
+: 1392528184:0;sudo du -sh rootfs-20140207
+: 1392528215:0;sudo du -sh rootfs-20140205
+: 1392528308:0;sudo tar cfvz root-20140205.tar.gz root-20140205
+: 1392529891:0;sudo du -sh root
+: 1392529895:0;sudo du -sh root-20140205
+: 1392529921:0;sudo du -sh home
+: 1392529927:0;sudo du -sh home-20140207
+: 1392529931:0;sudo du -sh home-20140205
+: 1392529956:0;sudo btfs subvolume delete home-20140205
+: 1392529961:0;sudo btrfs subvolume delete home-20140205
+: 1392529964:0;sudo btrfs subvolume delete home-20140207
+: 1392530055:0;man btrfs
+: 1392530100:0;sudo btrfs filesystem df home
+: 1392530302:0;sudo btrfs subvolume delete root-20140205
+: 1392530329:0;sudo btrfs subvolume snapshot rootfs rootfs-20140215
+: 1392530352:0;sudo btrfs subvolume snapshot src src-20140215
+: 1392530374:0;cd liub
+: 1392530398:0;sudo btrfs subvolume snapshot lxc lxc-20140215
+: 1392530438:0;cd /run
+: 1392530489:0;cd /var/run
+: 1392530499:0;nautilus
+: 1392530895:0;sudo rm home -R
+: 1392530946:0;sudo rm root.tar.gz
+: 1392530951:0;sudo rm rootfs.tar.gz
+: 1392530974:0;sudo rm SAVU2 -R
+: 1392531125:0;ps aux | grep acroread
+: 1392531131:0;kill 18004
+: 1392531149:0;cd Crypt-Info
+: 1392531156:0;mkdir SAVE
+: 1392531200:0;sudo mv opt.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392532505:0;du -sh opt.tar.gz
+: 1392532666:0;sudo mv root-20140205.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392532678:0;la
+: 1392532735:0;sudo mv arch* /run/media/sysop/Crypt-Info/SAVE
+: 1392532782:0;sudo mv debian* /run/media/sysop/Crypt-Info/SAVE
+: 1392532829:0;sudo mv dump.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392532842:0;sudo rm yaourt-tmp-root -R
+: 1392532851:0;sudo rm yaourt-tmp-sysop -R
+: 1392532856:0;cd /run/media
+: 1392532896:0;tar cfvz src-20140215.tar.gz src-20140215
+: 1392532919:0;cd src-20140215
+: 1392532927:0;tar cfvz src-20140215.tar.gz src-20140215 -R
+: 1392532939:0;tar cfvz src-20140215.tar.gz src
+: 1392532945:0;sudo tar cfvz src-20140215.tar.gz src
+: 1392532960:0;sudo tar cfvz src-20140215.tar.gz src-20140215
+: 1392533847:0;sudo mv src-20140215.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392533960:0;du -sh src-20140215.tar.gz
+: 1392534140:0;sudo mv home.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392534182:0;sudo btrfs subvolume delete home-20140215
+: 1392534192:0;sudo btrfs subvolume snapshot home home-20140215
+: 1392534227:0;sudo tar cfvz rootfs-20140215.tar.gz rootfs-20140215
+: 1392535185:0;sudo mv rootfs-20140215.tar.gz /run/media/sysop/Crypt-Info/SAVE
+: 1392535207:0;du -sh rootfs-20140215.tar.gz
+: 1392536405:0;mplayer WALL-E\ \(2008\)\ \[1080p\]/WALL-E.2008.1080p.BrRip.x264.YIFY.mp4
+: 1392536555:0;kill 20354
+: 1392536577:0;sudo git stash
+: 1392536610:0;kill 21216
+: 1392537130:0;cd /run/media/sysop/spare/ARCHIVE
+: 1392537136:0;sudo rm 20140203
+: 1392537138:0;sudo rm 20140203 -R
+: 1392537141:0;sudo rm 20140205 -R
+: 1392574030:0;irssi
+: 1392574033:0;yaourt -S irssi
+: 1392574986:0;yaourt -S speedtest-sli
+: 1392574990:0;yaourt -S speedtest-cli
+: 1392575005:0;speedtest-cli
+: 1392583458:0;cd var/lib/
+: 1392583545:0;ssh root@192.168
+: 1392583637:0;mv config config-old
+: 1392583650:0;cp ../arch-current/config ./
+: 1392583685:0;cat config-old
+: 1392583729:0;sudo lxc-kill -n debian-current
+: 1392583813:0;cd /sys/fs/cgroup/cpuset
+: 1392583919:0;sudo find /sys/fs/cgroup/systemd/node0/ -type d |\
+ tac |\
+ xargs rmdir
+: 1392583996:0;find /sys/fs/cgroup/systemd/node0/ -type d | tac | xargs rmdir
+: 1392584015:0;release_agent
+: 1392584068:0;lxc-info --name debian-current
+: 1392584075:0;sudo lxc-info --name debian-current
+: 1392584084:0;cat /proc/cgroups
+: 1392584184:0;sudo umount debian-current
+: 1392584288:0;sudo cp fstab ../debian-current
+: 1392584294:0;sudo lxc-start -n debian-current
+: 1392584365:0;ls /media/btrfs_pool/var
+: 1392584367:0;ls /media/btrfs_pool/var/lib
+: 1392586644:0;sudo btrfs subvolume snapshot debian-current dc-seed
+: 1392586699:0;sudo btrfs subvolume snapshot rootfs rootfs-seed
+: 1392586744:0;dd if=/dev/zero of=./overlayfs count=3 bs=1G
+: 1392586750:0;sudo dd if=/dev/zero of=./overlayfs count=3 bs=1G
+: 1392586773:0;cd /var/lib/lxc/debian-current
+: 1392586880:0;sudo losetup /dev/loop0 overlayfs
+: 1392586905:0;mkfs.btrfs /dev/loop0
+: 1392586973:0;sudo mv rootfs rootfs-og
+: 1392586977:0;mkdir rootfs
+: 1392586996:0;sudo umount /dev/loop0
+: 1392587007:0;ls /dev/loop0
+: 1392587011:0;ls /dev/loop0/*
+: 1392587030:0;sudo mount /dev/loop0 rootfs
+: 1392587063:0;sudo btrfstune -S 1 rootfs-seed
+: 1392587076:0;sudo mount rootfs-seed rootfs
+: 1392587105:0;sudo losetup /dev/loop1 rootfs-seed
+: 1392589397:0;sudo umount rootfs
+: 1392589409:0;sudo mount rootfs rootfs-og
+: 1392589456:0;rmdir rootfs
+: 1392589461:0;sudo rmdir rootfs
+: 1392589466:0;sudo mv rootfs-seed rootfs
+: 1392589474:0;sudo mkdir test
+: 1392589479:0;sudo mount rootfs test
+: 1392589502:0;cat /etc/fstab
+: 1392589611:0;cd /media
+: 1392589650:0;sudo mount -o subvolid=412 test
+: 1392589789:0;sudo mount -o defaults,subvolid=408 /dev/sda3 test
+: 1392589821:0;sudo mount -o subvolid=506 /dev/sda3 test
+: 1392589826:0;touch hello
+: 1392589830:0;sudo touch hello
+: 1392589834:0;sudo rm hello
+: 1392589859:0;sudo btrfstune -S 1 test
+: 1392589943:0;cd var/lib/lxc
+: 1392589964:0;sudo btrfs subvolume delete rootfs-og
+: 1392589975:0;sudo umount test
+: 1392589979:0;rmdir test
+: 1392589982:0;sudo rmdir test
+: 1392589992:0;cd rm overlayfs
+: 1392589996:0;sudo cd rm overlayfs
+: 1392590000:0;sudo rm overlayfs
+: 1392590068:0;sudo btrfs subvolume list /media/btrfs_pool
+: 1392590094:0;sudo tar cfvz debian-current.tar.gz debian-current
+: 1392607828:0;sn b.]'\ffssff\f\
+FF\
+]\f'
+: 1392659496:0;cd /run/media/sysop/shows/
+: 1392659530:0;umount /run/media/sysop/shows
+: 1392659564:0;lsof /run/media/sysop/shows
+: 1392659566:0;sudo umount /run/media/sysop/shows
+: 1392659611:0;sudo mkfs.ext4 /dev/sdd
+: 1392659656:0;sudo tune2fs -L 500GB-Spare /dev/sdd1
+: 1392660175:0;sudo umount /run/media/sysop/anime
+: 1392660217:0;sudo tune2fs -L 150GB-Spare
+: 1392660224:0;sudo tune2fs -L 150GB-Spare /dev/sdc1
+: 1392660278:0;sudo mkfs.ext4 /dev/sdc1
+: 1392660297:0;sudo tune2fs -L 320GB-Spare /dev/sdc1
+: 1392660402:0;rm lost+found -R
+: 1392660420:0;sudo mv * /home/sysop/Desktop
+: 1392660909:0;cd /run/media/sysop/spare
+: 1392660936:0;cd /home/sysop/Desktop
+: 1392661088:0;sudo tune2fs -L 60GB-Spare /dev/sdc1
+: 1392661133:0;sudo tune2fs -L 250GB-Spare /dev/sdc1
+: 1392661142:0;sudo gdisk /dev/sdd
+: 1392661213:0;sudo tune2fs -L 60GB-Spare /dev/sdd1
+: 1392661312:0;sudo du -sh ARCHIVE
+: 1392662792:0;su -sh ARCHIVE
+: 1392662815:0;su du -sh ARCHIVE
+: 1392662820:0;cd /run/media/sysop/spare1
+: 1392662829:0;cd spare1
+: 1392662832:0;cd spare
+: 1392663043:0;sudo du -sh SAVE
+: 1392663537:0;sudo du -sh SAVU
+: 1392665375:0;sudo mkfs.ext4 /dev/sdd1 -f
+: 1392665379:0;sudo mkfs.ext4 /dev/sdd1
+: 1392665398:0;sudo tune2fs -L 80GB-Spare /dev/sdd1
+: 1392665911:0;m
+: 1392666028:0;sudo tune2fs -m 0 /dev/sdd1
+: 1392668819:0;sudo fdisk -l
+: 1392668826:0;sudo tune2fs -L 320GB-Software /dev/sdd1
+: 1392669481:0;cd /home/test
+: 1392669503:0;kill 7509
+: 1392669529:0;su test
+: 1392675160:0;mc
+: 1392675176:0;/run/media/
+: 1392676297:0;cd /run/media/sysop/Crypt-Info
+: 1392676305:0;sudo du -sh Untitled\ Folder
+: 1392676383:0;yaourt -S k4dirstat
+: 1392676948:0;yaourt -S fdupes
+: 1392677015:0;fdupes -r . | {\
+    while IFS= read -r file; do\
+        [[ $file ]] && du "$file"
+: 1392677025:0;nano test.sh
+: 1392677040:0;sudo chmod 777 test.sh
+: 1392681109:0;sudo sensors
+: 1392681644:0;cd AUDIO
+: 1392681647:0;fdupes *
+: 1392681654:0;sudo fdupes *
+: 1392682753:0;mkdir test
+: 1392682781:0;nano README.txt
+: 1392682829:0;git add README.txt
+: 1392682848:0;git commit -m "new README"
+: 1392682870:0;git config --global user.email "hypokrites99@gmail.com"
+: 1392682900:0;cd /usr/src/GIT/test
+: 1392698008:0;cd 320GB-Spare
+: 1392698012:0;sudo rm DEM -R
+: 1392698040:0;sudo exit
+: 1392698060:0;kill 4833
+: 1392698070:0;kill 12462
+: 1392698127:0;sudo mc
+: 1392711211:0;sudo chown ciaran.users * -R
+: 1392711492:0;sudo chown ciaran * -R
+: 1392711499:0;sudo chown sysop.users * -R
+: 1392713133:0;sudo mv ssh /var/lib/lxc
+: 1392744564:0;sudo rm Untitled\ Folder -R
+: 1392744764:0;mplayer -playlist jh77 bbbkbb bbbbbbbbbbbbbbbbbbbbbbb bbbbbbbnbbbbbvbnm,mnbvcbbbbbbbbbnn bb bbb
+: 1392744771:0;mplayer -playlist jb021114.mp3
+: 1392744781:0;mplayer
+: 1392744865:0;lsmod | grep vbox
+: 1392744868:0;lsmod | grep virt
+: 1392744900:0;sudo du -sh /
+: 1392745935:0;yaourt -S wpa
+: 1392746140:0;sudo lsmod | grep kvm
+: 1392746152:0;sudo modprobe -R kmv_intel
+: 1392746179:0;modprobe vboxdrv
+: 1392746910:0;afd
+: 1392746912:0;sensors
+: 1392749135:0;cd /Down
+: 1392749139:0;mplayer jb021114.mp3
+: 1392749210:0;yaourt -S wpa_supplicant
+: 1392752766:0;sudo modprobe -R kvm
+: 1392752769:0;sudo modprobe -R kvm_intell
+: 1392752770:0;sudo modprobe -R kvm_intel
+: 1392762742:0;EXTI
+: 1392770936:0;yaourt gerrit
+: 1392770941:0;yaourt gitlab
+: 1392770951:0;yaourt gittorius
+: 1392770969:0;yaourt gitorious
+: 1392771044:0;yaourt gitolite
+: 1392771372:0;sudo make clean
+: 1392771392:0;sudo git pull origin zsh-5.5.0
+: 1392771415:0;sudo git checkout origin master
+: 1392771419:0;sudo git checkout master
+: 1392771480:0;sudo rm test -R
+: 1392773836:0;sudo mv sshd.tar.gz /var/lib/lxc
+: 1392773846:0;sudo mv oracle.tar.gz /var/lib/lxc
+: 1392773853:0;sudo mv opensuse.tar.gz /var/lib/lxc
+: 1392773872:0;tar xfvz oracle.tar.gz
+: 1392773876:0;sudo tar xfvz oracle.tar.gz
+: 1392773914:0;sudo tar xfvz sshd.tar.gz
+: 1392773934:0;mv opensuse.tar.gz opensuse-default.tar.gz
+: 1392773938:0;sudo mv opensuse.tar.gz opensuse-default.tar.gz
+: 1392773947:0;sudo mv oracle.tar.gz oracle-default.tar.gz
+: 1392773962:0;sudo mv sshd.tar.gz sshd-default.tar.gz
+: 1392773979:0;ls -ail | grep ssh
+: 1392773986:0;rm ssh -R
+: 1392773991:0;sudo rm ssh -R
+: 1392773999:0;lcx-start -n sshd
+: 1392774003:0;lxc-start -n sshd
+: 1392774029:0;cd sshd
+: 1392774096:0;cd dev
+: 1392774099:0;cd shm
+: 1392774107:0;find ./ | grep ksmg
+: 1392774141:0;sudo lxc-create -n ssh -t ssh
+: 1392774151:0;sudo lxc-create -n ssh -t sshd
+: 1392774166:0;sudo lxc-start -n ssh
+: 1392774174:0;sudo lxc-start -n sshd
+: 1392774178:0;cd ssh
+: 1392774278:0;rm sshd -R
+: 1392774285:0;sudo rm sshd -R
+: 1392774290:0;sudo rm sshd-default.tar.gz
+: 1392774401:0;rm opensuse -R
+: 1392774434:0;arch-chroot opensuse/rootfs /bin/bash
+: 1392774438:0;sudo arch-chroot opensuse/rootfs /bin/bash
+: 1392774480:0;sudo tar xfvz opensuse-default.tar.gz
+: 1392774665:0;sudo lxc-start -n oracle
+: 1392774714:0;sudo rm oracle-default.tar.gz
+: 1392774731:0;sudo rm opensuse-default.tar.gz
+: 1392775347:0;cp /home/sysop/opensuse.tar.gz ./
+: 1392775351:0;sudo cp /home/sysop/opensuse.tar.gz ./
+: 1392775480:0;sudo lxc-kill -n oracle
+: 1392775506:0;cd arch-current
+: 1392775633:0;sudo mv opensuse opensuse-default
+: 1392775638:0;lxc-start -n opensuse-default
+: 1392775675:0;cd opensuse-default
+: 1392775758:0;sudo lxc-start -n opensuse-default
+: 1392780123:0;sudo lxc-kill -n opensuse-default
+: 1392780148:0;sudo cp ~/Downloads/*.gz ./
+: 1392780193:0;sudo mv *.gz ../
+: 1392780204:0;sudo rm opensuse-default -R
+: 1392780239:0;sudo rm usr -R
+: 1392780246:0;sudo rm lost+found -R
+: 1392780257:0;sudo rm sbin -R
+: 1392780261:0;sudo rm selinux -R
+: 1392780345:0;sudo cp ../arch-current/config ./
+: 1392780432:0;cp suse-12.3-x86_64.tar.gz opensuse
+: 1392780436:0;sudo mv suse-12.3-x86_64.tar.gz opensuse
+: 1392780451:0;sudo mv opensuse opensuse-vz
+: 1392780462:0;sudo mv suse-12.3-x86_64.tar.gz rootfs
+: 1392780472:0;sudo tar xfvz suse-12.3-x86_64.tar.gz
+: 1392780611:0;cd opensuse-vz
+: 1392780956:0;cd pam
+: 1392780962:0;nano other
+: 1392781093:0;sudo nano other
+: 1392781151:0;sudo lxc-start -n opensuse-vz
+: 1392781163:0;sudo nano common-session
+: 1392781178:0;ls -ail | grep session
+: 1392781189:0;nano common-session-pc
+: 1392781254:0;sudo grep "deny" * -R
+: 1392781264:0;sudo nano common-account
+: 1392781314:0;ls /
+: 1392781322:0;sudo lxc-stop -n arch
+: 1392781329:0;sudo lxc-stop -n opensuse-vz
+: 1392781336:0;sudo lxc-kill -n opensuse-vz
+: 1392781359:0;sudo mv opensuse-vz opensuse
+: 1392781386:0;sudo mv opensuse.tar.gz ~
+: 1392781399:0;sudo rm centos-6-x86_64.tar.gz
+: 1392781445:0;sudo mv debian-current ~
+: 1392781646:0;sudo mv debian-current.tar.gz /home/sysop
+: 1392781679:0;sudo mkdir WIP
+: 1392781683:0;sudo mv oracle WIP
+: 1392781688:0;sudo mv ssh WIP
+: 1392786915:0;sudo git pull origin develop
+: 1392787000:0;cd /usr/src/GIT/POWERLINE/powerline
+: 1392787014:0;sudo git checkout origin/feature/daemon
+: 1392787029:0;sudo git pull origin/feature/daemon
+: 1392787038:0;cd tests
+: 1392787042:0;nano install.sh
+: 1392787110:0;nano README.rst
+: 1392787124:0;cd docs
+: 1392787127:0;cd source
+: 1392787147:0;cd Powerline.egg-info
+: 1392787712:0;topp
+: 1392790908:0;ls -ail | grep gz
+: 1392790923:0;sudo mv *.gz /var/lib/lxc
+: 1392791195:0;sudo tar xfvz alpine.tar.gz
+: 1392791346:0;mv alpine.tar.gz WIP
+: 1392791407:0;sudo tar xfvz busybox.tar.gz
+: 1392791411:0;cd busybox
+: 1392791427:0;sudo lxc-start busybox
+: 1392791435:0;sudo lxc-start -n busybox
+: 1392791464:0;sudo mv busybox.tar.gz WIP
+: 1392791471:0;sudo tar xfvz cirros.tar.gz
+: 1392791480:0;cd cirros
+: 1392791500:0;sudo lxc-start -n cirros
+: 1392791523:0;sudo lxc-stop -n cirros
+: 1392791542:0;sudo mv cirros.tar.gz WIP
+: 1392791545:0;sudo mv cirros WIP
+: 1392791556:0;sudo mv debian-current.tar.gz WIP
+: 1392791563:0;sudo mv opensuse.tar.gz WIP
+: 1392791592:0;sudo tar xfvz ubuntu-cloud.tar.gz
+: 1392791770:0;sudo mv ubuntu WIP
+: 1392791929:0;sudo lxc-start -n ubuntu-cloud
+: 1392792001:0;sudo mv ubuntu* WIP
+: 1392792009:0;sudo mv busybox WIP
+: 1392793263:0;ls | grep gz
+: 1392793269:0;sudo mv fedora.tar.gz /var/lib/lxc
+: 1392793276:0;sudo tar xfvz fedora.tar.gz
+: 1392793351:0;sudo lxc-start -n fedora
+: 1392793422:0;cd /var/lib/lxc/fedora
+: 1392830169:0;cd fedora
+: 1392830202:0;sudo cp ../arch-current/config config-new
+: 1392830215:0;sudo mv config config-old
+: 1392830253:0;sudo mv fedora-default
+: 1392830262:0;sudo mv fedora fedora-default
+: 1392830279:0;sudo cp fedora-default fedora-current -pR
+: 1392830316:0;sudo rm config-new
+: 1392830322:0;sudo mv config-old config
+: 1392830336:0;sudo rm config-old
+: 1392830367:0;sudo nano fstab
+: 1392830371:0;sudo nano config-new
+: 1392830382:0;sudo mv config-new config
+: 1392830428:0;cd /var/lib/lxc/
+: 1392830439:0;sudo chroot /bin/bash
+: 1392831055:0;cd config
+: 1392831581:0;wget https://dl.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/n/net-tools-2.0-0.15.20131119git.fc20.x86_64.rpm
+: 1392831641:0;cp ~/Downloads/net-tools-2.0-0.15.20131119git.fc20.x86_64.rpm ./
+: 1392831647:0;sudo wget https://dl.fedoraproject.org/pub/fedora/linux/releases/20/Everything/x86_64/os/Packages/n/net-tools-2.0-0.15.20131119git.fc20.x86_64.rpm
+: 1392833314:0;sudo lxc-start -n arch-current
+: 1392834346:0;cd su
+: 1392834369:0;sudo cp /usr/src/GIT/POWERLINE ./ -R
+: 1392834377:0;ls /usr/src/GIT
+: 1392834384:0;sudo cp /usr/src/GIT/ZSH ./ -R
+: 1392834388:0;sudo cp /usr/src/GIT/VIM ./ -R
+: 1392834395:0;sudo cp /usr/src/GIT/tmux-tmux-code ./ -R
+: 1392834403:0;sudo cp /usr/src/GIT/solarized ./ -R
+: 1392834425:0;ls /usr/src/CVS
+: 1392834436:0;sudo cp /usr/src/CVS/rxvt-unicode ./ -R
+: 1392834439:0;cd HG
+: 1392834444:0;ls /usr/src/HG
+: 1392834455:0;sudo cp /usr/src/HG/vim ./ -R
+: 1392834533:0;cd ~/Projects
+: 1392834537:0;sudo nano notes
+: 1392834556:0;sudo nano powerline-install.txt
+: 1392837916:0;sudo du -sh rootfs
+: 1392839344:0;ls .zsh/
+: 1392839368:0;cp .zsh /var/lib/lxc/fedora-current/rootfs/root -R
+: 1392839397:0;cp .zsh /var/lib/lxc/fedora-current/rootfs/home/sysop -R
+: 1392839406:0;sudo cp .zsh /var/lib/lxc/fedora-current/rootfs/home/sysop -R
+: 1392839440:0;sudo cp .zshrc /var/lib/lxc/fedora-current/rootfs/home/sysop -R
+: 1392839443:0;sudo cp .zshrc /var/lib/lxc/fedora-current/rootfs/root -R
+: 1392840385:0;ls -ail | grep tmux
+: 1392840408:0;sudo cp .vim* /var/lib/lxc/fedora-current/root -R
+: 1392840414:0;ls -ail | grep vim
+: 1392840477:0;sudo cp .tmux.conf /var/lib/lxc/fedora-current/root
+: 1392840495:0;sudo cp .tmux.conf /var/lib/lxc/fedora-current/rootfs/root
+: 1392840500:0;sudo cp .vim* /var/lib/lxc/fedora-current/rootfs/root -R
+: 1392840530:0;rm .ssh -R
+: 1392840609:0;ssh sysop@192.168.1.203
+: 1392840657:0;cd fedora-current
+: 1392840668:0;sudo rm root -R
+: 1392840719:0;ssh root@192.168.1.203
+: 1392842374:0;ssh sysop@192.168.1.235
+: 1392842388:0;ssh root@localhost
+: 1392842447:0;kill 6567
+: 1392842462:0;ssh sysop@localhost
+: 1392842500:0;ssh root@192.168.1.235
+: 1392842742:0;PATH=/root/.powerline/scripts:$PATH
+: 1392842745:0;env
+: 1392842794:0;sudo lxc-start -n fedora-current
+: 1392842861:0;rm fedora.tar.gz
+: 1392842864:0;sudo rm fedora.tar.gz
+: 1392842868:0;sudo du -sh *
+: 1392842938:0;sudo rm debian-current.tar.gz
+: 1392843038:7;sudo rm opensuse -R
+: 1392843057:0;sudo tar xfvz opensuse.tar.gz
+: 1392844818:0;sudo mkdir LXC
+: 1392844823:0;sudo mv * LXC
+: 1392844838:0;cd libvirt
+: 1392844840:0;cd images
+: 1392844858:0;mkdir QEMU
+: 1392844861:0;sudo cp win81x64.qcow2 /run/media/sysop/250GB-Spare/QEMU
+: 1392844894:0;sudo tar cfvz home.tar.gz home
+: 1392845029:0;cd /run/media/sysop/250GB-Spare/
+: 1392845158:0;sudo du -sh /opt
+: 1392845311:0;df -h
+: 1392845366:0;cd /media/btrfs_pool
+: 1392845380:0;cd media
+: 1392845381:0;cd dump
+: 1392845389:0;cd ,,
+: 1392843189:0;sudo lxc-kill -n fedora-current
+: 1392843197:0;sudo lxc-stop -n fedora-current
+: 1392843211:0;sudo lxc-stop -n fedora
+: 1392843264:0;cp * /run/media/sysop/250GB-Spare
+: 1392843273:593;sudo cp * /run/media/sysop/250GB-Spare -Rp
+: 1392845467:0;cd QEMU
+: 1392845469:0;ls -ailhp
+: 1392845494:0;cp /usr/src src -Rp
+: 1392845552:0;cd .snapshots
+: 1392845569:0;ls -ailph
+: 1392845588:0;rm home.tar.gz
+: 1392845592:0;sudo rm home.tar.gz
+: 1392846517:0;cp /home ./ -Rp
+: 1392846521:0;sudo cp /home ./ -Rp
+: 1392846541:0;sudo du -sh /home
+: 1392846589:0;cd /media/dump
+: 1392846599:0;sudo cp * /run/media/sysop/250GB-Spare
+: 1392846602:0;sudo cp * /run/media/sysop/250GB-Spare -R
+: 1392865178:0;bitcoind
+: 1392865190:0;yaourt -R bitcoind
+: 1392865193:0;yaourt -R bitcoin
+: 1392865397:0;du -sh VirtualBox\ VMs
+: 1392865403:0;rm yaourt-tmp-sysop -R
+: 1392865414:0;cd GitReal
+: 1392865423:0;df -Th
+: 1392865492:0;ls -ph
+: 1392865581:0;cp * ../sysopv -Rp
+: 1392865585:0;sudo cp * ../sysopv -Rp
+: 1392866207:0;sudo cp .??* ../sysopv -Rp
+: 1392866830:0;yaourt -S google chrome
+: 1392866836:0;yaourt google chrome
+: 1392866845:0;sudo chown sysop.users sysop -R
+: 1392866853:0;sudo chown test.users test -R
+: 1392868288:0;mv alpine.tar.gz ../
+: 1392868292:0;sudo mv alpine.tar.gz ../
+: 1392868304:0;sudo mv alpine.tar.gz WIP
+: 1392868326:0;sudo mv alpine ../
+: 1392868331:0;cd alpine
+: 1392868359:0;sudo nano config
+: 1392868439:0;sudo lxc-start -n alpine
+: 1392868474:0;sudo lxc-stop -n alpine
+: 1392868487:0;sudo mv alpine WIP
+: 1392868661:0;sudo mv opensuse ../
+: 1392868683:0;sudo chgrp users *
+: 1392868741:0;cat fedora/config
+: 1392869991:0;nano login
+: 1392870041:0;sudo nano login
+: 1392870535:0;cd /var/lib/lxc/opensuse/rootfs
+: 1392870558:0;sudo nano resolv.conf
+: 1392870593:0;man route
+: 1392871206:0;wget http://download.opensuse.org/distribution/13.1/repo/oss/suse/x86_64/wget-1.14-3.1.3.x86_64.rpm
+: 1392871212:0;sudo wget http://download.opensuse.org/distribution/13.1/repo/oss/suse/x86_64/wget-1.14-3.1.3.x86_64.rpm
+: 1392871234:0;cd /var/lib/lxc/opensuse/rootfs/root
+: 1392875436:0;cd /var/lib/lxc/opensuse/
+: 1392877430:0;sudo lxc-kill -n opensuse
+: 1392877846:0;tar xfvz ubuntu.tar.gz
+: 1392877853:0;sudo tar xfvz ubuntu.tar.gz
+: 1392877894:0;sudo mv ubuntu ubuntu-default
+: 1392877899:0;mv ubuntu-default ../
+: 1392877903:0;sudo mv ubuntu-default ../
+: 1392877915:0;mv ubuntu-default DEFAULT
+: 1392877919:0;sudo mv ubuntu-default DEFAULT
+: 1392877922:0;ls DEFAULT
+: 1392877997:0;ping ubuntu.lan
+: 1392878001:0;sudo ping ubuntu.lan
+: 1392878123:0;cd rootfs/
+: 1392878129:0;cd usr/src
+: 1392878178:0;sudo cp /var/lib/lxc/arch/rootfs/usr/src/* ./
+: 1392878183:0;sudo cp /var/lib/lxc/arch/rootfs/usr/src/* ./ -R
+: 1392878226:0;cd CVS
+: 1392878228:0;cd rxvt-unicode
+: 1392878256:0;ssh root@192.168.241
+: 1392881437:0;cd /var/lib/lxc/ubuntu/rootfs
+: 1392881442:0;cd home/sysop
+: 1392881556:0;ssh sysop@192.168.
+: 1392882410:0;cat /etc/sudoers
+: 1392882437:0;ssh sysop@192.168.1.241
+: 1392893000:0;sudo lxc-kill -n ubuntu
+: 1392893134:0;umount lxc
+: 1392893147:0;sudo cp opensuse opensuse-p -Rp
+: 1392893154:0;sudo rm opensuse-p -R
+: 1392893973:0;ssh root@192.168.1.241
+: 1392894529:0;sudo lxc-stop -n ubuntu
+: 1392894560:0;cd DEFAULT
+: 1392894575:0;cd opensuse
+: 1392894599:0;mv pam.d.tar.gz ~/Desktop
+: 1392894603:0;sudo mv pam.d.tar.gz ~/Desktop
+: 1392894619:0;sudo mv ~/pam.d.tar.gz ./
+: 1392894634:0;sudo tar xfvz pam.d.tar.gz
+: 1392894641:0;sudo lxc-start -n opensuse
+: 1392894708:0;sudo lxc-stop -n opensuse
+: 1392941561:0;sudo lxc-start -n ubuntu
+: 1392941829:0;cd usr/share/lintian/
+: 1392941883:0;cd /usr/share/terminfo
+: 1392941895:0;find /usr/share/terminfo | wc -l
+: 1392941900:0;find /lib/terminfo | wc -l
+: 1392941920:0;cd /lib/terminfo
+: 1392941925:0;find ./ | grep wc -l
+: 1392942158:0;cd ubuntu-cloud/rootfs
+: 1392942165:0;cd lib/terminfo
+: 1392942205:0;cp * ../../../../ubuntu-cloud/rootfs/lib/terminfo -R
+: 1392942210:0;sudo cp * ../../../../ubuntu-cloud/rootfs/lib/terminfo -R
+: 1392942987:0;cp * ../../../../ubuntu-cloud/rootfs/lib/terminfo -Rf
+: 1392943013:0;cd rootfs/lib/terminfo
+: 1392943021:0;cp * ../../../../ubuntu/rootfs/lib/terminfo -Rf
+: 1392943086:0;cp * ../../../../ubuntu/rootfs/lib/terminfo/* -Rf
+: 1392943096:0;sudo cp * ../../../../ubuntu/rootfs/lib/terminfo/ -Rf
+: 1392943110:0;sudo cp * ../../../../ubuntu/rootfs/lib/terminfo/* -Rf
+: 1392943181:0;cd usr/share/
+: 1392943213:0;cp ../../lib/terminfo ./ -R
+: 1392943481:0;cd ubuntu
+: 1392943502:0;cd lib/
+: 1392943510:0;cd terminfo
+: 1392943520:0;rm * -R
+: 1392943526:0;sudo rm * -R
+: 1392943586:0;cp /var/lib/lxc/ubuntu-cloud/rootfs/lib/terminfo/* ./ -R
+: 1392943591:0;sudo cp /var/lib/lxc/ubuntu-cloud/rootfs/lib/terminfo/* ./ -R
+: 1392943615:0;rm terminfo -R
+: 1392943620:0;sudo rm terminfo -R
+: 1392943646:0;sudo cp ../../lib/terminfo ./ -R
+: 1392943984:0;kill 30751
+: 1392944012:0;cd pam.d
+: 1392944016:0;nano sshd
+: 1392944019:0;sudo nano sshd
+: 1392944088:0;ssh-keygen -t rsa
+: 1392944097:0;cd ~/.ssh
+: 1392944155:0;ssh sysop@ubuntu-cloud
+: 1392947011:0;nano ~/Projects/notes/login.txt
+: 1392947045:0;nano zshenv
+: 1392947051:0;find ./ | grep zsh
+: 1392947061:0;ls | grep zsh
+: 1392947069:0;ls -ail | grep ".zsh"
+: 1392947084:0;locate zprofile
+: 1392947089:0;locate zshrc
+: 1392947098:0;sudo updatedb
+: 1392947160:0;locate .zshrc
+: 1392947164:0;locate zshenv
+: 1392947194:0;cd debian-current
+: 1392947201:0;rm debian-current -R
+: 1392947205:0;sudo rm debian-current -R
+: 1392947483:0;cd tmux-tmux-code
+: 1392947498:0;make uninstall
+: 1392952939:0;nano login.txt
+: 1392952973:0;echo $TERM
+: 1392960093:0;man tmux | grep debug
+: 1392960112:0;man tmux
+: 1392960298:0;cd /var/lib/lxc/ubuntu/rootfs/usr/src/GIT
+: 1392960350:0;sudo cp tmux-tmux-code /var/lib/lxc/ubuntu-cloud/rootfs/usr/src/GIT -Rp
+: 1392960525:0;ssh root@ubuntu
+: 1392960939:0;ssh root@ubuntu-cloud
+: 1392960996:0;btrfs subvolume list ./
+: 1392961022:0;mv rootfs r
+: 1392961063:0;sudo umount lxc
+: 1392961066:0;sudo mount lxc
+: 1392961074:0;cd ubuntu-cloud
+: 1392961079:0;sudo mv rootfs r
+: 1392961090:0;sudo btrfs subvolume create rootfs
+: 1392961092:0;cd r
+: 1392961101:0;sudo mv * ../rootfs
+: 1392962160:0;rmdir r
+: 1392962164:0;sudo rmdir r
+: 1392962260:0;rm CentOS-6.5-x86_64-bin-DVD1.iso
+: 1392962262:0;rm centos-6-x86_64.tar.gz
+: 1392962265:0;rm Fedora-Live-Desktop-x86_64-20-1.iso
+: 1392962270:0;rm ubuntu-13.10-server-amd64.iso
+: 1392962272:0;rm ubuntu-13.10-desktop-amd64.iso
+: 1392962279:0;rm suse-12.3-x86_64.tar.gz
+: 1392962285:0;rm net-tools-2.0-0.15.20131119git.fc20.x86_64.rpm
+: 1392962290:0;rm libgpgme-devel-1.4.3-2.1.3.x86_64.rpm
+: 1392962367:0;sudo rm .??* -R
+: 1392962491:0;sudo chown sysop.sysop * -R
+: 1392963347:0;julian
+: 1392963361:0;sudo cp lxc /run/media/sysop/250GB-Spare/lxc-2014051 -Rp
+: 1392964635:0;sudo cp /opt /run/media/sysop/250GB-Spare/opt-2014051 -Rp
+: 1392965919:0;sudo cp ./src /run/media/sysop/250GB-Spare/src-2014051 -Rp
+: 1392966937:0;sudo cp /home /run/media/sysop/250GB-Spare/home-2014051 -Rp
+: 1392971336:0;mount /dev/sdc1 /mnt
+: 1392971340:0;sudo mount /dev/sdc1 /mnt
+: 1392971348:0;nano /etc/fstab
+: 1392971365:0;sudo nano /etc/fstab
+: 1392971385:0;mount /usr/src
+: 1392971389:0;sudo mount /opt
+: 1392971392:0;sudo mount /usr/src
+: 1392971486:0;cd /mnt/opt-2014051
+: 1392971506:0;du -sh archives
+: 1393026933:0;kill 470
+: 1393026935:0;kill 909
+: 1393026946:0;sudo kill 470
+: 1393026949:0;sudo kill 909
+: 1393026951:0;lsof /mnt
+: 1393026963:0;exi
+: 1393026964:0;texit
+: 1393026972:0;sudo umount /mnt
+: 1393027099:0;sudo rm bitcoin -R
+: 1393027105:0;sudo git clone https://github.com/bitcoin/bitcoin.org.git
+: 1393027132:0;sudo chown sysop.root *
+: 1393027136:0;cd bitcoin.org
+: 1393027141:0;sudo git pull origin master
+: 1393027148:0;sudo git fetch --tags
+: 1393027172:0;kill 16842
+: 1393027211:0;nano coins.txt
+: 1393027227:0;yaourt bitcoin
+: 1393027232:0;yaourt -R bitcoin-qt
+: 1393027343:0;./configure
+: 1393027664:0;sudo rm bitcoin.org -R
+: 1393027672:0;sudo git clone https://github.com/bitcoin/bitcoin.git
+: 1393027708:0;./autogen.sh
+: 1393027713:0;sudo ./autogen.sh
+: 1393027732:0;sudo ./configure --prefix=/usr --with-incompatible-bdb
+: 1393027818:0;sudo ./configure --prefix=/usr --with-incompatible-bdb --with-gui
+: 1393029322:0;bitcoin-qt
+: 1393029481:0;sudo make -f Makefile all
+: 1393029494:0;sudo make -f Makefile bitcoin-qt
+: 1393029503:0;cat Makefile | grep bitcoin-qt
+: 1393029506:0;cat Makefile | grep qt
+: 1393029526:0;sudo make -f Makefile qt/bitcoinstrings.cpp
+: 1393029599:0;sudo git checkout v0.8.6
+: 1393029608:0;qmake-qt4 -makefile -Wall USE_QRCODE=1
+: 1393029737:0;sudo git checkout v0.8.5
+: 1393029747:0;sudo qmake-qt4 -makefile -Wall USE_QRCODE=1
+: 1393029774:0;sudo qmake-qt4
+: 1393029827:0;yaourt qtcreator
+: 1393029832:0;yaourt qt5
+: 1393031152:0;find ./ | grep linux
+: 1393031206:0;sudo qmake-qt4 USE_QRCODE=1
+: 1393031224:0;make
+: 1393031228:0;sudo make
+: 1393031287:0;locate litecoind
+: 1393031303:0;yaourt libminiupnpc
+: 1393031306:0;yaourt libminiupnp
+: 1393031310:0;yaourt miniupnp
+: 1393031325:0;locate libminiupnpc
+: 1393031345:0;cd /usr/lib
+: 1393031369:0;sudo ln -s ./libminiupnpc.so.10 ./libminiupnpc.so.9
+: 1393031372:0;litecoind
+: 1393031448:0;mount /dev/sde1 /mnt
+: 1393031452:0;sudo mount /dev/sde1 /mnt
+: 1393031461:0;cd opt-2014051
+: 1393031470:0;du -sh .??*
+: 1393031485:0;sudo du -sh .??*
+: 1393033075:0;git pull origin ed98703
+: 1393033100:0;git checkout trunk
+: 1393033144:0;cd SVN
+: 1393033149:0;svn update
+: 1393044399:0;sudo mkdir SEEDS
+: 1393044404:0;mv arch SEEDS
+: 1393044408:0;sudo mv arch SEEDS
+: 1393044412:0;sudo mv debian SEEDS
+: 1393044419:0;sudo mv fedora SEEDS
+: 1393044430:0;sudo mv ubuntu SEEDS
+: 1393044434:0;sudo mv ubuntu-cloud SEEDS
+: 1393044452:0;mkdir TESTING
+: 1393044460:0;sudo mv ssh TEST
+: 1393044464:0;sudo mv oracle TEST
+: 1393044469:0;sudo mv opensuse TEST
+: 1393044534:0;mkdir APPLICATIONS
+: 1393044538:0;sudo mkdir APPLICATIONS
+: 1393044548:0;sudo mkdir SERVERS
+: 1393044575:0;mv * ../WIP
+: 1393044579:0;sudo mv * ../WIP
+: 1393044593:0;rmdir TEST
+: 1393044596:0;sudo rmdir TEST
+: 1393044642:0;cd APPLICATIONS
+: 1393045289:0;nano btrfs.txt
+: 1393045309:0;sudo mkdir TEST
+: 1393045320:0;btrfs subvolume create seed
+: 1393045324:0;sudo btrfs subvolume create seed
+: 1393045330:0;sudo btrfs subvolume create rwLayer
+: 1393045342:0;sudo mkdir rootfs
+: 1393045348:0;cd seed
+: 1393045358:0;touch hello-i-am-read-only.txt
+: 1393045362:0;sudo touch hello-i-am-read-only.txt
+: 1393045367:0;nano hello-i-am-read-only.txt
+: 1393045381:0;sudo nano hello-i-am-read-only.txt
+: 1393045395:0;cat hello-i-am-read-only.txt
+: 1393045414:0;btrfstune -S 1 ./seed
+: 1393045419:0;sudo btrfstune -S 1 ./seed
+: 1393045543:0;man btrfstune
+: 1393045634:0;df | grep btrfs
+: 1393045691:0;mount /dev/sda5 -o subvolid=270 rootfs
+: 1393045697:0;sudo mount /dev/sda5 -o subvolid=270 rootfs
+: 1393045700:0;cd test
+: 1393045702:0;cd root
+: 1393045711:0;cd TEST
+: 1393045846:0;sudo btrfstune -S 1 /dev/sda5 -o subvolid=270
+: 1393045862:0;sudo btrfstune -S 1 -o subvolid=270 /dev/sda5
+: 1393045935:0;sudo btrfstune -S 1 rootfs
+: 1393045941:0;sudo btrfstune -S 1 seed
+: 1393045947:0;sudo btrfstune -S 1 seed -v
+: 1393046290:0;man losetup
+: 1393050546:0;sudo btrfs subvolume list ./
+: 1393051014:0;sudo btrfs subvolume help
+: 1393051027:0;sudo btrfs subvolume show
+: 1393051034:0;sudo btrfs subvolume show ./
+: 1393051084:0;sudo btrfs subvolume snapshot seed seed-2
+: 1393051091:0;sudo btrfs subvolume show seed-2
+: 1393051147:0;ls /dev/disk/by-uuid
+: 1393051166:0;sudo btrfs subvolume show seed
+: 1393051233:0;sudo btrfs device add testing
+: 1393051247:0;sudo btrfs device help
+: 1393051665:0;yaourt nbd
+: 1393051701:0;yaourt lvm
+: 1393051704:0;yaourt btrfs
+: 1393051721:0;systemctl list-unit-files | grep nbd
+: 1393052515:0;grep "qcow" *
+: 1393052518:0;nano qemu-nbd-notes.txt
+: 1393053856:0;modprobe nbd
+: 1393053861:0;sudo modprobe nbd
+: 1393053909:0;cd /etc/modprobe.d
+: 1393053915:0;nano nbd.conf
+: 1393053969:0;grep "nbd"
+: 1393053973:0;grep "nbd" *
+: 1393054020:0;man modprobe
+: 1393054392:0;man nbd
+: 1393054432:0;man nbd-client
+: 1393054804:0;modprobe nbd nbds_max=64
+: 1393056104:0;cd /var/lib/lxc/SEEDS
+: 1393056113:0;sudo du -sh newroot
+: 1393056185:0;cd newroot
+: 1393056347:0;sudo kill 3206
+: 1393056349:0;ps aux | grep cp
+: 1393056388:0;l
+: 1393090820:0;yaourt repytr
+: 1393090830:0;repo-add
+: 1393090834:0;yaourt reptyr
+: 1393090925:0;sudo reptyr 21821
+: 1393090968:0;reptyr 21821
+: 1393091024:0;man reptyr
+: 1393091058:0;yaourt ptrace
+: 1393091074:0;ptrace
+: 1393091101:0;cd /proc/sys/kernel/yama/
+: 1393091104:0;cat ptrace_scope
+: 1393091157:0;sudo echo 0 > /proc/sys/kernel/yama/ptrace_scope
+: 1393091183:0;sudo echo > 0 ptrace_scope
+: 1393091196:0;ps aux | grep find
+: 1393091210:0;reptyr 23936
+: 1393091373:0;find /
+: 1393091435:0;reptyr 25629
+: 1393091459:0;cd /proc/sys/kernel/yama
+: 1393091464:0;sudo nano ptrace_scope
+: 1393097510:0;rm debian-jessie.qcow2
+: 1393097733:0;yaourt dcfldd
+: 1393097884:0;qemu-img create -f vdi arch.vdi 12G
+: 1393097890:0;sudo qemu-img create -f vdi arch.vdi 12G
+: 1393109961:0;cd fedora-default
+: 1393109970:0;chroot rootfs /bin/bash
+: 1393109975:0;sudo chroot rootfs /bin/bash
+: 1393112038:0;nano powerline-install.txt
+: 1393113644:0;cp .zsh* /var/lib/lxc/fedora-default/rootfs/home/sysop -R
+: 1393113657:0;cp .vim* /var/lib/lxc/fedora-default/rootfs/home/sysop -R
+: 1393113668:0;cp .tmux.conf /var/lib/lxc/fedora-default/rootfs/home/sysop -R
+: 1393114784:0;sudo du -sh fedora-default
+: 1393133639:0;mv arch.tar.gz ../ARCHIVES
+: 1393135673:0;du -sh *.r
+: 1393135948:0;sudo iotop
+: 1393135970:0;du -sh *.raw
+: 1393136206:0;mv APPLICATIONS APPS
+: 1393136210:0;sudo mv APPLICATIONS APPS
+: 1393136229:0;mkdir TEMPLATES
+: 1393136235:0;sudo mkdir TEMPLATES
+: 1393136241:0;tar xfvz debian.tar.gz
+: 1393136245:0;sudo tar xfvz debian.tar.gz
+: 1393136475:0;sudo mv arch.tar.gz ../ARCHIVES
+: 1393136484:0;sudo mv debian.tar.gz ../ARCHIVES
+: 1393136491:0;sudo mv fedora.tar.gz ../ARCHIVES
+: 1393136501:0;sudo mv ubuntu ../ARCHIVES
+: 1393136512:0;sudo mv ../ARCHIVES/ubuntu ./
+: 1393136517:0;sudo mv ubuntu.tar.gz ../ARCHIVES
+: 1393136527:0;mv * TEMPLATES
+: 1393136532:0;sudo mv * TEMPLATES
+: 1393136536:0;cd TEMPLATES
+: 1393139329:0;btrfs device scan
+: 1393140123:0;ls -phail
+: 1393140299:0;du -sh test.raw
+: 1393140792:0;ps aux | grep nano
+: 1393140803:0;sudo kill 15766
+: 1393174981:0;cd ~/Downloads
+: 1393174991:0;mplayer jb021814.mp3
+: 1393176975:0;nano qemu-nbd-btrfs-notes.txt
+: 1393206104:0;lsmod | grep kvm
+: 1393206108:0;modprobe -r kvm_intel
+: 1393206113:0;sudo modprobe -r kvm_intel
+: 1393206118:0;sudo modprobe -r kvm
+: 1393206128:0;sudo modprobe vboxnetflt
+: 1393206131:0;sudo modprobe vboxdrv
+: 1393210967:0;zsh -v
+: 1393210982:0;echo $ZSH_VERSION
+: 1393211188:0;zkbd
+: 1393215715:0;nano ~/.vimrc
+: 1393216193:0;powerline-daemon
+: 1393216265:0;vim hello.txt
+: 1393216430:0;rm .git
+: 1393216431:0;rm .git -R
+: 1393216438:0;mkdir tell
+: 1393216439:0;cd tell
+: 1393216446:0;ps aux | grep poewrline
+: 1393216451:0;ps aux | grep powerline
+: 1393216454:0;kill 5080
+: 1393216459:0;git init
+: 1393216463:0;touch README.txt
+: 1393218364:0;ls ~/.vim/
+: 1393218380:0;cd col
+: 1393218387:0;ls ~/.vim/colors
+: 1393218735:0;vim README.txt
+: 1393223215:0;nano ~/.vshrc
+: 1393223230:0;vi
+: 1393223609:0;wget http://stackoverflow.com/questions/235839/how-do-i-indent-multiple-lines-quickly-in-vi
+: 1393223615:0;vim how-do-i-indent-multiple-lines-quickly-in-vi
+: 1393223636:0;mv how-do-i-indent-multiple-lines-quickly-in-vi aaa.html
+: 1393223639:0;vim aaa.html
+: 1393264375:0;rm aaa.html
+: 1393264406:0;cd debian-web
+: 1393264422:0;qemu-nbd -c /dev/nbd0 slayer.raw
+: 1393267254:0;rm qemu-nbd-btrfs-notes.txt.save
+: 1393267256:0;rm qemu-nbd-btrfs-notes.txt.save.1
+: 1393267258:0;ls | grep notes
+: 1393267276:0;ls .??*
+: 1393267279:0;rm .qemu-nbd-btrfs-notes.txt.swp
+: 1393273482:0;kill 23017
+: 1393273485:0;sudo kill 23017
+: 1393273493:0;sudo kill 22126
+: 1393273510:0;sudo systemctl restart nbd-server
+: 1393273516:0;sudo systemctl restart nbd
+: 1393273520:0;ps aux | grep nbd
+: 1393273528:0;ps aux | grep zsh
+: 1393273533:0;kill 447
+: 1393273536:0;sudo kill 447
+: 1393280862:0;cd var/www
+: 1393280888:0;cd www
+: 1393280947:0;cd /usr/share
+: 1393280959:0;cd archives/venus
+: 1393280970:0;cd SHELL
+: 1393280979:0;du -sh venus
+: 1393283547:0;man nbd-trdump
+: 1393283557:0;nbd-trdump
+: 1393283574:0;man nbd-server
+: 1393300194:0;vim powerline-install.txt
+: 1393312685:0;calc
+: 1393314030:0;ssh root@192.168.1.170
+: 1393314213:0;cd modules.d
+: 1393314385:0;sudo nano nbd.conf
+: 1393314561:0;journalctl -xn | grep nbd
+: 1393314566:0;journalctl | grep nbd
+: 1393314597:0;cd /var/log
+: 1393314602:0;yaourt bootlog
+: 1393314607:0;yaourt boot
+: 1393314616:0;yaourt boot | grep log
+: 1393314670:0;man modprobe.d
+: 1393314767:0;modinfo nbd
+: 1393314979:0;vim modules
+: 1393315201:0;vim modules.conf
+: 1393315220:0;sudo vim modules.conf
+: 1393315285:0;sudo vim modprobe.d
+: 1393315295:0;sudo vim modprobe.d/nbd.conf
+: 1393315370:0;ls /dev/
+: 1393315406:0;vim modules-notes
+: 1393315480:0;sudo rm modules.conf
+: 1393315483:0;cd modules-load.d
+: 1393315497:0;sudo vim nbd-load.conf
+: 1393315515:0;cd modprobe.d
+: 1393315520:0;sudo vim nbd.conf
+: 1393315528:0;sudo mv nbd.conf nbd-options.conf
+: 1393315537:0;sudo mv rose.conf rose-blacklist.conf
+: 1393315552:0;sudo mv rose-blacklist.conf blacklist-rose.conf
+: 1393315559:0;sudo mv nbd-options.conf options-nbd.conf
+: 1393315569:0;sudo mv netrom.conf blacklist-netrom.conf
+: 1393315582:0;sudo mv beep.conf blacklist-beep.conf
+: 1393315624:0;ls /dev
+: 1393315735:0;sudo mkdir IMAGES
+: 1393315743:0;cd debian-dbase
+: 1393315819:0;sudo mv slayer.qcow2 debian-dbase.slayer.qcow2
+: 1393315828:0;mv debian-dbase.slayer.qcow2 ../IMAGES
+: 1393315833:0;sudo mv debian-dbase.slayer.qcow2 ../IMAGES
+: 1393347193:0;wifi-menu
+: 1393349520:0;sudo wifi-menu
+: 1393349755:0;netctl stop br0
+: 1393349759:0;sudo netctl stop br0
+: 1393349772:0;ping 192.168.1.1
+: 1393349776:0;sudo ping 192.168.1.1
+: 1393352343:0;echo ${pwd/%*}
+: 1393352355:0;echo ${$(pwd)/%*}
+: 1393352360:0;echo $(pwd)
+: 1393352370:0;echo $(pwd)%/*
+: 1393352375:0;echo ${$(pwd)%/*}
+: 1393352471:0;loosetup /
+: 1393356478:0;sudo powerofrf
+: 1393356481:0;sudo poweroff
+: 1393366973:0;cd Projects/notes/
+: 1393380226:0;dd if=/dev/zero of=test.img bs=1G count=3
+: 1393380231:0;sudo dd if=/dev/zero of=test.img bs=1G count=3
+: 1393380279:0;losetup /dev/loop2 test.img
+: 1393380285:0;sudo losetup /dev/loop2 test.img
+: 1393388072:0;sleep 90m
+: 1393388100:0;sleep 90m;sleepy 4:55AM;mplayer pchick-alarm.wav -loop 20
+: 1393388110:0;mplayer pchick-alarm.wav -loop 10
+: 1393388118:0;mplayer pchick-alarm.wav -loop 2
+: 1393388228:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav
+: 1393388303:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -af volume 1:10
+: 1393388306:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -af volume 1:100
+: 1393388323:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -af volume 1:1
+: 1393388355:0;man mplayer | grep volume
+: 1393388369:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 2
+: 1393388393:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 20
+: 1393388399:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 40
+: 1393388403:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 50
+: 1393388408:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 55
+: 1393388412:0;mplayer Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav -volume 60
+: 1393388428:0;mv Loud_Alarm_Clock_Buzzer-Muk1984-493547174.wav alarm.wav
+: 1393388430:0;mv alarm.wav ../
+: 1393388449:0;sleep 90m;sleepy 4:55AM;mplayer alarm.wav -loop 20 -volume 60
+: 1393445604:0;sudo mv archives /run/media/sysop/250GB-Spare
+: 1393445645:0;cd /opt
+: 1393448241:0;sudo rm opt-2014051 -R
+: 1393448412:0;cd /var/run/media/sysop/250GB-Spare
+: 1393448432:0;sudo rm lxc* -R
+: 1393449259:0;rm opt -R
+: 1393449271:0;sudo rm opt -R
+: 1393449714:0;mplayer jb021714.mp3
+: 1393452084:0;rm src* -R
+: 1393452102:0;rm QEMU -R
+: 1393452109:0;sudo rm src* -R
+: 1393452722:0;du -sh LXC-007
+: 1393452727:0;sudo du -sh LXC-007
+: 1393453547:0;mv Season\ 2 /run/media/sysop/250GB-Spare
+: 1393455940:0;grub-mkconfig -o /boot/grub/grub.cfg
+: 1393455944:0;sudo grub-mkconfig -o /boot/grub/grub.cfg
+: 1393461158:0;sudo telini 3
+: 1393461161:0;sudo telinit 3
+: 1393461168:0;sudo init 3
+: 1393464654:0;mount /dev/sdb1 /mnt
+: 1393464658:0;sudo mount /dev/sdb1 /mnt
+: 1393464660:0;cd /mnt
+: 1393464667:0;cd opt
+: 1393464695:0;ls /usr/src
+: 1393464721:0;cd home
+: 1393464739:0;yaourt -S chrome
+: 1393464745:0;yaourt chrome
+: 1393464809:0;yaourt openarean
+: 1393464813:0;yaourt openarena
+: 1393464854:0;yaourt firefox
+: 1393465022:0;yaourt firefoxrm /usr/bin/firefox
+: 1393465045:0;sudo rm /usr/bin/firefox
+: 1393465047:0;yaourt -S firefox
+: 1393476815:0;nmap localhost -sT 6881
+: 1393476826:0;nmap localhost -sT -p 6881
+: 1393481380:0;btrfs -v
+: 1393481383:0;btrfs --versrion
+: 1393481386:0;btrfs --version
+: 1393485236:0;yaourt linux
+: 1393485320:0;yaourt -S linux-headers
+: 1393485343:0;yaourt linux lts
+: 1393485365:0;yaourt -S linux-lts-docs
+: 1393485473:0;yaourt -S linux-docs
+: 1393485487:0;yaourt linux source
+: 1393485524:0;cd linux-3.10.32-1-lts
+: 1393485728:0;vim btrfs.txt
+: 1393485783:0;btrfs subvolume find-new
+: 1393486014:0;ps aux | grep umount
+: 1393486115:0;lsof rootfrs
+: 1393532479:0;yaourt ktorrent
+: 1393532513:0;yaourt -Scc
+: 1393544689:0;grub-install /dev/sda
+: 1393544696:0;sudo grub-install /dev/sda
+: 1393544761:0;sudo reboot
+: 1393552627:0;cd Projects/notes
+: 1393560833:0;cd Projects
+: 1393560836:0;cd notes
+: 1393560839:0;vim qemu-nbd-btrfs-notes.txt
+: 1393571899:0;lsmod | grep vbox | awk '{pring $1}'
+: 1393571908:0;lsmod | grep kvm | awk '{pring $1}'
+: 1393571913:0;lsmod | grep kvm | awk '{print $1}'
+: 1393573559:0;insc=$(lsmod | grep kvm | awk '{print $1}')
+: 1393573566:0;echo "$insc"
+: 1393573569:0;echo "$insc" | wc -l
+: 1393656512:0;cd /sys/fs/cgroup
+: 1393656514:0;cd memory
+: 1393664446:0;yaourt -S gvfs
+: 1393664463:0;man gvfs
+: 1393665158:0;yaourt spreeder
+: 1393712233:0;yaourt -R virtuoso-base
+: 1393712283:0;yaourt -R soprano
+: 1393716217:0;si
+: 1393737795:0;tar xfvz jupiter.tar.gz
+: 1393737800:0;sudo tar xfvz jupiter.tar.gz
+: 1393741819:0;cd jupiter
+: 1393741824:0;mv mnt jupiter
+: 1393741827:0;sudo mv mnt jupiter
+: 1393752671:0;wget 192.168.1.170
+: 1393752675:0;cat index.html
+: 1393752713:0;cat index.html.1
+: 1394140162:0;fdisk -l
+: 1394152674:0;cd /etc/netctl
+: 1394152679:0;vim br0
+: 1394152717:0;sudo vim br0
+: 1394152746:0;ifconfig br0 down
+: 1394152758:0;systemctl netctl restart
+: 1394152837:0;sudo ifconfig br0 192.168.1.2
+: 1394152918:0;sudo netctl restart br0
+: 1394152971:0;sudo ping 10.1.1.1
+: 1394154641:0;ps aux | grep root
+: 1394154650:0;kill 912
+: 1394154653:0;sudo kill 912
+: 1394154664:0;sudo kill 973
+: 1394154666:0;ps aux | grep root | grep zsh
+: 1394154685:0;sudo kill 4329
+: 1394154688:0;ps aux | grep urxvt
+: 1394154693:0;sudo kill 766
+: 1394154696:0;sudo kill 677
+: 1394154699:0;sudo kill 661
+: 1394154709:0;ps aux | grep root | grep urxvt
+: 1394154715:0;sudo ps aux | grep root | grep urxvt
+: 1394154717:0;sudo ps aux | grep root | grep rxvt
+: 1394154722:0;sudo ps aux | grep rxvt
+: 1394154780:0;cd /run/media/
+: 1394154785:0;cd sysop/250GB-Spare
+: 1394154794:0;sudo du -sh archives
+: 1394159208:0;ssh root@192.168.1.53
+: 1394159238:0;ssh root@192.168.1.220
+: 1394159343:0;ssh root@10.1.1.18
+: 1394161683:0;man resolv.conf
+: 1394162942:0;ssh root@venus.hypokrites.me
+: 1394163571:0;rename
+: 1394163575:0;ren
+: 1394169725:0;yaourt -S mysql-client
+: 1394169801:0;nmap 10.1.1.18
+: 1394170505:0;cd usr/sha
+: 1394170516:0;cd usr
+: 1394170517:0;cd share
+: 1394170526:0;cd usr/share
+: 1394170557:0;sudo cp wordpress /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/usr/share -Rp
+: 1394170576:0;sudo cp mediawiki-1.20.2 /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/usr/share -Rp
+: 1394170780:0;sudo cp phpmyadmin.conf /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/etc/apache2/conf.d -Rp
+: 1394170790:0;sudo cp phppgadmin /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/etc/apache2/conf.d -Rp
+: 1394170867:0;sudo cp phpmyadmin.conf /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/etc/apache2/conf.d/ -Rp
+: 1394170872:0;sudo cp phppgadmin /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/etc/apache2/conf.d/ -Rp
+: 1394175455:0;ping livejasmin.com
+: 1394175460:0;sudo ping livejasmin.com
+: 1394180384:0;cd var
+: 1394180442:0;sudo cp awstats /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/var/lib/awstats -Rp
+: 1394180565:0;cd apache2
+: 1394180567:0;cd conf.d
+: 1394180796:0;cd awstats
+: 1394180820:0;sudo cp * /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/etc/awstats
+: 1394180943:0;cd mnt/var/lib/awstats
+: 1394180971:0;sudo cp * /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/var/lib/awstats -R
+: 1394181169:0;cd ..\\
+: 1394181201:0;cd cron.hourly
+: 1394190059:0;sleep 2h; mplayer -loop 5 pchick-alarm.wav
+: 1394214242:0;sudo freshclam
+: 1394216136:0;ks
+: 1394216149:0;ls | grep resolv
+: 1394216156:0;vim resolvconf.conf
+: 1394216186:0;sudo vim resolvconf.conf
+: 1394216250:0;nslookup venus.hypokrites.me
+: 1394216264:0;nslookup hotmail.com
+: 1394220084:0;cd YOUTUBE
+: 1394220091:0;vim VicNuland.txt
+: 1394221629:0;rm ./[k*
+: 1394221636:0;rm ./[kickass*
+: 1394221643:0;rm [kick*
+: 1394221657:0;rm ./\[kick
+: 1394221659:0;rm ./\[kick*
+: 1394221704:0;rm jb021114.mp3
+: 1394221980:0;mplayer jb022014.mp3
+: 1394223101:0;sudo ping www.hypokrites.me
+: 1394228528:0;top
+: 1394228847:0;kill 965272
+: 1394228852:0;kill 1011
+: 1394228857:0;ps aux | grep rxvt
+: 1394228860:0;kill 1930
+: 1394229191:0;nano debian-notes.txt
+: 1394229198:0;vim debian-notes.txt
+: 1394229321:0;sudo vim debian-notes.txt
+: 1394229399:0;ps aux | grep lxc-start
+: 1394229446:0;ssh root@10.1.1.80
+: 1394229472:0;lxc-stop -n debian-jesse-dbase
+: 1394229672:0;cat /etc/resolv.conf
+: 1394229782:0;mplayer jb022114.mp3
+: 1394235798:0;cd SERVERS/SEEDS
+: 1394236379:0;sudo lxc-destroy -n debian-jesse-domain
+: 1394236384:0;sudo lxc-ls
+: 1394236392:0;sudo lxc-stop -n debian-jesse-domain
+: 1394251804:0;cd /run/media/sysop/500GB-Spare
+: 1394251808:0;cd V.The.Original.Mini.Series.1983.WS.DVDRip.XviD-UKi
+: 1394251818:0;mplayer V.The.Original.Mini.Series.1983.Part.1.WS.DVDRip.XviD-UKi.avi
+: 1394257771:0;cd /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/usr/share/awstats-new
+: 1394257776:0;cd wwwroot
+: 1394258934:0;cd ~/Desktop
+: 1394258939:0;mplayer V.The.Original.Mini.Series.1983.Part.2.WS.DVDRip.XviD-UKi.avi
+: 1394259002:0;cd /run/media/sysop/250GB-Spare/archives/venus/mnt/var/lib/awstats
+: 1394259026:0;sudo cp * /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/var/lib/awstats -Rp
+: 1394259073:0;cd /usr
+: 1394259075:0;mkdir java
+: 1394259743:0;cd /java
+: 1394259746:0;cd /usr/java
+: 1394259750:0;cd default-jre
+: 1394259756:0;./ControlPanel
+: 1394260108:0;cd cron
+: 1394313272:0;cd venus
+: 1394313276:0;cd etc
+: 1394313279:0;cd phppgadmin
+: 1394313282:0;nano config.inc.php
+: 1394313285:0;vim config.inc.php
+: 1394313381:0;cd mnt/var/lib/postgresql
+: 1394313386:0;cd mnt/var/lib
+: 1394313391:0;cd postgresql
+: 1394316638:0;cd /etc/pam.d
+: 1394316647:0;vim login
+: 1394316734:0;cp xdm xdm-old
+: 1394316737:0;sudo cp xdm xdm-old
+: 1394316739:0;vim xdm
+: 1394316768:0;sudo vim xdm
+: 1394317396:0;vim resolv.conf
+: 1394317410:0;sudo vim resolv.conf
+: 1394317422:0;sudo ping google.com
+: 1394317426:0;links google.com
+: 1394347321:0;git pull tags
+: 1394347388:0;git pull --tags
+: 1394347488:0;cd .themes
+: 1394347544:0;sudo ./bulk-load.sh
+: 1394347590:0;sudo lxc-start -n debian-jesse-domain -f ./config
+: 1394347606:0;sudo lxc-start -n debian-jesse-domain -f ./config&
+: 1394347661:0;sudo lxc-start -n debian-jesse-dbase -f ./config&
+: 1394347667:0;root
+: 1394347708:0;sudo lxc-start -n debian-jesse-web -f ./config&
+: 1394347748:0;sudo lxc-start -n debian-jesse-proxy -f ./config&
+: 1394347771:0;sudo lxc-start -n debian-jesse-projects -f ./config&
+: 1394347795:0;sudo lxc-start -n debian-jesse-mail -f ./config&
+: 1394347835:0;sudo nano /etc/resolvconf.conf
+: 1394347851:0;sudo nano /etc/resolv.conf
+: 1394347861:0;ping www.hypokrites.me
+: 1394348088:0;systemctl list-unit-files | grep ssh
+: 1394348094:0;systemctl enable sshd
+: 1394348098:0;sudo systemctl enable sshd
+: 1394348102:0;sudo systemctl start sshd
+: 1394348109:0;systemctl list-unit-files | grep ftp
+: 1394348115:0;sudo systemctl start ftpd
+: 1394348123:0;sudo systemctl stop ftpd
+: 1394348129:0;sudo systemctl start pure-ftpd
+: 1394348134:0;sudo systemctl enable pure-ftpd
+: 1394348143:0;nmap localhost
+: 1394348259:0;nano ~/.Xdefaults
+: 1394348489:0;nano ~/Projects/notes/powerline-install.txt
+: 1394348540:0;nano ~/Projects/notes/instructions.txt
+: 1394348558:0;nano ~/Projects/notes/i3
+: 1394348567:0;nano ~/Projects/notes/TO_INSTALL.notes
+: 1394348588:0;rm /opt/openarena -R
+: 1394348593:0;sudo rm /opt/openarena -R
+: 1394348620:0;cd ~/Projects/notes
+: 1394348626:0;nano zsh-urxvt-powerline-tmux.txt
+: 1394348680:0;nano .tmux.conf
+: 1394348718:0;cd powerline/bindings/tmux
+: 1394348738:0;nano ~/.tmux.conf
+: 1394416242:0;ls -ail | grep pacman
+: 1394416242:0;chmod 600 pacman.conf
+: 1394416242:0;vim pacman.conf 
+: 1394416242:0;cp /home/sysop/.z* ./
+: 1394416219:0;nano hostname
+: 1394416310:0;ssh root@web.hypokrites.me
+: 1394416354:0;pwpd
+: 1394416586:0;nano wgetrc
+: 1394416680:0;export http_proxy=""
+: 1394416701:0;wget http://prdownloads.sourceforge.net/webadmin/webmin-1.670.tar.gz
+: 1394417224:0;rm /usr/lib/libEGL.so.1
+: 1394417356:0;man pacman.conf
+: 1394417423:0;nano /etc/pacman.conf
+: 1394418887:0;rm webmin-1.670.tar.gz
+: 1394418917:0;rm tar-1.27.1-1-x86_64.pkg.tar.xz
+: 1394418920:0;wget http://mirror.us.leaseweb.net/archlinux/core/os/x86_64/tar-1.27.1-1-x86_64.pkg.tar.xz
+: 1394418942:0;wget http://mirror.us.leaseweb.net/archlinux/core/os/x86_64/tar-1.27.1-1-x86_64.pkg.tar.xz -v
+: 1394437874:0;rm tar*
+: 1394437923:0;wget http://www.astro.virginia.edu/class/oconnell/astr1210/im/olympus-mons-3d-lg.jpg
+: 1394437975:0;wget http://www.astro.virginia.edu/class/oconnell/astr1210/im/marsglobe1-VM-hemis.jpg
+: 1394438040:0;rm olympus-mons-3d-lg.jpg*
+: 1394438190:0;yaourt -S clamav
+: 1394479113:0;nano bulk-start
+: 1394479405:0;kill 1176
+: 1394509241:0;yaourt ruby curses
+: 1394509271:0;yaourt rubygems
+: 1394509294:0;yaourt curses
+: 1394509318:0;yaourt curses ruby
+: 1394509389:0;ruby -v
+: 1394509403:0;irb
+: 1394509512:0;yaourt readline dev
+: 1394509517:0;yaourt readline
+: 1394509560:0;yaourt ruby
+: 1394509599:0;yaourt ruby gem
+: 1394509646:0;yaourt ruby | grep installed
+: 1394509703:0;gem install fzf
+: 1394509818:0;gem fzf
+: 1394509873:0;fzf
+: 1394509968:0;yaourt fzf vim
+: 1394509975:0;yaourt fzf
+: 1394510119:0;wget http://www.vim.org/scripts/download_script.php?src_id=13961
+: 1394510146:0;cp /home/sysop/Downloads/vim-fuzzyfinder.zip ./
+: 1394510300:0;cp plugin ~/.vim -R
+: 1394510310:0;cp plugin /home/sysop/.vim -R
+: 1394510314:0;cd /home/sysop/.vim
+: 1394510325:0;chown sysop.users plugin -R
+: 1394510399:0;cp /home/sysop/Downloads/vim-l9.zip ./
+: 1394510426:0;cp l9.vim ~/.vim/plugin
+: 1394510554:0;cd autoload
+: 1394510564:0;cd doc
+: 1394510629:0;rm l9.vim
+: 1394510635:0;rm autoload
+: 1394510636:0;rm autoload -R
+: 1394510639:0;rm doc -R
+: 1394510686:0;mv vim-l9.zip /usr/share/vim/vim74
+: 1394510704:0;unzip vim-l9.zip
+: 1394510707:0;rm vim-l9.zip
+: 1394510777:0;rm plugin -R
+: 1394510795:0;mv vim-fuzzyfinder.zip /usr/share/vim/vim74
+: 1394510803:0;cd /usr/share/vim/vim74
+: 1394510808:0;unzip vim-fuzzyfinder.zip
+: 1394517000:0;cd VIM
+: 1394517008:0;git clone https://github.com/gmarik/Vundle.vim.git
+: 1394517016:0;cd Vundle.vim
+: 1394517083:0;git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+: 1394517098:0;rm clang_complete.vmb
+: 1394519847:0;vim .zshrc
+: 1394520024:0;d\
+b\
+a\
+c\
+c\
+a\
+b\
+d\
+ls -ail\
+ls
+: 1394522281:0;iotop
+: 1394524044:0;history\
+d\
+c\
+d\
+ls -ail
+: 1394524140:0;ls -ail hello world
+: 1394524152:0;ckear
+: 1394526367:0;sleep 212m; mplayer alarm.wav -loop 3
+: 1394558542:0;yaourt fuzzy finder
+: 1394558563:0;yaourt -R fzf-git
+: 1394558586:0;yaourt -S fzf-git
+: 1394558668:0;nano .bashrc
+: 1394562939:0;ln -s SERVERS/debian-jesse-web web
+: 1394563111:0;ping 10.1.1.28
+: 1394563149:0;chmod 750 bulk-unload.sh
+: 1394563173:0;nano bulk-unload.sh
+: 1394566357:0;nano ~/.zshrc
+: 1394566936:0;xtei
+: 1394568690:0;cd .gem
+: 1394568696:0;du -sh *
+: 1394568706:0;cp .gem /home/sysop -R
+: 1394568714:0;chown sysop.users /home/sysop/.gem
+: 1394568715:0;chown sysop.users /home/sysop/.gem -R
+: 1394632210:0;./pre-hook.sh
+: 1394632261:0;./pre-hook.sh 423 231
+: 1394632600:0;seed=debian-jesse.seed
+: 1394632615:0;seedName=${seed%.*}
+: 1394632619:0;echo seedName
+: 1394632624:0;echo $seedName
+: 1394632640:0;echo ${${seed#$seedName}#.}
+: 1394632661:0;type=${${seed#$seedName}#.}
+: 1394632663:0;echo $type
+: 1394632680:0;./pre-hook.sh debian-jesse.seed
+: 1394632961:0;./pre-hook.sh debian-jesse.seed debian-jesse-www.raw
+: 1394633026:0;./pre-hook.sh debian-jesse-seed.raw debian-jesse-www.raw
+: 1394651104:0;~
+: 1394651604:0;./pre-hook.sh --seed=test --image=image --type=raw
+: 1394651817:0;test="--url=test.html"
+: 1394651844:0;echo ${%%test%=*}
+: 1394651848:0;echo ${%-test%=*}
+: 1394651852:0;echo ${--test%=*}
+: 1394651883:0;echo ${${test%=*}%--*}
+: 1394651884:0;echo ${${test%=*}%-*}
+: 1394651889:0;echo ${${test%=*}%%-*}
+: 1394651891:0;echo ${${test%=*}%%-}
+: 1394651893:0;echo ${${test%=*}%%--}
+: 1394651895:0;echo ${${test%=*}%--}
+: 1394651897:0;echo ${${test%=*}--}
+: 1394651903:0;echo ${${test%=*}#-}
+: 1394651906:0;echo ${${test%=*}##-}
+: 1394651908:0;echo ${${test%=*}#--}
+: 1394652054:0;echo ${test#=}
+: 1394652059:0;echo ${test%=}
+: 1394652085:0;echo $test#${test%=*}*}
+: 1394652092:0;echo ${$test#${test%=*}*}
+: 1394652095:0;echo ${$test#${test%=*}}
+: 1394652108:0;echo $test#${test%=*}-}
+: 1394652112:0;echo ${$test#${test%=*}-}
+: 1394652120:0;echo $test#${test%=*}
+: 1394652136:0;echo ${test%%=*}
+: 1394652163:0;arg= ${Test%=*}
+: 1394652172:0;arg=${test%=*}
+: 1394652174:0;echo $arg
+: 1394652224:0;echo ${${test}#=*}
+: 1394652233:0;echo ${${test#$arg}#=*}
+: 1394652250:0;echo ${test#$arg}
+: 1394652298:0;echo $test
+: 1394652305:0;echo ${test#=*}
+: 1394652308:0;echo ${test##=*}
+: 1394652312:0;echo ${test#%=*}
+: 1394652326:0;echo ${test#\=*}
+: 1394652331:0;echo ${test#test*}
+: 1394652335:0;echo ${test#--*}
+: 1394652340:0;echo ${test#url*}
+: 1394652346:0;echo ${test#.*}
+: 1394652366:0;echo ${test%=*}
+: 1394652374:0;com=${test%=*}
+: 1394652381:0;com=${com#--};
+: 1394652383:0;echo $com
+: 1394652410:0;lhs=${test%=*};
+: 1394652414:0;echo $lhs
+: 1394652438:0;echo ${test#$lhs}
+: 1394652469:0;rhs=${test#$lhs}
+: 1394652473:0;echo $rhs
+: 1394652493:0;echo ${rhs#=*}
+: 1394653305:0;vim .vimrc
+: 1394654276:0;./pre-hook.sh --url=http.html --image=fatso-debian.raw --seed=fatso.raw
+: 1394660193:0;du *
+: 1394660197:0;du * | sort -h
+: 1394660202:0;du -sh bundle
+: 1394660852:0;rm save.sh
+: 1394660872:0;cd bundle/vim-snippets
+: 1394660879:0;cat sh.snippets
+: 1394660897:0;vim sh.snippets
+: 1394661758:0;find .??*
+: 1394661762:0;find .??* *
+: 1394661911:0;find {1:-*} | most
+: 1394661964:0;find ${1:-*} | most
+: 1394661970:0;find ${2:-*} | most
+: 1394661978:0;find ${10:-*} | most
+: 1394661983:0;find ${10:-*} | wc -l
+: 1394662004:0;find ${1:-*} ${2:-.??*} | wc -l
+: 1394662008:0;find ${1:-*} ${2:-.??*} | most
+: 1394662256:0;find etc
+: 1394662528:0;find ${1:-*}
+: 1394662531:0;find ${1:-*} | wc -l
+: 1394662544:0;find ${1:-*} ${1:-.??*}| wc -l
+: 1394662590:0;ls -ail | most
+: 1394662654:0;find ${1:-*} ${1:-.??*} -path '*/\.*'| wc -l
+: 1394662672:0;find ${1:-*} ${1:-.??*} -path '*/\.*' -prune -o -type d -print 2 | wc -l
+: 1394662679:0;find ${1:-*} ${1:-.??*} -path '*/\.*' -prune -o -type d -print | wc -l
+: 1394662686:0;find ${1:-*} ${1:-.??*} -path -prune -o -type d -print | wc -l
+: 1394662700:0;find ${1:-*} ${1:-.??*} -prune -o -type d -print | \
+most
+: 1394662712:0;find ${1:-*} ${1:-.??*} -prune -o -type d -print | \
+
+: 1394662720:0;find ${1:-*} ${1:-.??*} -prune -o -type d -print | most\
+
+: 1394662735:0;find ${1:-*} ${1:-.??*} -type d -print | most\
+
+: 1394662745:0;find ${1:-*} ${1:-.??*} -type d -print | wc -l\
+
+: 1394662755:0;find ${1:-*} ${1:-.??*} -type d -print | wc -l | grep .Xauth\
+
+: 1394662788:0;find ${1:-*} ${1:-.??*} | wc -l
+: 1394662793:0;find ${1:-*} ${1:-.??*} | wc -l | grep .Xauth
+: 1394662800:0;find ${1:-*} ${1:-.??*} | grep .Xauth
+: 1394664163:0;cd .vim
+: 1394664170:0;cd Command-T
+: 1394664174:0;rake make
+: 1394668414:0;tmu
+: 1394671275:0;netctl disable wlp12s0
+: 1394671283:0;netctl stop wlp12s0
+: 1394671597:0;cd vim-snippets
+: 1394671601:0;cd snippets
+: 1394671609:0;cat sh.snippets | grep func
+: 1394671626:0;nano sh.snippets
+: 1394671816:0;losetup > loop
+: 1394671822:0;echo "$loop"
+: 1394671853:0;nano .zlogout
+: 1394671881:0;los="$(losetup)"
+: 1394671908:0;echo "$los" | awk {print $1}
+: 1394671917:0;echo "$los" | awk '{print $1}'
+: 1394672391:0;tel="1"
+: 1394672400:0;echo eval(tel+1)
+: 1394672404:0;echo eval($tel+1)
+: 1394672456:0;echo eval((tel+1))
+: 1394672460:0;echo ((tel+1))
+: 1394672464:0;echo (($tel+1))
+: 1394672469:0;echo $(($tel+1))
+: 1394679760:0;cat /etc/passwd
+: 1394687496:0;cd SERVERS/IMAGES
+: 1394687506:0;qemu-nbd -c /dev/nbd0 debian-jesse-projects.raw
+: 1394732130:0;cd /cd
+: 1394732139:0;/home/sysop/Downloads
+: 1394735907:0;file=debian-jesse-www.raw
+: 1394735909:0;echo $file
+: 1394735976:0;echo ${file#.*}
+: 1394735980:0;echo ${file%.*}
+: 1394735998:0;name=${file%.*}
+: 1394736045:0;echo ${}
+: 1394736078:0;echo ${file#$name%.}
+: 1394736080:0;echo ${file#$name#.}
+: 1394742740:0;mv pre-hook.sh pre-hook.sh
+: 1394742750:0;cat loop
+: 1394742753:0;rm loop
+: 1394742935:0;touch test.sh
+: 1394744666:0;rm .test.sh.swp
+: 1394744686:0;vim test.py
+: 1394744771:0;cd ~/.vim/bundle
+: 1394744792:0;cd syntastic
+: 1394744838:0;find ./ | wc -l
+: 1394744941:0;yaourt pyflakes
+: 1394745607:0;yaourt bash checker
+: 1394745632:0;yaourt bash syntax
+: 1394745777:0;lxc-create -n arch-test -t archlinux
+: 1394745790:0;yaourt pacstrap
+: 1394746373:0;yaourt oxacompile
+: 1394746377:0;yaourt osacompile
+: 1394746391:0;yaourt mcs
+: 1394746439:0;yaourt dmd
+: 1394747769:0;yaourt -S dtools
+: 1394747795:0;yaourt xmlint
+: 1394747803:0;yaourt xmllint
+: 1394747810:0;yaourt escript
+: 1394747819:0;yaourt gfortran
+: 1394747830:0;yaourt go
+: 1394747853:0;yaourt ghc-mod
+: 1394747865:0;yaourt hlint
+: 1394747943:0;yaourt tidy
+: 1394748029:0;yaourt validator
+: 1394748044:0;yaourt w3
+: 1394748098:0;yaourt checkstyle
+: 1394748193:0;yaourt closurecompiler
+: 1394748198:0;yaourt eslint
+: 1394748203:0;yaourt gjslint
+: 1394748210:0;yaourt tscs
+: 1394748214:0;yaourt jscs
+: 1394748222:0;yaourt jshint
+: 1394748230:0;yaourt jsl
+: 1394748292:0;yaourt jsxhint
+: 1394748337:0;yaourt jsonval
+: 1394748358:0;yaourt lessc
+: 1394748368:0;yaourt flex
+: 1394748381:0;yaourt clisp
+: 1394748386:0;yaourt llvm
+: 1394748422:0;yaourt luac
+: 1394748435:0;yaourt mlint
+: 1394748458:0;yaourt nasm
+: 1394748526:0;rm /var/lib/pacman/db.lck
+: 1394748528:0;yaourt -S nasm
+: 1394748536:0;yaourt mandoc
+: 1394748549:0;yaourt php
+: 1394748586:0;yaourt puppetlint
+: 1394748598:0;yaourt flake9
+: 1394748601:0;yaourt flake8
+: 1394748659:0;yaourt pylint
+: 1394748674:0;yaourt racket
+: 1394748884:0;yaourt -S rubylint
+: 1394748890:0;yaourt rubylint
+: 1394748897:0;yaourt fsc
+: 1394748905:0;yaourt scalac
+: 1394748922:0;yaourt makeinfo
+: 1394748929:0;yaourt lacheck
+: 1394748936:0;yaourt chktex
+: 1394748944:0;yaourt twiglint
+: 1394748951:0;yaourt tsc
+: 1394748987:0;yaourt valac
+: 1394748991:0;yaourt lisp
+: 1394749008:0;yaourt ghdl
+: 1394749495:0;yaourt bourne shell
+: 1394749521:0;man sh
+: 1394750706:0;yaourt verilator
+: 1394751730:0;yaourt bison
+: 1394751740:0;yaourt yamlxs
+: 1394751745:0;yaourt jsyaml
+: 1394751806:0;vim new.py
+: 1394752042:0;vim special.bash
+: 1394752066:0;rm special.bash
+: 1394752068:0;rm new.py
+: 1394752168:0;ls /usr/share/vim/vim74/
+: 1394752180:0;find ./ | grep synta
+: 1394752182:0;find ./ | grep syntas
+: 1394752185:0;cd ~/.vim
+: 1394752189:0;cd bundle
+: 1394755398:0;where is sh
+: 1394755404:0;ls /usr/bin/sh -ail
+: 1394755422:0;cd /usr/bin
+: 1394755425:0;rm sh
+: 1394755433:0;cp bash sh
+: 1394755439:0;ls -ail | grep sh
+: 1394755442:0;sh
+: 1394755555:0;vim sleepy
+: 1394759889:0;cd ~/.vim/bundle/syntastic
+: 1394759904:0;nano checkbashisms.vim
+: 1394759918:0;yaourt checkbashisms
+: 1394759953:0;vim backup.sh
+: 1394760046:0;ls /root/.vim/bundle/syntastic/syntax_checkers
+: 1394760050:0;ls /root/.vim/bundle/syntastic/syntax_checkers/sh
+: 1394760056:0;yaourt shellcheck
+: 1394760175:0;~/.vim/bundle/syntastic/sh
+: 1394760178:0;~/.vim/bundle/syntastic/
+: 1394760185:0;cd syntax_checkers
+: 1394760187:0;cd sh
+: 1394760191:0;nano sh.vim
+: 1394760285:0;ls /bin | grep sh
+: 1394760289:0;ls /bin | grep zsh
+: 1394760291:0;ls /bin | grep zsh -ail
+: 1394760300:0;ls /bin -ail | grep zsh
+: 1394760308:0;ls /bin -ail | grep bash
+: 1394760312:0;ls /bin -ail | grep sh
+: 1394760316:0;ls /bin -ail
+: 1394760326:0;ls -ail /bin
+: 1394760331:0;cd /bin
+: 1394760337:0;ls -ail | grep bash
+: 1394760344:0;ls -ail | grep zsh
+: 1394760348:0;./zsh
+: 1394768376:0;cd /home/sysop/scripts/
+: 1394768376:0;vim backup.sh 
+: 1394760693:0;vim hello.cpp
+: 1394760721:0;cd ~/.vim/bundle/syntastic/syntax_checkers/c
+: 1394760728:0;yaourt avrgcc
+: 1394760738:0;yaourt checkpatch
+: 1394760766:0;yaourt oclint
+: 1394761304:0;yaourt opttable
+: 1394761376:0;yaourt clang driver
+: 1394761385:0;yaourt clang lib
+: 1394761550:0;tar xfvz oclint-0.7-src.tar.gz
+: 1394761555:0;cd oclint-0.7-src
+: 1394761561:0;vim README
+: 1394761642:0;yaourt gnu ld
+: 1394761682:0;yaourt binutils gold
+: 1394761686:0;yaourt binutils
+: 1394761818:0;yaourt -S cmake
+: 1394761918:0;tar xfvz oclint-0.9.dev.525ebe0-x86_64-linux-3.5.0-23-generic.tar.gz
+: 1394761962:0;rm oclint*
+: 1394761964:0;rm oclint* -R
+: 1394761995:0;cd oclint
+: 1394762023:0;git checkout origin master
+: 1394763068:0;make clean
+: 1394763072:0;./make clean
+: 1394763119:0;git checkout origin/release_07
+: 1394763143:0;./buildAll
+: 1394763149:0;./buildAll.sh
+: 1394763167:0;whereis clang
+: 1394763200:0;git checkout origin/release_08
+: 1394763209:0;cd oclint-scripts
+: 1394763212:0;./make
+: 1394763744:0;tar xfvz oclint-0.7-x86_64-linux-ubuntu-12.04.tar.gz
+: 1394763749:0;cd oclint-0.7-x86_64-linux-ubuntu-12.04
+: 1394763770:0;mv * /usr/bin
+: 1394763774:0;cd lib
+: 1394763781:0;find ./
+: 1394763784:0;find ./ | most
+: 1394763795:0;mv * /usr/lib
+: 1394763801:0;cd clang
+: 1394763810:0;ls /usr/lib/clang
+: 1394763815:0;cd 3.3
+: 1394763824:0;cd include
+: 1394763830:0;oclint
+: 1394763844:0;cd /home
+: 1394763848:0;cd sysop
+: 1394763852:0;vim hello.c
+: 1394765143:0;rm hello.c
+: 1394765162:0;ls ~/.vim/bundle/syntastic/syntax_checkers
+: 1394765165:0;ls ~/.vim/bundle/syntastic/syntax_checkers/c
+: 1394765170:0;yaourt sparse
+: 1394765185:0;yaourt splint
+: 1394765204:0;yaourt cpplint
+: 1394765224:0;yaourt cppcheck
+: 1394765230:0;ls ~/.vim/bundle/syntastic/syntax_checkers/cpp
+: 1394765235:0;ls ~/.vim/bundle/syntastic/syntax_checkers/zsh
+: 1394765240:0;yaourt spellcheck
+: 1394765263:0;ls ~/.vim/bundle/syntastic/syntax_checkers/
+: 1394765267:0;ls ~/.vim/bundle/syntastic/syntax_checkers/html
+: 1394765280:0;ls ~/.vim/bundle/syntastic/syntax_checkers/css
+: 1394765352:0;cd /usr/src
+: 1394765356:0;cd GIT
+: 1394765369:0;git clone https://github.com/stubbornella/csslint.git
+: 1394765377:0;cd csslint
+: 1394765391:0;nano README.md
+: 1394765474:0;yaourt csslint
+: 1394768030:0;yaourt -R google-chrome
+: 1394768041:0;yaourt -S google-chrome
+: 1394824627:0;echo "" > /home/sysop/test.txt
+: 1394824640:0;rm /home/sysop/test.txt
+: 1394824645:0;touch /home/sysop/test.txt
+: 1394824659:0;cat /home/sysop/test.txt
+: 1394824963:0;name="debian-jesse-seed";
+: 1394824975:0;echo ${name%%-.*}
+: 1394824977:0;echo ${name%-.*}
+: 1394824981:0;echo ${name##-.*}
+: 1394824984:0;echo ${name#-.*}
+: 1394824987:0;echo ${name#-}
+: 1394824993:0;echo ${name#-*}
+: 1394824996:0;echo ${name%%-*}
+: 1394824998:0;echo ${name%-*}
+: 1394825048:0;base="debian-jesse"
+: 1394825060:0;cart=$base-seed.raw
+: 1394825063:0;echo $cart
+: 1394825128:0;dur=$(losetup | grep debian-jesse-seed.raw)
+: 1394825138:0;dur=$(losetup | "grep debian-jesse-seed.raw")
+: 1394825160:0;dur=losetup | grep "debian-jesse-seed.raw"
+: 1394825173:0;dur=${losetup | grep "debian-jesse-seed.raw"}
+: 1394825179:0;dur=$(losetup | grep "debian-jesse-seed.raw")
+: 1394825193:0;dur=$(losetup | grep "debian-jesse.raw")
+: 1394825196:0;echo $dur
+: 1394825215:0;echo ${dur%/.*}
+: 1394825226:0;echo ${dur%%/.*}
+: 1394825231:0;echo ${dur%%\/.*}
+: 1394825234:0;echo ${dur%\/.*}
+: 1394825236:0;echo ${dur%\.*}
+: 1394825239:0;echo ${dur#/.*}
+: 1394825244:0;echo ${dur#.*}
+: 1394825248:0;echo ${dur%.*}
+: 1394825259:0;echo ${dur#*}
+: 1394825262:0;echo ${dur#/*}
+: 1394825274:0;echo ${dur%/*}
+: 1394825290:0;echo ${${dur%/*}#$dur}
+: 1394825296:0;echo ${${dur%/*}#$dur#.*}
+: 1394831380:0;systemctl | grep wlp12s0
+: 1394831409:0;systemctl disable netctl@wlp12s0
+: 1394831833:0;echo ${${dur%/*}#}
+: 1394832022:0;file="debian-jesse-www.raw"
+: 1394832048:0;name="debian-jesse-www"
+: 1394832086:0;echo ${file#$name%}
+: 1394850936:0;file="debian-jesse-seed.raw"
+: 1394850936:0;name="debian-jesse-seed"
+: 1394850936:0;echo ${file#$name%.*}
+: 1394850936:0;echo ${file#$name#.*}
+: 1394850936:0;echo ${file#$name#}
+: 1394850936:0;echo ${file#$name}
+: 1394850936:0;ext=${file#$name}
+: 1394850936:0;echo $ext
+: 1394850936:0;echo ${ext#.*}
+: 1394850936:0;./pre-hook.sh --seed=debian-jesse-seed.raw --image=debian-jesse-www.raw
+: 1394850936:0;cat /home/sysop/test.txt 
+: 1394850936:0;find ./ | grep "debian-jesse.raw"
+: 1394850936:0;dub=$(losetup)
+: 1394850936:0;echo $dub
+: 1394850936:0;echo "$dub"
+: 1394850936:0;wc -l $dub
+: 1394850936:0;wc -l < <($dub)
+: 1394850936:0;wc -l <<($dub)
+: 1394850936:0;wc -l < <$($dub)
+: 1394850936:0;wc -l < <$(dub)
+: 1394850936:0;wc -l < <${dub}
+: 1394850936:0;echo "$dub" | wc -l
+: 1394850936:0;losetup | awk {print $2}
+: 1394850936:0;losetup | awk '{print $2}'
+: 1394850936:0;losetup | awk '{print $3}'
+: 1394850936:0;losetup | awk '{print $4}'
+: 1394850936:0;losetup | awk '{print $5}'
+: 1394850936:0;losetup | awk '{print $6}'
+: 1394850936:0;losetup | awk '{print $6}' | grep "debian-jesse.raw"
+: 1394850936:0;systemctl stop netctl@wlp12s0
+: 1394913630:0;nano ~/.zlogout 
+: 1394913630:0;a=5
+: 1394913630:0;echo $((a+2))
+: 1394913630:0;los="${losetup | awk '{print $6}'
+: 1394913630:0;"
+: 1394913630:0;los="${losetup | awk '{print $6}'"
+: 1394913630:0;los=${losetup | awk '{print $6}' ;
+: 1394913630:0;los=${losetup | awk '{print $6}'}
+: 1394913630:0;los=$(losetup | awk '{print $6}')
+: 1394913630:0;crn="/var/lib/lxc/SERVERS/IMAGES/debian-jesse-dbase.raw"
+: 1394913630:0;los=$(losetup | awk '{print $1}')
+: 1394913630:0;echo "$los"
+: 1394913630:0;crn="/dev/loop2"
+: 1394913630:0;echo ${crn#"loop"}
+: 1394913630:0;echo ${crn#loop.*}
+: 1394913630:0;echo ${crn%loop.*}
+: 1394913630:0;echo ${crn%"loop".*}
+: 1394913630:0;echo ${crn##"loop".*}
+: 1394913630:0;echo ${crn#"loop".*}
+: 1394913630:0;echo ${crn#"/dev/loop".*}
+: 1394913630:0;echo ${crn#"/dev/loop"}
+: 1394913630:0;fh
+: 1394867393:0;ps aux | grep gedit
+: 1394867396:0;kill 4170
+: 1394913627:0;su
+: 1394913810:0;rm .pre-hook.sh.swp
+: 1394914555:0;chmod 750 test.sh
+: 1394914581:0;vim bulk-unload.sh
+: 1394914599:0;ssh root@mercury.hypokrites.me
+: 1394914645:0;cd ../SCRIPTS
+: 1394917368:0;losetup /dev/loop3 debian-jesse-mail.raw
+: 1394917402:0;vim bulk-stop.sh
+: 1394917455:0;mount /dev/loop3 rootfs
+: 1394917468:0;lxc-start -n debian-jesse-mail -f ./config
+: 1394917525:0;lxc-stop -n debian-jesse-web -f ./config
+: 1394917541:0;lxc-stop -n debian-jesse-web
+: 1394917553:0;lxc-stop -n debian-jesse-web -k
+: 1394917571:0;ps aux | grep debian-jesse-web
+: 1394919427:0;cat test.sh >> pre-hook.sh
+: 1394921958:0;losetup /dev/loop3 /var/lib/lxc/SERVERS/SEEDS/debian-jesse.raw
+: 1394924592:0;nano bulk-load.sh
+: 1394924631:0;./test.sh
+: 1394925111:0;find "/var/lib/lxc/SERVERS" | grep "debian-jesse.raw"
+: 1394925314:0;losetup -d /dev/loop3
+: 1394925316:0;./pre-hook.sh --seed=debian-jesse.raw
+: 1394925324:0;./pre-hook.sh --seed=debian-jesse-mail.raw
+: 1394925550:0;man lxc.conf.config
+: 1394925556:0;man lxc.config.conf
+: 1394926135:0;targ=$(losetup | grep loop0)
+: 1394926141:0;echo "$targ"
+: 1394926165:0;echo $(echo $targ | awk '{print $1}')
+: 1394926320:0;vim ~/.vimrc
+: 1394966293:0;ls /dev/ | grep nbd
+: 1394966297:0;ls /dev/ | grep nbd | sort
+: 1394966301:0;ls /dev/ | grep nbd | sort -h
+: 1394966307:0;ls /dev/ | grep nbd | sort -h | most
+: 1394966365:0;nbd=$(ls /dev | grep nbd)
+: 1394966368:0;echo $nbd
+: 1394966405:0;echo "${nbd%nbd}"
+: 1394966421:0;echo "${nbd%nbd}
+: 1394966446:0;echo ${nbd%"nbd"}
+: 1394966459:0;nbdz="nbd8"
+: 1394966472:0;echo ${nbdz%nbd}
+: 1394966476:0;echo ${nbdz%nbd.*}
+: 1394966480:0;echo ${nbdz#nbd.*}
+: 1394966496:0;nbdz=$(ls /dev | grep nbd)
+: 1394966498:0;echo ${nbdz#nbd}
+: 1394966507:0;echo ${nbdz}
+: 1394966679:0;lsmod | grep nbd
+: 1394966695:0;lsmod | grep cat
+: 1394966823:0;ls /dev | grep nbd | sort -V
+: 1394966895:0;cd nbd0
+: 1394966928:0;qemu-nbd -c /dev/nbd0 /var/lib/lxc/SERVERS/SEEDS/arch-2014.raw
+: 1394966943:0;cat range
+: 1394966954:0;cat size
+: 1394967603:0;man qemu-nbd
+: 1394967616:0;man qemu-img
+: 1394967902:0;man lxc.config
+: 1394967970:0;mount | grep debian
+: 1394967977:0;mount | grep arch
+: 1394967987:0;fdisk /dev/ndb1
+: 1394968003:0;cd /sys/block
+: 1394968006:0;cd nbd1
+: 1394968016:0;mount | grep nbd
+: 1394968023:0;fdisk /dev/nbd0
+: 1395016687:0;lxc-start -n debian-jesse-domain -f ./config&
+: 1395016709:0;lxc-start -n debian-jesse-proxy -f ./config&
+: 1395017169:0;yaourt -Qdt
+: 1395017196:0;lxc-start -n arch-default -t archlinux
+: 1395017199:0;lxc-start -n arch-default -t arch
+: 1395017212:0;ls /usr/share/lxc/templates
+: 1395017236:0;yaourt -S arch install
+: 1395017242:0;yaourt arch install
+: 1395017249:0;lxc-create -n arch-default -t archlinux
+: 1395017370:0;lxc-start -n arch-default
+: 1395017987:0;lxc-stop -n arch-default
+: 1395018023:0;kill 31448
+: 1395018030:0;ps aux | grep arch-default
+: 1395019578:0;tar xfvz arch-default.tar.gz
+: 1395019623:0;mv arch-default ../
+: 1395019637:0;du -sh lxc *
+: 1395019652:0;cp lxc /run/media/sysop/250GB-Spare/lxc -Rp
+: 1395019846:0;cd arch-default
+: 1395019871:0;lxc-start -n arch-default -f arch-default/config
+: 1395019923:0;rm arch-default -R
+: 1395019933:0;tar xfvz arch.tar.gz
+: 1395020039:0;mv arch ../
+: 1395020054:0;find newroot
+: 1395020056:0;rmdir newroot
+: 1395020086:0;mv arch arch-browser
+: 1395020812:0;cd /run/media/sysop/250GB-Spare
+: 1395020814:0;du -sh lxc
+: 1395026592:0;tar cfvz arch-basic.tar.gz arch-browser
+: 1395026728:0;ping 10.1.1.1
+: 1395026759:0;git log
+: 1395026800:0;cd /home/sysop/.powerline
+: 1395026830:0;cd powerline-daemon
+: 1395026841:0;cd powerline-fonts
+: 1395026849:0;cd ipython
+: 1395026871:0;cd nftables
+: 1395026881:0;cd ruby
+: 1395026889:0;cd unionfs
+: 1395026898:0;cd I3
+: 1395026899:0;cd i3
+: 1395026924:0;cd solarized
+: 1395026931:0;cd urxvt-perls
+: 1395026940:0;cd ZSH
+: 1395026944:0;cd oh-my-zsh
+: 1395026953:0;cd zsh-syntax-highlighting
+: 1395026963:0;cd zsh
+: 1395026974:0;cd LINUX
+: 1395026979:0;cd linux
+: 1395027010:0;cd linux-stable
+: 1395027039:0;git fetch --tags
+: 1395027066:0;uname -a
+: 1395027097:0;mkdir APPS
+: 1395027103:0;mv arch-browser APPS
+: 1395027112:0;cd arch-browser
+: 1395027143:0;lxc-start -n arch-browser -f ./config
+: 1395036379:0;yaourt pulseaudio
+: 1395036578:0;systemctl status iptables
+: 1395036584:0;systemctl start iptables
+: 1395036593:0;lsmod | grep iptables
+: 1395036632:0;iptables -nVl
+: 1395036634:0;iptables -nVlL
+: 1395036636:0;iptables -nVL
+: 1395036637:0;iptables -L
+: 1395036908:0;pulseaudio --system
+: 1395036938:0;cd pulse
+: 1395036944:0;nano client.conf
+: 1395036977:0;nano daemon.conf
+: 1395037065:0;yaourt -S pavucontrol
+: 1395037114:0;pactl
+: 1395037124:0;yaourt pyqt
+: 1395037247:0;qpaeq
+: 1395040365:0;vim test.sh
+: 1395040400:0;man lxc.conf
+: 1395040507:0;cd SERVERS/SCRIPTS
+: 1395040554:0;lxc-start -n debian-jesse-dbase -f ./config&
+: 1395040589:0;kill 3765
+: 1395040851:0;cat bulk-unload.sh
+: 1395040859:0;./bulk-unload.sh
+: 1395042009:0;mount -l | grep debian-jesse
+: 1395042901:0;mount -l | grep "loop1"
+: 1395043154:0;mount -l | grep "loop0"
+: 1395043647:0;cd /var/lib/lxc/SERVERS/SCRIPTS
+: 1395043723:0;ssh root@mars.hypokrites.me
+: 1395043734:0;./post-hook.sh /var/lib/lxc/SERVERS/debian-jesse-dbase/rootfs
+: 1395043789:0;rm .post-hook.sh.swp
+: 1395044221:0;sleep 4h;mplayer alarm.wav -loop 4
+: 1395044317:0;losetup /dev/loop1 ../IMAGES/debian-jesse-dbase.raw
+: 1395044746:0;cd /var/lib/lx
+: 1395069792:0;ps aux | grep mysql
+: 1395069834:0;kill -9 22876
+: 1395069847:0;lxc-start -n debian-jesse-dbase -f ./config &
+: 1395070211:0;./bulk-start
+: 1395070893:0;ps aux | grep debian
+: 1395070916:0;cat resolv.conf
+: 1395070931:0;nslookup google.com
+: 1395074675:0;yaourt mysql client
+: 1395074714:0;mysql -h sql.hypokrites.me -u root -p
+: 1395074942:0;rroot
+: 1395076832:0;cd lxc/SERVERS
+: 1395076884:0;tar cfvz mysql.tar.gz mysql-old
+: 1395076906:0;mv mysql.tar.gz /var/lib/lxc
+: 1395076931:0;losetup -d /dev/loop1
+: 1395076957:0;rm debian-jesse-dbase.raw
+: 1395076998:0;qemu-img create -f raw debian-jesse-dbase.raw 16GB
+: 1395077001:0;qemu-img create -f raw debian-jesse-dbase.raw 16G
+: 1395077016:0;losetup /dev/loop1 debian-jesse-dbase.raw
+: 1395077066:0;mount /dev/loop0 rootfs
+: 1395077077:0;btrfs device add /dev/loop1 rootfs
+: 1395077249:0;cp ../debian-jesse-web/rootfs/etc/apt/apt.conf.d/squid-proxy rootfs/etc/apt/apt.conf.d
+: 1395077904:0;cp ../../mysql.tar.gz rootfs/var/lib -p
+: 1395079399:0;nmap sql.hypokrites.me
+: 1395079412:0;cd /var/lib
+: 1395079418:0;rm mysql -R
+: 1395079813:0;mysql -h sql.hypokrites.me -u phpmyadmin -p
+: 1395082811:0;ps aux | grep debian-jesse
+: 1395082830:0;cd SERVERS/debian-jesse-dbase
+: 1395082841:0;lxc-start -n debian-jesse-dbase -f ./config
+: 1395082867:0;cd /run/
+: 1395082880:0;cd media/sysop/250GB-Spare
+: 1395082882:0;cd archives
+: 1395082933:0;cd var/
+: 1395082941:0;cd mars
+: 1395082943:0;cd mnt
+: 1395082946:0;cd var/lib
+: 1395082954:0;cd mysql
+: 1395082963:0;du -sh * | sort -h
+: 1395082976:0;du -sh ./
+: 1395083025:0;cp mysql /var/lib/lxc/SERVERS/debian-jesse-dbase/rootfs/var/lib -Rp
+: 1395086536:0;ps aux | grep git
+: 1395086540:0;ps aux | grep proj
+: 1395086550:0;nmap git.hypokrites.me
+: 1395096229:0;cp Downloads/LocalSettings.php /var/lib/lxc/SERVERS/debian-jesse-web/rootfs/usr/share/mediawiki-1.22.4
+: 1395097526:0;grep "hook" *
+: 1395097629:0;ssh root@www.hypokrites.me
+: 1395097672:0;ssh root@dbase.hypokrites.me
+: 1395097677:0;ssh root@sql.hypokrites.me
+: 1395097699:0;ssh root@mail.hypokrites.me
+: 1395097710:0;ssh root@git.hypokrites.me
+: 1395097727:0;ssh root@proxy.hypokrites.me
+: 1395097782:0;cd .
+: 1395097783:0;.cd ..
+: 1395097824:0;mount -l | grep rootfs
+: 1395097924:0;cd /var/lib/lxc/SERVERS/debian-jesse-web
+: 1395098041:0;ps aux | grep web
+: 1395098266:0;../SCRIPTS/pre-hook.sh --seed=debian-jesse-seed.raw --image=debian-jesse-web.raw
+: 1395100681:0;losetup /dev/loop2 /var/lib/lxc/SERVERS/SEEDS/debian-jesse-dom.raw
+: 1395100687:0;losetup /dev/loop2 /var/lib/lxc/SERVERS/SEEDS/debian-jesse-domain.raw
+: 1395100692:0;losetup /dev/loop2 /var/lib/lxc/SERVERS/SEEDS/debian-jesse-d.raw
+: 1395100705:0;losetup /dev/loop2 /var/lib/lxc/SERVERS/SIMAGES/debian-jesse-
+: 1395100714:0;losetup /dev/loop2 /var/lib/lxc/SERVERS/IMAGES/debian-jesse-domain.raw
+: 1395100740:0;kill 10230
+: 1395100754:0;kill 10255
+: 1395100762:0;kill 11333
+: 1395100768:0;cat bulk-load.sh
+: 1395100784:0;losetup /dev/loop0 /var/lib/lxc/SERVERS/SEEDS/debian-jesse.raw
+: 1395100809:0;losetup /dev/loop5 /var/lib/lxc/SERVERS/IMAGES/debian-jesse-proxy.raw
+: 1395100843:0;mount /dev/loop2 rootfs
+: 1395100880:0;mount /dev/loop5 rootfs
+: 1395113256:0;alsamixer
+: 1395113275:0;hostname
+: 1395113278:0;su sysop
+: 1395113995:0;cd /etc/pacman.d
+: 1395114001:0;nano pacman.conf
+: 1395114062:0;route add default gw 10.1.1.1 br0
+: 1395114070:0;netctl restart br0
+: 1395114094:0;ping google.com
+: 1395114129:0;yaourt feh
+: 1395114175:0;ls -ail | grep feh
+: 1395114179:0;cd .fehbg
+: 1395114183:0;nano .fehbg
+: 1395114207:0;nano .xinitrc
+: 1395114228:0;cat .xinitrc
+: 1395114246:0;mkdir /usr/local/share/background-images
+: 1395114498:0;cd Desktop
+: 1395114512:0;cp arch-dtbg.png /usr/local/share/background-images
+: 1395114527:0;ls /usr/local/share/background-images
+: 1395114622:0;mv /usr/local/share/background-images/arch-dtbg.png /usr/local/share/background-images/arch_dtbg.png
+: 1395114625:0;/usr/bin/feh --bg-center /usr/local/share/background-images/arch_dtbg.png&
+: 1395119760:0;find / | grep arch
+: 1395119835:0;man lxc.container.conf
+: 1395120115:0;vim pre-hook.sh
+: 1395120151:0;cd *web
+: 1395120183:0;echo "" > text.txt
+: 1395123456:0;rm text.txt
+: 1395123462:0;touch text.txt
+: 1395123530:0;cat config
+: 1395124033:0;find ! -path "*/rootfs/*" "/var/lib/lxc/SERVERS" | grep "debian-jesse-seed.raw"
+: 1395124081:0;find /var/lib/lxc/SERVERS | grep "debian-jesse-seed.raw"
+: 1395124118:0;ls /var/lib/lxc/SERVERS/SEEDS
+: 1395124131:0;vim ../SCRIPTS/pre-hook.sh
+: 1395124184:0;find /var/lib/lxc/SERVERS | grep "debian-jesse.raw"
+: 1395124199:0;find "/var/lib/lxc/SERVERS" ! -path "*/rootfs/*" | grep "debian-jesse-seed.raw"
+: 1395124203:0;find "/var/lib/lxc/SERVERS" ! -path "*/rootfs/*" | grep "debian-jesse.raw"
+: 1395124512:0;vim post-hook.sh
+: 1395124955:0;mount -l
+: 1395124962:0;mount -l | grep "rootfs"
+: 1395124968:0;mount -l | grep "/dev/loop0"
+: 1395125177:0;lxc-start -n debian-jesse-web -f ./config
+: 1395125634:0;vim config
+: 1395125712:0;vim run
+: 1395125741:0;mv run run.sh
+: 1395125813:0;cd SERVERS/debian-jesse-projects
+: 1395125823:0;name=$(pwd)
+: 1395125872:0;echo ${name%/}
+: 1395125880:0;echo ${name%%/}
+: 1395125885:0;echo ${name}
+: 1395125889:0;echo ${name##/}
+: 1395125892:0;echo ${name#/}
+: 1395125899:0;echo ${name#/*}
+: 1395125901:0;echo ${name##/*}
+: 1395125910:0;echo ${name%%/*}
+: 1395125912:0;echo ${name%/*}
+: 1395125972:0;part=${name%/*}
+: 1395125990:0;echo {name#$part%*}
+: 1395125993:0;echo {name#$part%}
+: 1395125996:0;echo {name#$part}
+: 1395126010:0;echo {name#$part%/}
+: 1395126013:0;echo {name#$part#/}
+: 1395126015:0;echo {name#$part#/*}
+: 1395126019:0;echo {name#$part%/*}
+: 1395126037:0;echo ${name#$part%/*}
+: 1395126080:0;vim run.sh
+: 1395126101:0;chmod 750 run.sh
+: 1395126204:0;
+: 1395126364:0;bash
+: 1395178114:0;name="/var/lib/lxc/SERVERS/debian-jesse-domain"
+: 1395178114:0;Â part="/var/lib/lxc/SERVERS"
+: 1395178114:0;part="/var/lib/lxc/SERVERS"
+: 1395178114:0;echo $part
+: 1395178114:0;echo $name
+: 1395178114:0;echo ${name#$part#}
+: 1395178114:0;echo ${name#$part%}
+: 1395178114:0;echo ${name#$part%*}
+: 1395178114:0;echo ${name#$part#/*}
+: 1395178114:0;echo ${name#$part%/}
+: 1395178114:0;echo ${name#$part#/}
+: 1395178114:0;echo ${name#$part}
+: 1395126503:0;zil="/debian-jesse-domain"
+: 1395126510:0;echo ${zil#/*}
+: 1395126555:0;cp run.sh ../debian-jesse-proxy -p
+: 1395126559:0;cp run.sh ../debian-jesse-mail -p
+: 1395126564:0;cp run.sh ../debian-jesse-projects -p
+: 1395126568:0;cp run.sh ../debian-jesse-dbase -p
+: 1395126572:0;cp run.sh ../debian-jesse-web -p
+: 1395126586:0;./run
+: 1395126709:0;rm mysql.tar.gz
+: 1395126719:0;rm arch-basic.tar.gz
+: 1395126725:0;cat lxc-monitord.log
+: 1395127326:0;systemctl enable lxc@debian-jesse-domain.service
+: 1395127415:0;kill 29998
+: 1395127526:0;systemctl disable lxc@debian-jesse-domain.service
+: 1395127547:0;ln -s /var/lib/lxc/SERVERS/debian-jesse-domain domain
+: 1395127565:0;systemctl enable lxc@domain
+: 1395127574:0;systemctl start lxc@domain
+: 1395127588:0;systemctl status lxc@domain
+: 1395127626:0;kill -9 29998
+: 1395127640:0;systemctl disable lxc@domain
+: 1395168762:0;systemctl enable lxc@arch
+: 1395168771:0;systemctl start lxc@arch
+: 1395168855:0;ssh root@10.1.1.239
+: 1395168906:0;systemctl stop lxc@arch
+: 1395168923:0;ifconfig wlp12s0 down
+: 1395168926:0;route
+: 1395168945:0;ps aux | grep arch
+: 1395168960:0;nmap 10.1.1.239
+: 1395168969:0;cd arch
+: 1395169210:0;rm arch -R
+: 1395169225:0;rm domain
+: 1395169226:0;rm web
+: 1395169244:0;systemctl disable lxc@arch
+: 1395169312:0;cd /etc/systemd
+: 1395169317:0;find ./ | grep lxc
+: 1395169339:0;cd /usr/lib/systemd/
+: 1395169347:0;cd system
+: 1395169350:0;nano lxc
+: 1395170088:0;cp * /run/media/sysop/250GB-Spare/lxc/ -Rpf
+: 1395171211:0;cp lxc@.service lxc-server@.service
+: 1395171236:0;cp lxc@.service lxc-app@.service
+: 1395171574:0;systemctl disable lxc@debian-jesse.domain.service
+: 1395171593:0;rm /etc/systemd/system/multi-user.target.wants/lxc@debian-jesse-domain.service
+: 1395171595:0;ls /etc/systemd/system/multi-user.target.wants
+: 1395171706:0;nano lxc-server@.service
+: 1395171721:0;ls /var/lib/lxc/SERVERS/debian-jesse-domain/config
+: 1395171765:0;systemctl status lxc-server@debian-jesse-domain
+: 1395171778:0;systemctl start lxc-server@debian-jesse-domain
+: 1395172003:0;systemctl enable lxc-server@debian-jesse-domain.service
+: 1395172026:0;cd systemd/system
+: 1395172042:0;journalctl -xn
+: 1395172066:0;cd SERVERS/debian-jesse-domain
+: 1395172131:0;nano test.txt
+: 1395172140:0;nano text.txt
+: 1395172162:0;cat text.txt
+: 1395173454:0;/var/lib/lxc/SERVERS/debian-jesse-domain/run.sh
+: 1395173463:0;/var/lib/lxc/SERVERS/debian-jesse-domain/
+: 1395173596:0;nano ./run.sh
+: 1395173649:0;systemctl disable lxc-server@debian-jesse-domain.service
+: 1395173663:0;systemctl enable lxc-server@debian-jesse-domain
+: 1395173771:0;nano /usr/lib/systemd/system/lxc-server@.service
+: 1395174624:0;systemctl disable lxc-server@debian-jesse-domain
+: 1395174626:0;systemctl start lxc-server@debian-jesse-domain.service
+: 1395174737:0;cp /home/sysop/scripts ./ -R
+: 1395174747:0;./listmods
+: 1395174752:0;nano listmods
+: 1395174772:0;touch lxc-find.sh
+: 1395174782:0;mv lxc-find.sh lxc-find
+: 1395174787:0;vim lxc-find
+: 1395174807:0;mv lxc-find lxc-find.sh
+: 1395174809:0;vim lxc-find.sh
+: 1395175635:0;chmod 750 lxc-activate
+: 1395175643:0;./lxc-activate debian-jesse-domain
+: 1395175660:0;nmap -sP 10.1.1.0/24
+: 1395175674:0;ping 10.1.1.220
+: 1395175703:0;rm lxc-find.sh
+: 1395175711:0;cd /usr/sbin
+: 1395175724:0;ln -s /root/scripts/lxc-activate lxc-activate
+: 1395175731:0;updatedb
+: 1395175878:0;lxc-activate
+: 1395176288:0;rm /usr/lib/systemd/system/lxc-app@.service
+: 1395176291:0;rm /usr/lib/systemd/system/lxc-server@.service
+: 1395176304:0;nano lxc@.service
+: 1395176604:0;ls /var/lib/lxc/SERVERS
+: 1395176648:0;systemctl status lxc@debian-jesse-web
+: 1395176653:0;systemctl status lxc@debian-jesse-dbase
+: 1395176656:0;systemctl status lxc@debian-jesse-proxy
+: 1395176659:0;systemctl status lxc@debian-jesse-projects
+: 1395176689:0;ps aux | grep jesse
+: 1395177966:0;lxc-activate debian-jesse-web
+: 1395177979:0;cat /usr/sbin/lxc-activate
+: 1395178021:0;kill -9 5447
+: 1395178033:0;kill -9 14317
+: 1395178042:0;lxc-start -d -n debian-jesse-domain -f /var/lib/lxc/SERVERS/debian-jesse-domain/config
+: 1395178062:0;kill -9 15159
+: 1395178156:0;lxc-start -n debian-jesse-domain -f /var/lib/lxc/SERVERS/debian-jesse-domain/config
+: 1395181188:0;./run.sh&
+: 1395181845:0;kill -9 3352
+: 1395181854:0;kill -7 3352
+: 1395181944:0;systemctl list-unit-files | grep lxc@
+: 1395181983:0;rm lxc*
+: 1395181988:0;nano netctl
+: 1395181991:0;nano netctl.service
+: 1395182076:0;systemctl enable lxc@debian-jesse-domain
+: 1395182229:0;nmap 10.1.1.229
+: 1395182241:0;kill -9 664
+: 1395183616:0;nmap 10.1.1.220
+: 1395191152:0;nmap 10.1.1.0/24
+: 1395191325:0;ifconfig
+: 1395193176:0;yaourt autodev
+: 1395193197:0;cat /var/lib/lxc/SERVERS/debian-jesse-domain/config
+: 1395193236:0;nano /var/lib/lxc/SERVERS/debian-jesse-domain/config
+: 1395193353:0;./bulk-load.sh
+: 1395193373:0;cd etc/systemd/system
+: 1395193384:0;find ./ | grep udev
+: 1395193395:0;find /etc/systemd/system | grep dev
+: 1395193422:0;ln -s /dev/null /etc/systemd/system/systemd-udevd.service
+: 1395193458:0;rm /etc/systemd/system/systemd*
+: 1395193466:0;rm /etc/systemd/system/proc-sys-fs-binfmt_misc.automount
+: 1395193476:0;arch-chroot rootfs
+: 1395194036:0;cd /usr/src/GIT/ZSH/oh-my-zsh
+: 1395194058:0;cd plugins
+: 1395194286:0;nano .zshrc
+: 1395194564:0;yaourt jsonlint
+: 1395194615:0;git pull origin develop
+: 1395194647:0;cat common.py
+: 1395194722:0;vim config_files/config.json
+: 1395195156:0;cd plugin
+: 1395195166:0;vim syntastic.py
+: 1395195422:0;find ./ | grep themes
+: 1395195447:0;cd powerline/config_files
+: 1395195534:0;vim default_leftonly.json
+: 1395195561:0;vim select.json
+: 1395195575:0;cp default.json custom.json
+: 1395195642:0;cd vim
+: 1395195707:0;vim colorschemes/shell/solarized.json
+: 1395195870:0;vim solarized.json
+: 1395195921:0;cd colorschemes
+: 1395196014:0;vim colors.json
+: 1395196057:0;vim continuation.json
+: 1395196154:0;cd lint
+: 1395196405:0;vim shell
+: 1395196570:0;date
+: 1395196795:0;vim shell/custom.json
+: 1395197217:0;vim custom.json
+: 1395197258:0;mv default.json default-old.json
+: 1395197264:0;mv custom.json default.json
+: 1395197279:0;cd .powerline
+: 1395197290:0;owd
+: 1395197498:0;cd ~/.powerline/powerline/config_files
+: 1395197503:0;nano config.json
+: 1395197579:0;cd ~/.powerline/powerline
+: 1395197606:0;rm config.json
+: 1395197610:0;mv config-old.json config.json
+: 1395197641:0;cp config.json config-old.json
+: 1395197665:0;nano default.json
+: 1395197737:0;zsh
+: 1395197771:0;powerline
+: 1395202188:0;cd themes
+: 1395202191:0;cd shell
+: 1395202202:0;vim default
+: 1395202210:0;vim default.json
+: 1395203531:0;nano .vimrc
+: 1395203564:0;virtualenv
+: 1395203749:0;virtualenv --help
+: 1395203757:0;man virtualenv
+: 1395203820:0;virtualenv venv
+: 1395203835:0;cd venv
+: 1395203877:0;source venv/bin/activate
+: 1395203881:0;cd bin
+: 1395203885:0;./activate
+: 1395203899:0;source ./activate
+: 1395203927:0;vim
+: 1395209475:0;cd segments
+: 1395209482:0;vim common.py
+: 1395209549:0;cd config_files
+: 1395209553:0;vim config.json
+: 1395215362:0;echo $http_proxy
+: 1395215369:0;nano /etc/wgetrc
+: 1395215391:0;wget http://dist.schmorp.de/rxvt-unicode/rxvt-unicode-9.19.tar.bz2
+: 1395215408:0;tar xfvj rxvt-unicode-9.19.tar.bz2
+: 1395215417:0;cd rxvt-unicode-9.19
+: 1395215421:0;cd src
+: 1395215431:0;find ./ | grep fix
+: 1395247716:0;freshclam
+: 1395248469:0;cd ~/.Xdef
+: 1395248478:0;nano .Xdefaults
+: 1395249800:0;kill -9 10728
+: 1395249802:0;ps aux | grep lxc\\
+: 1395259293:0;
+: 1395249899:0;touch log.txt
+: 1395249903:0;lxc-start -n debian-jesse-domain -f ./config -L log.txt
+: 1395249993:0;lxc-start -n debian-jesse-domain -f ./config -o log.txt -l DEBUG
+: 1395250021:0;ps aux | grep domain
+: 1395250251:0;systemctl enable lxc@debian-jesse-proxy
+: 1395250359:0;cd /var/lib/lxc/SERVERS
+: 1395250422:0;man lxc-start
+: 1395251400:0;mkdir DATA
+: 1395251413:0;ssh root@10.1.1.220
+: 1395251433:0;mv APPS DATA
+: 1395251435:0;mv ARCHIVES DATA
+: 1395251441:0;mv SERVERS DATA
+: 1395251447:0;mv WIP DATA
+: 1395251479:0;ln ./DATA/SERVERS/debian-jesse-domain debian-jesse-domain
+: 1395251492:0;ln -s ./DATA/SERVERS/debian-jesse-domain debian-jesse-domain
+: 1395251529:0;cp run.sh ../debian-jesse-mail
+: 1395251532:0;cp run.sh ../debian-jesse-projects
+: 1395251537:0;cp run.sh ../debian-jesse-dbase
+: 1395251539:0;cp run.sh ../debian-jesse-web
+: 1395251543:0;cp run.sh ../debian-jesse-domain
+: 1395251570:0;cd debian-jesse-mail
+: 1395251710:0;ln -s DATA/SERVERS/debian-jesse-proxy debian-jesse-proxy
+: 1395251905:0;nano post-hook.sh
+: 1395252523:0;./debian-jesse-proxy/run.sh
+: 1395252715:0;nano lxc@debian-jesse-domain.service
+: 1395252913:0;kill -9 1054
+: 1395252981:0;cd lxc-start
+: 1395253169:0;poweroff
+: 1395253229:0;cd /home/sysop
+: 1395253312:0;cd rootfs.de
+: 1395253318:0;nano rootfs.dev
+: 1395253332:0;cd /dev/.lxc
+: 1395253338:0;cd /dev
+: 1395253343:0;ls -ail | grep lxc
+: 1395253354:0;rm debian-jesse-domain
+: 1395253358:0;rm debian-jesse-proxy
+: 1395253385:0;mv debian-jesse-domain /var/lib/lxc
+: 1395253390:0;mv debian-jesse-proxy /var/lib/lxc
+: 1395253447:0;lxc-start -n debian-jesse-proxy -f ./config
+: 1395253462:0;yaourt -S linux
+: 1395253498:0;yaourt -S lxc
+: 1395253645:0;rm rootfs.dev
+: 1395253648:0;rm rootfs.hold
+: 1395253653:0;rm log.txt
+: 1395253733:0;cd /etc
+: 1395253736:0;nano resolv.conf
+: 1395253750:0;/var/lib/lxc
+: 1395253754:0;;ls
+: 1395253756:0;cd rootfs
+: 1395253792:0;cd SERVERS
+: 1395253797:0;mv IMAGES ../
+: 1395253800:0;mv SCRIPTS ../
+: 1395253803:0;mv SEEDS ../
+: 1395253806:0;mv TEMPLATES ../
+: 1395253815:0;cd WIP
+: 1395253822:0;cd ARCHIVES
+: 1395253828:0;cd APPS
+: 1395253912:0;cd ../DATA
+: 1395253919:0;cd IMAGES
+: 1395253923:0;lcd ..
+: 1395253939:0;losetup /dev/loop0 ../SEEDS/debian-jesse.raw
+: 1395253946:0;losetup /dev/loop1 debian-jesse-domain.raw
+: 1395254103:0;lxc-stop --kill -n debian-jesse-domain
+: 1395254121:0;kill -9 5054
+: 1395254208:0;lxc-start -n debian-jesse-domain -f ./config -o log.txt
+: 1395254342:0;cp /lxc /run/media/sysop/250GB-Spare
+: 1395254350:0;cp /lxc /run/media/sysop/250GB-Spare/lxc2 -Rp
+: 1395254356:0;cp lxc /run/media/sysop/250GB-Spare/lxc2 -Rp
+: 1395254382:0;df
+: 1395256621:0;yaourt -R lxc
+: 1395256897:0;lxc-stop -n arch
+: 1395256907:0;lxc-stop --kill -n arch
+: 1395256959:0;nano fstab
+: 1395256968:0;nano run.sh
+: 1395257035:0;cat log.txt
+: 1395257051:0;./run.sh
+: 1395257112:0;env | most
+: 1395257362:0;lxc-start -n debian-jesse-domain -f config
+: 1395257385:0;cd /etc/lxc
+: 1395257388:0;nano default.conf
+: 1395257425:0;cd rootfs.dev
+: 1395257436:0;cd arch.23864f5710920562
+: 1395257459:0;cd user
+: 1395257502:0;ls /dev/.lxc
+: 1395257554:0;tmux
+: 1395257571:0;cd Downloads
+: 1395257691:0;lxc-create -n debian-jessie-domain
+: 1395257706:0;lxc-create -n debian-jessie-domain -f debian-jessie-domain/config
+: 1395257715:0;lxc-create -n debian-jesse-domain -f debian-jessie-domain/config
+: 1395257755:0;rm lxc-monitord.log
+: 1395257756:0;sl
+: 1395257774:0;lxc-start -n debian-jesse-domain -f debian-jessie-domain/config
+: 1395258045:0;liblxc
+: 1395258048:0;yaourt liblxc
+: 1395258052:0;yaourt lxc
+: 1395258140:0;git clone https://github.com/lxc/lxc.git
+: 1395258167:0;cd lxc
+: 1395258175:0;nano README
+: 1395258259:0;rmdir debian-jessie-domain
+: 1395258269:0;lxc-start -n debian-jesse-domain
+: 1395258288:0;kill 3871
+: 1395258293:0;cd debian-jesse-domain
+: 1395258415:0;lxc-start -n debian-jesse-domain -f ./config
+: 1395258434:0;cd /var/cache/lxc
+: 1395258449:0;lxc-create -n arch -t -archlinux
+: 1395258454:0;lxc-create -n arch -t archlinux
+: 1395258971:0;lxc-create -n arch2 -t archlinux
+: 1395259136:0;mplayer -playlist stream.pls -ao
+: 1395259153:0;mplayer -playlist stream.pls -ao pulse
+: 1395259176:0;mplayer -playlist stream.pls -ao=pulse
+: 1395259192:0;cd /etc/
+: 1395259195:0;cd mplayer
+: 1395259219:0;cd ~
+: 1395259226:0;mkdir .mplayer
+: 1395259230:0;cd .mplayer
+: 1395259242:0;cd /home/sysop/Downloads
+: 1395259246:0;mplayer -pl stream.pls
+: 1395259253:0;mplayer -playlist stream.pls
+: 1395259267:0;nano /etc/resolv.conf
+: 1395259280:0;mplayer jb030414.mp3
+: 1395264112:0;lxc-ls --fancy
+: 1395268886:0;lxc-start -n arch
+: 1395472365:0;chmod 750 gitupdate.sh
+: 1395472553:0;pat="/usr/src/GIT/";
+: 1395472585:0;pat="/usr/src/GIT/lxc/";
+: 1395472590:0;pat="/usr/src/GIT/lxc/.git";
+: 1395472605:0;echo ${pat#.git}
+: 1395472611:0;echo ${pat%.git}
+: 1395472679:0;ark=${pat%.git}
+: 1395472688:0;man git
+: 1395472724:0;cd $ark
+: 1395472726:0;pwd
+: 1395472751:0;cd POWERLINE
+: 1395472754:0;cd powerline
+: 1395472771:0;git status | awk {print $3};
+: 1395472773:0;git status | awk {print $3}
+: 1395472782:0;git status | awk '{print $3}'
+: 1395472873:0;git status | awk '{print $3}' | head -n 1
+: 1395473116:0;ls;
+: 1395473137:0;kill 32450
+: 1395473139:0;ps aux | grep vim
+: 1395473143:0;kill 32613
+: 1395473144:0;:
+: 1395473156:0;rm .gitupdate.sh.swp
+: 1395473157:0;rm .gitupdate.sh.swo
+: 1395473272:0;echo $pat
+: 1395473279:0;pat="/usr/src/GIT"
+: 1395473282:0;find $pat | grep -E ".git$"
+: 1395473289:0;find $pat | grep -E "..git$"
+: 1395473297:0;find $pat | grep -E ".\.git$"
+: 1395473488:0;vim lxc-activate
+: 1395473524:0;vim coincheck-qt
+: 1395473540:0;:q
+: 1395474427:0;cd /usr/src/GIT/file-roller
+: 1395474450:0;git stash
+: 1395474454:0;git clean
+: 1395474499:0;rm file-roller -R
+: 1395474510:0;nano /home/sysop/Projects/notes/fileroller.txt
+: 1395474532:0;cd file-roller
+: 1395474563:0;cd /usr/src/GIT/oclint
+: 1395474630:0;git clean - f
+: 1395474643:0;rm oclint -R
+: 1395474682:0;git clone https://github.com/oclint/oclint.git
+: 1395474727:0;cd /usr/src/GIT/CCOINS/FeatherCoin
+: 1395474765:0;rm FeatherCoin
+: 1395474774:0;rm FeatherCoin -r
+: 1395474778:0;git clone https://github.com/FeatherCoin/Feathercoin.git
+: 1395474793:0;cd Feathercoin
+: 1395474809:0;git pull origin master-0.8.6
+: 1395474847:0;cd /usr/src/GIT/CCOINS/bitcoin
+: 1395474862:0;git clean -f
+: 1395474868:0;git checkout master
+: 1395474874:0;git checkout origin/master
+: 1395474878:0;rm bitcoin -R
+: 1395474893:0;git clone https://github.com/bitcoin/bitcoin.git
+: 1395474930:0;cd bitcoin
+: 1395474933:0;git pull origin master
+: 1395475105:0;sleep 40m;poweroff;
+: 1395533526:0;cd ~/.powerline
+: 1395533528:0;git status
+: 1395533546:0;cd CCOINS
+: 1395533549:0;cd dogecoin
+: 1395533557:0;git branch
+: 1395533798:0;lxc-destroy -n arch
+: 1395533800:0;lxc-destroy -n arch2
+: 1395533819:0;lxc-create -n arch-temp -t archlinux
+: 1395533882:0;lxc-start -n arch-temp
+: 1395533903:0;lxc-stop -n arch-temp
+: 1395533917:0;lxc-stop --kill -n arch-temp
+: 1395533965:0;kill 355
+: 1395533973:0;systemctl | grep lxc
+: 1395538366:0;cd DATA
+: 1395538371:0;cd SCRIPTS
+: 1395538399:0;./pre-hook.sh --seed=../IMAGES/debian-jesse-web.raw --image=../IMAGES/debian-jesse-proxy.raw
+: 1395538412:0;nano pre-hook.sh
+: 1395538455:0;losetup -d /dev/loop0
+: 1395538471:0;cd SEEDS
+: 1395538476:0;losetup /dev/loop0 debian-jesse.raw
+: 1395538481:0;cd //
+: 1395538500:0;mount /dev/loop1 rootfs
+: 1395540765:0;cd /
+: 1395540787:0;lxc-start -n debian-jesse-proxy -f /var/lib/lxc/debian-jesse-proxy/config
+: 1395540862:0;lxc-start debian-jesse-proxy -f debian-jesse-proxy/config
+: 1395540976:0;lxc-destroy -n arch-temp
+: 1395540981:0;lxc-start -n debian-jesse-proxy -f debian-jesse-proxy/config
+: 1395541047:0;cd /root/scripts
+: 1395541112:0;nano lxc-activate
+: 1395541182:0;ssh root@quaoar.hypokrites.me
+: 1395541195:0;ssh root@jupiter.hypokrites.me
+: 1395541488:0;cd /usr/lib/systemd/system/
+: 1395541492:0;vim lxc@.service
+: 1395541567:0;lxc-stop -n debian-jesse-domain
+: 1395541700:0;systemctl | grep lxc@
+: 1395541721:0;systemctl start lxc@debian-jesse-domain
+: 1395541730:0;systemctl start lxc@debian-jesse-proxy
+: 1395541759:0;systemctl stop lxc@debian-jesse-proxy
+: 1395541790:0;yaourt -Syua
+: 1395547772:0;cd DATA/SERVERS
+: 1395547783:0;mv debian-jesse-dbase ../../
+: 1395547793:0;mv debian-jesse-web ../../
+: 1395547799:0;mv debian-jesse-projects ../../
+: 1395547803:0;cd ../..
+: 1395547945:0;nmap 10.1.1.81 -sT
+: 1395547985:0;lxc-stop -n debian-jesse-projects
+: 1395548117:0;lxc-start -n debian-jesse-projects -f debian-jesse-projects/config
+: 1395548155:0;lxc-activate debian-jesse-domain
+: 1395548164:0;lxc-activate debian-jesse-proxy
+: 1395548619:0;ssh root@10.1.1.81
+: 1395548635:0;lxc-activate debian-jesse-projects
+: 1395548662:0;systemctl | grep haveged
+: 1395548683:0;systemctl enable lxc@debian-jesse-projects
+: 1395548691:0;systemctl start lxc@debian-jesse-projects
+: 1395548713:0;ssh -v root@10.1.1.81
+: 1395548724:0;clear
+: 1395548768:0;lxc-activate debian-jesse-dbase
+: 1395548850:0;ssh -v root@10.1.1.18
+: 1395549098:0;ping 10.1.1.18
+: 1395549227:0;lxc-stop --kill -n debian-jesse-dbase
+: 1395549279:0;kill 18700
+: 1395549283:0;kill -9 18700
+: 1395549327:0;ps aux | grep dbase
+: 1395549338:0;lxc-start -n debian-jesse-dbase -f debian-jesse-dbase/config -o debian-jesse-dbase/log.txt
+: 1395549424:0;losetup -d /dev/loop5
+: 1395549434:0;htop
+: 1395551819:0;lxc-ls
+: 1395551864:0;lxc-start -n debian-jesse-dbase -f debian-jesse-dbase/config
+: 1395552070:0;nano config
+: 1395552112:0;lxc-start -n debian-jesse-web -f debian-jesse-web/config
+: 1395616707:0;cd /etc/systemd/system
+: 1395616709:0;cd multi-user.target.wants
+: 1395616763:0;systemctl enable lxc@debian-jesse-dbase
+: 1395616765:0;systemctl enable lxc@debian-jesse-web
+: 1395616776:0;systemctl start lxc@debian-jesse-web
+: 1395616782:0;nmap 10.1.1.80
+: 1395616806:0;systemctl stop lxc@debian-jesse-domain
+: 1395616872:0;systemctl stop lxc@debian-jesse-projects
+: 1395617159:0;systemctl start lxc@debian-jesse-proxy.service
+: 1395617170:0;systemctl start lxc@debian-jesse-dbase.service
+: 1395617191:0;systemctl start lxc@debian-jesse-projects.service
+: 1395617239:0;nmap jupiter
+: 1395617242:0;nmap mars
+: 1395617247:0;nmap venus
+: 1395617253:0;nmap git
+: 1395617257:0;nmap quaoar
+: 1395617479:0;systemctl stop lxc@debian-jesse-domain.service
+: 1395617504:0;systemctl stop lxc@debian-jesse-proxy.service
+: 1395617554:0;systemctl stop lxc@debian-jesse-dbase.service
+: 1395617707:0;systemctl stop lxc@debian-jesse-web.service
+: 1395617767:0;systemctl stop lxc@debian-jesse-projects.service
+: 1395617974:0;cd debian-jesse-proxy
+: 1395617982:0;cd debian-jesse-dbase
+: 1395617989:0;cd debian-jesse-web
+: 1395617996:0;cd debian-jesse-projects
+: 1395617998:0;umount rootfs
+: 1395618001:0;losetup -D
+: 1395618653:0;systemctl status lxc@debian-jesse-domain
+: 1395618827:0;cd ..
+: 1395618843:0;lxc-start -n debian-jesse-domain -f debian-jesse-domain/config
+: 1395618861:0;journalctl -f
+: 1395618930:0;ps aux | grep lxc
+: 1395619109:0;lxc-start -n debian-jesse-domain -f debian-jesse-domain/config -o ./log.txt
+: 1395619112:0;cd /var/lib/lxc
+: 1395619118:0;tail -f log.txt
+: 1395619630:0;reboot
+: 1395619712:0;systemctl start debian-jesse-domain
+: 1395619721:0;cd /etc/systemd/system/multi-user.target.wants
+: 1395619740:0;systemctl start lxc@debian-jesse-domain.service
+: 1395619757:0;systemctl start lxc@debian-jesse-web.service
+: 1395619765:0;losetup
+: 1395619823:0;nmap 10.1.1.0/24 -sP
+: 1395619841:0;ping jupiter
+: 1395619845:0;ping quaoar
+: 1395619847:0;ping mars
+: 1395619850:0;ping git
+: 1395619854:0;ping venus
+: 1395621930:0;sudo yaourt -Syua
+: 1395621945:0;systemctl status lxc@debian-jesse-dbase.service
+: 1395621949:0;systemctl status lxc@debian-jesse-domain.service
+: 1395621953:0;systemctl status lxc@debian-jesse-projects.service
+: 1395621957:0;systemctl status lxc@debian-jesse-proxy.service
+: 1395621962:0;systemctl status lxc@debian-jesse-web.service
+: 1395621971:0;systemctl restart lxc@*
+: 1395627791:0;cd /root
+: 1395627793:0;cd scripts
+: 1395627795:0;./gitupdate.sh
+: 1395627951:0;vim gitupdate.sh
+: 1395628018:0;ln -s /root/scripts/gitupdate.sh /usr/sbin/gitupdate
+: 1395628023:0;cd /usr/src/GIT
+: 1395628028:0;cd PXC
+: 1395628037:0;gitupdate home
+: 1395628061:0;ls -ail
+: 1395628090:0;rm home
+: 1395628093:0;rm home -R
+: 1395628109:0;git clone git@git.hypokrites.me:pcxmac/home.git
+: 1395628129:0;cd /tmp
+: 1395628310:0;who
+: 1395628324:0;cd /usr/src/GIT/PXC
+: 1395628331:0;mkdir dotfiles
+: 1395628335:0;cd dotfiles
+: 1395628405:0;ssh-keygen -t rsa -C "admin@local.host"
+: 1395628417:0;ssh-keygen -t rsa -C "root@one.hypokrites.me"
+: 1395628439:0;cd /root/.ssh
+: 1395628440:0;ls
+: 1395628443:0;cat id_rsa.pub
+: 1395628466:0;exit
+: 1395628515:0;ls
+: 1395628521:0;cd dotfes
+: 1395628524:0;cd dotfiles
+: 1395628525:0;ls
+: 1395628531:0;touch README
+: 1395628543:0;cp ~/.zshrc ./
+: 1395628550:0;cp ~/.zlogout
+: 1395628552:0;cp ~/.zlogout ./
+: 1395628562:0;cp ~/.zsh ./
+: 1395628565:0;cp ~/.zsh ./ -R
+: 1395628583:0;cp ~/.zhistfile ./ -R
