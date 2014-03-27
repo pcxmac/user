@@ -1,4 +1,3 @@
-
 ################################### SHELL #############################
 
 alias ls="ls -ph --color=auto"
@@ -173,8 +172,8 @@ fi
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
 POWERLINE_COMMAND=powerline
+_POWERLINE_MODE=viins
 
-#_POWERLINE_MODE=viins
 #_POWERLINE_DEFAULT_MODE=emacs
 
 # POWERLINE-DAEMON ###########################################################
@@ -185,4 +184,3 @@ POWERLINE_COMMAND=powerline
 #then
 #        ~/.powerline/scripts/powerline-daemon;
 #fi
-
