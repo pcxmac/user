@@ -34,6 +34,7 @@ PROMPT_COMMAND='history -a'
 #export POWERLINE_COMMAND=powerline-client
 export POWERLINE_COMMAND="powerline"
 export _POWERLINE_MODE="emacs"
+export _POWERLINE_DEFAULT_MODE="emacs"
 
 #if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
 #then
