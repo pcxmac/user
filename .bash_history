@@ -710,3 +710,9 @@ cd ~
 exit
 cat .bashrc
 git status
+git commit -a -m 'added bash_history support'
+git status
+ls -ail
+git rm --cached .viminfo
+ls -ail
+git status
