@@ -5,12 +5,9 @@ alias df="df -Th"
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins
-
-bindkey -v	# vi-mode/keymap
-#bindkey -e   	# emacs-mode/keymap
-
+bindkey -v # vi-mode/keymap
+#bindkey -e # emacs-mode/keymap
 bindkey -r '^Q'
-
 bindkey -M viins '^A' beginning-of-line
 bindkey -M viins '^B' backward-char
 bindkey -M viins '^D' delete-char-or-list
@@ -23,23 +20,15 @@ bindkey -M viins '^R' history-incremental-search-backward
 bindkey -M viins '^S' history-incremental-search-forward
 bindkey -M viins '^T' transpose-chars
 bindkey -M viins '^Y' yank
-
 bindkey -M emacs '^X^[' vi-cmd-mode
-
-
 bindkey -M emacs ' ' magic-space
 bindkey -M viins ' ' magic-space
-
 bindkey -M isearch '^J' accept-search 2>/dev/null
 
-
 fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; zle -N fzf_history; bindkey '^F' fzf_history
-
 fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; zle -N fzf_killps; bindkey '^Q' fzf_killps
-
 #fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf) && cd "$DIR" ; }; zle -N fzf_cd; bindkey '^E' fzf_cd
 fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; zle -N fzf_cd; bindkey '^E' fzf_cd
-
 
 autoload -U compinit promptinit zcalc zsh-mime-setup select-word-style
 select-word-style shell
@@ -49,11 +38,9 @@ zsh-mime-setup
 
 # shell processes longer than 3 minutes get output stats
 REPORTTIME=3
-
 setopt interactivecomments
 setopt hist_ignore_all_dups
 setopt auto_cd
-
 setopt extendedglob
 setopt glob_complete
 setopt pushd_minus
@@ -70,7 +57,6 @@ setopt no_clobber
 setopt no_case_glob
 setopt numeric_glob_sort
 setopt rc_expand_param
-
 setopt cd_able_vars
 #setopt correct
 setopt complete_in_word
@@ -84,15 +70,13 @@ setopt magic_equal_subst
 setopt auto_name_dirs
 
 #################################### ENV ##############################
-
-export LANG=en_US.UTF-8			# ssh
-export USER=$(/usr/bin/whoami)		# powerline, continuity
-export SHELL=/usr/bin/zsh		# continuity
-export EDITOR=vim			# continuity
+export LANG=en_US.UTF-8	# ssh
+export USER=$(/usr/bin/whoami) # powerline, continuity
+export SHELL=/usr/bin/zsh # continuity
+export EDITOR=vim # continuity
 export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$PATH
 
 ##################################### HISTORY #########################
-
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
@@ -121,10 +105,8 @@ setopt completeinword
 setopt menucomplete
 
 #COMPLETION
-
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format '%B%d%b'
 zstyle ':completion:*:messages' format '%d'
@@ -132,7 +114,6 @@ zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*' group-name ''
 #zstyle ':completion:*' completer _oldlist _expand _force_rehash _complete
 #zstyle ':completion:*' completer _expand _force_rehash _complete _approximate _ignored
-
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*:default' list-prompt '%S%M matches%s'
 zstyle ':completion:*:default' menu 'select=0'
@@ -140,39 +121,36 @@ zstyle ':completion:*' file-sort modification reverse
 zstyle ':completion:*' list-colors "=(#b) #([0-9]#)*=36=31"
 
 unsetopt LIST_AMBIGUOUS
-setopt  COMPLETE_IN_WORD
+setopt COMPLETE_IN_WORD
 
 zstyle ':completion:*:manuals' separate-sections true
 #zstyle ':completion:*' list-separator 'fREW'
 zstyle ':completion:*:windows' menu on=0
 zstyle ':completion:*:expand:*' tag-order all-expansions
-zstyle ':completion:*:approximate:*' max-errors 'reply=(  $((  ($#PREFIX+$#SUFFIX)/3  ))  )'
+zstyle ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) )'
 zstyle ':completion:*:corrections' format '%B%d (errors %e)%b'
 zstyle ':completion::*:(rm|vi):*' ignore-line true
 zstyle ':completion:*' ignore-parents parent pwd
 zstyle ':completion::approximate*:*' prefix-needed false
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
-
-
 ############################ MISC #########################################################
 
-
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 # POWERLINE ###################################################################
 
 if [[ ! $PATH == *".powerline/scripts"* ]]
 then
-	export PATH=~/.powerline/scripts:$PATH
+export PATH=~/.powerline/scripts:$PATH
 fi
 
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
-export POWERLINE_COMMAND="powerline"
-export _POWERLINE_MODE="viins"
-export _POWERLINE_DEFAULT_MODE="viins"
+POWERLINE_COMMAND=powerline
+
+#_POWERLINE_MODE=viins
+#_POWERLINE_DEFAULT_MODE=emacs
 
 # POWERLINE-DAEMON ###########################################################
 
@@ -180,5 +158,6 @@ export _POWERLINE_DEFAULT_MODE="viins"
 
 #if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
 #then
-#        ~/.powerline/scripts/powerline-daemon;
+# ~/.powerline/scripts/powerline-daemon;
 #fi
+
