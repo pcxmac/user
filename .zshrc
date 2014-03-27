@@ -91,7 +91,6 @@ export SHELL=/usr/bin/zsh		# continuity
 export EDITOR=vim			# continuity
 export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$PATH
 
-
 ##################################### HISTORY #########################
 
 setopt APPEND_HISTORY
@@ -171,13 +170,9 @@ fi
 
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
-#POWERLINE_COMMAND=powerline-client
-
 export POWERLINE_COMMAND="powerline"
-#export _POWERLINE_DEFAULT_MODE="viins"
 export _POWERLINE_MODE="viins"
-
-#_POWERLINE_DEFAULT_MODE=emacs
+export _POWERLINE_DEFAULT_MODE="viins"
 
 # POWERLINE-DAEMON ###########################################################
 

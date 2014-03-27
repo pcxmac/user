@@ -13,7 +13,6 @@ export SHELL=/usr/bin/zsh
 export EDITOR=vim
 export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$PATH
 
-
 ############################################### SHELL #####################################
 
 alias ls='ls --color=auto'
@@ -32,8 +31,10 @@ PROMPT_COMMAND='history -a'
 # POWERLINE-DAEMON REQUIRED
 
 #export POWERLINE_COMMAND=powerline-client
-export POWERLINE_COMMAND="powerline"
+#export _POWERLINE_MODE="viins"
+
 export _POWERLINE_MODE="emacs"
+export POWERLINE_COMMAND="powerline"
 export _POWERLINE_DEFAULT_MODE="emacs"
 
 #if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]

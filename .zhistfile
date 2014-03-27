@@ -1266,27 +1266,18 @@
 : 1391984133:0;yaourt cups pdf
 : 1391984192:0;sudo systemctl list-unit-files | grep cpus
 : 1391984194:0;sudo systemctl list-unit-files | grep cups
-: 1391984203:0;sudo systemctl enable cups
-: 1391984207:0;sudo systemctl start cups
 : 1391984238:0;nano cups-printing.txt
-: 1391984254:0;sudo systemctl enable avahi-daemon.service
-: 1391984261:0;sudo systemctl start avahi-daemon.service
 : 1391984273:0;systemctl status avahi-daemon.service
 : 1391984287:0;cd cups
 : 1391984329:0;yaourt -S libcups gsfonts ghostscript
-: 1391984351:0;sudo nano client.conf
 : 1391984388:0;nano cups-pdf.conf
-: 1391984447:0;sudo nano cups-pdf.conf
 : 1391984484:0;sudo systemctl restart cups
 : 1391984506:0;a
 : 1391984669:0;ls ~/Printer
-: 1391984686:0;cd ~/Printer
 : 1391984697:0;tar printer.tar.gz *
 : 1391984701:0;tar printer.tar.gz ./\\
 : 1391984728:0;tar cfvz print.tar.gz *
 : 1391984735:0;rm *.pdf
-: 1391984791:0;lpstat -p -d
-: 1391984809:0;cd Printer
 : 1391984822:0;yaourt acrobat
 : 1391984866:0;yaourt -S acroread
 : 1391985038:0;yaourt -S teamviewer
@@ -1877,7 +1868,6 @@
 : 1392370106:0;sudo rm /var/lib/lxc/arch-current/home/sysop/root/.powerline -R
 : 1392370118:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/root/.powerline -R
 : 1392370126:0;sudo cp powerline /var/lib/lxc/arch-current/rootfs/home/sysop/.powerline -R
-: 1392408471:0;echo $_POWERLINE_MODE
 : 1392408574:0;_POWERLINE_MODE=viins
 : 1392408818:0;bindkey
 : 1392408825:0;bindkey -lL
@@ -2300,7 +2290,6 @@ FF\
 : 1392746152:0;sudo modprobe -R kmv_intel
 : 1392746179:0;modprobe vboxdrv
 : 1392746910:0;afd
-: 1392746912:0;sensors
 : 1392749135:0;cd /Down
 : 1392749139:0;mplayer jb021114.mp3
 : 1392749210:0;yaourt -S wpa_supplicant
@@ -2492,7 +2481,6 @@ FF\
 : 1392842462:0;ssh sysop@localhost
 : 1392842500:0;ssh root@192.168.1.235
 : 1392842742:0;PATH=/root/.powerline/scripts:$PATH
-: 1392842745:0;env
 : 1392842794:0;sudo lxc-start -n fedora-current
 : 1392842861:0;rm fedora.tar.gz
 : 1392842864:0;sudo rm fedora.tar.gz
@@ -2627,8 +2615,6 @@ FF\
 : 1392943481:0;cd ubuntu
 : 1392943502:0;cd lib/
 : 1392943510:0;cd terminfo
-: 1392943520:0;rm * -R
-: 1392943526:0;sudo rm * -R
 : 1392943586:0;cp /var/lib/lxc/ubuntu-cloud/rootfs/lib/terminfo/* ./ -R
 : 1392943591:0;sudo cp /var/lib/lxc/ubuntu-cloud/rootfs/lib/terminfo/* ./ -R
 : 1392943615:0;rm terminfo -R
@@ -3077,7 +3063,6 @@ FF\
 : 1393532513:0;yaourt -Scc
 : 1393544689:0;grub-install /dev/sda
 : 1393544696:0;sudo grub-install /dev/sda
-: 1393544761:0;sudo reboot
 : 1393552627:0;cd Projects/notes
 : 1393560833:0;cd Projects
 : 1393560836:0;cd notes
@@ -3472,7 +3457,6 @@ most
 : 1394662788:0;find ${1:-*} ${1:-.??*} | wc -l
 : 1394662793:0;find ${1:-*} ${1:-.??*} | wc -l | grep .Xauth
 : 1394662800:0;find ${1:-*} ${1:-.??*} | grep .Xauth
-: 1394664163:0;cd .vim
 : 1394664170:0;cd Command-T
 : 1394664174:0;rake make
 : 1394668414:0;tmu
@@ -3589,7 +3573,6 @@ most
 : 1394752180:0;find ./ | grep synta
 : 1394752182:0;find ./ | grep syntas
 : 1394752185:0;cd ~/.vim
-: 1394752189:0;cd bundle
 : 1394755398:0;where is sh
 : 1394755404:0;ls /usr/bin/sh -ail
 : 1394755422:0;cd /usr/bin
@@ -3785,7 +3768,6 @@ most
 : 1394913630:0;fh
 : 1394867393:0;ps aux | grep gedit
 : 1394867396:0;kill 4170
-: 1394913627:0;su
 : 1394913810:0;rm .pre-hook.sh.swp
 : 1394914555:0;chmod 750 test.sh
 : 1394914581:0;vim bulk-unload.sh
@@ -4005,7 +3987,6 @@ most
 : 1395100880:0;mount /dev/loop5 rootfs
 : 1395113256:0;alsamixer
 : 1395113275:0;hostname
-: 1395113278:0;su sysop
 : 1395113995:0;cd /etc/pacman.d
 : 1395114001:0;nano pacman.conf
 : 1395114062:0;route add default gw 10.1.1.1 br0
@@ -4069,7 +4050,6 @@ most
 : 1395126080:0;vim run.sh
 : 1395126101:0;chmod 750 run.sh
 : 1395126204:0;
-: 1395126364:0;bash
 : 1395178114:0;name="/var/lib/lxc/SERVERS/debian-jesse-domain"
 : 1395178114:0; part="/var/lib/lxc/SERVERS"
 : 1395178114:0;part="/var/lib/lxc/SERVERS"
@@ -4238,7 +4218,6 @@ most
 : 1395197610:0;mv config-old.json config.json
 : 1395197641:0;cp config.json config-old.json
 : 1395197665:0;nano default.json
-: 1395197737:0;zsh
 : 1395197771:0;powerline
 : 1395202188:0;cd themes
 : 1395202191:0;cd shell
@@ -4254,7 +4233,6 @@ most
 : 1395203881:0;cd bin
 : 1395203885:0;./activate
 : 1395203899:0;source ./activate
-: 1395203927:0;vim
 : 1395209475:0;cd segments
 : 1395209482:0;vim common.py
 : 1395209549:0;cd config_files
@@ -4340,7 +4318,6 @@ most
 : 1395254342:0;cp /lxc /run/media/sysop/250GB-Spare
 : 1395254350:0;cp /lxc /run/media/sysop/250GB-Spare/lxc2 -Rp
 : 1395254356:0;cp lxc /run/media/sysop/250GB-Spare/lxc2 -Rp
-: 1395254382:0;df
 : 1395256621:0;yaourt -R lxc
 : 1395256897:0;lxc-stop -n arch
 : 1395256907:0;lxc-stop --kill -n arch
@@ -4356,8 +4333,6 @@ most
 : 1395257436:0;cd arch.23864f5710920562
 : 1395257459:0;cd user
 : 1395257502:0;ls /dev/.lxc
-: 1395257554:0;tmux
-: 1395257571:0;cd Downloads
 : 1395257691:0;lxc-create -n debian-jessie-domain
 : 1395257706:0;lxc-create -n debian-jessie-domain -f debian-jessie-domain/config
 : 1395257715:0;lxc-create -n debian-jesse-domain -f debian-jessie-domain/config
@@ -4389,7 +4364,6 @@ most
 : 1395259230:0;cd .mplayer
 : 1395259242:0;cd /home/sysop/Downloads
 : 1395259246:0;mplayer -pl stream.pls
-: 1395259253:0;mplayer -playlist stream.pls
 : 1395259267:0;nano /etc/resolv.conf
 : 1395259280:0;mplayer jb030414.mp3
 : 1395264112:0;lxc-ls --fancy
@@ -4451,7 +4425,6 @@ most
 : 1395474933:0;git pull origin master
 : 1395475105:0;sleep 40m;poweroff;
 : 1395533526:0;cd ~/.powerline
-: 1395533528:0;git status
 : 1395533546:0;cd CCOINS
 : 1395533549:0;cd dogecoin
 : 1395533557:0;git branch
@@ -4497,7 +4470,6 @@ most
 : 1395547945:0;nmap 10.1.1.81 -sT
 : 1395547985:0;lxc-stop -n debian-jesse-projects
 : 1395548117:0;lxc-start -n debian-jesse-projects -f debian-jesse-projects/config
-: 1395548155:0;lxc-activate debian-jesse-domain
 : 1395548164:0;lxc-activate debian-jesse-proxy
 : 1395548619:0;ssh root@10.1.1.81
 : 1395548635:0;lxc-activate debian-jesse-projects
@@ -4505,7 +4477,6 @@ most
 : 1395548683:0;systemctl enable lxc@debian-jesse-projects
 : 1395548691:0;systemctl start lxc@debian-jesse-projects
 : 1395548713:0;ssh -v root@10.1.1.81
-: 1395548724:0;clear
 : 1395548768:0;lxc-activate debian-jesse-dbase
 : 1395548850:0;ssh -v root@10.1.1.18
 : 1395549098:0;ping 10.1.1.18
@@ -4548,10 +4519,8 @@ most
 : 1395617998:0;umount rootfs
 : 1395618001:0;losetup -D
 : 1395618653:0;systemctl status lxc@debian-jesse-domain
-: 1395618827:0;cd ..
 : 1395618843:0;lxc-start -n debian-jesse-domain -f debian-jesse-domain/config
 : 1395618861:0;journalctl -f
-: 1395618930:0;ps aux | grep lxc
 : 1395619109:0;lxc-start -n debian-jesse-domain -f debian-jesse-domain/config -o ./log.txt
 : 1395619112:0;cd /var/lib/lxc
 : 1395619118:0;tail -f log.txt
@@ -4582,7 +4551,6 @@ most
 : 1395628023:0;cd /usr/src/GIT
 : 1395628028:0;cd PXC
 : 1395628037:0;gitupdate home
-: 1395628061:0;ls -ail
 : 1395628090:0;rm home
 : 1395628093:0;rm home -R
 : 1395628109:0;git clone git@git.hypokrites.me:pcxmac/home.git
@@ -4590,17 +4558,12 @@ most
 : 1395628310:0;who
 : 1395628324:0;cd /usr/src/GIT/PXC
 : 1395628331:0;mkdir dotfiles
-: 1395628335:0;cd dotfiles
 : 1395628405:0;ssh-keygen -t rsa -C "admin@local.host"
 : 1395628417:0;ssh-keygen -t rsa -C "root@one.hypokrites.me"
 : 1395628439:0;cd /root/.ssh
-: 1395628440:0;ls
 : 1395628443:0;cat id_rsa.pub
-: 1395628466:0;exit
-: 1395628515:0;ls
 : 1395628521:0;cd dotfes
 : 1395628524:0;cd dotfiles
-: 1395628525:0;ls
 : 1395628531:0;touch README
 : 1395628543:0;cp ~/.zshrc ./
 : 1395628550:0;cp ~/.zlogout
@@ -4608,3 +4571,92 @@ most
 : 1395628562:0;cp ~/.zsh ./
 : 1395628565:0;cp ~/.zsh ./ -R
 : 1395628583:0;cp ~/.zhistfile ./ -R
+: 1395906053:0;git add *
+: 1395906072:0;git config --global user.email "sysop@mail.hypokrites.me"
+: 1395906079:0;git config --global user.name
+: 1395906083:0;git config --global user.name "sysop"
+: 1395906090:0;git commit -m
+: 1395906094:0;git commit -m 'nonsense'
+: 1395906098:0;sudo git commit -m 'nonsense'
+: 1395906148:5;rm * -R
+: 1395906155:0;sudo rm * -R
+: 1395906161:0;git commit -m 'nonsense last'
+: 1395906165:0;sudo git commit -m 'nonsense last'
+: 1395906180:0;git conig --global push.default simple
+: 1395906187:0;git config --global push.default simple
+: 1395906217:0;ls
+: 1395906226:0;git stash save --keep-index
+: 1395906274:0;cd .vim
+: 1395906277:0;cd bundle
+: 1395906372:0;mkdir vundle
+: 1395906383:0;rmdir vundle
+: 1395906387:0;git submodule add -b developer https://github.com/gmarik/Vundle.vim.git vundle
+: 1395906401:3;git submodule add -f -b developer https://github.com/gmarik/Vundle.vim.git vundle
+: 1395906445:0;git rm -f vundle
+: 1395906451:0;git submodule add -f https://github.com/gmarik/Vundle.vim.git vundle
+: 1395906456:0;cd vundle
+: 1395906481:0;git add -f vundle
+: 1395906491:0;git commit -a -m 'added vundle to developer'
+: 1395906496:0;sudo git commit -a -m 'added vundle to developer'
+: 1395906500:1;git push
+: 1395906516:0;sudo git config --global push.default simple
+: 1395906518:1;sudo git push
+: 1395906892:9;vim
+: 1395906966:0;cd ..
+: 1395906981:0;chown sysop.sysop .zhistfile
+: 1395906985:1;sudo chown sysop.sysop .zhistfile
+: 1395906995:0;sudo chown sysop.sysop .viminfo
+: 1395907032:0;sudo chown sysop.sysop .bashrc
+: 1395907036:0;sudo chown sysop.sysop .gem -R
+: 1395907040:0;sudo chown sysop.sysop .i3 -R
+: 1395907090:0;gitupdate
+: 1395907106:0;sudo gitupdate
+: 1395907796:0;df
+: 1395908623:0;timeout 30m mplayer -playlist stream.pls
+: 1395908688:0;sensors
+: 1395942839:0;rm stream.pls
+: 1395942886:0;sudo reboot
+: 1395942920:0;cd Downloads
+: 1395942937:0;lxc-activate debian-jesse-domain
+: 1395942942:0;sudo lxc-activate debian-jesse-domain
+: 1395942950:0;sudo lxc-activate debian-jesse-proxy
+: 1395942956:0;sudo lxc-activate debian-jesse-dbase
+: 1395942964:0;sudo lxc-activate debian-jesse-web
+: 1395942985:0;tmux
+: 1395942988:0;sudo lxc-activate debian-jesse-projects
+: 1395942993:0;mplayer -playlist stream.pls
+: 1395944782:0;ssh root@git
+: 1395944906:0;ssh root@www
+: 1395944973:0;du -sh /
+: 1395945262:0;yaourt -S cups cups-pdf libcups gsfonts ghostscript avahi
+: 1395945371:0;sudo systemctl enable cups
+: 1395945377:0;sudo systemctl enable avahi-daemon.service
+: 1395945388:0;cd /etc/cups
+: 1395945391:0;sudo nano client.conf
+: 1395945428:0;man client.conf
+: 1395945460:0;sudo nano cups-pdf.conf
+: 1395945508:0;sudo systemctl start cups
+: 1395945515:0;sudo systemctl start avahi-daemon.service
+: 1395945524:0;sudo lpstat -p -d
+: 1395945537:0;systemctl status cups.service
+: 1395945638:0;lpstat -p -d
+: 1395945739:0;cd Printer
+: 1395945799:0;cd ~/Printer
+: 1395945801:0;ls -ail
+: 1395947826:0;su
+: 1395949797:0;ps aux | grep lxc
+: 1395949820:0;clear
+: 1395949855:0;git status
+: 1395950009:0;env
+: 1395950023:0;env | grep SHELL
+: 1395950031:0;echo $_POWERLINE_MODE
+: 1395950072:0;export _POWERLINE_MODE="vicmd"
+: 1395950076:0;export _POWERLINE_MODE="viins"
+: 1395950088:0;bash
+: 1395950126:0;git pull
+: 1395950139:0;su sysop
+: 1395950172:0;sudo cp /home/sysop/.zshrc ./
+: 1395950177:0;zsh
+: 1395950179:0;exit
+: 1395950189:0;sudo cp /home/sysop/.bashrc ./
+: 1395950196:0;git commit -a -m 'new changes'
