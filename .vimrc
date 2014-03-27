@@ -28,11 +28,12 @@ Bundle 'honza/vim-snippets'
 
 Bundle 'jmcantrell/vim-virtualenv'
 
-Bundle 'Valloric/YouCompleteMe'
+"requires vim with python2
+"Bundle 'Valloric/YouCompleteMe'
 
-Bundle 'sjl/gundo'
+Bundle 'sjl/gundo.vim'
 
-Bundle 'kien/ctrlp'
+Bundle 'kien/ctrlp.vim'
 
 Bundle 'tpope/vim-repeat'
 
