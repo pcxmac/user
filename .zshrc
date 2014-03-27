@@ -174,7 +174,7 @@ fi
 #POWERLINE_COMMAND=powerline-client
 
 export POWERLINE_COMMAND="powerline"
-export _POWERLINE_DEFAULT_MODE="viins"
+#export _POWERLINE_DEFAULT_MODE="viins"
 export _POWERLINE_MODE="viins"
 
 #_POWERLINE_DEFAULT_MODE=emacs
