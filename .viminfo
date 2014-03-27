@@ -17,7 +17,9 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
 :q
+:BundleInstall
 :w
 :wq
 :.,.+2!
@@ -28,8 +30,6 @@ $
 :BundleUpdate\
 :Vexplore
 :VirtualEnvList
-:BundleInstall
-:q!
 :save lxc-activate
 :.!-path "*/test/*" 
 :.!-path "*/test/*"
@@ -201,9 +201,13 @@ $
 -'  18  63  /var/lib/lxc/SERVERS/debian-jesse-web/config
 -'  81  43  /var/lib/lxc/SERVERS/SCRIPTS/pre-hook.sh
 -'  79  20  /var/lib/lxc/SERVERS/SCRIPTS/pre-hook.sh
--'  97  20  /var/lib/lxc/SERVERS/SCRIPTS/pre-hook.sh
 
 # History of marks within files (newest to oldest):
+
+> /[Vundle] Installer
+	"	19	0
+	.	1	0
+	+	1	0
 
 > ~/scripts/gitupdate.sh
 	"	8	2
@@ -1601,6 +1605,3 @@ $
 
 > /usr/src/powerline-daemon/powerline-client.py
 	"	1	0
-
-> ~/.powerline/scripts/powerline-daemon
-	"	25	0

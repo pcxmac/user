@@ -708,3 +708,5 @@ tmux
 man tmux
 cd ~
 exit
+cat .bashrc
+git status

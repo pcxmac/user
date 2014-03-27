@@ -4598,7 +4598,6 @@ most
 : 1395906481:0;git add -f vundle
 : 1395906491:0;git commit -a -m 'added vundle to developer'
 : 1395906496:0;sudo git commit -a -m 'added vundle to developer'
-: 1395906500:1;git push
 : 1395906516:0;sudo git config --global push.default simple
 : 1395906518:1;sudo git push
 : 1395906892:9;vim
@@ -4622,7 +4621,6 @@ most
 : 1395942950:0;sudo lxc-activate debian-jesse-proxy
 : 1395942956:0;sudo lxc-activate debian-jesse-dbase
 : 1395942964:0;sudo lxc-activate debian-jesse-web
-: 1395942985:0;tmux
 : 1395942988:0;sudo lxc-activate debian-jesse-projects
 : 1395942993:0;mplayer -playlist stream.pls
 : 1395944782:0;ssh root@git
@@ -4642,8 +4640,6 @@ most
 : 1395945638:0;lpstat -p -d
 : 1395945739:0;cd Printer
 : 1395945799:0;cd ~/Printer
-: 1395945801:0;ls -ail
-: 1395947826:0;su
 : 1395949797:0;ps aux | grep lxc
 : 1395949820:0;clear
 : 1395949855:0;git status
@@ -4652,11 +4648,147 @@ most
 : 1395950031:0;echo $_POWERLINE_MODE
 : 1395950072:0;export _POWERLINE_MODE="vicmd"
 : 1395950076:0;export _POWERLINE_MODE="viins"
-: 1395950088:0;bash
-: 1395950126:0;git pull
 : 1395950139:0;su sysop
 : 1395950172:0;sudo cp /home/sysop/.zshrc ./
-: 1395950177:0;zsh
-: 1395950179:0;exit
 : 1395950189:0;sudo cp /home/sysop/.bashrc ./
 : 1395950196:0;git commit -a -m 'new changes'
+: 1395950197:0;git push
+: 1395950793:0;git pull
+: 1395950810:0;ls -ail
+: 1395950813:0;bash
+: 1395950893:0;zsh
+: 1395950822:0;tmux
+: 1395950898:0;su
+: 1395950912:0;exit
+: 1395950991:0;su
+: 1395951076:0;ssh root@localhost
+: 1395951168:0;groups
+: 1395951176:0;usermod -a -G root ciaran
+: 1395951182:0;sudo usermod -a -G root ciaran
+: 1395951186:0;groups
+: 1395951202:0;cat /etc/group | grep ciaran
+: 1395951218:0;visudo
+: 1395951221:0;sudo visudo
+: 1395951414:0;cd /etc
+: 1395951419:0;sudo vim sudoers
+: 1395951426:0;vim
+: 1395951434:0;sudo updatedb
+: 1395951440:0;locate libpython3.3m
+: 1395951445:0;vim
+: 1395951460:0;locate libpython3.3m | grep /usr/lib
+: 1395951482:0;find /usr/lib | grep libpython3.3m
+: 1395951492:0;yaourt libpython3.3
+: 1395951497:0;sudo yaourt libpython3.3
+: 1395951503:0;find /usr/lib | grep libpython3
+: 1395951516:0;cd ..
+: 1395951518:0;su
+: 1395951951:0;cd Downloads
+: 1395951957:0;mplayer -playlist stream.pls
+: 1395952315:0;vim
+: 1395952341:0;cd /var/lib/lxc
+: 1395952343:0;cd DATA/SCRIPTS
+: 1395952345:0;ls -ail
+: 1395952347:0;git pull
+: 1395952351:0;sudo git pull
+: 1395952366:0;cp /root/scripts/lxc-activate ./
+: 1395952368:0;ls -ail
+: 1395952379:0;git commit -a -m 'added activate'
+: 1395952384:0;sudo git commit -a -m 'added activate'
+: 1395952390:0;ls
+: 1395952392:0;ls -ail
+: 1395952402:0;git add *
+: 1395952406:0;sudo git add *
+: 1395952409:0;sudo git commit -a -m 'added activate'
+: 1395952424:0;sudo git config --global user.name "ciaran"
+: 1395952435:0;sudo git config --global user.email "ciaran@mail.hypokrites.me"
+: 1395952471:0;sudo git commit -a -m 'added activate'
+: 1395952478:0;sudo git push
+: 1395952523:0;sudo git pull
+: 1395952529:0;ls -ail
+: 1395952534:0;cd /var/lib/lxc
+: 1395952537:0;cd DATA/SCRIPTS
+: 1395952538:0;ls -ail
+: 1395953531:0;cd /usr/src/GIT
+: 1395953533:0;ls -ail
+: 1395953542:0;chown ciaran.users PXC
+: 1395953546:0;sudo chown ciaran.users PXC
+: 1395953548:0;ls -ail
+: 1395953550:0;cd PXC
+: 1395953552:0;ls -ail
+: 1395953555:0;rm dotfiles -R
+: 1395953562:0;sudo rm dotfiles -R
+: 1395953564:0;sudo rm scripts -R
+: 1395953566:0;ls -ail
+: 1395953594:0;git clone git@git.hypokrites.me:pcxmac/lxc-scripts.git
+: 1395953603:0;git clone git@git.hypokrites.me:pcxmac/skeleton
+: 1395953612:0;git clone git@git.hypokrites.me:pcxmac/project-notes
+: 1395953622:0;git clone git@git.hypokrites.me:website/hypokrites.me
+: 1395953632:0;git clone git@git.hypokrites.me:website/hypokrites-me.git
+: 1395953673:0;git clone git@git.hypokrites.me:pcxmac/oldcpp.git
+: 1395953735:0;git clone git@git.hypokrites.me:pcxmac/school-projects/vhdlclass.git
+: 1395953758:0;git clone
+: 1395953766:0;News Feed
+: 1395953767:0;Homepage Blog @gitlabhq
+: 1395953771:0;ls
+: 1395953779:0;git clone git@git.hypokrites.me:pcxmac/school-projects/vhdlclass.git
+: 1395953849:0;git clone
+: 1395953854:0;git clone git@git.hypokrites.me:pcxmac/school-projects/vhdlclass.git
+: 1395953925:0;sudo git clone
+: 1395953981:0;sudo git clone http://git.hypokrites.me/client-work/rbirt.git
+: 1395953997:0;sudo git clone http://git.hypokrites.me/client-work/inthezone.git
+: 1395954005:0;sudo git clone http://git.hypokrites.me/client-work/js-slider.git
+: 1395954012:0;sudo git clone http://git.hypokrites.me/client-work/psd2html.git
+: 1395954020:0;sudo git clone http://git.hypokrites.me/client-work/ancientwords.git
+: 1395954021:0;ls
+: 1395954043:0;sudo git clone http://git.hypokrites.me/school-projects/vhdlclass.git
+: 1395954053:0;sudo git clone http://git.hypokrites.me/school-projects/stash.git
+: 1395954059:0;sudo git clone http://git.hypokrites.me/school-projects/vb-project.git
+: 1395954068:0;sudo git clone http://git.hypokrites.me/school-projects/digi-portfolio.git
+: 1395954080:0;sudo git clone http://git.hypokrites.me/school-projects/school-webpage.git
+: 1395954087:0;sudo git clone http://git.hypokrites.me/school-projects/AES.git
+: 1395954091:0;sudo git clone http://git.hypokrites.me/school-projects/aes.git
+: 1395954096:0;sudo git clone http://git.hypokrites.me/school-projects/gba.git
+: 1395954104:0;sudo git clone http://git.hypokrites.me/school-projects/blackjack.git
+: 1395954126:0;sudo git clone http://git.hypokrites.me/website/hypokrites.me.git
+: 1395954129:0;sudo git clone http://git.hypokrites.me/website/hypokrites-me.git
+: 1395954150:0;ls
+: 1395954154:0;cd hypokrites-me
+: 1395954156:0;ls -ail
+: 1395954160:0;git pull
+: 1395954177:0;cd ...
+: 1395954179:0;cd ..
+: 1395954192:0;gitupdate /usr/src/GIT/
+: 1395954203:0;sudo gitupdate /usr/src/GIT/
+: 1395954258:0;ls
+: 1395954279:0;du -sh GIT
+: 1395954284:0;cd ..
+: 1395954288:0;df
+: 1395954294:0;cd ..
+: 1395954298:0;ls -ail
+: 1395954301:0;groups
+: 1395954318:0;ls
+: 1395954323:0;cd /home
+: 1395954324:0;ls -ail
+: 1395958293:0;clear
+: 1395958297:0;cd ~
+: 1395958302:0;git pull
+: 1395958305:0;git status
+: 1395958310:0;nano .viminfo
+: 1395958314:0;bash
+ls -ail
+git status
+jump the shark
+git status
+cat /usr/share/blender/2.70/datafiles/locale/ar/LC_MESSAGES/blender.mo 
+ls -ail
+git status
+cat .bashrc
+cat .bash_history 
+env | grep BASH
+env | grep HISTORY
+nano .bashrc
+history
+git status
+tail .zhistfile 
+env | grep hist
+nano .bashrc

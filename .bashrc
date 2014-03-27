@@ -12,6 +12,7 @@ export USER=$(/usr/bin/whoami)
 export SHELL=/usr/bin/zsh
 export EDITOR=vim
 export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$PATH
+export HISTFILE=.bash_history
 
 ############################################### SHELL #####################################
 
