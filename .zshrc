@@ -172,7 +172,8 @@ fi
 
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
-#POWERLINE_COMMAND=powerline
+POWERLINE_COMMAND=powerline
+
 #_POWERLINE_MODE=viins
 #_POWERLINE_DEFAULT_MODE=emacs
 
