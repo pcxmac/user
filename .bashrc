@@ -12,7 +12,6 @@ export USER=$(/usr/bin/whoami)
 export SHELL=/usr/bin/zsh
 export EDITOR=vim
 export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:$PATH
-export HISTFILE=~/.bash_history
 
 ############################################### SHELL #####################################
 
@@ -21,22 +20,20 @@ PS1='[\u@\h \W]\$ '
 
 ############################################### HISTORY ###################################
 
+export HISTFILE=~/.bash_histfile
 HISTSIZE=65536
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
-
-
 ################################################ POWERLINE ################################
+
+export POWERLINE_COMMAND="powerline"
+export _POWERLINE_DEFAULT_MODE="emacs"
+export _POWERLINE_MODE="emacs"
 
 # POWERLINE-DAEMON REQUIRED
 
 #export POWERLINE_COMMAND=powerline-client
-#export _POWERLINE_MODE="viins"
-
-export _POWERLINE_MODE="emacs"
-export POWERLINE_COMMAND="powerline"
-export _POWERLINE_DEFAULT_MODE="emacs"
 
 #if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
 #then
@@ -45,9 +42,6 @@ export _POWERLINE_DEFAULT_MODE="emacs"
 
 # POWERLINE REQUIRED
 
-# GET RID OF VIINS/VICMD PREFIX FOR ZSH
-export _POWERLINE_MODE=""
-
 if [[ ! $PATH == *".powerline/scripts"* ]]
 then
         export PATH=~/.powerline/scripts:$PATH
@@ -55,7 +49,7 @@ fi
 
 . ~/.powerline/powerline/bindings/bash/powerline.sh
 
-############################################# FUZZY FINDER ##################################
+############################################# FUZZY FINDER ################################
 
 fh() {
 eval $(history | fzf +s | sed 's/ *[0-9]* *//')
