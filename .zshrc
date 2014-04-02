@@ -158,6 +158,8 @@ POWERLINE_COMMAND=powerline
 
 ############################### FUZZY FINDER ##################################
 
+source ~/.fzf.zsh
+
 fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
 fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
 fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
