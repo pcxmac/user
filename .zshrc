@@ -25,11 +25,6 @@ bindkey -M emacs ' ' magic-space
 bindkey -M viins ' ' magic-space
 bindkey -M isearch '^J' accept-search 2>/dev/null
 
-fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; zle -N fzf_history; bindkey '^F' fzf_history
-fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; zle -N fzf_killps; bindkey '^Q' fzf_killps
-#fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf) && cd "$DIR" ; }; zle -N fzf_cd; bindkey '^E' fzf_cd
-fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; zle -N fzf_cd; bindkey '^E' fzf_cd
-
 autoload -U compinit promptinit zcalc zsh-mime-setup select-word-style
 select-word-style shell
 compinit
@@ -161,3 +156,15 @@ POWERLINE_COMMAND=powerline
 # ~/.powerline/scripts/powerline-daemon;
 #fi
 
+############################### FUZZY FINDER ##################################
+
+fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
+fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
+fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
+
+zle -N fzf_history; 
+bindkey '^F' fzf_history
+zle -N fzf_killps; 
+bindkey '^Q' fzf_killps
+zle -N fzf_cd; 
+bindkey '^E' fzf_cd
