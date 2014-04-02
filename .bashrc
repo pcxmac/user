@@ -51,8 +51,18 @@ fi
 
 ############################################# FUZZY FINDER ################################
 
-fh() {
-eval $(history | fzf +s | sed 's/ *[0-9]* *//')
+fh() { 
+	eval $(history | fzf +s | sed 's/ *[0-9]* *//') 
+}
+fp() { 
+	ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}; 
+}
+fd() { 
+	DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR"; 
 }
 
-bind '"\C-F":"fh\n"'	# fzf history
+bind '"\C-F":"fh\n"'    # fzf history
+bind '"\C-T":"fp\n"'    # fzf process
+bind '"\C-E":"fd\n"'    # fzf directory
+
+
