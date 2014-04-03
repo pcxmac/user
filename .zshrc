@@ -1,12 +1,15 @@
 ################################### SHELL #############################
 
+
 alias ls="ls -ph --color=auto"
 alias df="df -Th"
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins
+
 bindkey -v # vi-mode/keymap
 #bindkey -e # emacs-mode/keymap
+
 bindkey -r '^Q'
 bindkey -M viins '^A' beginning-of-line
 bindkey -M viins '^B' backward-char
@@ -21,18 +24,22 @@ bindkey -M viins '^S' history-incremental-search-forward
 bindkey -M viins '^T' transpose-chars
 bindkey -M viins '^Y' yank
 bindkey -M emacs '^X^[' vi-cmd-mode
+
 bindkey -M emacs ' ' magic-space
 bindkey -M viins ' ' magic-space
+
 bindkey -M isearch '^J' accept-search 2>/dev/null
 
 autoload -U compinit promptinit zcalc zsh-mime-setup select-word-style
 select-word-style shell
+
 compinit
 promptinit
 zsh-mime-setup
 
 # shell processes longer than 3 minutes get output stats
 REPORTTIME=3
+
 setopt interactivecomments
 setopt hist_ignore_all_dups
 setopt auto_cd
@@ -52,6 +59,7 @@ setopt no_clobber
 setopt no_case_glob
 setopt numeric_glob_sort
 setopt rc_expand_param
+
 setopt cd_able_vars
 #setopt correct
 setopt complete_in_word
@@ -65,13 +73,18 @@ setopt magic_equal_subst
 setopt auto_name_dirs
 
 #################################### ENV ##############################
+
 export LANG=en_US.UTF-8	# ssh
 export USER=$(/usr/bin/whoami) # powerline, continuity
 export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
-export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.1.0/bin
+export PATH=$HOME/.gem/ruby/2.1.0/bin:$HOME/.powerline/scripts
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
+export PATH=/bin:/sbin:$PATH
+
 
 ##################################### HISTORY #########################
+
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
@@ -100,6 +113,7 @@ setopt completeinword
 setopt menucomplete
 
 #COMPLETION
+
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' verbose yes
@@ -109,6 +123,7 @@ zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*' group-name ''
 #zstyle ':completion:*' completer _oldlist _expand _force_rehash _complete
 #zstyle ':completion:*' completer _expand _force_rehash _complete _approximate _ignored
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*:default' list-prompt '%S%M matches%s'
 zstyle ':completion:*:default' menu 'select=0'
@@ -170,3 +185,4 @@ zle -N fzf_killps;
 bindkey '^Q' fzf_killps
 zle -N fzf_cd; 
 bindkey '^E' fzf_cd
+
