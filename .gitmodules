@@ -8,3 +8,6 @@
 	path = .powerline
 	url = https://github.com/Lokaltog/powerline.git
 	branch = develop
+[submodule ".fzf"]
+	path = .fzf
+	url = https://github.com/junegunn/fzf.git
