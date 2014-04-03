@@ -78,9 +78,9 @@ export LANG=en_US.UTF-8	# ssh
 export USER=$(/usr/bin/whoami) # powerline, continuity
 export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
-export PATH=$HOME/.gem/ruby/2.1.0/bin:$HOME/.powerline/scripts
+export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=/bin:/sbin:$PATH
+export PATH=$HOME/.fzf:$HOME/.powerline/scripts:$PATH
 
 
 ##################################### HISTORY #########################

@@ -11,9 +11,9 @@ export LANG=en_US.UTF-8
 export USER=$(/usr/bin/whoami)
 export SHELL=/usr/bin/zsh
 export EDITOR=vim
-export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin
+export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=/bin:/sbin:$PATH
+export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
 
 
 ############################################### SHELL #####################################
