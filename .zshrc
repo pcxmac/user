@@ -69,7 +69,7 @@ export LANG=en_US.UTF-8	# ssh
 export USER=$(/usr/bin/whoami) # powerline, continuity
 export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
-export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
+export PATH=$HOME/.powerline/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$HOME/.gem/ruby/2.1.0/bin
 
 ##################################### HISTORY #########################
 setopt APPEND_HISTORY
