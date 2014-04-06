@@ -19,6 +19,9 @@ export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
 ############################################### SHELL #####################################
 
 alias ls='ls --color=auto'
+alias df='df -Th'
+alias du='du -h'
+
 PS1='[\u@\h \W]\$ '
 
 ############################################### HISTORY ###################################

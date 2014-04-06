@@ -3,6 +3,7 @@
 
 alias ls="ls -ph --color=auto"
 alias df="df -Th"
+alias du="du -h"
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins

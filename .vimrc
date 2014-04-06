@@ -61,6 +61,9 @@ vmap <S-Tab> <gv
 
 set mouse+=a
 
+set ignorecase
+set hlsearch
+
 set mousemodel=extend
 
 " backspace
