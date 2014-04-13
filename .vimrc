@@ -50,7 +50,7 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 let g:Powerline_symbols='fancy'
-colorscheme github
+colorscheme colors
 set nocompatible
 set guifont=Menlo\ For\ Powerline
 set number
@@ -88,8 +88,11 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
 "Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+"highlight NonText guifg=#4a4a59
+"highlight SpecialKey guifg=#4a4a59
+
+highlight NonText guifg=#44efef guibg=#ffffff
+highlight SpecialKey guifg=#44efef guibg=#ffffff
 
 highlight LineNr ctermfg=green ctermbg=black
 
