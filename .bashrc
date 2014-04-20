@@ -9,23 +9,33 @@
 
 export LANG=en_US.UTF-8
 export USER=$(/usr/bin/whoami)
+<<<<<<< HEAD
 export SHELL=/usr/bin/zsh
 export EDITOR=vim
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
 export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
 
+=======
+export SHELL=/usr/bin/bash
+export EDITOR=vim
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:PATH$
+>>>>>>> 33d8e3e7f805f915a2c3e25c76fa6d23e695297d
 
 ############################################### SHELL #####################################
 
 alias ls='ls --color=auto'
+<<<<<<< HEAD
 alias df='df -Th'
 alias du='du -h'
 
+=======
+>>>>>>> 33d8e3e7f805f915a2c3e25c76fa6d23e695297d
 PS1='[\u@\h \W]\$ '
 
 ############################################### HISTORY ###################################
 
+<<<<<<< HEAD
 export HISTFILE=~/.bash_histfile
 HISTSIZE=65536
 shopt -s histappend
@@ -72,3 +82,8 @@ fd() {
 bind '"\C-F":"fh\n"'    # fzf history
 bind '"\C-T":"fp\n"'    # fzf process
 bind '"\C-E":"fd\n"'    # fzf directory
+=======
+HISTSIZE=65536
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+>>>>>>> 33d8e3e7f805f915a2c3e25c76fa6d23e695297d
