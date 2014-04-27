@@ -1,0 +1,18 @@
+/usr/bin/ruby extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling psych_parser.c
+compiling psych.c
+compiling psych_yaml_tree.c
+compiling psych_emitter.c
+compiling psych_to_ruby.c
+linking shared-object psych.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 psych.so ./.gem.20140403-31524-1mgpbdz
+installing default psych libraries
