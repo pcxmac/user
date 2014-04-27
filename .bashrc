@@ -72,3 +72,12 @@ fd() {
 bind '"\C-F":"fh\n"'    # fzf history
 bind '"\C-T":"fp\n"'    # fzf process
 bind '"\C-E":"fd\n"'    # fzf directory
+
+###################################### GEN (UNTRACKED/CUSTOM) DOT FILES ##############################
+
+if [[ ! -c $HOME/.tmux.conf ]]
+then
+	touch $HOME/.tmux.conf
+	echo "source '$HOME/.powerline/powerline/bindings/tmux/powerline.conf'" >> $HOME/.tmux.conf
+	echo "set -g default-terminal \"screen-256color\"" >> $HOME/.tmux.conf
+fi
