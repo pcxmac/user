@@ -26,7 +26,9 @@ bindkey -M viins '^T' transpose-chars
 bindkey -M viins '^Y' yank
 bindkey -M emacs '^X^[' vi-cmd-mode
 
+bindkey -M viins '^[OD' backward-word
 bindkey -M viins '^[Od' backward-word
+bindkey -M viins '^[OC' forward-word
 bindkey -M viins '^[Oc' forward-word
 
 
