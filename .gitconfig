@@ -1,0 +1,5 @@
+[user]
+	email = admin@local.host
+	name = pxc
+[push]
+	default = simple
