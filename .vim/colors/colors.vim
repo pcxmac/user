@@ -62,6 +62,11 @@ hi SpecialKey   guifg=#177F80 gui=italic
 hi MatchParen	guibg=#cdcdfd guifg=#000000
 hi Underlined	guifg=#000000 gui=underline
 hi Directory	guifg=#990000
+
+hi SignColumn	  ctermbg=black	 
+hi Error		  ctermbg=red	 ctermfg=black
+hi Todo			  ctermbg=yellow	 ctermfg=black
+
  " }}}
 
 " {{{ Search, Visual, etc

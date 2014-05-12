@@ -40,6 +40,7 @@ Bundle 'tpope/vim-repeat'
 
 Bundle 'plasticboy/vim-markdown'
 
+Bundle 'airblade/vim-gitgutter'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
