@@ -4,6 +4,7 @@
 alias ls="ls -ph --color=auto"
 alias df="df -Th"
 alias du="du -h"
+alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins
