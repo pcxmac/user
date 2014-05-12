@@ -32,6 +32,15 @@ HISTSIZE=65536
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
+################################################ BINDKEYS ################################
+
+bind '"\eOD"':backward-word
+bind '"\eOd"':backward-word
+bind '"\eOC"':forward-word
+bind '"\eOc"':forward-word
+
+set -o emacs                          # Set emacs mode in bash (see below)
+
 ################################################ POWERLINE ################################
 
 export POWERLINE_COMMAND="powerline"
