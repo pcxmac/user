@@ -32,7 +32,8 @@ Bundle 'jmcantrell/vim-virtualenv'
 "requires vim with python2
 "Bundle 'Valloric/YouCompleteMe'
 
-Bundle 'sjl/gundo.vim'
+
+Bundle 'rking/ag.vim'
 
 Bundle 'kien/ctrlp.vim'
 
@@ -42,7 +43,12 @@ Bundle 'plasticboy/vim-markdown'
 
 Bundle 'airblade/vim-gitgutter'
 
+
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-misc'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 set rtp+=~/.powerline/powerline/bindings/vim/
 set encoding=utf-8
@@ -61,7 +67,11 @@ set ttimeoutlen=0
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-set mouse+=a
+"set mouse+=a
+set mouse=
+
+
+set paste
 
 set ignorecase
 set hlsearch
@@ -78,10 +88,39 @@ set list
 set listchars=tab:▸\ ,eol:¬
 set ts=6 sts=3 sw=3 noexpandtab
 
+
+" UNDO
 set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
+
+" backup
+set backupdir=~/.vim/tmp/backup
+set directory=~/.vim/tmp/swap
+set backupskip=~/tmp/*
+set backup
+set writebackup
+set noswapfile
+
+
+" session management
+
+let g:session_direcotry = "~/.vim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+nnoremap <leader>so :OpenSession
+nnoremap <leader>ss :SaveSession
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
+
+" tabs
+
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 nnoremap <Space> za
 
