@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+filetype plugin indent on
 
 set rtp+=~/.fzf
 set rtp+=~/.vim/bundle/vundle/
@@ -43,9 +43,10 @@ Bundle 'plasticboy/vim-markdown'
 
 Bundle 'airblade/vim-gitgutter'
 
-
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'
+
+Bundle 'fweep/vim-tabber'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -117,10 +118,18 @@ nnoremap <leader>sc :CloseSession<CR>
 
 " tabs
 
+" --- vim-tabber
+"set tabline=%!tabber#TabLine()
+set showtabline=2
+set hidden
+set switchbuf=useopen,usetab
+
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
+
+
 
 nnoremap <Space> za
 
