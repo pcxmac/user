@@ -48,7 +48,9 @@ Bundle 'xolox/vim-misc'
 
 Bundle 'fweep/vim-tabber'
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'vim-scripts/tComment'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'vim-scripts/taglist.vim'
 
 
 set rtp+=~/.powerline/powerline/bindings/vim/
@@ -64,6 +66,10 @@ set nocompatible
 set guifont=Menlo\ For\ Powerline
 set number
 set ttimeoutlen=0
+
+" tComment
+map <leader>c <c-_><c-_>
+
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
