@@ -32,6 +32,7 @@ bindkey -M viins '^[Od' backward-word
 bindkey -M viins '^[OC' forward-word
 bindkey -M viins '^[Oc' forward-word
 
+bindkey -M viins '^H' backward-kill-word
 
 bindkey -M emacs ' ' magic-space
 bindkey -M viins ' ' magic-space
