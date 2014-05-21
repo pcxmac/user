@@ -52,9 +52,16 @@ Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/taglist.vim'
 
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline_theme='powerlineish'
 
-set rtp+=~/.powerline/powerline/bindings/vim/
+"  rtp+=~/.powerline/powerline/bindings/vim/
+
 set encoding=utf-8
+
 set laststatus=2
 set fillchars+=stl:\ ,stlnc:\
 syntax enable
