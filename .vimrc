@@ -23,7 +23,16 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 
 Bundle 'scrooloose/syntastic'
+
+" NERDTree
 Bundle 'scrooloose/nerdtree'
+"no files specified on startup
+autocmd vimenter * if !argc() | NERDTree | endif
+"some file specified
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 Bundle 'honza/vim-snippets'
 
