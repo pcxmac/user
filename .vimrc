@@ -52,13 +52,26 @@ Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/taglist.vim'
 
+" powerline / UI 
+
+" airline
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='powerlineish'
 
-"  rtp+=~/.powerline/powerline/bindings/vim/
+"powerline
+" Bundle 'bling/vim-bufferline'
+" let g:bufferline_active_buffer_left = '['
+" let g:bufferline_active_buffer_right = ']'
+" let g:bufferline_active_modified = '+'
+" let g:bufferline_show_bufnr = 1
+" let g:bufferline_rotate = 1
+" let g:bufferline_fixed_index = 1
+" let g:bufferline_solo_highlight = 1
+
+" set rtp+=~/.powerline/powerline/bindings/vim/
 
 set encoding=utf-8
 
@@ -133,9 +146,9 @@ nnoremap <leader>sc :CloseSession<CR>
 
 " --- vim-tabber
 "set tabline=%!tabber#TabLine()
-set showtabline=2
-set hidden
-set switchbuf=useopen,usetab
+" set showtabline=2
+" set hidden
+" set switchbuf=useopen,usetab
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
