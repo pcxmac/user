@@ -182,6 +182,11 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ~/.powerline/scripts/powerline-daemon;
 #fi
 
+
+################################################ PROMPT ####################################
+
+PS1="[%n@%m %1~]$ "
+
 ############################### FUZZY FINDER ##################################
 
 source ~/.fzf.zsh
