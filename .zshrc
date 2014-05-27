@@ -83,6 +83,11 @@ setopt multios
 setopt magic_equal_subst
 setopt auto_name_dirs
 
+################################################ PROMPT ####################################
+
+PS1="[%n@%m %1~]$ "
+
+
 #################################### ENV ##############################
 
 export LANG=en_US.UTF-8	# ssh
@@ -181,11 +186,6 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #then
 # ~/.powerline/scripts/powerline-daemon;
 #fi
-
-
-################################################ PROMPT ####################################
-
-PS1="[%n@%m %1~]$ "
 
 ############################### FUZZY FINDER ##################################
 
