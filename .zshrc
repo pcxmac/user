@@ -166,10 +166,10 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
- if [[ ! $PATH == *".powerline/scripts"* ]]
- then
- export PATH=~/.powerline/scripts:$PATH
- fi
+if [[ ! $PATH == *".powerline/scripts"* ]]
+then
+	export PATH=~/.powerline/scripts:$PATH
+fi
 
  . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 #
@@ -182,10 +182,10 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #export POWERLINE_COMMAND=powerline-client
 
-#if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
-#then
-# ~/.powerline/scripts/powerline-daemon;
-#fi
+# if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
+# then
+# 	~/.powerline/scripts/powerline-daemon;
+# fi
 
 ############################### FUZZY FINDER ##################################
 
