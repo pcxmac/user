@@ -22,4 +22,6 @@ fi
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-scale /usr/local/share/background-images/arch_dtbg.png
 
+/usr/bin/xscreensaver -no-splash &
+
 exec i3

@@ -27,9 +27,9 @@ Bundle 'scrooloose/syntastic'
 " NERDTree
 Bundle 'scrooloose/nerdtree'
 "no files specified on startup
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 "some file specified
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -95,6 +95,8 @@ set nocompatible
 set guifont=Menlo\ For\ Powerline
 set number
 set ttimeoutlen=0
+
+set nowrap
 
 " tComment
 map <leader>c <c-_><c-_>
