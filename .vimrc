@@ -67,7 +67,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
+"let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='powerlineish'
 
 "powerline
