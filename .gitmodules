@@ -8,9 +8,6 @@
 	path = .powerline
 	url = https://github.com/Lokaltog/powerline.git
 	branch = develop
-[submodule ".fzf"]
-	path = .fzf
-	url = https://github.com/junegunn/fzf.git
 [submodule ".themes/solarized"]
 	path = .themes/solarized
 	url = https://github.com/altercation/solarized.git
