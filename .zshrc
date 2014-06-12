@@ -96,7 +96,8 @@ export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=$HOME/.fzf:$HOME/.powerline/scripts:$PATH
+export PATH=$HOME/.powerline/scripts:$PATH
+#export PATH=$HOME/.fzf:$PATH
 
 
 ##################################### HISTORY #########################
@@ -189,18 +190,18 @@ fi
 
 ############################### FUZZY FINDER ##################################
 
-source ~/.fzf.zsh
+#source ~/.fzf.zsh
 
-fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
-fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
-fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
+#fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
+#fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
+#fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
 
-zle -N fzf_history; 
-bindkey '^F' fzf_history
-zle -N fzf_killps; 
-bindkey '^Q' fzf_killps
-zle -N fzf_cd; 
-bindkey '^E' fzf_cd
+#zle -N fzf_history; 
+#bindkey '^F' fzf_history
+#zle -N fzf_killps; 
+#bindkey '^Q' fzf_killps
+#zle -N fzf_cd; 
+#bindkey '^E' fzf_cd
 
 ###################################### GEN (UNTRACKED/CUSTOM) DOT FILES ##############################
 
