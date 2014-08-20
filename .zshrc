@@ -105,7 +105,8 @@ export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=$HOME/.fzf:$HOME/.powerline/scripts:$PATH
+export PATH=$HOME/.powerline/scripts:$PATH
+#export PATH=$HOME/.fzf:$PATH
 
 
 ##################################### HISTORY #########################
