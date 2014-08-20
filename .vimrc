@@ -1,6 +1,8 @@
 set nocompatible
 filetype plugin indent on
 
+set autoindent
+
 set rtp+=~/.fzf
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -69,6 +71,14 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='powerlineish'
+"let g:airline#extensions#whitespace#enabled = 1
+"let g:airline#extensions#whitespace#mixed_indent_algo = 1
+"let g:airline#extensions#whitespace#symbol = '!'
+
+" show all tabs /\t
+" show all whitespace /\s\+$
+" show all spaces before a tab / \+\ze\t
+
 
 "powerline
 " Bundle 'bling/vim-bufferline'

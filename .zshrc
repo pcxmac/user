@@ -1,10 +1,19 @@
 ################################### SHELL #############################
 
-
+alias upgrade="yaourt -Syua --noconfirm"
 alias ls="ls -ph --color=auto"
 alias df="df -Th"
 alias du="du -h"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
+alias copycheck="rsync -a --checksum --verbose"
+alias copynew="rsync -au --verbose"
+alias copyig="rsync -a --ignore-existing --verbose"
+alias snapr="btrfs subvolume snapshot -r"
+alias snap="btrfs subvolume snapshot"
+alias ddd="dd if=/dev/zero bs=1G"
+alias pkgs-local=""
+alias pkgs-official=""
+
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins
@@ -173,7 +182,8 @@ fi
 
  . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 #
- POWERLINE_COMMAND=powerline
+ 
+POWERLINE_COMMAND=powerline-render
 
 #_POWERLINE_MODE=viins
 #_POWERLINE_DEFAULT_MODE=emacs
@@ -189,18 +199,18 @@ fi
 
 ############################### FUZZY FINDER ##################################
 
-source ~/.fzf.zsh
+#source ~/.fzf.zsh
 
-fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
-fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
-fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
+#fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; }; 
+#fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; 
+#fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; }; 
 
-zle -N fzf_history; 
-bindkey '^F' fzf_history
-zle -N fzf_killps; 
-bindkey '^Q' fzf_killps
-zle -N fzf_cd; 
-bindkey '^E' fzf_cd
+#zle -N fzf_history; 
+#bindkey '^F' fzf_history
+#zle -N fzf_killps; 
+#bindkey '^Q' fzf_killps
+#zle -N fzf_cd; 
+#bindkey '^E' fzf_cd
 
 ###################################### GEN (UNTRACKED/CUSTOM) DOT FILES ##############################
 
