@@ -14,6 +14,8 @@ alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
 
+#copying to multiple directories = echo dir* | xargs -n 1 cp file
+
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins

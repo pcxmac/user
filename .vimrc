@@ -1,16 +1,26 @@
 set nocompatible
 filetype plugin indent on
-
 set autoindent
 
 set rtp+=~/.fzf
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
+Bundle 'nathanaelkane/vim-indent-guides'
+autocmd VimEnter * IndentGuidesEnable
+
+let g:indent_guides_auto_colors = 1
+"let g:indent_guides_color_change_percent = 10
+let g:indent_guides_guide_size = 2
+let g:indent_guides_start_level = 2
+
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=234 ctermfg=4
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236 ctermfg=4
+
 " other bundles ...
+
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
@@ -18,14 +28,12 @@ Bundle 'tpope/vim-surround'
 
 "Bundle 'wincent/Command-T'
 
-Bundle 'junegunn/fzf'
+"Bundle 'junegunn/fzf'
 
 Bundle 'marcweber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
-
 Bundle 'scrooloose/syntastic'
-
 " NERDTree
 Bundle 'scrooloose/nerdtree'
 "no files specified on startup
@@ -43,7 +51,6 @@ Bundle 'jmcantrell/vim-virtualenv'
 "requires vim with python2
 "Bundle 'Valloric/YouCompleteMe'
 
-
 Bundle 'rking/ag.vim'
 
 Bundle 'kien/ctrlp.vim'
@@ -51,6 +58,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-repeat'
 
 Bundle 'plasticboy/vim-markdown'
+
+Bundle 'bronson/vim-trailing-whitespace'
 
 Bundle 'airblade/vim-gitgutter'
 
@@ -63,7 +72,7 @@ Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/taglist.vim'
 
-" powerline / UI 
+" powerline / UI
 
 " airline
 Bundle 'bling/vim-airline'
@@ -98,6 +107,7 @@ set laststatus=2
 set fillchars+=stl:\ ,stlnc:\
 syntax enable
 set background=dark
+set t_Co=256
 let g:solarized_termcolors=256
 let g:Powerline_symbols='fancy'
 colorscheme colors
@@ -134,7 +144,6 @@ set whichwrap+=<,>,[,]
 
 set list
 set listchars=tab:▸\ ,eol:¬
-set ts=6 sts=3 sw=3 noexpandtab
 
 
 " UNDO
@@ -175,9 +184,6 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
-
-
-
 nnoremap <Space> za
 
 nmap <leader>l :set list!<CR>
@@ -193,33 +199,21 @@ highlight SpecialKey guifg=#44efef guibg=#ffffff
 
 highlight LineNr ctermfg=green ctermbg=black
 
-" Set tabstop, softtabstop and shiftwidth to the same value
-
-command! -nargs=* Stab call Stab()
-
-function! Stab()
-    let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
-    if l:tabstop > 0
-	let &l:sts = l:tabstop
-	let &l:ts = l:tabstop
-	let &l:sw = l:tabstop
-    endif
-    call SummarizeTabs()
-endfunction
+set ts=4 sts=4 sw=4 noexpandtab
 
 function! SummarizeTabs()
-    try
-	echohl ModeMsg
-	echon 'tabstop='.&l:ts
-	echon ' shiftwidth='.&l:sw
-	echon ' softtabstop='.&l:sts
-	if &l:et
-	    echon ' expandtab'
-	    else
-	    echon ' noexpandtab'
-	endif
-	finally
-	    echohl None
-	    endtry
+	try
+		echohl ModeMsg
+		echon 'tabstop='.&l:ts
+		echon ' shiftwidth='.&l:sw
+		echon ' softtabstop='.&l:sts
+		if &l:et
+		echon ' expandtab'
+		else
+		echon ' noexpandtab'
+		endif
+		finally
+		echohl None
+		endtry
 endfunction
 
