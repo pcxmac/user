@@ -20,7 +20,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=234 ctermfg=4
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236 ctermfg=4
 
 " other bundles ...
-
+Bundle 'yonchu/accelerated-smooth-scroll'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
