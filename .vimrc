@@ -26,6 +26,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 
+Bundle 'valloric/YouCompleteMe'
+
 "Bundle 'wincent/Command-T'
 
 "Bundle 'junegunn/fzf'
