@@ -1,96 +1,68 @@
-*color0:       			#000000
-*color1:       			#b45151
-*color2:       			#aece92
-*color3:       			#d2b05D
-*color4:       			#646E84
-*color5:       			#aa6eaf
-*color6:       			#6B9999
-*color7:       			#bebebe
-*color8:       			#808080
-*color9:       			#fe8686
-*color10:      			#c5ee83
-*color11:      			#F0F18F
-*color12:      			#92A1BF
-*color13:      			#cb96ce
-*color14:      			#8FCCCC
-*color15:      			#ffffff
+*color0:						#000000
+*color1:						#b45151
+*color2:						#aece92
+*color3:						#d2b05D
+*color4:						#646E84
+*color5:						#aa6eaf
+*color6:						#6B9999
+*color7:						#bebebe
+*color8:						#808080
+*color9:						#fe8686
+*color10:						#c5ee83
+*color11:						#F0F18F
+*color12:						#92A1BF
+*color13:						#cb96ce
+*color14:						#8FCCCC
+*color15:						#ffffff
 
+URxvt*.scrollColor:				grey
+URxvt*.troughColor:				black
 
-!URxvt*.font:             	xft:DejaVu Sans Mono for Powerline:antialias=true:pixelsize=16
+URxvt*.font:					xft:Inconsolata for Powerline:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Regular:antialias=true:pixelsize=16
+URxvt*.boldFont:				xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold:antialias=true:pixelsize=16
+URxvt*.italicFont:				xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Italic:antialias=true:pixelsize=16
+URxvt*.boldItalicFont:			xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold Italic:antialias=true:pixelsize=16
 
-!URxvt*.font:             	xft:Inconsolata for Powerline:antialias=true:pixelsize=16
-!URxvt*.boldFont:         	xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16
-!URxvt*.italicFont:       	xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16
-!URxvt*.boldItalicFont:   	xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16
+URxvt*.foreground:				white
+URxvt*.background:				black
+URxvt*.geometry:				150x30
+URxvt*.jumpScroll:				true
+URxvt*.skipScroll:				true
 
-URxvt*.font:             	xft:Inconsolata for Powerline:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Regular:antialias=true:pixelsize=16
-URxvt*.boldFont:         	xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold:antialias=true:pixelsize=16
-URxvt*.italicFont:       	xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Italic:antialias=true:pixelsize=16
-URxvt*.boldItalicFont:   	xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold Italic:antialias=true:pixelsize=16
+! NATIVE TRANSPARENCY
+! shading values are 0-200, > 100 lighter, < 100 darker
+URxvt*.transparent:				true
+URxvt*.shading:					90
 
-!URxvt*.font:             	xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Regular:antialias=true:pixelsize=16, xft:Inconsolata for Powerline:antialias=true:pixelsize=16
-!URxvt*.boldFont:         	xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold:antialias=true:pixelsize=16, xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16
-!URxvt*.italicFont:       	xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Italic:antialias=true:pixelsize=16, xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16
-!URxvt*.boldItalicFont:   	xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold Italic:antialias=true:pixelsize=16, xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, 
+URxvt*.fading:					20
+URxvt*.tintColor:				grey30
+URxvt*.mapAlert:				true
+URxvt*.loginShell:				true
+URxvt*.scrollstyle:				rxvt
+URxvt*.scrollBar:				true
+URxvt*.scrollTtyOutput:			true
+URxvt*.scrollWithBuffer:		true
+URxvt*.scrollTtyKeypress:		true
+URxvt*.saveLines:				1048576
+URxvt*.internalBorder:			5
+URxvt*.externalBorder:			0
+URxvt*.pastableTabs:			true
+URxvt*.pointerBlank:			true
+URxvt*.pointerBlankDelay:		5
+URxvt*.tripleclickwords:		true
 
+URxvt*.multiScroll:				true
+URxvt*.scrollKey:				true
 
-! xft:DejaVu Sans Mono for Powerline:antialias=true:pixelsize=16,
-! xft:DejaVu Sans Mono Bold for Powerline:bold:antialias=true:pixelsize=16,
-! xft:DejaVu Sans Mono Oblique for Powerline:italic:antialias=true:autohint=true:pixelsize=16,
-! xft:DejaVu Sans Mono Oblique for Powerline:italic:antialias=true:autohint=true:pixelsize=16,
+URxvt*.perl-ext-common:			default,matcher
+URxvt*.urlLauncher:				/usr/bin/firefox-nightly
+URxvt*.matcher.button:			1
+URxvt*.scrollBar_floating:		true
+URxvt*.scrollBar_right:			true
 
-! xft:Consolas:antialias=true:pixelsize=16,
-! xft:Consolas:bold:antialias=true:pixelsize=16,
-! xft:Consolas:italic:antialias=true:autohint=true:pixelsize=16, 
-! xft:Consolas:italic:antialias=true:autohint=true:pixelsize=16,
+URxvt*iso14755:				false
 
-!  xft:Unifont:antialias=true:pixelsize=16,
-
-! Ubuntu Mono derivative Powerline:style=Regular
-! Ubuntu Mono derivative Powerline:style=Bold Italic
-! Ubuntu Mono derivative Powerline:style=Bold
-! Ubuntu Mono derivative Powerline:style=Italic
-
-URxvt*.background:       	black
-URxvt*.foreground:       	white
-URxvt*.geometry:         	150x30
-URxvt*.jumpScroll:       	true
-URxvt*.skipScroll:       	true
-
-# NATIVE TRANSPARENCY
-# shading values are 0-200, > 100 lighter, < 100 darker
-URxvt*.transparent:      	true
-URxvt*.shading			120
-
-URxvt*.fading:          	20
-URxvt*.tintColor:        	grey30
-URxvt*.mapAlert:         	true
-URxvt*.loginShell:       	true
-URxvt*.scrollstyle:		rxvt
-URxvt*.scrollBar:        	true
-URxvt*.scrollTtyOutput:  	true
-URxvt*.scrollWithBuffer: 	true
-URxvt*.scrollTtyKeypress:	true
-URxvt*.saveLines:        	1048576
-URxvt*.internalBorder:   	5
-URxvt*.externalBorder:   	0
-URxvt*.pastableTabs:     	true
-URxvt*.pointerBlank:     	true
-URxvt*.pointerBlankDelay:	5
-URxvt*.tripleclickwords: 	true
-	
-URxvt*.multiScroll:      	true
-URxvt*.scrollKey:        	true
-
-URxvt*.perl-ext-common:  	default,matcher
-URxvt*.urlLauncher:      	/usr/bin/firefox-nightly
-URxvt*.matcher.button:  	1
-URxvt*.scrollColor:             grey
-URxvt*.troughColor:             black
-URxvt*.scrollBar_floating:      true
-URxvt*.scrollBar_right:         true
-
-# TRUE TRANSPARENCY	... requires (if not using a wm w/ compositing mgr) something like compton
+! TRUE TRANSPARENCY	... requires (if not using a wm w/ compositing mgr) something like compton
 !URxvt*.depth: 			32
 !URxvt*.background: 		[84]#000000
 
@@ -100,21 +72,18 @@ Xcursor.theme:          	gentoo-silver
 
 !xterm*termName: 		xterm-256color
 
-### https://wiki.archlinux.org/index.php/rxvt-unicode
+! https://wiki.archlinux.org/index.php/rxvt-unicode
 
-# requires urxvt-vthwheel
+! requires urxvt-vthwheel
 
-#URxvt.perl-ext-common:  font-size
+! URxvt.perl-ext-common:  font-size
 
-#URxvt.iso14755: false
-#URxvt.iso14755_52: false
+! URxvt.keysym.C-Up:     perl:font-size:increase
+! URxvt.keysym.C-Down:   perl:font-size:decrease
+! URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+! URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
-#URxvt.keysym.C-Up:     perl:font-size:increase
-#URxvt.keysym.C-Down:   perl:font-size:decrease
-#URxvt.keysym.C-S-Up:   perl:font-size:incglobal
-#URxvt.keysym.C-S-Down: perl:font-size:decglobal
+! requires urxvt-font-size-git
 
-# requires urxvt-font-size-git
-
-#URxvt.perl-ext-common:  vtwheel
+! URxvt.perl-ext-common:  vtwheel
 

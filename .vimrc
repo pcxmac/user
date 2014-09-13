@@ -2,7 +2,28 @@ set nocompatible
 filetype plugin indent on
 set autoindent
 
-set rtp+=~/.fzf
+" control pageup next buffer
+nmap <ESC>[5^	<C-PageUp>
+nnoremap <C-PageUp> :bnext!<CR>
+" control pagedown last buffer
+nmap <ESC>[6^ <C-PageDown>
+nnoremap <C-PageDown> :bprevious!<CR>
+" control del drop buffer
+nmap <ESC>[3^ <C-End>
+nnoremap <C-End> :bd<CR>
+
+nmap <ESC>[2^ <C-Insert>
+nnoremap <C-Insert> :set number! \| :set list! \| :GitGutterToggle<CR>
+
+" control pageup next buffer
+nmap <ESC>[7^	<Home>
+nnoremap <Home> gg<CR>
+" control pagedown last buffer
+nmap <ESC>[8^ <End>
+nnoremap <End> G<CR>
+
+
+"set rtp+=~/.fzf
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " Let Vundle manage Vundle
@@ -41,6 +62,8 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/syntastic'
 " NERDTree
+
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 "no files specified on startup
 "autocmd vimenter * if !argc() | NERDTree | endif
@@ -107,6 +130,10 @@ let g:airline_theme='powerlineish'
 
 " set rtp+=~/.powerline/powerline/bindings/vim/
 
+"switch to alternate file
+map <C-Tab> :bnext<cr>
+map <C-S-Tab> :bprevious<cr>
+
 set encoding=utf-8
 
 set laststatus=2
@@ -132,7 +159,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 "set mouse+=a
-set mouse=
+set mouse=a
 
 
 set paste
