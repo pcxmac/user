@@ -3,3 +3,10 @@
 	name = pxc
 [push]
 	default = simple
+[color]
+	diff = auto
+	interactive = auto
+	status = auto
+	branch = auto
+[core]
+	editor = vim\n
