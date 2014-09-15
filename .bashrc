@@ -91,3 +91,19 @@ fi
 #	echo "source '$HOME/.powerline/powerline/bindings/tmux/powerline.conf'" >> $HOME/.tmux.conf
 #	echo "set -g default-terminal \"screen-256color\"" >> $HOME/.tmux.conf
 #fi
+
+##################################### GIT SETTINGS ###################################################
+#
+# git config --global user.email "name@host"
+# git config --global user.name "name"
+
+# git config --global core.editor "vim"
+
+# git config --global push.default "simple"
+
+# git config --global color.branch auto
+# git config --global color.diff auto
+# git config --global color.interactive auto
+# git config --global color.status auto
+
+
