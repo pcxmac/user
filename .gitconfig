@@ -1,6 +1,6 @@
 [user]
-	email = admin@local.host
-	name = pxc
+	email = root@saturn
+	name = root
 [push]
 	default = simple
 [color]
