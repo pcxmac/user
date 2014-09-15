@@ -2,6 +2,8 @@ set nocompatible
 filetype plugin indent on
 set autoindent
 
+				"hello
+
 " control pageup next buffer
 nmap <ESC>[5^	<C-PageUp>
 nnoremap <C-PageUp> :bnext!<CR>
@@ -32,13 +34,16 @@ Bundle 'gmarik/vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 autocmd VimEnter * IndentGuidesEnable
 
-let g:indent_guides_auto_colors = 1
+"let g:indent_guides_auto_colors = 1
 "let g:indent_guides_color_change_percent = 10
-let g:indent_guides_guide_size = 2
-let g:indent_guides_start_level = 2
+"let g:indent_guides_guide_size = 2
+"let g:indent_guides_start_level = 2
 
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=234 ctermfg=4
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236 ctermfg=4
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd	ctermbg=234		ctermfg=4
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven	ctermbg=236		ctermfg=4
+
+autocmd BufEnter,FileType,BufWinEnter,BufWinLeave * :hi IndentGuidesOdd		ctermbg=234		ctermfg=4
+autocmd BufEnter,FileType,BufWinEnter,BufWinLeave * :hi IndentGuidesEven	ctermbg=236		ctermfg=4
 
 " other bundles ...
 Bundle 'yonchu/accelerated-smooth-scroll'
@@ -234,19 +239,19 @@ highlight LineNr ctermfg=green ctermbg=black
 
 set ts=4 sts=4 sw=4 noexpandtab
 
-function! SummarizeTabs()
-	try
-		echohl ModeMsg
-		echon 'tabstop='.&l:ts
-		echon ' shiftwidth='.&l:sw
-		echon ' softtabstop='.&l:sts
-		if &l:et
-		echon ' expandtab'
-		else
-		echon ' noexpandtab'
-		endif
-		finally
-		echohl None
-		endtry
-endfunction
-
+" function! SummarizeTabs()
+" 	try
+" 		echohl ModeMsg
+" 		echon 'tabstop='.&l:ts
+" 		echon ' shiftwidth='.&l:sw
+" 		echon ' softtabstop='.&l:sts
+" 		if &l:et
+" 		echon ' expandtab'
+" 		else
+" 		echon ' noexpandtab'
+" 		endif
+" 		finally
+" 		echohl None
+" 		endtry
+" endfunction
+"

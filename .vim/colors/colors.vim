@@ -63,9 +63,12 @@ hi MatchParen	guibg=#cdcdfd guifg=#000000
 hi Underlined	guifg=#000000 gui=underline
 hi Directory	guifg=#990000
 
-hi SignColumn	  ctermbg=black	 
+hi SignColumn	  ctermbg=black
 hi Error		  ctermbg=red	 ctermfg=black
 hi Todo			  ctermbg=yellow	 ctermfg=black
+
+"hi IndentGuidesOdd	guibg=red	ctermfg=234 ctermbg=4
+"hi IndentGuidesEven	guibg=green	ctermfg=236 ctermbg=4
 
  " }}}
 
