@@ -2,7 +2,6 @@ set nocompatible
 filetype plugin indent on
 set autoindent
 
-				"hello
 
 " control pageup next buffer
 nmap <ESC>[5^	<C-PageUp>
@@ -30,6 +29,10 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+
+"Bundle 'djoshea/vim-autoread'
+"autocmd CursorHold,CursorHoldI,BufEnter,BufWinEnter,CursorHold filename * checktime!
+set autoread
 
 Bundle 'nathanaelkane/vim-indent-guides'
 autocmd VimEnter * IndentGuidesEnable
