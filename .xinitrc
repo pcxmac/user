@@ -16,7 +16,7 @@ fi
 # exec startxfce4
 # ...or the Window Manager of your choice
 
-/usr/bin/feh --bg-center /usr/local/share/background-images/arch_dtbg.png&
+/usr/bin/feh --bg-center ~/.desktop/background-images/arch_dtbg.png&
 #/usr/bin/feh --bg-tile /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-max /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
