@@ -15,6 +15,8 @@ alias pkgs-local=""
 alias pkgs-official=""
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
 
+alias atitemp="aticonfig --odgt"
+
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
 
 
