@@ -14,13 +14,13 @@ uwpdr=$(ps aux | grep powerline-daemon | grep -v "grep" | awk '{print $1}' | uni
 # difference between logged in users and powerline-daemon users represents daemons needing to be killed
 difu=$(diff <(echo "$usli") <(echo "$uwpdr") | sed -n '1!p' | awk '{print $2}' | sed '/^$/d');
 
-while read nUser; 
-do 
+while read nUser;
+do
 
         if [[ "$(ps aux | grep $nUser | grep "powerline-daemon" | grep -v "grep" | wc -l)" > 0 ]]
         then
                 sudo -u $nUser powerline-daemon --kill;
         fi
- 
+
 done < <(echo "$difu")
 

@@ -54,14 +54,17 @@ Bundle 'yonchu/accelerated-smooth-scroll'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-markdown'
 
 "Bundle 'valloric/YouCompleteMe'
 Bundle 'Shougo/neocomplete'
 Bundle 'davidhalter/jedi-vim'
-"Bundle ''
+
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tristen/vim-sparkup'
 "Bundle ''
 
-"Bundle 'wincent/Command-T'
+Bundle 'wincent/Command-T'
 
 "Bundle 'junegunn/fzf'
 
@@ -93,8 +96,6 @@ Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 
 Bundle 'tpope/vim-repeat'
-
-Bundle 'plasticboy/vim-markdown'
 
 Bundle 'bronson/vim-trailing-whitespace'
 
