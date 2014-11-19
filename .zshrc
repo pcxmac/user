@@ -14,7 +14,7 @@ alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
-
+alias temp="sensors;aticonfig --odgt"
 alias atitemp="aticonfig --odgt"
 
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
