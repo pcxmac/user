@@ -14,6 +14,9 @@ alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
+alias rcp="rsync --checksum -v -r -l -H -p"
+alias pigc="pigz --best"
+alias pigd="pigz -d"
 
 alias atitemp="aticonfig --odgt"
 

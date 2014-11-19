@@ -3,6 +3,8 @@ filetype plugin indent on
 set autoindent
 
 
+" how to capture keyseq --> [insert mode] Control-v
+
 " control pageup next buffer
 nmap <ESC>[5^	<C-PageUp>
 nnoremap <C-PageUp> :bnext!<CR>
