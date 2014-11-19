@@ -14,10 +14,14 @@ alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
+<<<<<<< HEAD
 alias rcp="rsync --checksum -v -r -l -H -p"
 alias pigc="pigz --best"
 alias pigd="pigz -d"
 
+=======
+alias temp="sensors;aticonfig --odgt"
+>>>>>>> refs/remotes/origin/developer
 alias atitemp="aticonfig --odgt"
 
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
