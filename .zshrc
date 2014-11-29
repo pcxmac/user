@@ -19,6 +19,8 @@ alias pigc="pigz --best"
 alias pigd="pigz -d"
 alias temp="sensors;aticonfig --odgt"
 alias atitemp="aticonfig --odgt"
+alias blist="btrfs subvolume list"
+alias bdf="btrfs filesystem df"
 
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
 
