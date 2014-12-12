@@ -21,7 +21,9 @@ alias temp="sensors;aticonfig --odgt"
 alias atitemp="aticonfig --odgt"
 alias blist="btrfs subvolume list"
 alias bdf="btrfs filesystem df"
-
+alias pacclean="yaourt -Qdt;yaourt Scc;"
+alias pacremove="yaourt -Rdd"
+alias bdel="btrfs subvolume delete"
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
 
 
