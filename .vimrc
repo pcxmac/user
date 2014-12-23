@@ -169,6 +169,17 @@ map <leader>c <c-_><c-_>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+" Folding
+    set foldenable " Turn on folding
+    set foldmethod=indent " Fold on the indent (damn you python)
+    set foldlevel=100 " Don't autofold anything (but I can still fold manually)
+    set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds
+    function SimpleFoldText() " {
+        return getline(v:foldstart).' '
+    endfunction " }
+    set foldtext=SimpleFoldText() " Custom fold text function (cleaner than default)
+
+
 "set mouse+=a
 set mouse=a
 

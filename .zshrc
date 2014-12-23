@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
 alias ls="ls -ph --color=auto"
 alias df="df -Th"
