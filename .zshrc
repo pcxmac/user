@@ -2,7 +2,7 @@
 
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
-alias ls="ls -ph --color=auto"
+alias ls="ls -ph --color=auto --ignore="lost+found"
 alias df="df -Th"
 alias du="du -h"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
