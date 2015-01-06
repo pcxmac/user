@@ -1,0 +1,8 @@
+[trusted]
+users = root,ciaran,sysop
+groups = root
+
+[http_proxy]
+host = proxy.hypokrites.me:3128
+#passwd = password
+#user = username
