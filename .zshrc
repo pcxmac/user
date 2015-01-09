@@ -25,6 +25,7 @@ alias bdf="btrfs filesystem df"
 alias pacclean="yaourt -Qdt;yaourt Scc;"
 alias pacremove="yaourt -Rdd"
 alias bdel="btrfs subvolume delete"
+alias grep="grep --color"
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
 
 
