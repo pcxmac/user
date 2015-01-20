@@ -12,8 +12,8 @@ nnoremap <C-PageUp> :bnext!<CR>
 nmap <ESC>[6^ <C-PageDown>
 nnoremap <C-PageDown> :bprevious!<CR>
 " control del drop buffer
-nmap <ESC>[3^ <C-End>
-nnoremap <C-End> :bd<CR>
+nmap <ESC>[3^ <C-Del>
+nnoremap <C-Del> :bd<CR>
 
 nmap <ESC>[2^ <C-Insert>
 nnoremap <C-Insert> :set number! \| :set list! \| :GitGutterToggle<CR>
