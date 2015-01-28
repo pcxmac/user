@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias scan="clamscan -r --bell -i"
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
 alias ls="ls -ph --color=auto --ignore='lost+found'"
