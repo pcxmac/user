@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
 alias scan="clamscan -r --bell -i"
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
