@@ -192,32 +192,13 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
-powerline-daemon -q
+	export PATH=~/.local/bin:$PATH
 
-#if [[ ! $PATH == *".powerline/scripts"* ]]
-#then
-#	export PATH=~/.powerline/scripts:$PATH
-#fi
+	. ~/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
 
-# . ~/.powerline/powerline/bindings/zsh/powerline.zsh
-#
-
-	. /usr/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+	powerline-daemon -q
 
 
-POWERLINE_COMMAND=powerline-render
-
-#_POWERLINE_MODE=viins
-#_POWERLINE_DEFAULT_MODE=emacs
-
-# POWERLINE-DAEMON ###########################################################
-
-#export POWERLINE_COMMAND=powerline-client
-
-# if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
-# then
-# 	~/.powerline/scripts/powerline-daemon;
-# fi
 
 ############################### FUZZY FINDER ##################################
 
