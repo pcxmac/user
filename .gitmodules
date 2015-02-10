@@ -4,10 +4,6 @@
 [submodule ".vim/bundle/vundle"]
 	path = .vim/bundle/vundle
 	url = https://github.com/gmarik/Vundle.vim.git
-[submodule ".powerline"]
-	path = .powerline
-	url = https://github.com/Lokaltog/powerline.git
-	branch = develop
 [submodule ".themes/solarized"]
 	path = .themes/solarized
 	url = https://github.com/altercation/solarized.git
