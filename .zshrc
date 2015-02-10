@@ -194,7 +194,11 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 	export PATH=~/.local/bin:$PATH
 
+<<<<<<< HEAD
 	. /root/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+=======
+	. ~/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+>>>>>>> 70506e99e93ac121c618f6d824087432a591a311
 
 	powerline-daemon -q
 
