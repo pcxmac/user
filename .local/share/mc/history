@@ -1,0 +1,30 @@
+[input-def]
+0=/mnt/*
+1=*
+
+[input2]
+0=/usr/src/
+1=/ark/media
+
+[cmdline]
+0=[21~
+1=/run/media/ciaran
+2=
+
+[Dir Hist New Right Panel]
+0=/mnt
+1=/
+2=/usr
+3=/usr/src
+4=/var/lib/lxc/trusty.bind9
+5=/ark
+6=/run/media/ciaran
+7=/run/media/ciaran/samsung/GAMES
+8=/run/media/ciaran/samsung
+
+[Dir Hist New Left Panel]
+0=/mnt/.git
+1=/mnt
+2=/
+3=/var/lib/lxc/trusty.bind9
+4=/ark
