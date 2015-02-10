@@ -192,13 +192,18 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
-if [[ ! $PATH == *".powerline/scripts"* ]]
-then
-	export PATH=~/.powerline/scripts:$PATH
-fi
+powerline-daemon -q
 
- . ~/.powerline/powerline/bindings/zsh/powerline.zsh
+#if [[ ! $PATH == *".powerline/scripts"* ]]
+#then
+#	export PATH=~/.powerline/scripts:$PATH
+#fi
+
+# . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 #
+
+	. /usr/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+
 
 POWERLINE_COMMAND=powerline-render
 
