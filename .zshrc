@@ -121,7 +121,7 @@ export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=$HOME/.powerline/scripts:$PATH
+#export PATH=$HOME/.powerline/scripts:$PATH
 #export PATH=$HOME/.fzf:$PATH
 
 
@@ -192,17 +192,29 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
-	powerlinestatus="$(pip freeze | grep 'powerline-status')"
 
+	# AUTOMATED INSTALL
+	powerlinestatus="$(pip freeze | grep 'powerline-status')"
 	if [ -z "$powerlinestatus" ]
 	then
 		pip install --user git+git://github.com/powerline/powerline
 	fi
 
-	export PATH=~/.local/bin:$PATH
+	# AUTOMATED UPGRADE (10 days)
+	updateWhen=10
+	revDate="$(date -d "$(ls -ail .local/bin/powerline | awk '{print $7" "$8}')" +%s)"
+	thisDate="$(date -d now +%s)"
+	diffDate="$(( ($thisDate - $revDate) / 86400))"
+	if [ $diffDate -gt $updateWhen ]
+	then
+		pip install --user git+git://github.com/powerline/powerline	--upgrade
+	fi
 
+	# export powerline bin and bind zsh
+	export PATH=~/.local/bin:$PATH
 	. ~/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
 
+	# utilize powerline-daemon for quicker responses from powerline
 	powerline-daemon -q
 
 
