@@ -192,6 +192,13 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
+	powerlinestatus="$(pip freeze | grep 'powerline-status')"
+
+	if [ -z "$powerlinestatus" ]
+	then
+		pip install --user git+git://github.com/powerline/powerline
+	fi
+
 	export PATH=~/.local/bin:$PATH
 
 	. ~/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
