@@ -36,6 +36,9 @@ Bundle 'gmarik/vundle'
 "autocmd CursorHold,CursorHoldI,BufEnter,BufWinEnter,CursorHold filename * checktime!
 set autoread
 
+" FUZZY FINDER / CTRL-P
+Bundle 'kien/ctrlp.vim'
+
 Bundle 'nathanaelkane/vim-indent-guides'
 autocmd VimEnter * IndentGuidesEnable
 
@@ -95,8 +98,6 @@ Bundle 'jmcantrell/vim-virtualenv'
 
 Bundle 'rking/ag.vim'
 
-Bundle 'kien/ctrlp.vim'
-
 Bundle 'tpope/vim-repeat'
 
 Bundle 'bronson/vim-trailing-whitespace'
@@ -115,11 +116,12 @@ Bundle 'vim-scripts/taglist.vim'
 " powerline / UI
 
 " airline
-Bundle 'bling/vim-airline'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+""Bundle 'bling/vim-airline'
+""let g:airline_powerline_fonts = 1
+""let g:airline_theme='powerlineish'
+""let g:airline#extensions#tabline#enabled = 1
+
 "let g:airline#extensions#syntastic#enabled = 1
-let g:airline_theme='powerlineish'
 "let g:airline#extensions#whitespace#enabled = 1
 "let g:airline#extensions#whitespace#mixed_indent_algo = 1
 "let g:airline#extensions#whitespace#symbol = '!'
@@ -130,16 +132,16 @@ let g:airline_theme='powerlineish'
 
 
 "powerline
-" Bundle 'bling/vim-bufferline'
-" let g:bufferline_active_buffer_left = '['
-" let g:bufferline_active_buffer_right = ']'
-" let g:bufferline_active_modified = '+'
-" let g:bufferline_show_bufnr = 1
-" let g:bufferline_rotate = 1
-" let g:bufferline_fixed_index = 1
-" let g:bufferline_solo_highlight = 1
+ Bundle 'bling/vim-bufferline'
+ "let g:bufferline_active_buffer_left = '['
+ "let g:bufferline_active_buffer_right = ']'
+ "let g:bufferline_active_modified = '+'
+ "let g:bufferline_show_bufnr = 1
+ "let g:bufferline_rotate = 1
+ "let g:bufferline_fixed_index = 1
+ "let g:bufferline_solo_highlight = 1
 
-" set rtp+=~/.powerline/powerline/bindings/vim/
+ set rtp+=~/.local/lib/python3.4/site-packages/powerline/bindings/vim/
 
 "switch to alternate file
 map <C-Tab> :bnext<cr>
@@ -230,10 +232,11 @@ nnoremap <leader>sc :CloseSession<CR>
 " tabs
 
 " --- vim-tabber
-"set tabline=%!tabber#TabLine()
-" set showtabline=2
-" set hidden
-" set switchbuf=useopen,usetab
+set tabline=%!tabber#TabLine()
+ set showtabline=2
+ set hidden
+ set switchbuf=useopen,usetab
+
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
