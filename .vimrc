@@ -3,6 +3,8 @@ filetype plugin indent on
 set autoindent
 
 
+
+
 " how to capture keyseq --> [insert mode] Control-v
 
 " control pageup next buffer
@@ -39,7 +41,22 @@ set autoread
 " FUZZY FINDER / CTRL-P
 Bundle 'kien/ctrlp.vim'
 
+nnoremap <C-P> :CtrlP
+
+"nmap <C-p> :CtrlP
+"nmap <C-b> :CtrlPBuffer<CR>
+
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_switch_buffer = 0
+
+
 Bundle 'nathanaelkane/vim-indent-guides'
+
 autocmd VimEnter * IndentGuidesEnable
 
 "let g:indent_guides_auto_colors = 1
@@ -85,7 +102,7 @@ Bundle 'scrooloose/nerdtree'
 "autocmd vimenter * if !argc() | NERDTree | endif
 "some file specified
 "autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -130,9 +147,7 @@ Bundle 'vim-scripts/taglist.vim'
 " show all whitespace /\s\+$
 " show all spaces before a tab / \+\ze\t
 
-
-"powerline
- Bundle 'bling/vim-bufferline'
+" Bundle 'bling/vim-bufferline'
  "let g:bufferline_active_buffer_left = '['
  "let g:bufferline_active_buffer_right = ']'
  "let g:bufferline_active_modified = '+'
@@ -141,7 +156,9 @@ Bundle 'vim-scripts/taglist.vim'
  "let g:bufferline_fixed_index = 1
  "let g:bufferline_solo_highlight = 1
 
- set rtp+=~/.local/lib/python3.4/site-packages/powerline/bindings/vim/
+"powerline
+
+set rtp+=~/.local/lib/python3.4/site-packages/powerline/bindings/vim/
 
 "switch to alternate file
 map <C-Tab> :bnext<cr>
@@ -167,7 +184,6 @@ set nowrap
 " tComment
 map <leader>c <c-_><c-_>
 
-
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
@@ -182,16 +198,15 @@ vmap <S-Tab> <gv
     set foldtext=SimpleFoldText() " Custom fold text function (cleaner than default)
 
 
-"set mouse+=a
-set mouse=a
-
-
-set paste
+" set mouse to scroll in normal and visual mode, pase in insert mode with
+" console mouse
+set mouse=nv
+"set paste
 
 set ignorecase
 set hlsearch
 
-set mousemodel=extend
+"set mousemodel=extend
 
 " backspace
 set backspace=indent,eol,start
@@ -247,6 +262,8 @@ nnoremap <Space> za
 nmap <leader>l :set list!<CR>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+
+nnoremap <C-p> :CtrlP<CR>
 
 "Invisible character colors
 "highlight NonText guifg=#4a4a59
