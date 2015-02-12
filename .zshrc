@@ -202,7 +202,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 	# AUTOMATED UPGRADE (10 days)
 	updateWhen=10
-	revDate="$(date -d "$(ls -ail .local/bin/powerline | awk '{print $7" "$8}')" +%s)"
+	revDate="$(date -d "$(ls -ail $HOME/.local/bin/powerline | awk '{print $7" "$8}')" +%s)"
 	thisDate="$(date -d now +%s)"
 	diffDate="$(( ($thisDate - $revDate) / 86400))"
 	if [ $diffDate -gt $updateWhen ]
