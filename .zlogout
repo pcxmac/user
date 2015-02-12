@@ -20,6 +20,7 @@ do
         if [[ "$(ps aux | grep $nUser | grep "powerline-daemon" | grep -v "grep" | wc -l)" > 0 ]]
         then
                 sudo -u $nUser powerline-daemon --kill;
+				echo "killing powerline daemon by $nUser" >> $HOME/daemon-kill.txt-zlogout
         fi
 
 done < <(echo "$difu")
