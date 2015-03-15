@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias gputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
 alias scan="clamscan -r --bell -i"
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
@@ -119,8 +120,11 @@ export LANG=en_US.UTF-8	# ssh
 export USER=$(/usr/bin/whoami) # powerline, continuity
 export SHELL=/usr/bin/zsh # continuity
 export EDITOR=vim # continuity
-export PATH=/bin:/sbin
+
+export PATH=/bin:/sbin:/opt/bin
+export PATH=$PATH:/usr/games/bin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
+
 #export PATH=$HOME/.powerline/scripts:$PATH
 #export PATH=$HOME/.fzf:$PATH
 
@@ -194,7 +198,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 	# AUTOMATED INSTALL
-	powerlinestatus="$(pip freeze | grep 'powerline-status')"
+	powerlinestatus="$(pip freeze 2>/dev/null | grep 'powerline-status')"
 	if [ -z "$powerlinestatus" ]
 	then
 		pip install --user git+git://github.com/powerline/powerline

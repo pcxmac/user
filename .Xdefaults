@@ -32,7 +32,7 @@ URxvt*.skipScroll:				true
 ! NATIVE TRANSPARENCY
 ! shading values are 0-200, > 100 lighter, < 100 darker
 URxvt*.transparent:				true
-URxvt*.shading:					90
+URxvt*.shading:					40
 
 URxvt*.fading:					20
 URxvt*.tintColor:				grey30
@@ -63,14 +63,14 @@ URxvt*.scrollBar_right:			true
 URxvt*iso14755:				false
 
 ! TRUE TRANSPARENCY	... requires (if not using a wm w/ compositing mgr) something like compton
-!URxvt*.depth: 			32
-!URxvt*.background: 		[84]#000000
+!URxvt*.depth:				32
+!URxvt*.background:			[84]#000000
 
-Xcursor.theme:          	gentoo-silver
+Xcursor.theme:				gentoo-silver
 
-!Xft.dpi:               	75
+!Xft.dpi:					75
 
-!xterm*termName: 		xterm-256color
+!xterm*termName:			xterm-256color
 
 ! https://wiki.archlinux.org/index.php/rxvt-unicode
 

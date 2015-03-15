@@ -11,9 +11,12 @@ export LANG=en_US.UTF-8
 export USER=$(/usr/bin/whoami)
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
+#export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
+export PATH=/usr/games/bin:$PATH
 
-export SHELL=/usr/bin/bash
+#export SHELL=/usr/bin/bash ## ARCH
+#export SHELL=/bin/bash	## GENTOO
+
 export EDITOR=vim
 
 ############################################### SHELL #####################################
@@ -43,9 +46,9 @@ set -o emacs                          # Set emacs mode in bash (see below)
 
 ################################################ POWERLINE ################################
 
-export POWERLINE_COMMAND="powerline-render"
-export _POWERLINE_DEFAULT_MODE="emacs"
-export _POWERLINE_MODE="emacs"
+#export POWERLINE_COMMAND="powerline-render"
+#export _POWERLINE_DEFAULT_MODE="emacs"
+#export _POWERLINE_MODE="emacs"
 
 # POWERLINE-DAEMON REQUIRED
 
@@ -58,12 +61,12 @@ export _POWERLINE_MODE="emacs"
 
 # POWERLINE REQUIRED
 
-if [[ ! $PATH == *".powerline/scripts"* ]]
-then
-        export PATH=~/.powerline/scripts:$PATH
-fi
+#if [[ ! $PATH == *".powerline/scripts"* ]]
+#then
+#        export PATH=~/.powerline/scripts:$PATH
+#fi
 
-. ~/.powerline/powerline/bindings/bash/powerline.sh
+#. ~/.powerline/powerline/bindings/bash/powerline.sh
 
 ############################################# FUZZY FINDER ################################
 

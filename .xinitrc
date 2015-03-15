@@ -16,7 +16,8 @@ fi
 # exec startxfce4
 # ...or the Window Manager of your choice
 
-/usr/bin/feh --bg-center ~/.desktop/background-images/arch_dtbg.png&
+/usr/bin/feh --bg-fill ~/.desktop/background-images/gentoo.png&
+
 #/usr/bin/feh --bg-tile /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-max /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
@@ -24,4 +25,4 @@ fi
 
 /usr/bin/xscreensaver -no-splash &
 
-exec i3
+exec i3 -V >> ~/.i3/i3log 2>&1
