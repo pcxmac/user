@@ -44,29 +44,38 @@ bind '"\eOc"':forward-word
 
 set -o emacs                          # Set emacs mode in bash (see below)
 
-################################################ POWERLINE ################################
 
-#export POWERLINE_COMMAND="powerline-render"
-#export _POWERLINE_DEFAULT_MODE="emacs"
-#export _POWERLINE_MODE="emacs"
+# POWERLINE ###################################################################
 
-# POWERLINE-DAEMON REQUIRED
 
-#export POWERLINE_COMMAND=powerline-client
+    # AUTOMATED INSTALL
+    powerlinestatus="$(pip freeze 2>/dev/null | grep 'powerline-status')"
+    if [ -z "$powerlinestatus" ]
+    then
+        pip install --user $USER git+git://github.com/powerline/powerline
+    fi
 
-#if [[ "$(ps aux | grep $USER | grep "powerline-daemon" | grep -v "grep" | wc -l)" == 0 ]]
-#then
-#        ~/.powerline/scripts/powerline-daemon;
-#fi
+    # AUTOMATED UPGRADE (10 days)
+    updateWhen=10
+    revDate="$(date -d "$(ls -ail $HOME/.local/bin/powerline | awk '{print $7" "$8}')" +%s)"
+    thisDate="$(date -d now +%s)"
+    diffDate="$(( ($thisDate - $revDate) / 86400))"
+    if [ $diffDate -gt $updateWhen ]
+    then
+        pip install --user $USER git+git://github.com/powerline/powerline   --upgrade
+    fi
 
-# POWERLINE REQUIRED
+    # !!! get python version/location ...
 
-#if [[ ! $PATH == *".powerline/scripts"* ]]
-#then
-#        export PATH=~/.powerline/scripts:$PATH
-#fi
+    # export powerline bin and bind zsh
+    export PATH=~/.local/bin:$PATH
+    . ~/.local/lib64/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
-#. ~/.powerline/powerline/bindings/bash/powerline.sh
+    # utilize powerline-daemon for quicker responses from powerline
+    powerline-daemon -q
+
+
+
 
 ############################################# FUZZY FINDER ################################
 
