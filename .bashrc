@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 export USER=$(/usr/bin/whoami)
 export PATH=/bin:/sbin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
-#export PATH=$HOME/.powerline/scripts:$HOME/.gem/ruby/2.1.0/bin:$PATH
+#export PATH=$HOME/.gem/ruby/2.1.0/bin:$PATH
 export PATH=/usr/games/bin:$PATH
 
 #export SHELL=/usr/bin/bash ## ARCH
@@ -48,31 +48,32 @@ set -o emacs                          # Set emacs mode in bash (see below)
 # POWERLINE ###################################################################
 
 
-    # AUTOMATED INSTALL
-    powerlinestatus="$(pip freeze 2>/dev/null | grep 'powerline-status')"
-    if [ -z "$powerlinestatus" ]
-    then
-        pip install --user $USER git+git://github.com/powerline/powerline
-    fi
+    # installed ? (if not) then install
+        # git clone
+        if [ ! -d ~/.powerline ]
+        then
+            git clone https://github.com/powerline/powerline.git .powerline
 
-    # AUTOMATED UPGRADE (10 days)
-    updateWhen=10
-    revDate="$(date -d "$(ls -ail $HOME/.local/bin/powerline | awk '{print $7" "$8}')" +%s)"
-    thisDate="$(date -d now +%s)"
-    diffDate="$(( ($thisDate - $revDate) / 86400))"
-    if [ $diffDate -gt $updateWhen ]
-    then
-        pip install --user $USER git+git://github.com/powerline/powerline   --upgrade
-    fi
+        fi
 
-    # !!! get python version/location ...
+        if [ ! -d ~/.local/lib64/python2.7/site-packages ]
+        then
+            mkdir -p ~/.local/lib64/python2.7/site-packages
+            # link .powerline/powerline to .local/lib64/python2.7/sites-packages/powerline
+            ln -s ~/.powerline/powerline ~/.local/lib64/python2.7/site-packages/powerline
+        fi
+
+
+
+    PATH=~/.powerline/scripts:$PATH
 
     # export powerline bin and bind zsh
-    export PATH=~/.local/bin:$PATH
     . ~/.local/lib64/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
     # utilize powerline-daemon for quicker responses from powerline
     powerline-daemon -q
+
+
 
 
 
