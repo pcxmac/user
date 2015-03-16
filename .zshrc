@@ -201,7 +201,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	powerlinestatus="$(pip freeze 2>/dev/null | grep 'powerline-status')"
 	if [ -z "$powerlinestatus" ]
 	then
-		pip install --user git+git://github.com/powerline/powerline
+		pip install --user $USER git+git://github.com/powerline/powerline
 	fi
 
 	# AUTOMATED UPGRADE (10 days)
@@ -211,7 +211,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	diffDate="$(( ($thisDate - $revDate) / 86400))"
 	if [ $diffDate -gt $updateWhen ]
 	then
-		pip install --user git+git://github.com/powerline/powerline	--upgrade
+		pip install --user $USER git+git://github.com/powerline/powerline	--upgrade
 	fi
 
 	# !!! get python version/location ...
