@@ -214,9 +214,11 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 		pip install --user git+git://github.com/powerline/powerline	--upgrade
 	fi
 
+	# !!! get python version/location ...
+
 	# export powerline bin and bind zsh
 	export PATH=~/.local/bin:$PATH
-	. ~/.local/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+	. ~/.local/lib64/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 	# utilize powerline-daemon for quicker responses from powerline
 	powerline-daemon -q
