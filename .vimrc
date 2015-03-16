@@ -158,7 +158,7 @@ Bundle 'vim-scripts/taglist.vim'
 
 "powerline
 
-set rtp+=~/.local/lib/python3.4/site-packages/powerline/bindings/vim/
+set rtp+=~/.local/lib64/python2.7/site-packages/powerline/bindings/vim/
 
 "switch to alternate file
 map <C-Tab> :bnext<cr>
