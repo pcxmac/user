@@ -156,6 +156,10 @@ Bundle 'vim-scripts/taglist.vim'
  "let g:bufferline_fixed_index = 1
  "let g:bufferline_solo_highlight = 1
 
+
+ "Bundle 'ryanoasis/vim-webdevicons'
+
+
 "powerline
 
 set rtp+=~/.local/lib64/python2.7/site-packages/powerline/bindings/vim/

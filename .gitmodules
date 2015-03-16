@@ -7,3 +7,11 @@
 [submodule ".themes/solarized"]
 	path = .themes/solarized
 	url = https://github.com/altercation/solarized.git
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = git://github.com/tarruda/zsh-autosuggestions
+	branch = master
+[submodule ".zsh/zsh-history-substring-search"]
+	path = .zsh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
+	branch = master

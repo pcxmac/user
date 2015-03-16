@@ -192,7 +192,6 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 ############################ MISC #########################################################
 
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # POWERLINE ###################################################################
 
@@ -263,5 +262,34 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # git config --global color.status auto
 
 
-#autoload predict-on
-#predict-on
+# ZSH-SYNTAX-HIGHLIGHTING #######################################################
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# zsh-history-substring-search ##################################################
+
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+
+# Setup zsh-autosuggestions #####################################################
+
+source /home/ciaran/.zsh/zsh-autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+zle-line-init() {
+    zle autosuggest-start
+}
+
+zle -N zle-line-init
+
+# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# zsh-autosuggestions is designed to be unobtrusive)
+
+bindkey '^T' autosuggest-toggle
+
+
