@@ -57,11 +57,19 @@ bindkey -M viins '^Y' yank
 bindkey -M emacs '^X^[' vi-cmd-mode
 
 
+
+
 #rxvt
 bindkey -M viins '^[OD' backward-word
 bindkey -M viins '^[Od' backward-word
 bindkey -M viins '^[OC' forward-word
 bindkey -M viins '^[Oc' forward-word
+
+bindkey -M viins '^[Oa' history-search-backward
+bindkey -M viins '^[[a' history-search-backward
+bindkey -M viins '^[Ob' history-search-forward
+bindkey -M viins '^[[b' history-search-forward
+
 
 
 #tmux
@@ -69,6 +77,10 @@ bindkey -M viins '^[[1;5d' backward-word
 bindkey -M viins '^[[1;5D' backward-word
 bindkey -M viins '^[[1;5c' forward-word
 bindkey -M viins '^[[1;5C' forward-word
+
+bindkey -M viins '^[OA' history-search-backward
+bindkey -M viins '^[OB' history-search-forward
+
 
 
 bindkey -M viins '^H' backward-kill-word
