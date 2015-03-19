@@ -1,5 +1,8 @@
 ################################### SHELL #############################
 
+alias eclean="sudo emerge -av --depclean --ask"
+alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask"
+alias esync="sudo emerge --sync --ask"
 alias gputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
 alias scan="clamscan -r --bell -i"

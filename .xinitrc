@@ -25,4 +25,5 @@ fi
 
 /usr/bin/xscreensaver -no-splash &
 
-exec i3 -V >> ~/.i3/i3log 2>&1
+#exec i3 -V >> ~/.i3/i3log 2>&1
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
