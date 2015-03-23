@@ -1,6 +1,5 @@
 ################################### SHELL #############################
 
-alias pcilist="sudo lspci -vvvnnDqq | less"
 alias eclean="sudo emerge -av --depclean --ask"
 alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask"
 alias esync="sudo emerge --sync --ask"
@@ -10,7 +9,7 @@ alias scan="clamscan -r --bell -i"
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
 alias ls="ls -ph --color=auto --ignore='lost+found'"
-alias df="df -Th | grep -v 'ark'"
+alias df="df -Th"
 alias du="du -h"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
 alias copycheck="rsync -a --checksum --verbose"
@@ -58,7 +57,8 @@ bindkey -M viins '^Y' yank
 bindkey -M emacs '^X^[' vi-cmd-mode
 
 bindkey -M viins '^[[3^' delete-word
-bindkey '\e[3~' delete-char
+bindkey -M viins '^[[3~' delete-word
+
 
 #rxvt
 bindkey -M viins '^[OD' backward-word
