@@ -303,7 +303,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # Setup zsh-autosuggestions #####################################################
 
-source /home/ciaran/.zsh/zsh-autosuggestions/autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
 zle-line-init() {
