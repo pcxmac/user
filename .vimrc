@@ -1,9 +1,7 @@
 set nocompatible
 filetype plugin indent on
 set autoindent
-
-
-
+set encoding=utf-8
 
 " how to capture keyseq --> [insert mode] Control-v
 
@@ -42,7 +40,6 @@ set autoread
 Bundle 'kien/ctrlp.vim'
 
 nnoremap <C-P> :CtrlP
-
 "nmap <C-p> :CtrlP
 "nmap <C-b> :CtrlPBuffer<CR>
 
@@ -56,9 +53,7 @@ let g:ctrlp_switch_buffer = 0
 
 
 Bundle 'nathanaelkane/vim-indent-guides'
-
 autocmd VimEnter * IndentGuidesEnable
-
 "let g:indent_guides_auto_colors = 1
 "let g:indent_guides_color_change_percent = 10
 "let g:indent_guides_guide_size = 2
@@ -94,8 +89,8 @@ Bundle 'marcweber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/syntastic'
-" NERDTree
 
+" NERDTree
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 "no files specified on startup
@@ -103,72 +98,32 @@ Bundle 'scrooloose/nerdtree'
 "some file specified
 "autocmd vimenter * NERDTree
 "map <C-n> :NERDTreeToggle<CR>
-
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 Bundle 'honza/vim-snippets'
-
 Bundle 'jmcantrell/vim-virtualenv'
 
 "requires vim with python2
 "Bundle 'Valloric/YouCompleteMe'
 
 Bundle 'rking/ag.vim'
-
 Bundle 'tpope/vim-repeat'
-
 Bundle 'bronson/vim-trailing-whitespace'
-
 Bundle 'airblade/vim-gitgutter'
-
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-misc'
-
 Bundle 'fweep/vim-tabber'
-
 Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/taglist.vim'
 
 " powerline / UI
 
-" airline
-""Bundle 'bling/vim-airline'
-""let g:airline_powerline_fonts = 1
-""let g:airline_theme='powerlineish'
-""let g:airline#extensions#tabline#enabled = 1
-
-"let g:airline#extensions#syntastic#enabled = 1
-"let g:airline#extensions#whitespace#enabled = 1
-"let g:airline#extensions#whitespace#mixed_indent_algo = 1
-"let g:airline#extensions#whitespace#symbol = '!'
-
-" show all tabs /\t
-" show all whitespace /\s\+$
-" show all spaces before a tab / \+\ze\t
-
-" Bundle 'bling/vim-bufferline'
- "let g:bufferline_active_buffer_left = '['
- "let g:bufferline_active_buffer_right = ']'
- "let g:bufferline_active_modified = '+'
- "let g:bufferline_show_bufnr = 1
- "let g:bufferline_rotate = 1
- "let g:bufferline_fixed_index = 1
- "let g:bufferline_solo_highlight = 1
-
-
- "Bundle 'ryanoasis/vim-webdevicons'
-
-
-"powerline
-
 set rtp+=~/.local/lib64/python2.7/site-packages/powerline/bindings/vim/
 
 "switch to alternate file
 map <C-Tab> :bnext<cr>
 map <C-S-Tab> :bprevious<cr>
-
-set encoding=utf-8
 
 set laststatus=2
 set fillchars+=stl:\ ,stlnc:\
@@ -192,25 +147,23 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Folding
-    set foldenable " Turn on folding
-    set foldmethod=indent " Fold on the indent (damn you python)
-    set foldlevel=100 " Don't autofold anything (but I can still fold manually)
-    set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds
-    function SimpleFoldText() " {
-        return getline(v:foldstart).' '
+set foldenable " Turn on folding
+set foldmethod=indent " Fold on the indent (damn you python)
+set foldlevel=100 " Don't autofold anything (but I can still fold manually)
+set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds
+function SimpleFoldText() " {
+	return getline(v:foldstart).' '
     endfunction " }
-    set foldtext=SimpleFoldText() " Custom fold text function (cleaner than default)
-
+set foldtext=SimpleFoldText() " Custom fold text function (cleaner than default)
 
 " set mouse to scroll in normal and visual mode, pase in insert mode with
 " console mouse
 set mouse=nv
 "set paste
+"set mousemodel=extend
 
 set ignorecase
 set hlsearch
-
-"set mousemodel=extend
 
 " backspace
 set backspace=indent,eol,start
@@ -220,7 +173,6 @@ set whichwrap+=<,>,[,]
 
 set list
 set listchars=tab:▸\ ,eol:¬
-
 
 " UNDO
 set undofile                " Save undo's after file closes
@@ -236,9 +188,7 @@ set backup
 set writebackup
 set noswapfile
 
-
 " session management
-
 let g:session_direcotry = "~/.vim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
@@ -249,13 +199,11 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
 " tabs
-
 " --- vim-tabber
 set tabline=%!tabber#TabLine()
- set showtabline=2
- set hidden
- set switchbuf=useopen,usetab
-
+set showtabline=2
+set hidden
+set switchbuf=useopen,usetab
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
@@ -279,20 +227,3 @@ highlight SpecialKey guifg=#44efef guibg=#ffffff
 highlight LineNr ctermfg=green ctermbg=black
 
 set ts=4 sts=4 sw=4 noexpandtab
-
-" function! SummarizeTabs()
-" 	try
-" 		echohl ModeMsg
-" 		echon 'tabstop='.&l:ts
-" 		echon ' shiftwidth='.&l:sw
-" 		echon ' softtabstop='.&l:sts
-" 		if &l:et
-" 		echon ' expandtab'
-" 		else
-" 		echon ' noexpandtab'
-" 		endif
-" 		finally
-" 		echohl None
-" 		endtry
-" endfunction
-"
