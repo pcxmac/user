@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias lsusb="sudo lsusb -v"
 alias lspci="sudo lspci -vvvknnD"
 alias emerge="sudo emerge --ask"
 alias eclean="sudo emerge -av --depclean --ask"
