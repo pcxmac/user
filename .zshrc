@@ -1,5 +1,7 @@
 ################################### SHELL #############################
 
+alias lspci="sudo lspci -vvvnnDQ"
+alias emerge="sudo emerge --ask"
 alias eclean="sudo emerge -av --depclean --ask"
 alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask"
 alias esync="sudo emerge --sync --ask"
