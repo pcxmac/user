@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias eselect="sudo eselect"
 alias lsusb="sudo lsusb -v"
 alias lspci="sudo lspci -vvvknnD"
 alias emerge="sudo emerge --ask"
@@ -18,8 +19,8 @@ alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-
 alias copycheck="rsync -a --checksum --verbose"
 alias copynew="rsync -au --verbose"
 alias copyig="rsync -a --ignore-existing --verbose"
-alias snapr="btrfs subvolume snapshot -r"
-alias snap="btrfs subvolume snapshot"
+alias snapr="sudo btrfs subvolume snapshot -r"
+alias snap="sudo btrfs subvolume snapshot"
 alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
