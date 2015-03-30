@@ -68,22 +68,46 @@ Bundle 'scrooloose/nerdcommenter'
 " " Class/module browser
 Bundle 'majutsushi/tagbar'
 
+" The Silver Searcher
+Bundle 'rking/ag.vim'
+" make sure to install silver_searcher in the 'os' "
+
+	if executable('ag')
+		set grepprg=ag\ --nogroup\ --nocolor
+		set grepformat=%f:%l:%c%m
+	endif "
+
+	nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+	" bind \ (backward slash) to grep shortcut
+	command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+	nnoremap \ :Ag<SPACE>
+
+
+Bundle 'mileszs/ack.vim'
+	let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
-	"nmap <C-p> :CtrlP
-	nnoremap <C-p> :CtrlP<CR>
-	"nmap <C-b> :CtrlPBuffer<CR>
 
-	let g:ctrlp_map = '<Leader>t'
+	set shell=/bin/bash
+	let g:ctrlp_map = '<c-\>'
+	let g:ctrlp_cmd = 'CtrlP'
+
+	let g:ctrlp_working_path_mode = 'ra'
+
+	let g:ctrlp_use_caching = 0
 	let g:ctrlp_match_window_bottom = 0
 	let g:ctrlp_match_window_reversed = 0
 	let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
-	let g:ctrlp_dotfiles = 0
+	let g:ctrlp_dotfiles = 1
 
 	let g:ctrlp_match_window = 'bottom,order:ttb'
 	let g:ctrlp_switch_buffer = 0
-	let g:ctrlp_working_path_mode = 0
-	let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+	"let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+	let g:ctrlp_user_command = 'find %s -type f'
+
+
 
 " " Extension to ctrlp, for fuzzy command finder
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
@@ -314,7 +338,6 @@ Bundle 'wincent/Command-T'
 
 Bundle 'jmcantrell/vim-virtualenv'
 
-Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'airblade/vim-gitgutter'
@@ -380,8 +403,11 @@ endif
 
 set autoread
 
-set wildmenu
-set wildmode=longest:full,full
+" wild-menu
+	set wildmenu
+	set wildmode=longest:full,full
+	set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+	set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows "
 
 set lazyredraw
 set showmatch
