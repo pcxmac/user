@@ -1,5 +1,5 @@
 " ============================================================================
-
+"
 	set nocompatible
 
 	let vInstalled=1
@@ -37,7 +37,6 @@ Bundle 'sirver/ultisnips'
 
 Bundle 'ervandew/supertab'
 	let g:SuperTabDefaultCompletionType = '<C-n>'
-
 
 Bundle 'valloric/YouCompleteMe'
 " go to ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
@@ -84,8 +83,10 @@ Bundle 'rking/ag.vim'
 	nnoremap \ :Ag<SPACE>
 
 
-Bundle 'mileszs/ack.vim'
-	let g:ackprg = 'ag --nogroup --nocolor --column'
+"Bundle 'mileszs/ack.vim'
+"	if executable('ag')
+"	  let g:ackprg = 'ag --vimgrep'
+"	endif
 
 " " Code and files fuzzy finder
 Bundle 'kien/ctrlp.vim'
@@ -107,6 +108,19 @@ Bundle 'kien/ctrlp.vim'
 	"let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 	let g:ctrlp_user_command = 'find %s -type f'
 
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+	if executable('ag')
+		" Use Ag over Grep
+	set grepprg=ag\ --nogroup\ --nocolor
+	" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+	let g:ctrlp_user_command = 'ag -l -U --nocolor -i --silent -g %s
+		\ --ignore .git
+		\ --ignore .svn
+		\ --ignore .hg
+		\ --ignore .DS
+		\ --ignore "**/*.pyc"
+		\ -g ""'
+endif"
 
 
 " " Extension to ctrlp, for fuzzy command finder
