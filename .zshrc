@@ -1,5 +1,7 @@
 ################################### SHELL #############################
 
+alias gitclean="git clean -ffdx"
+alias bbalance="sudo btrfs balance start -v"
 alias eselect="sudo eselect"
 alias lsusb="sudo lsusb -v"
 alias lspci="sudo lspci -vvvknnD"
@@ -7,15 +9,13 @@ alias emerge="sudo emerge --ask"
 alias eclean="sudo emerge -av --depclean --ask"
 alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask --verbose"
 alias esync="sudo emerge --sync --ask"
-alias gputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
+alias gputemp="nvidia-settings -q gpucoretemp -t"
+alias atigputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
 alias scan="clamscan -r --bell -i"
 alias pingsub="nmap -sL 10.1.1.0/24 | grep '('"
 alias upgrade="yaourt -Syua --noconfirm"
 alias ls="ls -ph --color=auto --ignore='lost+found'"
-alias df="df -Th"
-alias du="du -h"
-alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
 alias copycheck="rsync -a --checksum --verbose"
 alias copynew="rsync -au --verbose"
 alias copyig="rsync -a --ignore-existing --verbose"
@@ -36,6 +36,12 @@ alias pacclean="yaourt -Qdt;yaourt Scc;"
 alias pacremove="yaourt -Rdd"
 alias bdel="btrfs subvolume delete"
 alias grep="grep --color"
+
+alias df="df -Th"
+alias du="du -h"
+alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
+
+
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
 
 
@@ -61,7 +67,10 @@ bindkey -M viins '^Y' yank
 bindkey -M emacs '^X^[' vi-cmd-mode
 
 bindkey -M viins '^[[3^' delete-word
-bindkey -M viins '^[[3~' delete-word
+bindkey -M viins '^[[3~' delete-char
+
+bindkey -M viins '^[[5^' end-of-line
+bindkey -M viins '^[[6^' beginning-of-line
 
 
 #rxvt

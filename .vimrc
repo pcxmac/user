@@ -22,33 +22,33 @@
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 
-Bundle 'sirver/ultisnips'
-	let g:UltiSnipsEditSplit = 'vertical'
-	let g:tex_flavor = "latex"
-	let g:UltiSnipsSnippetsDir = expand("$XDG_CONFIG_HOME/vim/ultisnips")
-	let g:UltiSnipsSnippetDirectories = ["UltiSnips", "ultisnips"]
+"Bundle 'sirver/ultisnips'
+"	let g:UltiSnipsEditSplit = 'vertical'
+"	let g:tex_flavor = "latex"
+"	let g:UltiSnipsSnippetsDir = expand("$XDG_CONFIG_HOME/vim/ultisnips")
+"	let g:UltiSnipsSnippetDirectories = ["UltiSnips", "ultisnips"]
 	"let g:UltiSnipsExpandTrigger = "<C-L>"
 	"let g:UltiSnipsJumpForwardTrigger = "<C-L>"
 	"let g:UltiSnipsJumpBackwardTrigger = "<C-H>"
-	let g:UltiSnipsExpandTrigger = "<tab>"
-	let g:UltiSnipsJumpForwardTrigger = "<tab>"
-	let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-	let g:UltiSnipsUsePythonVersion = 2
+"	let g:UltiSnipsExpandTrigger = "<tab>"
+"	let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"	let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+"	let g:UltiSnipsUsePythonVersion = 2
 
-Bundle 'ervandew/supertab'
-	let g:SuperTabDefaultCompletionType = '<C-n>'
+"Bundle 'ervandew/supertab'
+"	let g:SuperTabDefaultCompletionType = '<C-n>'
 
-Bundle 'valloric/YouCompleteMe'
+"Bundle 'valloric/YouCompleteMe'
 " go to ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
-	let g:ycm_extra_conf_globlist = ['~/src/*','/mnt/data/src/*']
-	let g:ycm_global_ycm_extra_conf = expand('$XDG_CONFIG_HOME/vim/ycm_extra_conf.py')
-	let g:ycm_extra_conf_vim_data = ['getcwd()']
-	let g:ycm_add_preview_to_completeopt = 1
-	let g:ycm_autoclose_preview_window_after_insertion = 1
+"	let g:ycm_extra_conf_globlist = ['~/src/*','/mnt/data/src/*']
+"	let g:ycm_global_ycm_extra_conf = expand('$XDG_CONFIG_HOME/vim/ycm_extra_conf.py')
+"	let g:ycm_extra_conf_vim_data = ['getcwd()']
+"	let g:ycm_add_preview_to_completeopt = 1
+"	let g:ycm_autoclose_preview_window_after_insertion = 1
 	"let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 	"let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-	let g:ycm_key_list_select_completion = ['<C-n>']
-	let g:ycm_key_list_previous_completion = ['<C-p>']
+"	let g:ycm_key_list_select_completion = ['<C-n>']
+"	let g:ycm_key_list_previous_completion = ['<C-p>']
 
 
 " post text to gist.github.com

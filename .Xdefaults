@@ -18,10 +18,12 @@
 URxvt*.scrollColor:				grey
 URxvt*.troughColor:				black
 
+
 URxvt*.font:					xft:Inconsolata for Powerline:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Regular:antialias=true:pixelsize=16
-URxvt*.boldFont:				xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold:antialias=true:pixelsize=16
-URxvt*.italicFont:				xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Italic:antialias=true:pixelsize=16
-URxvt*.boldItalicFont:			xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:Unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold Italic:antialias=true:pixelsize=16
+URxvt*.boldFont:				xft:Inconsolata for Powerline:bold:antialias=true:pixelsize=16, xft:unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold:antialias=true:pixelsize=16
+URxvt*.italicFont:				xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Italic:antialias=true:pixelsize=16
+
+URxvt*.boldItalicFont:			xft:Inconsolata for Powerline:italic:antialias=true:autohint=true:pixelsize=16, xft:unifont:antialias=true:pixelsize=16, xft:Ubuntu Mono derivative Powerline:style=Bold Italic:antialias=true:pixelsize=16
 
 URxvt*.foreground:				white
 URxvt*.background:				black

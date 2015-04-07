@@ -25,7 +25,7 @@ fi
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-scale /usr/local/share/background-images/arch_dtbg.png
 
-/usr/bin/xscreensaver -no-splash &
+/usr/local/bin/xscreensaver -no-splash &
 
 #exec i3 -V >> ~/.i3/i3log 2>&1
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
