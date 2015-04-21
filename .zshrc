@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias lsblk="lsblk -o name,mountpoint,label,size,uuid"
 alias win7="/var/lib/virt/images/MICROSOFT/WINDOWS/WIN-7/run-spice&;/var/lib/virt/images/MICROSOFT/WINDOWS/WIN-7/spice-client;"
 alias build="cd /usr/src/linux;make clean;make menuconfig;make -j6 && make modules_install;make install;genkernel --install initramfs;grub2-mkconfig -o /boot/grub/grub.cfg;emerge nvidia-drivers broadcom-sta spl zfs-kmod zfs;"
 alias gitclean="git clean -ffdx"
