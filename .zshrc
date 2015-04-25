@@ -1,5 +1,7 @@
 ################################### SHELL #############################
 
+alias pcitree="lspci -tv"
+alias usbtree="lsusb -tv"
 alias smarctl="smarctl --all"
 alias lsblk="lsblk -o name,mountpoint,label,size,uuid"
 alias win7="/var/lib/virt/images/MICROSOFT/WINDOWS/WIN-7/run-spice&;/var/lib/virt/images/MICROSOFT/WINDOWS/WIN-7/spice-client;"
