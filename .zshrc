@@ -257,7 +257,7 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 
 
-	PATH=~/.powerline/scripts:$PATH	
+	PATH=~/.powerline/scripts:$PATH
 
 	# export powerline bin and bind zsh
 	. ~/.local/lib64/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
