@@ -13,7 +13,8 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-export TERMINAL="urxvtc&"
+#export TERMINAL="urxvtc&"		# can cause lag ... under heavy load
+export TERMINAL="urxvt"
 
 # exec gnome-session
 # exec startkde
@@ -29,7 +30,11 @@ export TERMINAL="urxvtc&"
 
 /usr/local/bin/xscreensaver -no-splash &
 
-/usr/bin/urxvtd -q -o -f
+#dbus-launch /usr/bin/nm-applet &
 
-#exec i3 -V >> ~/.i3/i3log 2>&1
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
+#/usr/bin/urxvtd -q -o -f		# performs poorly under heavy system load
+
+exec i3 -V >> ~/.i3/i3log 2>&1
+
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
+exec dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
