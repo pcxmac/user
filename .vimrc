@@ -509,7 +509,7 @@ set nowrap
 	set backupskip=~/tmp/*
 	set backup
 	set writebackup
-	set noswapfile
+	" set noswapfile
 
 " session management
 	let g:session_direcotry = "~/.vim/session"
