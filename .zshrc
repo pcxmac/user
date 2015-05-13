@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias revdep-rebuild="sudo revdep-rebuild"
 alias ez_install="python setup.py install --user"
 alias pcitree="lspci -tv"
 alias usbtree="lsusb -tv"
@@ -45,7 +46,7 @@ alias bdel="btrfs subvolume delete"
 alias grep="grep --color"
 
 alias df="df -Th"
-alias du="du -h"
+alias du="du -s --block-size=1M"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
 
 
