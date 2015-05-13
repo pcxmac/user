@@ -1,5 +1,7 @@
 ################################### SHELL #############################
 
+alias revdep-rebuild="sudo revdep-rebuild"
+alias ez_install="python setup.py install --user"
 alias pcitree="lspci -tv"
 alias usbtree="lsusb -tv"
 alias smarctl="smarctl --all"
@@ -44,7 +46,7 @@ alias bdel="btrfs subvolume delete"
 alias grep="grep --color"
 
 alias df="df -Th"
-alias du="du -h"
+alias du="du -s --block-size=1M"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
 
 
@@ -155,22 +157,21 @@ setopt auto_name_dirs
 
 ################################################ PROMPT ####################################
 
-PS1="[%n@%m %1~]$ "
+export PS1="[%n@%m %1~]$ "
 
 
 #################################### ENV ##############################
 
 export LANG=en_US.UTF-8	# ssh
 export USER=$(/usr/bin/whoami) # powerline, continuity
-export SHELL=/usr/bin/zsh # continuity
+export SHELL=/bin/zsh # continuity
 export EDITOR=vim # continuity
 
 export PATH=/bin:/sbin:/opt/bin
 export PATH=$PATH:/usr/games/bin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
 
-#export PATH=$HOME/.powerline/scripts:$PATH
-#export PATH=$HOME/.fzf:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 
 ##################################### HISTORY #########################
@@ -235,6 +236,10 @@ zstyle ':completion::approximate*:*' prefix-needed false
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 ############################ MISC #########################################################
+
+# PYTHON ######################################################################
+
+export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 
 
 # POWERLINE ###################################################################
