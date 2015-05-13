@@ -25,3 +25,6 @@
 [submodule ".i3/extras/i3-py"]
 	path = .i3/extras/i3-py
 	url = https://github.com/ziberna/i3-py.git
+[submodule ".powerline"]
+	path = .powerline
+	url = https://github.com/powerline/powerline.git
