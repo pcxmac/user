@@ -23,3 +23,6 @@
 	path = .i3/extras/i3-py
 	url = https://github.com/ziberna/i3-py.git
 	branch = master
+[submodule ".fonts/powerline-fonts"]
+	path = .fonts/powerline-fonts
+	url = https://github.com/powerline/fonts.git
