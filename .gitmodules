@@ -19,10 +19,9 @@
 	path = .i3/extras/i3session
 	url = https://github.com/joepestro/i3session.git
 	branch = master
-[submodule ".i3/extras/i3-py"]
-	path = .i3/extras/i3-py
-	url = https://github.com/ziberna/i3-py.git
-	branch = master
 [submodule ".fonts/powerline-fonts"]
 	path = .fonts/powerline-fonts
 	url = https://github.com/powerline/fonts.git
+[submodule ".i3/extras/i3-py"]
+	path = .i3/extras/i3-py
+	url = https://github.com/ziberna/i3-py.git
