@@ -13,8 +13,8 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-#export TERMINAL="urxvtc&"		# can cause lag ... under heavy load
-export TERMINAL="urxvt"
+export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
+#export TERMINAL="urxvt"
 
 # exec gnome-session
 # exec startkde
