@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias nfsports="netstat -tn | egrep '2049|Active|Proto'"
 alias revdep-rebuild="sudo revdep-rebuild"
 alias ez_install="python setup.py install --user"
 alias pcitree="lspci -tv"

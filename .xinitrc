@@ -28,11 +28,11 @@ export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-scale /usr/local/share/background-images/arch_dtbg.png
 
-/usr/local/bin/xscreensaver -no-splash &
+/usr/bin/xscreensaver -no-splash &
 
 #dbus-launch /usr/bin/nm-applet &
 
-#/usr/bin/urxvtd -q -o -f		# performs poorly under heavy system load
+/usr/bin/urxvtd -q -o -f		# performs poorly under heavy system load
 
 exec i3 -V >> ~/.i3/i3log 2>&1
 
