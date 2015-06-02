@@ -156,6 +156,8 @@ setopt auto_pushd
 setopt multios
 setopt magic_equal_subst
 setopt auto_name_dirs
+setopt noequals
+
 
 ################################################ PROMPT ####################################
 
