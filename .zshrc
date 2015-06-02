@@ -170,7 +170,7 @@ export SHELL=/bin/zsh # continuity
 export EDITOR=vim # continuity
 
 export PATH=/bin:/sbin:/opt/bin
-export PATH=$PATH:/usr/games/bin
+export PATH=$PATH:/usr/games/bin:/var/lib/qemu/bin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
 
 export PATH=$HOME/.local/bin:$PATH
