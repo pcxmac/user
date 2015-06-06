@@ -36,5 +36,7 @@ export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
 
 exec i3 -V >> ~/.i3/i3log 2>&1
 
+#/usr/bin/rofi -dmenu &
+
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
 exec dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1

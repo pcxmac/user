@@ -1,0 +1,31 @@
+Xcursor.theme: oxy-honeycomb
+Xcursor.size: 16			! 32,48,or 64 my also be good values
+
+rofi.opacity: 85
+rofi.width: 300
+rofi.lines: 40
+rofi.columns: 1
+rofi.font: Terminus bold 10
+rofi.bw: 2
+rofi.padding: 2
+rofi.yoffset: 0
+rofi.xoffset: -2
+rofi.fixed-num-lines: true
+rofi.hmode: false
+rofi.terminal: urxvtc
+rofi.ssh-set-title: true
+rofi.key: F12
+rofi.rkey: mod1+F11
+rofi.skey: mod1+F12
+rofi.location: 1
+
+rofi.fg:   #AAAAAA
+rofi.bg:   #000000
+rofi.hlfg: #000000
+rofi.hlbg: #AAAAAA
+rofi.bc:   #CCCCCC
+rofi.disable-history: false
+rofi.levenshtein-sort: true
+rofi.switchers: window,run,ssh,Workspace:~/.local/bin/i3_switch_workspace_script.sh
+
+
