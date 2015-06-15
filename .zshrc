@@ -207,6 +207,8 @@ setopt completealiases
 setopt completeinword
 setopt menucomplete
 
+unsetopt no_match
+
 #COMPLETION
 
 zstyle ':completion::complete:*' use-cache 1
