@@ -31,14 +31,18 @@ export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
 
 #dbus-launch /usr/bin/nm-applet &
 
-/usr/bin/urxvtd -q -o -f		# performs poorly under heavy system load
-
+#/usr/bin/urxvtd -q -o -f		# performs poorly under heavy system load
 
 /usr/bin/feh --bg-fill ~/.desktop/background-images/nova.jpg&
+
 
 exec i3 -V >> ~/.i3/i3log 2>&1
 
 #/usr/bin/rofi -dmenu &
 
+
+
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
 #exec dbus-launch --sh-syntax --exit-with-session i3 -V >> ~/.i3/i3log 2>&1
+
+

@@ -1,5 +1,11 @@
 ################################### SHELL #############################
 
+alias zfs='sudo zfs'
+alias syncwatch='watch grep -e Dirty: -e Writeback: /proc/meminfo'
+alias sudo='sudo mount'
+alias sudo='sudo '
+alias zsnaps="zfs list -t snapshot -o name,creation -s creation | grep "
+alias zlist="sudo zfs list -o name,creation -s creation | grep "
 alias nfsports="netstat -tn | egrep '2049|Active|Proto'"
 alias revdep-rebuild="sudo revdep-rebuild"
 alias ez_install="python setup.py install --user"
@@ -45,7 +51,7 @@ alias bdf="btrfs filesystem df"
 alias pacclean="yaourt -Qdt;yaourt Scc;"
 alias pacremove="yaourt -Rdd"
 alias bdel="btrfs subvolume delete"
-alias grep="grep --color"
+alias grep="grep -n --color"
 
 alias df="df -Th"
 alias du="du -s --block-size=1M"
