@@ -261,7 +261,7 @@ ppid="$(ps -p $$ -o ppid=)"
 ppid="${ppid// /}"
 pcom="$(ps -p $ppid -o command=)"
 
-echo "ppid = $ppid"
+#echo "ppid = $ppid"
 
 if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
     # we're not in a tmux session

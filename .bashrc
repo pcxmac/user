@@ -74,10 +74,6 @@ set -o emacs                          # Set emacs mode in bash (see below)
     powerline-daemon -q
 
 
-
-
-
-
 ############################################# FUZZY FINDER ################################
 
 #source ~/.fzf.bash
@@ -131,7 +127,7 @@ ppid="$(ps -p $$ -o ppid=)"
 ppid="${ppid// /}"
 pcom=$(ps -p $ppid -o command=)
 
-echo "pcom = $pcom"
+#echo "pcom = $pcom"
 
 if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
 
