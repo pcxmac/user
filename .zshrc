@@ -252,11 +252,15 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 ############################ MISC #########################################################
 
-# https://robinwinslow.uk/2012/07/20/tmux-and-ssh-auto-login-with-ssh-agent-finally/
+# https://robinwinslow.uk/2012/07/20/tmux-and-ssh-auto-login-with-ssh-agent-finally/  (MODIFIED)...
 
 # TMUX ON SSH CONNECTIONS
 
-if [ -z "$TMUX" ]; then
+# get parent process ... if not sshd, then don't bother with joining tmux session...
+ppid="$(ps -p $$ -o ppid=)"
+pcom=$(ps -p $ppid -o command=)
+
+if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
     # we're not in a tmux session
 
     if [ ! -z "$SSH_TTY" ]; then
@@ -269,7 +273,6 @@ if [ -z "$TMUX" ]; then
 
         # if socket is available create the new auth session
         if [ ! -S "$SSH_AUTH_SOCK" ]; then
-#            `ssh-agent -a $SSH_AUTH_SOCK` &gt; /dev/null 2&gt;&amp;1
             `ssh-agent -a $SSH_AUTH_SOCK` > /dev/null >&1
             echo $SSH_AGENT_PID &gt; $HOME/.ssh/.auth_pid
         fi
