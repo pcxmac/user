@@ -258,7 +258,10 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 # get parent process ... if not sshd, then don't bother with joining tmux session...
 ppid="$(ps -p $$ -o ppid=)"
-pcom=$(ps -p $ppid -o command=)
+ppid="${ppid// /}"
+pcom="$(ps -p $ppid -o command=)"
+
+echo "ppid = $ppid"
 
 if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
     # we're not in a tmux session

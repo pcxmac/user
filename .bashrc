@@ -128,7 +128,10 @@ set -o emacs                          # Set emacs mode in bash (see below)
 # get parent process ... if not sshd, then don't bother with joining tmux session...
 
 ppid="$(ps -p $$ -o ppid=)"
+ppid="${ppid// /}"
 pcom=$(ps -p $ppid -o command=)
+
+echo "pcom = $pcom"
 
 if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
 
