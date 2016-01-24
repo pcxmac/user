@@ -111,8 +111,8 @@ bindkey -M viins '^[[1;5D' backward-word
 bindkey -M viins '^[[1;5c' forward-word
 bindkey -M viins '^[[1;5C' forward-word
 
-bindkey -M viins '^[OA' history-search-backward
-bindkey -M viins '^[OB' history-search-forward
+bindkey -M viins '^[OA' history-substring-search-up
+bindkey -M viins '^[OB' history-substring-search-down
 
 
 
@@ -252,48 +252,6 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 ############################ MISC #########################################################
 
-# https://robinwinslow.uk/2012/07/20/tmux-and-ssh-auto-login-with-ssh-agent-finally/  (MODIFIED)...
-
-# TMUX ON SSH CONNECTIONS
-
-# get parent process ... if not sshd, then don't bother with joining tmux session...
-ppid="$(ps -p $$ -o ppid=)"
-ppid="${ppid// /}"
-pcom="$(ps -p $ppid -o command=)"
-
-#echo "ppid = $ppid"
-
-if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
-    # we're not in a tmux session
-
-    if [ ! -z "$SSH_TTY" ]; then
-        # We logged in via SSH
-
-        # if ssh auth variable is missing
-        if [ -z "$SSH_AUTH_SOCK" ]; then
-            export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
-        fi
-
-        # if socket is available create the new auth session
-        if [ ! -S "$SSH_AUTH_SOCK" ]; then
-            `ssh-agent -a $SSH_AUTH_SOCK` > /dev/null >&1
-            echo $SSH_AGENT_PID &gt; $HOME/.ssh/.auth_pid
-        fi
-
-        # if agent isn't defined, recreate it from pid file
-        if [ -z $SSH_AGENT_PID ]; then
-            export SSH_AGENT_PID=`cat $HOME/.ssh/.auth_pid 2>/dev/null`
-        fi
-
-        # Add all default keys to ssh auth
-        ssh-add 2>/dev/null
-
-        # start tmux
-        tmux attach 2>/dev/null
-    fi
-fi
-
-
 # PYTHON ######################################################################
 
 export PYTHONPATH=~/.local/lib64/python2.7/site-packages
@@ -381,6 +339,12 @@ zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+# ... support zsh in tmux in URxvt too
+if test "${TERM#screen}" != "$TERM"; then
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+fi
+
 
 # Setup zsh-autosuggestions #####################################################
 
@@ -397,5 +361,50 @@ zle -N zle-line-init
 # zsh-autosuggestions is designed to be unobtrusive)
 
 bindkey '^T' autosuggest-toggle
+
+
+##### TMUX AUTO ATTACH ON SSHD #############################################################################
+
+# https://robinwinslow.uk/2012/07/20/tmux-and-ssh-auto-login-with-ssh-agent-finally/  (MODIFIED)...
+
+# TMUX ON SSH CONNECTIONS
+
+# get parent process ... if not sshd, then don't bother with joining tmux session...
+ppid="$(ps -p $$ -o ppid=)"
+ppid="${ppid// /}"
+pcom="$(ps -p $ppid -o command=)"
+
+#echo "ppid = $ppid"
+
+if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
+    # we're not in a tmux session
+
+    if [ ! -z "$SSH_TTY" ]; then
+        # We logged in via SSH
+
+        # if ssh auth variable is missing
+        if [ -z "$SSH_AUTH_SOCK" ]; then
+            export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
+        fi
+
+        # if socket is available create the new auth session
+        if [ ! -S "$SSH_AUTH_SOCK" ]; then
+            `ssh-agent -a $SSH_AUTH_SOCK` > /dev/null >&1
+            echo $SSH_AGENT_PID &gt; $HOME/.ssh/.auth_pid
+        fi
+
+        # if agent isn't defined, recreate it from pid file
+        if [ -z $SSH_AGENT_PID ]; then
+            export SSH_AGENT_PID=`cat $HOME/.ssh/.auth_pid 2>/dev/null`
+        fi
+
+        # Add all default keys to ssh auth
+        ssh-add 2>/dev/null
+
+        # start tmux
+        tmux attach 2>/dev/null
+    fi
+fi
+
 
 
