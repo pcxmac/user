@@ -376,8 +376,14 @@ pcom="$(ps -p $ppid -o command=)"
 
 #echo "ppid = $ppid"
 
-if [ -z "$TMUX" ] && [[ $pcom == sshd* ]]; then
+if [ -z "$TMUX" ] && [[ $pcom == sshd* || $pcom == *bin/login* ]]; then
     # we're not in a tmux session
+
+	# invoke a tmux session, if logging in through TTY
+	if [[ $pcom == *bin/login* ]]
+	then
+		tmux
+	fi
 
     if [ ! -z "$SSH_TTY" ]; then
         # We logged in via SSH
