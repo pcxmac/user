@@ -1,0 +1,30 @@
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".vim/bundle/vundle"]
+	path = .vim/bundle/vundle
+	url = https://github.com/gmarik/Vundle.vim.git
+[submodule ".themes/solarized"]
+	path = .themes/solarized
+	url = https://github.com/altercation/solarized.git
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = git://github.com/tarruda/zsh-autosuggestions
+	branch = master
+[submodule ".zsh/zsh-history-substring-search"]
+	path = .zsh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
+	branch = master
+[submodule ".i3/extras/i3session"]
+	path = .i3/extras/i3session
+	url = https://github.com/joepestro/i3session.git
+	branch = master
+[submodule ".fonts/powerline-fonts"]
+	path = .fonts/powerline-fonts
+	url = https://github.com/powerline/fonts.git
+[submodule ".i3/extras/i3-py"]
+	path = .i3/extras/i3-py
+	url = https://github.com/ziberna/i3-py.git
+[submodule ".powerline"]
+	path = .powerline
+	url = https://github.com/powerline/powerline.git
