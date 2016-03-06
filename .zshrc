@@ -1,5 +1,6 @@
 ################################### SHELL #############################
 
+alias smart='smartctl -info'
 alias zfs='sudo zfs'
 alias syncwatch='watch grep -e Dirty: -e Writeback: /proc/meminfo'
 alias sudo='sudo mount'
