@@ -27,6 +27,8 @@ export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
 #/usr/bin/feh --bg-fill /usr/local/share/background-images/arch_dtbg.png
 #/usr/bin/feh --bg-scale /usr/local/share/background-images/arch_dtbg.png
 
+/usr/bin/numlockx &
+
 /usr/bin/xscreensaver -no-splash &
 
 #dbus-launch /usr/bin/nm-applet &
