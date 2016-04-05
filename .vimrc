@@ -21,6 +21,7 @@
 " " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'vim-airline/vim-airline-themes'
 
 "Bundle 'sirver/ultisnips'
 "	let g:UltiSnipsEditSplit = 'vertical'
