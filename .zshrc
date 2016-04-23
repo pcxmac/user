@@ -25,7 +25,7 @@ alias demerge="sudo emerge -cav"
 alias emerge="sudo emerge --ask"
 alias clean="sudo emerge -av --depclean --ask;sudo eclean-dist;sudo eclean-pkg"
 alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask --verbose"
-alias esync="sudo emerge --sync --verbose"
+alias esync="sudo emerge --sync --verbose;sudo egencache --jobs=16 --update --repo gentoo;sudo eix-update"
 alias gputemp="nvidia-settings -q gpucoretemp -t"
 alias atigputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
@@ -205,7 +205,7 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
 
 export HISTFILE=~/.zhistfile
-export HISTSIZE=20000
+export HISTSIZE=100000
 export SAVEHIST=$HISTSIZE
 
 ################################## COMPLETION #########################
