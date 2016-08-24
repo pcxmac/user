@@ -29,7 +29,7 @@ export TERMINAL="urxvtc&"		# can cause lag ... under heavy load ... or not?
 
 /usr/bin/numlockx on &
 
-/usr/bin/xscreensaver -no-splash &
+#/usr/bin/xscreensaver -no-splash &
 
 #dbus-launch /usr/bin/nm-applet &
 

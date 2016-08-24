@@ -25,7 +25,8 @@ alias demerge="sudo emerge -cav"
 alias emerge="sudo emerge --ask"
 alias clean="sudo emerge -av --depclean --ask;sudo eclean-dist;sudo eclean-pkg"
 alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask --verbose"
-alias esync="sudo emerge --sync --verbose;sudo egencache --jobs=16 --update --repo gentoo;sudo eix-update"
+#alias esync="sudo emerge --sync --verbose;sudo egencache --jobs=16 --update --repo gentoo;sudo eix-update"
+alias esync="sudo emerge --sync --verbose;sudo eix-update"
 alias gputemp="nvidia-settings -q gpucoretemp -t"
 alias atigputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
@@ -57,6 +58,11 @@ alias grep="grep -n --color"
 alias df="df -Th"
 alias du="du -s --block-size=1M"
 alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-upgrade -y; sudo apt-get autoremove -y;sudo apt-get clean -y"
+
+function ptree
+{
+	ps --forest -o pid=,tty=,stat=,time=,cmd= -g $(ps -o sid= -p $1)	
+}
 
 if [[ $(/usr/bin/whoami) == "root" ]]; then
 	alias pip="echo 'running pip as root is not advisable'"
