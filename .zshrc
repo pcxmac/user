@@ -333,12 +333,14 @@ export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 # git config --global color.status auto
 
 
-# ZSH-SYNTAX-HIGHLIGHTING #######################################################
-
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-# zsh-history-substring-search ##################################################
+
+
+
+
+
+# ZSH-HISTORY-SUBSTRING-SEARCH  ##################################################
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
@@ -353,9 +355,18 @@ if test "${TERM#screen}" != "$TERM"; then
 fi
 
 
-# Setup zsh-autosuggestions #####################################################
+
+# Setup ZSH-AUTOSUGGESTIONS  #####################################################
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# ZSH-SYNTAX-HIGHLIGHTING #######################################################
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
 
 
 
