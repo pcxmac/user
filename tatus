@@ -1,0 +1,1753 @@
+[33mcommit e200da63e9e5e69556e594370cf4ec1ad833d59d[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Aug 23 18:26:48 2016 -0700
+
+    changes again
+
+[33mcommit d5d480ee8b67bf1ecb9d5aed097270aab7f6bf47[m
+Author: root <root@jupiter.hypokrites.me>
+Date:   Sat Apr 23 10:19:41 2016 -0700
+
+    periodic update
+
+[33mcommit 6e86ddb2b7d2fc4617bd701757529511e1646a35[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Apr 4 17:39:03 2016 -0700
+
+    added vim-airline-themes
+
+[33mcommit 4f36cbda0051f7044b3dc32bdbc81f8b859a3667[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 14 23:05:02 2016 -0700
+
+    added numlockx to xinitrc -- correction
+
+[33mcommit aeebf1462f4a28038af1e04644be86e717987a08[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 14 23:03:36 2016 -0700
+
+    added numlockx to xinitrc
+
+[33mcommit 5e4a39aba2ee4afccb2304d35224a7b8c791a72a[m
+Author: ciaran <ciaran@saturn>
+Date:   Sat Mar 12 19:47:16 2016 -0800
+
+    fixed autosuggest-zsh, updated stuff
+
+[33mcommit c1253597f144d4328211f3c21b74a9a69eaaa2a2[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 11:29:51 2016 -0800
+
+    tmux mods
+
+[33mcommit ed6c0574eec991af2f86f851c94bf694fc0c2c6d[m
+Merge: cbbf657 0e79fc7
+Author: root <root@jupiter>
+Date:   Sun Mar 6 10:53:14 2016 -0800
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 0e79fc73ce8592826362229e6fb56aac28ab4885[m
+Merge: e7a2efe ad77ca2
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 10:08:53 2016 -0800
+
+    Merge branch 'master' of gitlab.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit cbbf657dc1c0fec2ce863d2fb4d944748a9c00c1[m
+Merge: 3abefc9 e7a2efe
+Author: root <root@jupiter>
+Date:   Sun Mar 6 09:41:15 2016 -0800
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit e7a2efef7a1facd42bda24c367b19cb20539f990[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 09:40:50 2016 -0800
+
+    update
+
+[33mcommit 3abefc9fc54700351dbc04cbc463f5bc8d25d7d2[m
+Merge: 9fefa1d 58e4728
+Author: root <root@jupiter>
+Date:   Sun Mar 6 09:39:23 2016 -0800
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 58e47288261b71c5fa7613a6e5aceea951111171[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 09:28:53 2016 -0800
+
+    update
+
+[33mcommit beb26bd38838b993823793fa152bfb5856e2a9b2[m
+Merge: 6a1a4e3 4c51dd3
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 09:28:41 2016 -0800
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 6a1a4e3d4930bc393358c64bfc45a03d1bdfce15[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 6 09:27:15 2016 -0800
+
+    update
+
+[33mcommit 9fefa1ddec1b4da0221fd46ac3f9de3d110673cb[m
+Author: root <root@jupiter>
+Date:   Sun Mar 6 09:18:16 2016 -0800
+
+    changes again
+
+[33mcommit 4c51dd35efc5f98a7fd1b488331e057168459300[m
+Author: pxc <admin@hypokrites.me>
+Date:   Sat Mar 5 21:47:29 2016 -0800
+
+    new changes
+
+[33mcommit ad77ca2f8dc8c5b579ee7ea9fe593b3c13891df2[m
+Merge: 9a68090 aa08399
+Author: pxc <admin@example.com>
+Date:   Sat Mar 5 17:47:59 2016 +0000
+
+    Merge branch 'developer' into 'master'
+    
+    Developer
+    
+    
+    
+    See merge request !1
+
+[33mcommit aa0839923a70ccf1f1378fc5b196f2a0760d0cbe[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Jan 31 18:59:13 2016 -0800
+
+    update
+
+[33mcommit 9718d59ca42e88137b7a397d3ebf1abf6834800d[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Jan 31 17:39:42 2016 -0800
+
+    fix tmux/ssh line 399
+
+[33mcommit 3362f8bfe0623ffac9702075f22fb15b5bccf589[m
+Author: root <root@jupiter>
+Date:   Sun Jan 31 12:57:07 2016 -0800
+
+    tmux on tty
+
+[33mcommit 3b68e1d80ef825bfc7dd06bd692e861f66a2ac6e[m
+Author: root <root@jupiter>
+Date:   Sun Jan 31 11:56:34 2016 -0800
+
+    new day
+
+[33mcommit 389e1a5a667fff7d71aac88421b0b322c8e4c920[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Jan 24 15:22:03 2016 -0800
+
+    freshen up
+
+[33mcommit 5633595b888832d8a9810eb3bbecc9d7965657d7[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 22:40:55 2016 -0800
+
+    changes again
+
+[33mcommit 1f9e9d9f125ac4e21b39d4dba6ed7531e71740c3[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Jan 17 22:40:30 2016 -0800
+
+    freshen up
+
+[33mcommit 9deaa8ea699bc508d3e57d2aa8be637528825f57[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 22:40:03 2016 -0800
+
+    changes again
+
+[33mcommit bc769717677c5c330f33de7a9775cfd9993db99b[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 22:06:30 2016 -0800
+
+    changes again
+
+[33mcommit fe83dad97133c8806d76022b6b20d2afc9156d70[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 21:19:20 2016 -0800
+
+    no more white space
+
+[33mcommit 4959f9c75d5d64ea821be8a68778ed6c6e948938[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 20:58:05 2016 -0800
+
+    changes again
+
+[33mcommit c30dd02a8bb93c9a7b2b4af901a99283a4d1ce58[m
+Merge: b170b6c 3368644
+Author: root <root@jupiter>
+Date:   Sun Jan 17 20:18:38 2016 -0800
+
+    changes again
+
+[33mcommit b170b6c2d55f38a4145ecd1b829163a65c99a1a6[m
+Author: root <root@jupiter>
+Date:   Sun Jan 17 20:17:59 2016 -0800
+
+    changes again
+
+[33mcommit 336864439539eb4f6a0fd27661d1861a84426594[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Dec 11 22:25:26 2015 -0800
+
+    changes
+
+[33mcommit e5c07fde2fb020fd3032f9875b4299f04354e65b[m
+Author: root <root@jupiter>
+Date:   Thu Dec 3 21:34:59 2015 -0800
+
+    changes again
+
+[33mcommit 117f47d10cc614d072509d24d66d43dcef3bd6cb[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Dec 3 21:25:45 2015 -0800
+
+    changes
+
+[33mcommit 03e38672681d23b19f422f54c99c9a0ea1209d25[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Dec 2 21:46:15 2015 -0800
+
+    changes
+
+[33mcommit f1031a973429388515f89860f713649293b3e97f[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Jul 29 20:33:01 2015 -0700
+
+    changes
+
+[33mcommit 8847d9e79d62d4a627119e21d9e9103b366ec242[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Jun 15 08:17:27 2015 -0700
+
+    no more arg matching
+
+[33mcommit 544d8e3a14c393d31a934207fb0edf5989c27ab5[m
+Author: root <root@jupiter>
+Date:   Tue Jun 9 03:53:13 2015 -0700
+
+    modified rcp
+
+[33mcommit 145d5417c7d46a04a802d9aa6468a5ae370132d9[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Jun 5 23:17:39 2015 -0700
+
+    added rofi
+
+[33mcommit fd3b433de06b0bb64dd1dc6adf4eebd6fbbd9d74[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Jun 2 01:27:09 2015 -0700
+
+    equal sign
+
+[33mcommit 51556ec8e25674d156b8e62d5a74a790fc00d4dc[m
+Author: root <root@jupiter>
+Date:   Mon Jun 1 19:12:22 2015 -0700
+
+    added qemu bin links
+
+[33mcommit fff1e4366df59ff060b4c319e00a3c29674f9580[m
+Author: root <root@jupiter>
+Date:   Fri May 29 21:46:56 2015 -0700
+
+    updates
+
+[33mcommit ccc413499c404eca99a520eccd3e2195af2865f6[m
+Author: root <root@jupiter>
+Date:   Fri May 22 18:08:26 2015 -0700
+
+    new powerline
+
+[33mcommit 00728ba8831061d4e44d6af3ee75b4b457735a91[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri May 22 17:52:43 2015 -0700
+
+    proposed
+
+[33mcommit 64d7ef6755dd5a71bf7ffd5e54a7acbf2c9ed500[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon May 18 15:01:12 2015 -0700
+
+    updates + nanorc
+
+[33mcommit 09e7799cac5a2f812ac170fc296f11ecbba61e02[m
+Merge: 757e9ed 5cef952
+Author: root <root@jupiter>
+Date:   Wed May 13 10:23:25 2015 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 757e9ed09b2d012b20329f94897a53946ca2c861[m
+Author: root <root@jupiter>
+Date:   Wed May 13 10:22:46 2015 -0700
+
+    changes
+
+[33mcommit 5cef95208a8aaa6b887df4134bf6c409013bfbd2[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:50:16 2015 -0700
+
+    nano_rc
+
+[33mcommit 0e6fadc9f8acf8a1eddbcb6ca94df90907a41848[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:31:54 2015 -0700
+
+    infinite power!
+
+[33mcommit 3a26acb27e12f28b83f2120e146e9bf67cfe631b[m
+Author: root <root@jupiter>
+Date:   Wed May 13 03:31:25 2015 -0700
+
+    pow pow powerline
+
+[33mcommit 5f8686a98dc9eedf5a45dbd81531ca76898a79c9[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:30:16 2015 -0700
+
+    added powerline...again
+
+[33mcommit 3e7aea48bb37b931e67a0083709a0bdcaefb548f[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:19:44 2015 -0700
+
+    submodule updates...
+
+[33mcommit deaf1f096871163ecf6f136a28bc57cf30ef47a7[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:13:51 2015 -0700
+
+    submodule updates...
+
+[33mcommit 8ee1cc7ae7cc5f096aa0340d15ded1d2ab07ef73[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:11:28 2015 -0700
+
+    submodule updates...
+
+[33mcommit 2abb4a602699f5dce76608c3ad1f7319d67a1194[m
+Merge: 8ef977c cdd3fff
+Author: root <root@jupiter>
+Date:   Wed May 13 03:01:34 2015 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit cdd3fff0b5e47779dcbdb298e0cc8e63b6261207[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed May 13 03:00:23 2015 -0700
+
+    submodule update + extras
+
+[33mcommit 0ef9b3a814451a9b4804a8d786d52ced396b933d[m
+Author: root <root@jupiter>
+Date:   Thu May 7 18:48:01 2015 -0700
+
+    added i3 submodules
+
+[33mcommit 8ef977cab2ad607789235c86a926615a7ac05b4a[m
+Author: root <root@jupiter>
+Date:   Wed Apr 29 23:32:41 2015 -0700
+
+    another change
+
+[33mcommit ad0115f798ae1a6abbaa208aac82fec433641616[m
+Author: root <root@jupiter>
+Date:   Sat Apr 25 16:01:15 2015 -0700
+
+    trees
+
+[33mcommit a2abf8fc53cf44ee84b91d291672c9f271feb39c[m
+Author: root <root@jupiter>
+Date:   Tue Apr 21 02:52:11 2015 -0700
+
+    new changes
+
+[33mcommit fe90634215cc9ae5627c9187128c1356d16d41f7[m
+Author: root <root@jupiter>
+Date:   Tue Apr 21 02:51:35 2015 -0700
+
+    new changes
+
+[33mcommit 50bdfd4ee607ab6eefb4bc5456a0ba0de8e03eb3[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Apr 17 15:14:05 2015 -0700
+
+    urxvtc + powerline-daemon optimizations
+
+[33mcommit 89f2fce46ac113e19a53ac70e61a96524b537072[m
+Merge: 9ab7921 4549f84
+Author: root <root@jupiter>
+Date:   Wed Apr 15 12:39:01 2015 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 9ab792148670587097a2651a1e1b07e0c5acd123[m
+Author: root <root@jupiter>
+Date:   Wed Apr 15 12:38:53 2015 -0700
+
+    rebuild
+
+[33mcommit 4549f84262dd2b01954957ad1ddc55447210dffa[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Apr 15 12:38:33 2015 -0700
+
+    rebuild
+
+[33mcommit a965d4314fd8ca0f6ede7ded187876b07deaa76b[m
+Merge: 9d664e9 7361fa0
+Author: root <root@jupiter>
+Date:   Thu Apr 9 16:26:17 2015 -0700
+
+    zshrc mods
+
+[33mcommit 9d664e91aa651706f873c073e32575fa36bdc85c[m
+Author: root <root@jupiter>
+Date:   Thu Apr 9 16:25:40 2015 -0700
+
+    zshrc mods
+
+[33mcommit 7361fa0a7cae648278d70e95c5eff3d3fd6dbd37[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Apr 9 16:25:24 2015 -0700
+
+    zshrc mods
+
+[33mcommit 91db09694681afc3c44b687489c37c9c7dc642b9[m
+Author: root <root@jupiter>
+Date:   Tue Apr 7 07:09:22 2015 -0700
+
+    vimrc
+
+[33mcommit 735d0ef71c813ff1416653e2c8b1526ac22dbdd2[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Apr 7 06:50:36 2015 -0700
+
+    new additions
+
+[33mcommit 953b58fcece401fc3d22076b8e6695d92f9e80e1[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Apr 1 10:50:50 2015 -0700
+
+    mod vimrc
+
+[33mcommit aa64812c8f94511ee2417360c7021da5f9442374[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 30 15:39:17 2015 -0700
+
+    vimrc mods
+
+[33mcommit a3b8692fc0ee7e16e4d7657d626b6e3ff7904633[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 30 10:18:26 2015 -0700
+
+    vimrc mods
+
+[33mcommit a50efe92251a229ffc6036c17174231aeaedec87[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 29 05:15:59 2015 -0700
+
+    new commits
+
+[33mcommit 0ead3995323a94bb012a161c25c74873c23bac02[m
+Author: root <root@jupiter>
+Date:   Fri Mar 27 13:05:45 2015 -0700
+
+    added alias lsusb
+
+[33mcommit 02b355838ac3ce4b9d450f6ba4042d25588d3457[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Mar 27 12:55:54 2015 -0700
+
+    new commits
+
+[33mcommit 3a231f6c5858ce260f6ba9130bdb59b4320c7fbf[m
+Merge: becbb3c 1257662
+Author: ciaran <ciaran@saturn>
+Date:   Fri Mar 27 12:52:40 2015 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit becbb3c262dc09b2a0b1a796bd72f2518e780e76[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Mar 27 12:52:28 2015 -0700
+
+    new aliases
+
+[33mcommit 12576622131dc0115d1e3bcd52ac5e689503c475[m
+Author: root <root@jupiter>
+Date:   Tue Mar 24 14:48:42 2015 -0700
+
+    fixed reference to zsh-autosuggest...
+
+[33mcommit 5289631f9b1eef2505836d936ea4c8f83fed51a4[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 23 16:44:06 2015 -0700
+
+    generalized include
+
+[33mcommit f827b9da41dd7eddd1aeffc47ec4910873e34468[m
+Merge: 02ec243 861ff04
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 23 16:42:22 2015 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+    
+    Conflicts:
+    	.zshrc
+
+[33mcommit 02ec243f99f2fa801b639d6d6f9bbe26db08a83c[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 23 16:40:13 2015 -0700
+
+    modifications
+
+[33mcommit 861ff04ab3cf7fb00f194508d54d90cd853df9d4[m
+Author: root <root@jupiter>
+Date:   Mon Mar 23 16:39:21 2015 -0700
+
+    fixed history del
+
+[33mcommit c388075c760db74ccdad70427fa820eee2bd4feb[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Mar 19 09:30:12 2015 -0700
+
+    delete before word-zsh
+
+[33mcommit a55a0d4a67d1d8858312ae8ef19b5c5bf4b1804c[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Mar 19 09:24:31 2015 -0700
+
+    ctrl-arrow for tmux
+
+[33mcommit bcb04845f93e01fbf9bbf96bd601fb5ce6076985[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Mar 18 23:42:19 2015 -0700
+
+    tmux mods
+
+[33mcommit fd4a613b7c5f3fd73e510bdddd6bbf18e8f71c92[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Mar 18 18:29:25 2015 -0700
+
+    consolekit changes to xinitrc, plus aliases
+
+[33mcommit 6796a6c86532da14de60e8cc65b78de01e8047b4[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 16 13:39:06 2015 -0700
+
+    added zsh autosuggest and history substr
+
+[33mcommit 16eec50c1a38fda2c3711b63490e9c7600760dc5[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Mar 16 10:59:17 2015 -0700
+
+    vundle update
+
+[33mcommit d1e896dc3d3993aebb45958a4ba5e5c3d4d49602[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 15 20:26:16 2015 -0700
+
+    updated vim
+
+[33mcommit efd63d1f09c3ba4637d253a277ce76846df92263[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 15 20:02:54 2015 -0700
+
+    revert to old style powerline install -- safer, no pip
+
+[33mcommit a22c8e9ff54a794691ac96e3a02d54b5bf599f8b[m
+Author: root <root@jupiter>
+Date:   Sun Mar 15 17:58:31 2015 -0700
+
+    fixed bash powerline
+
+[33mcommit 22d416f8f8b50c9ac306c67196fbdae638c4597d[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 15 17:46:29 2015 -0700
+
+    powerline bindings for tmux
+
+[33mcommit 9ac512b7b41b5a30cda2bed1fedf41ee27a2bba8[m
+Author: root <root@jupiter>
+Date:   Sun Mar 15 17:45:04 2015 -0700
+
+    added USER to powerline update
+
+[33mcommit 7fc31243d14b4f797bf08b62075695d74c88c0b0[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 15 17:43:24 2015 -0700
+
+    correct local reference
+
+[33mcommit 31a0515157bacba341a25ac92184ada2ea71ebae[m
+Author: ciaran <ciaran@saturn>
+Date:   Sun Mar 15 13:34:23 2015 -0700
+
+    new mods
+
+[33mcommit 1e1951c8a95aaf03791be9cc55f595fb58fd444f[m
+Author: root <root@jupiter>
+Date:   Thu Feb 12 14:31:22 2015 -0800
+
+     fixed .local bad ls issue
+
+[33mcommit a4a11149c1decc1301ac2d43da75ea7016e913e5[m
+Author: root <root@jupiter>
+Date:   Wed Feb 11 21:34:23 2015 -0800
+
+    zlogout?
+
+[33mcommit c5cd5961ea5686ae4a77d49d10e8dbf4ceb4d6fa[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Feb 11 21:33:56 2015 -0800
+
+    mods for vim
+
+[33mcommit 757d37d3715d89aa058facb97d51f0bac9c73704[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Feb 11 02:51:30 2015 -0800
+
+    no more gems
+
+[33mcommit 48143dcb539c8bfe1b56c932f9edf7ec95127615[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 20:09:21 2015 -0800
+
+    automated powerline install and upgrade per user
+
+[33mcommit b983425ebab81573bd4133adf3aff8502684cc2d[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 19:41:31 2015 -0800
+
+    added powerline automated install
+
+[33mcommit 7cbcc805bc4b207ac0afece7f631eaebac44ae3f[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 13:43:10 2015 -0800
+
+    no more cached powerline, too many files change state when running powerline/tmux/...
+
+[33mcommit ac04abde619172da02c89a3b5c315aab43cca50c[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 13:41:40 2015 -0800
+
+    modified for all users
+
+[33mcommit edeca4ed07be0f3fff85a74cee382256e3607791[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 13:30:09 2015 -0800
+
+    new changes?
+
+[33mcommit 6ca15d3b71e84822411fb8214ed891358a784701[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 11:57:41 2015 -0800
+
+    new changes to powerline
+
+[33mcommit 31968ccbf94f45c1878b7b054ae5c7bcf847884f[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 09:26:55 2015 -0800
+
+    new commit
+
+[33mcommit 8de756c9690000c33eead777c02633db4948f31e[m
+Merge: d225d49 70506e9
+Author: root <root@jupiter>
+Date:   Tue Feb 10 09:26:01 2015 -0800
+
+    fk me
+
+[33mcommit 70506e99e93ac121c618f6d824087432a591a311[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 09:20:45 2015 -0800
+
+    deleted old powerline
+
+[33mcommit a98d860968413e9609e986bd01f9635ec711c582[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 09:20:17 2015 -0800
+
+    new powerline style
+
+[33mcommit d225d4955bd9bef2aea64ca57faf6e3c4309ed9d[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 09:11:39 2015 -0800
+
+    motherload dev
+
+[33mcommit fdbe56b19724fbb281e0d246a0b76d068134400d[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Feb 10 09:09:58 2015 -0800
+
+    all user zshrc powerline
+
+[33mcommit 92811330a33f5822272ebecda549176ff3fafce7[m
+Author: root <root@jupiter>
+Date:   Tue Feb 10 08:47:28 2015 -0800
+
+    new changes to powerline/zsh
+
+[33mcommit 96dc96bd4d5052a70d1ffb877b00ae4d2f847c07[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Feb 9 17:34:00 2015 -0800
+
+    added gitlog alias
+
+[33mcommit 3539a55cb751da12bccd37354f7ac6c1548105c1[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Feb 9 09:51:53 2015 -0800
+
+    powerline update
+
+[33mcommit af0c552d8f93db4aef7e9823f1455b4bb6d5b1b0[m
+Author: root <root@jupiter>
+Date:   Wed Feb 4 22:48:36 2015 -0800
+
+    updates
+
+[33mcommit 6253f986ee46931ca0f217ca30a836aac913c399[m
+Author: ciaran <ciaran@saturn>
+Date:   Mon Feb 2 15:18:09 2015 -0800
+
+    proxy for curl
+
+[33mcommit 653707d49cc38641f8870e7529e46fa863758fae[m
+Author: root <root@jupiter>
+Date:   Wed Jan 28 05:42:21 2015 -0800
+
+    added clamscan
+
+[33mcommit 51573c7583551331e88af2d1608eb99f7e67d962[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Jan 20 04:33:25 2015 -0800
+
+    modified vimrc , cntrl-del
+
+[33mcommit 7a846fb43fe19b2d8049b4e1e06fd3fe427ba023[m
+Author: root <root@jupiter>
+Date:   Thu Jan 8 22:07:18 2015 -0800
+
+    grep color
+
+[33mcommit 6c8b149815cf56b10bb32da21a2aa3cb6fe293d2[m
+Author: root <root@jupiter>
+Date:   Tue Jan 6 15:35:17 2015 -0800
+
+    added hgrc
+
+[33mcommit 903e444f206c3076f407decb0071ce4d54895535[m
+Author: root <root@jupiter>
+Date:   Wed Dec 31 10:02:19 2014 -0800
+
+    new powerline
+
+[33mcommit e106514dd9b280d5a6c713b6285690f7df9002d4[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Dec 25 21:31:31 2014 -0800
+
+    fixed zshrc
+
+[33mcommit c384dcfb525c8063931d8c69c5e196a0092dc637[m
+Author: root <root@jupiter>
+Date:   Thu Dec 25 21:28:35 2014 -0800
+
+    new changes
+
+[33mcommit f0837b2e6ee2d488de890d33d1671c661ad73b9b[m
+Author: root <root@jupiter>
+Date:   Wed Dec 24 09:27:54 2014 -0800
+
+    moded nanorc
+
+[33mcommit 6b2282ade2e87d8a037a1309ef91fff47a893119[m
+Author: root <root@jupiter>
+Date:   Tue Dec 23 12:47:41 2014 -0800
+
+    new changes
+
+[33mcommit 7bdd90ff8f405c886f35b88ebf99e43c58b78e53[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Dec 11 23:45:57 2014 -0800
+
+    new powpow
+
+[33mcommit eab4665260166f2333fc2ccd1ae248fb3839c708[m
+Author: root <root@jupiter>
+Date:   Thu Dec 11 23:45:10 2014 -0800
+
+    new mods
+
+[33mcommit 19ac2a44db1ae168e6ca9aecc875794241f952bf[m
+Author: root <root@jupiter>
+Date:   Fri Nov 28 17:16:42 2014 -0800
+
+    btr alias
+
+[33mcommit e18dce1a823a83c38e52b34364b4afd2d9895f88[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Nov 28 14:44:53 2014 -0800
+
+    new powerline
+
+[33mcommit 460ebe1779e0aff6e90362180022a7532f9f5c27[m
+Author: ciaran <ciaran@saturn>
+Date:   Fri Nov 28 14:43:05 2014 -0800
+
+    resync
+
+[33mcommit 934b4a54d9761c24ca2fde16c53b671934d46409[m
+Author: root <root@jupiter>
+Date:   Wed Nov 19 08:38:23 2014 -0800
+
+    merged zshrc
+
+[33mcommit 801dcdda4ad48e65637a041aa492ce77cf657629[m
+Merge: 99fc0a7 2adb9b8
+Author: root <root@jupiter>
+Date:   Wed Nov 19 08:37:37 2014 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/developer' into developer
+    
+    Conflicts:
+    	.zshrc
+
+[33mcommit 99fc0a739602a3d815836f3c679875f5739f1183[m
+Author: root <root@jupiter>
+Date:   Wed Nov 19 08:36:58 2014 -0800
+
+    merging zshrc
+
+[33mcommit 2adb9b82f84bda695c3c3b67692641884cc4eea6[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Nov 19 08:35:48 2014 -0800
+
+    cumulative update
+
+[33mcommit b068dd2cb15d137d2d6c1e258a35bd792f7c9611[m
+Author: root <root@jupiter>
+Date:   Mon Oct 27 10:33:10 2014 -0700
+
+    modified zlogout and vimrc
+
+[33mcommit 057e6886e48f94472d50089f1cf63806d8c00113[m
+Author: ciaran <ciaran@saturn>
+Date:   Wed Oct 22 10:20:14 2014 -0700
+
+    zshrc + updates
+
+[33mcommit bd502b10e0355783ad91eed4ad7dd8d8910f04f0[m
+Author: ciaran <ciaran@saturn>
+Date:   Tue Oct 14 07:29:07 2014 -0700
+
+    new background stuff
+
+[33mcommit 325f97d8715a9e976c42b7dc256c87b2dc3c86bf[m
+Merge: a638404 2bd18b0
+Author: root <root@saturn>
+Date:   Wed Oct 8 20:53:26 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit a638404b2210089ddba6eaeba7e77264810363b5[m
+Author: root <root@saturn>
+Date:   Wed Oct 8 20:53:15 2014 -0700
+
+    powerline update
+
+[33mcommit 2bd18b059b3c8e72bf8fcd31a91f292379e5291a[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Oct 2 19:04:37 2014 -0700
+
+    update
+
+[33mcommit c4ea919567ce19ad127bee97f8def1db5cffd151[m
+Author: ciaran <ciaran@saturn>
+Date:   Thu Sep 25 17:20:07 2014 -0700
+
+    updates
+
+[33mcommit 795bc62832b8eae240c0b34eed7ff2bb8a951466[m
+Author: root <root@saturn>
+Date:   Tue Sep 23 21:38:09 2014 -0700
+
+    update
+
+[33mcommit 38c8c2a8275da567e544db07db4dd57faa04bd33[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:14:15 2014 -0700
+
+    new powerline
+
+[33mcommit 2b0a1fc26a152d0840c6efb99bae84f51eb15604[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:12:04 2014 -0700
+
+    no more gitconfig
+
+[33mcommit e3632adafd8dd677975dc3d62b14c26680cce699[m
+Merge: 864f934 11f88ec
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:10:45 2014 -0700
+
+    fixed gitconfig again
+
+[33mcommit 864f9347400a50b95c2732323b22be70f22257db[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:10:09 2014 -0700
+
+    fixed gitconfig
+
+[33mcommit 99e0ebbe36c37ef726940da53dba9a4969e2efea[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:09:05 2014 -0700
+
+    fixes
+
+[33mcommit 8699c18fca02a9a041864826ed5e220fc4bda3d3[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:08:23 2014 -0700
+
+    root changes
+
+[33mcommit 11f88ec0e2a8a5a6194d82a7affca11e1af92996[m
+Merge: bfd946b dbeb933
+Author: root <root@saturn>
+Date:   Mon Sep 15 15:08:00 2014 -0700
+
+    new changes
+
+[33mcommit bfd946b2ed8114633d9d4d6b0b3f7e26dc1879b9[m
+Author: pxc <admin@local.host>
+Date:   Mon Sep 15 15:06:21 2014 -0700
+
+    added some git config notes to bashrc
+
+[33mcommit b228de968f15a54b4fe5042e510b04e265bbfced[m
+Author: pxc <admin@local.host>
+Date:   Mon Sep 15 15:05:08 2014 -0700
+
+    added some git config notes to zshrc
+
+[33mcommit dbeb933e8830b09231eb6811f30dc0e55af1c761[m
+Author: root <root@saturn>
+Date:   Mon Sep 15 14:58:01 2014 -0700
+
+    testing
+
+[33mcommit 55e208fc63ea6fd1b659d078d773ba61d5908e77[m
+Merge: ec8bd31 a76a3fe
+Author: pxc <admin@local.host>
+Date:   Mon Sep 15 14:38:32 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit a76a3fe026276d458bdcb694791f582d17c62ae0[m
+Author: pxc <admin@local.host>
+Date:   Mon Sep 15 14:37:56 2014 -0700
+
+    fixed buffers/indent-guide plugin for vim
+
+[33mcommit ec8bd31028bfeecc820f9377f4d2fb16283549b1[m
+Merge: 9b33dd3 c2b391e
+Author: pxc <admin@local.host>
+Date:   Fri Sep 12 19:50:49 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit c2b391e1397e78f392d0d0eb451fea63aa1547b8[m
+Author: pxc <admin@local.host>
+Date:   Fri Sep 12 19:48:40 2014 -0700
+
+    fixed Xdefaults, upgraded vimrc
+
+[33mcommit 9b33dd371c0e3eba54ffd6f7a209ff34884fd6b8[m
+Author: pxc <admin@local.host>
+Date:   Tue Sep 9 18:38:26 2014 -0700
+
+    added nanorc
+
+[33mcommit 42c2776d90d0b876bd0a3792347509ea05936c87[m
+Author: pxc <admin@local.host>
+Date:   Tue Sep 9 17:11:39 2014 -0700
+
+    meh
+
+[33mcommit 9ee1264684bc60840fa5ed6024cb91d45afb0bce[m
+Author: pxc <admin@local.host>
+Date:   Tue Sep 9 16:50:22 2014 -0700
+
+    added YouCompleteMe-vimrc
+
+[33mcommit bc8e7618f08f430ec000dde75663d06339987335[m
+Author: pxc <admin@local.host>
+Date:   Tue Sep 9 12:05:33 2014 -0700
+
+    pow pow powerline
+
+[33mcommit 08682555abf9144432091f16aff6d1a6d8d0d9a4[m
+Merge: 6e9bdd1 f91dd8f
+Author: pxc <admin@local.host>
+Date:   Thu Sep 4 11:22:07 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 6e9bdd1da6a61f54598aabe68f601279b5b6df06[m
+Author: pxc <admin@local.host>
+Date:   Thu Sep 4 11:22:02 2014 -0700
+
+    zshrc tmux mod
+
+[33mcommit f91dd8f6b1b3a25133594b5b447970a46b519a0e[m
+Author: pxc <admin@local.host>
+Date:   Thu Sep 4 11:21:49 2014 -0700
+
+    vimrc mod
+
+[33mcommit ad38b60d5ee37a2b5b2ac6650eb6a40f21c38046[m
+Author: pxc <admin@local.host>
+Date:   Thu Aug 28 00:04:29 2014 -0700
+
+    powerline
+
+[33mcommit 432a9fcbfb7ba78bdd899ddfb1b845a7b8e18546[m
+Author: pxc <admin@local.host>
+Date:   Wed Aug 27 20:02:25 2014 -0700
+
+    modified vimrc and zshrc
+
+[33mcommit 6ecc566bf14974d66222d72ff365bd038106abd4[m
+Merge: 823a508 c793074
+Author: pxc <admin@local.host>
+Date:   Tue Aug 19 22:48:26 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 823a508e25d6cabcd9627dbaea0cc4db35b9696e[m
+Author: pxc <admin@local.host>
+Date:   Tue Aug 19 22:48:23 2014 -0700
+
+    new mods
+
+[33mcommit c7930746505e57a3f0649d79b676040b7773a51c[m
+Author: pxc <admin@local.host>
+Date:   Thu Jun 12 10:08:19 2014 -0700
+
+    finished denying fzf
+
+[33mcommit 63c2e171b91e9cb62c0bafa1e6356c84d37c409d[m
+Merge: 0936cdd fd36583
+Author: pxc <admin@local.host>
+Date:   Thu Jun 12 09:58:39 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 0936cdd9111b3ff248ea97c5f08cbbe95c3e0679[m
+Author: pxc <admin@local.host>
+Date:   Thu Jun 12 09:58:29 2014 -0700
+
+    removed fzf
+
+[33mcommit fd365836a02ac4bdb485e3a6d98c1d780ff1bf77[m
+Author: pxc <admin@local.host>
+Date:   Thu Jun 12 09:57:22 2014 -0700
+
+    removed fzf
+
+[33mcommit 076b6c0f855a48803b0b13a93e9099f09b25a519[m
+Author: pxc <admin@local.host>
+Date:   Tue Jun 3 12:51:51 2014 -0700
+
+    mod-vimrc
+
+[33mcommit c3e98dac45b4c7a68a0d842301c5e556664e8559[m
+Author: pxc <admin@local.host>
+Date:   Wed May 28 17:28:26 2014 -0700
+
+    mods
+
+[33mcommit e9660cd336af984994b10bd1aabacc193a315e83[m
+Author: pxc <admin@local.host>
+Date:   Wed May 28 14:52:19 2014 -0700
+
+    screensaver, nowrap on vim, updates
+
+[33mcommit 3a64cce536c507e28976a4a5f41fde8a310a0fac[m
+Author: pxc <admin@local.host>
+Date:   Tue May 27 12:13:20 2014 -0700
+
+    mod power
+
+[33mcommit 9cb16a945ed4393c83f8a53f5afbff98908db5ad[m
+Author: pxc <admin@local.host>
+Date:   Tue May 27 08:20:21 2014 -0700
+
+    fixed ps1
+
+[33mcommit a01e458c40f6915a3f885c59ad56b7d685896406[m
+Author: pxc <admin@local.host>
+Date:   Tue May 27 08:13:52 2014 -0700
+
+    modified ps1/non powerline for zsh
+
+[33mcommit 3fb6f9fc67a8b9b22d99bf65e308e2f345f6f372[m
+Author: pxc <admin@local.host>
+Date:   Tue May 27 07:26:02 2014 -0700
+
+    mod-d zshrc , new updates
+
+[33mcommit abcc14c069f151af474609185bfdefdd3c1e3943[m
+Author: pxc <admin@local.host>
+Date:   Wed May 21 18:47:17 2014 -0700
+
+    added nerd tree
+
+[33mcommit 59cebd4e291e11d567a13c093614daf09b8f0d53[m
+Author: pxc <admin@local.host>
+Date:   Wed May 21 18:34:12 2014 -0700
+
+    mod vimrc
+
+[33mcommit 13b07c930f36d2b847c681a789d894ce6c06ef40[m
+Author: pxc <admin@local.host>
+Date:   Wed May 21 14:42:33 2014 -0700
+
+    modified rc files
+
+[33mcommit b53f18786646050fe8302dd1d627a328a307fd19[m
+Author: pxc <admin@local.host>
+Date:   Tue May 20 23:01:09 2014 -0700
+
+    mod zshrc
+
+[33mcommit cadad50edb219c1361b972b8b1feb8b5bd3e4e28[m
+Author: pxc <admin@local.host>
+Date:   Tue May 20 22:55:55 2014 -0700
+
+    fzf mod
+
+[33mcommit f1dace172fffad7867044194914e401c32c0c99f[m
+Author: pxc <admin@local.host>
+Date:   Tue May 20 09:58:37 2014 -0700
+
+    modified zshrc
+
+[33mcommit d73c5841982ce98a26bdf0872276d5e388be3c8c[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 20:14:56 2014 -0700
+
+    moded vim dir
+
+[33mcommit 63b3735f474e184d11318eddf6f120d7bcaf15aa[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 20:14:49 2014 -0700
+
+    moded vim dir
+
+[33mcommit f3b59b647c0da73e20f97fba108e8542dfa8d706[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 20:14:36 2014 -0700
+
+    moded vim dir
+
+[33mcommit ae46652f4cb593ba0d2997c6ceb2e6cddeca7baa[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 20:14:29 2014 -0700
+
+    moded vim dir
+
+[33mcommit c76fa8eafeac020acbfe9436d9a6afd70faf6bd6[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 20:13:24 2014 -0700
+
+    moded vimrc
+
+[33mcommit a9dcf5d7a77fe82ddb3bdfe0f50c18d2adbea6fb[m
+Author: pxc <admin@local.host>
+Date:   Mon May 19 11:57:53 2014 -0700
+
+    modified .vimrc
+
+[33mcommit d6285c4d6071460883a6ff948a0087689107d791[m
+Author: pxc <admin@local.host>
+Date:   Sun May 18 16:11:02 2014 -0700
+
+    some changes to vimrc
+
+[33mcommit 996bb6339411fc6ce695e603d1cbf1d1be76676d[m
+Author: pxc <admin@local.host>
+Date:   Sun May 18 12:01:37 2014 -0700
+
+    added some vim stuff
+
+[33mcommit 51593e86bd58ff0f5f155ea297a588e2d1b8c96a[m
+Author: pxc <admin@local.host>
+Date:   Mon May 12 16:04:23 2014 -0700
+
+    modified vim colors
+
+[33mcommit d12cd88a7aa330e7a944be471df05c835fc67c44[m
+Author: pxc <admin@local.host>
+Date:   Mon May 12 16:11:15 2014 +0000
+
+    powerline ...
+
+[33mcommit 51172271b7b15c322beb848dd9e1f94aea5a873a[m
+Merge: 918c343 0ff6ad2
+Author: pxc <admin@local.host>
+Date:   Mon May 12 16:09:57 2014 +0000
+
+    Merge branch 'developer' of git.hypokrites.me:pxc/skeleton into developer
+
+[33mcommit 918c34364aadf33b700268a30b8d86852e9b63de[m
+Author: pxc <admin@local.host>
+Date:   Mon May 12 15:22:25 2014 +0000
+
+    added update-deb alias
+
+[33mcommit 0ff6ad267aa1b1d41ea1ef5f111df834cd5d94d8[m
+Author: pxc <admin@local.host>
+Date:   Fri May 9 19:59:54 2014 -0700
+
+    corrected PS in bashrc
+
+[33mcommit 2cfca497a1b5fac7a29ac7379ef627d3ec8ba07c[m
+Author: pxc <admin@local.host>
+Date:   Fri May 9 19:24:23 2014 -0700
+
+    added control arrow bind functionality
+
+[33mcommit 9770ee70f4c39d97896260fb8080cc94705ffdc0[m
+Author: pxc <admin@local.host>
+Date:   Tue May 6 22:08:49 2014 -0700
+
+    updated powerline
+
+[33mcommit c10c349d565e4acbb4199308a3f7923afdf15dde[m
+Author: pxc <admin@local.host>
+Date:   Tue May 6 22:01:25 2014 -0700
+
+    sync fzf
+
+[33mcommit 8dd8da5e6b9ddd1143cbf40504f44f6509f3f1d7[m
+Author: pxc <admin@local.host>
+Date:   Sat May 3 09:27:49 2014 -0700
+
+    added gitconfig
+
+[33mcommit aefeaf3e9c6766958c84ca77295ab655b48380c3[m
+Author: pxc <admin@local.host>
+Date:   Sat May 3 09:22:37 2014 -0700
+
+    added themes + solarized submod
+
+[33mcommit 9804aedb13959589d1adde5c517eb4e9850e4480[m
+Author: pxc <admin@local.host>
+Date:   Sat May 3 09:15:25 2014 -0700
+
+    removed solarized non-submodule
+
+[33mcommit e25446da6cbf246248fb46965fc1a795011d503e[m
+Author: pxc <admin@local.host>
+Date:   Sat May 3 09:11:22 2014 -0700
+
+    added themes
+
+[33mcommit e4bd5e93f42decd482acfccba20c0b6d93007c27[m
+Author: pxc <admin@local.host>
+Date:   Fri May 2 08:13:27 2014 -0700
+
+    submod sync
+
+[33mcommit e10ed1723a382d4f8fbefc42d55ab74dca3eaa63[m
+Author: pxc <admin@local.host>
+Date:   Fri May 2 08:10:17 2014 -0700
+
+    modified zshrc
+
+[33mcommit 4e1d6785e486d5013a9741bf6f71fde641e2918d[m
+Author: pxc <admin@local.host>
+Date:   Thu May 1 09:16:50 2014 -0700
+
+    update vundle
+
+[33mcommit 148b6294714af9576ae47b4194b492ab07830ef8[m
+Author: pxc <admin@local.host>
+Date:   Mon Apr 28 21:26:20 2014 -0700
+
+    sync subs
+
+[33mcommit ef8547614cf5c3421ddfff831cee2c66401ecaf9[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Tue Apr 29 04:25:39 2014 +0000
+
+    added gitignore
+
+[33mcommit 8622d7df6110ac8d1548b8e50821bbf77be609af[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Tue Apr 29 04:24:55 2014 +0000
+
+    sync, added gitignore
+
+[33mcommit 1b06776c96da17dd7768efa06603655d1d1d0236[m
+Author: pxc <admin@local.host>
+Date:   Mon Apr 28 20:28:12 2014 -0700
+
+    sync tmux.conf and zshrc
+
+[33mcommit 9f9dcb40803dc474307e7ad7054b312ddac5076d[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:40:25 2014 -0700
+
+    fixed rc files
+
+[33mcommit 8112dc6eb9246cabf092e002ef35fd66647ccee2[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:39:46 2014 -0700
+
+    added tmux.conf
+
+[33mcommit cdbbc3a55b684c7ef03a9fbd6755d22cd9e8863d[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:34:27 2014 -0700
+
+    added gen dot tmux.conf file to rc files
+
+[33mcommit 187e9f8b4c39409fbf6a1c2e7b0381a58870b016[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:22:55 2014 -0700
+
+    sync bashrc
+
+[33mcommit d0eb303d00c89590550f31d3ee3bb97e6ca887f4[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:20:37 2014 -0700
+
+    sync vimrc
+
+[33mcommit a2c5b5a9cc100234fbe5d31459116f0d46fcc1fa[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:19:43 2014 -0700
+
+    sync
+
+[33mcommit 24e36f802f979a36ef2a1fb599b90abb539c4770[m
+Merge: d232a8f c4c48b0
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:14:12 2014 -0700
+
+    sync
+
+[33mcommit d232a8ff24781dfeee329e443f78e9cc54f78c53[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 15:10:47 2014 -0700
+
+    altered
+
+[33mcommit c4c48b0abab6e1763eaca802726f29b0f670076e[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 06:55:05 2014 -0700
+
+    init
+
+[33mcommit 9a6809042936bd6209a8bf37a00efd2dd5f1ab6f[m
+Author: pxc <admin@local.host>
+Date:   Sun Apr 27 06:09:05 2014 -0700
+
+    first commit
+
+[33mcommit faf2f379abecddbd1c0137157333153e1d47156e[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Sun Apr 20 13:00:16 2014 -0700
+
+    corrections
+
+[33mcommit f1a4b4ce78b9a9da4acd22dd87b10e218286ad80[m
+Merge: 7495858 33d8e3e
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Sun Apr 20 12:55:57 2014 -0700
+
+    Merge git.hypokrites.me:pcxmac/skeleton into developer
+    
+    Conflicts:
+    	.bashrc
+    	.tmux.conf
+
+[33mcommit 33d8e3e7f805f915a2c3e25c76fa6d23e695297d[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Sat Apr 19 15:06:36 2014 -0700
+
+    deleted history file
+
+[33mcommit 74958588d346352776460792ab79fabd231c86d2[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Sat Apr 19 11:33:58 2014 -0700
+
+    added colors.vim profile
+
+[33mcommit d9c382ba012b4e57703c256024905f05ab7c2148[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 16 06:26:52 2014 -0700
+
+    modified vundle and powerline
+
+[33mcommit 0cacaa809f2f02553fdf078424e31b9dac577c21[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Sun Apr 13 08:52:19 2014 -0700
+
+    modified search highlight in vimrc
+
+[33mcommit 480038801a267d5aabdca3f80dbd739556577661[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Sat Apr 5 23:49:27 2014 -0700
+
+    modified bash and zsh and vim rc files
+
+[33mcommit ee646cc3a07df70f65583b553d6cac654676a898[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 20:00:58 2014 +0000
+
+    last fzf commit
+
+[33mcommit 974d76e004de563024a4c227c4b59f1114a41fd5[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 19:53:14 2014 +0000
+
+    new fzf commit, again
+
+[33mcommit ec498ce53c5cb211f9ce0f5b2c80bd267eaf17e6[m
+Author: = <=>
+Date:   Thu Apr 3 19:50:30 2014 +0000
+
+    new fzf commit
+
+[33mcommit 9da3f1249c54e29e11037b8f0c08dbf745822faf[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 19:40:47 2014 +0000
+
+    last rc edit today
+
+[33mcommit 326d6a66949a1545a5d5592d53c1376c48098eac[m
+Merge: 4bfd22b 501ec3d
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 12:06:13 2014 -0700
+
+    Merge branch 'developer' of git.hypokrites.me:pcxmac/skeleton into developer
+
+[33mcommit 4bfd22b4f039be88bbbe26f6ecac42476c1c8fe8[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Thu Apr 3 12:04:57 2014 -0700
+
+    added missing gem files
+
+[33mcommit 501ec3da2d2a87a161e6b4fdff1727681e3cfa1d[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 18:40:07 2014 +0000
+
+    removed user name from path to fzf.bash/zsh
+
+[33mcommit 74dd3f2c1bda73f8a442441c84cf8459631e5cd3[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Thu Apr 3 11:33:55 2014 -0700
+
+    modified rc files
+
+[33mcommit 9d23d8a646ec1e6d2575e56b95cd09e234d931cc[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 11:23:06 2014 -0700
+
+    deleted some stuff
+
+[33mcommit 0a9fd9caf1dddb124df3ee0fb001338d16ef9fc1[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 11:08:55 2014 -0700
+
+    fixed gem issue and modified path in bash and zsh rc files
+
+[33mcommit c8c4835005e1a9df0bbd6736ed8838aa101ce43c[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 00:33:26 2014 +0000
+
+    added fzf, last time ?
+
+[33mcommit 9826cdda1d531b7f6d8a9a8a85215867de6ddd0c[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 00:31:39 2014 +0000
+
+    nullified bad fzf install
+
+[33mcommit 30d27e5f7b7c284dac7e97dacaec76d68e81cd70[m
+Merge: 9eabec9 df76a93
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 00:31:02 2014 +0000
+
+    Merge branch 'developer' of git.hypokrites.me:pcxmac/skeleton into developer
+
+[33mcommit 9eabec92434375e2c9ae6f3a94a81ae4b7dd0206[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 00:30:52 2014 +0000
+
+    adding fzf repo
+
+[33mcommit df76a9328c3ff92d0991812ef1880c9792aba63c[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Apr 3 00:18:00 2014 +0000
+
+    added fzf
+
+[33mcommit 75dfc884653dc2e9040a93c1838363531e2456a1[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 2 22:57:53 2014 +0000
+
+    add .fzf.* to user
+
+[33mcommit 54487466f0071b872406663e2c832d63fafa50f2[m
+Author: root <root@git.hypokrites.me>
+Date:   Wed Apr 2 22:07:45 2014 +0000
+
+    source fzf for bash and zsh
+
+[33mcommit 8db2e6607c52369d5c652776126da1da1b927989[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 2 14:37:59 2014 -0700
+
+    modified zshrc
+
+[33mcommit a35f48df43450cf3916e3b49eb39fa736bb418c9[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 2 14:34:52 2014 -0700
+
+    added fuzzy commands ^T, ^E, ^F to bash
+
+[33mcommit f8bde0dd63ea750db9281148c3e0ccd86573384f[m
+Author: root <root@git.hypokrites.me>
+Date:   Wed Apr 2 21:03:25 2014 +0000
+
+    added gems
+
+[33mcommit e85ffaaa1c5d01cb841e99abed985869d4febb5d[m
+Author: root <root@jupiter.hypokrites.me>
+Date:   Wed Apr 2 17:17:57 2014 +0000
+
+    modified powerline
+
+[33mcommit 8e266ff1566d8221f36548bd24da902583388084[m
+Author: pxc <admin@local.host>
+Date:   Wed Apr 2 17:02:27 2014 +0000
+
+    removed README from user
+
+[33mcommit 3386cc8dfc6c51261b35a9dc75753c9445390895[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 2 17:01:27 2014 +0000
+
+    removed README from developer
+
+[33mcommit 55ebfe488d78791640f34afa9047af62612496c0[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Wed Apr 2 16:58:26 2014 +0000
+
+    modified bash and zsh path variable
+
+[33mcommit ef726aa2be7191541193c675a9c22bc1bf1cac05[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Wed Apr 2 08:50:16 2014 -0700
+
+    vundle mod
+
+[33mcommit 466724a0da8aab7f01ecc116d178e9c403f45d42[m
+Author: ciaran <ciaran@mail.hypokrites.me>
+Date:   Fri Mar 28 09:20:20 2014 -0700
+
+    modified bashrc
+
+[33mcommit 22e9234e9524ee9010bf5c087fced6ee15e2e8e6[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 15:28:42 2014 -0700
+
+    fixed bashrc histfile
+
+[33mcommit bf3df817e6da4ee61378d20eb2d9696876f89039[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 15:26:33 2014 -0700
+
+    zhistfile untracked
+
+[33mcommit 97a593a6752af91b7b3b37faa3bcfc1c9e0b19b1[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 15:25:51 2014 -0700
+
+    bash_history untracked
+
+[33mcommit 145b510f272c4c61aff6adc22f475344ce7889e9[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 15:19:04 2014 -0700
+
+    remove viminfo
+
+[33mcommit 9ad8779d1ef7ed76f247101c5ca90955d8f89921[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 15:15:35 2014 -0700
+
+    added bash_history support
+
+[33mcommit 76b116786711aa77f97b937890e810140d516e70[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 20:06:09 2014 +0000
+
+    roll back attempt
+
+[33mcommit 69c261729176968a90ce9941a8b8579eb70a3170[m
+Author: sysop <sysop@mail.hypokrites.me>
+Date:   Thu Mar 27 12:56:36 2014 -0700
+
+    new changes
+
+[33mcommit 224c51e8d64118396276770e862901ec659cb55b[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:55:23 2014 +0000
+
+    updated zshrc
+
+[33mcommit f3f1e57786ec8da40be5eeb202c823f49871154d[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:52:58 2014 +0000
+
+    updated zshrc defaults
+
+[33mcommit 44de1e2507bff175bd1d32cf8b96a8cfd249ff87[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:52:06 2014 +0000
+
+    updated bashrc default mode
+
+[33mcommit 18b94631fb896b833a9054fedcda746c6fd375db[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:33:53 2014 +0000
+
+    updated zshrc
+
+[33mcommit 9588ba9e50f31a75addbde2e76008edb3b109d27[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:32:29 2014 +0000
+
+    updated bashrc
+
+[33mcommit d3009575d81306aaf77d3a7d07c606b4772a2811[m
+Author: pxc <admin@local.host>
+Date:   Thu Mar 27 19:31:33 2014 +0000
+
+    updated zshrc
+
+[33mcommit c8af0fe22b65b7f1df3f564f94d4ea84ed11a6a9[m
+Author: root <root@one.hypokrites.me>
+Date:   Thu Mar 27 00:54:42 2014 -0700
+
+    modified vimrc
+
+[33mcommit fe0da1d62d6d784c69b7787f1cc20587c0f2ad5a[m
+Author: root <root@one.hypokrites.me>
+Date:   Thu Mar 27 00:48:16 2014 -0700
+
+    added vundle to developer
+
+[33mcommit edeed235c32eef5fed91a3a46abf191f9f524891[m
+Author: root <root@one.hypokrites.me>
+Date:   Thu Mar 27 00:41:38 2014 -0700
+
+    nonsense
+
+[33mcommit 0c1ff20ff7b378ad828f197a2a2b989f433cf846[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Wed Mar 26 22:13:34 2014 -0700
+
+    added i3
+
+[33mcommit b57c557f8aad67e8abbe4c9b289245263c7f09a7[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Wed Mar 26 21:16:57 2014 -0700
+
+    added i3
+
+[33mcommit fbb730fa7af4be2d7f85035f3e28ebae7cc9a174[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Wed Mar 26 20:43:05 2014 -0700
+
+    updated .zshrc POWERLINE_COMMAND
+
+[33mcommit d33e49a427b4f9c38145d43d8fe5480526655458[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Wed Mar 26 15:51:09 2014 -0700
+
+    added bundles to vimrc
+
+[33mcommit 36bce0d7ba6c81ebbadb2160a7b60919a30c6920[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 23:37:14 2014 -0700
+
+    modified gitignore
+
+[33mcommit 6cba6bcc0534decc5680931a6c5dee46dc41111f[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 23:01:15 2014 -0700
+
+    modified gitignore
+
+[33mcommit a64962a1303195552b6fae4f245c9ff2ea7864c8[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 22:59:17 2014 -0700
+
+    added gitignore
+
+[33mcommit 3954efceb5cb435f7d4eeefc429374a944a0468e[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 22:56:45 2014 -0700
+
+    added gitignore
+
+[33mcommit bdb9f0b77e052ad18a6412b4b805dc45b1379a66[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 22:44:51 2014 -0700
+
+    modified path variable
+
+[33mcommit 6306e45d85f9fef4ee5573e451affb34d806fa1a[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 22:42:22 2014 -0700
+
+    added path to bashrc
+
+[33mcommit 292c643b3ecc70bd80aca4a53b5145067164df92[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 21:19:04 2014 -0700
+
+    added submodules
+
+[33mcommit 92f35fadb8d8982109ba1b6277bb8d4714de2a8a[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 20:59:34 2014 -0700
+
+    developer load up
+
+[33mcommit 43d181f2d921c21afca895a8824e003ad99f33cf[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 20:20:36 2014 -0700
+
+    initial user push
+
+[33mcommit f7b4cb9ab324a7ddd09086cf97a766a97a4bf36f[m
+Author: pxc <sysop@mail.hypokrites.me>
+Date:   Tue Mar 25 20:16:40 2014 -0700
+
+    init commit
