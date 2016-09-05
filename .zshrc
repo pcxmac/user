@@ -132,13 +132,6 @@ bindkey -M viins ' ' magic-space
 
 bindkey -M isearch '^J' accept-search 2>/dev/null
 
-autoload -U compinit promptinit zcalc zsh-mime-setup select-word-style
-select-word-style shell
-
-compinit
-promptinit
-zsh-mime-setup
-
 # shell processes longer than 3 minutes get output stats
 REPORTTIME=3
 
@@ -217,12 +210,22 @@ export SAVEHIST=$HISTSIZE
 
 ################################## COMPLETION #########################
 
+zstyle :compinstall filename '~/.zshrc'
+
 #yaourt completion
-#fpath=(~/.zsh/functions $fpath)
+fpath=(~/.zsh/zsh-completions/src $fpath)
+fpath=(~/.zsh/gentoo-zsh-completions/src $fpath)
 
 setopt completealiases
 setopt completeinword
 setopt menucomplete
+
+autoload -Uz compinit promptinit zcalc zsh-mime-setup select-word-style
+select-word-style shell
+
+compinit
+promptinit
+zsh-mime-setup
 
 unsetopt no_match
 
@@ -420,5 +423,8 @@ if [ -z "$TMUX" ] && [[ $pcom == sshd* || $pcom == *bin/login* ]]; then
     fi
 fi
 
+
+
+##################################<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
