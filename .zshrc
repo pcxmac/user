@@ -62,7 +62,7 @@ alias update-deb="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get dist-
 
 function ptree
 {
-	ps --forest -o pid=,tty=,stat=,time=,cmd= -g $(ps -o sid= -p $1)	
+	ps --forest -o pid=,tty=,stat=,time=,cmd= -g $(ps -o sid= -p $1)
 }
 
 if [[ $(/usr/bin/whoami) == "root" ]]; then
@@ -70,7 +70,6 @@ if [[ $(/usr/bin/whoami) == "root" ]]; then
 fi
 
 #copying to multiple directories = echo dir* | xargs -n 1 cp file
-
 
 #bindkey -M viins '\C-i' complete-word
 #bindkey -M viins
@@ -99,7 +98,6 @@ bindkey -M viins '^[[3~' delete-char
 bindkey -M viins '^[[5^' end-of-line
 bindkey -M viins '^[[6^' beginning-of-line
 
-
 #rxvt
 bindkey -M viins '^[OD' backward-word
 bindkey -M viins '^[Od' backward-word
@@ -111,8 +109,6 @@ bindkey -M viins '^[[a' history-search-backward
 bindkey -M viins '^[Ob' history-search-forward
 bindkey -M viins '^[[b' history-search-forward
 
-
-
 #tmux
 bindkey -M viins '^[[1;5d' backward-word
 bindkey -M viins '^[[1;5D' backward-word
@@ -121,8 +117,6 @@ bindkey -M viins '^[[1;5C' forward-word
 
 bindkey -M viins '^[OA' history-substring-search-up
 bindkey -M viins '^[OB' history-substring-search-down
-
-
 
 bindkey -M viins '^H' backward-kill-word
 bindkey -M viins '^[' kill-word
@@ -168,11 +162,9 @@ setopt magic_equal_subst
 setopt auto_name_dirs
 setopt noequals
 
-
 ################################################ PROMPT ####################################
 
 export PS1="[%n@%m %1~]$ "
-
 
 #################################### ENV ##############################
 
@@ -186,7 +178,6 @@ export PATH=$PATH:/usr/games/bin:/var/lib/qemu/bin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/core_perl:$PATH
 
 export PATH=$HOME/.local/bin:$PATH
-
 
 ##################################### HISTORY #########################
 
@@ -267,9 +258,7 @@ zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 
 export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 
-
 # POWERLINE ###################################################################
-
 
 	# installed ? (if not) then install
 		# git clone
@@ -285,8 +274,6 @@ export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 			# link .powerline/powerline to .local/lib64/python2.7/sites-packages/powerline
 			ln -s ~/.powerline/powerline ~/.local/lib64/python2.7/site-packages/powerline
 		fi
-
-
 
 	PATH=~/.powerline/scripts:$PATH
 
@@ -336,14 +323,6 @@ export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 # git config --global color.interactive auto
 # git config --global color.status auto
 
-
-
-
-
-
-
-
-
 # ZSH-HISTORY-SUBSTRING-SEARCH  ##################################################
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -354,25 +333,17 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # ... support zsh in tmux in URxvt too
 if test "${TERM#screen}" != "$TERM"; then
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
+	bindkey '^[[A' history-substring-search-up
+	bindkey '^[[B' history-substring-search-down
 fi
-
-
 
 # Setup ZSH-AUTOSUGGESTIONS  #####################################################
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # ZSH-SYNTAX-HIGHLIGHTING #######################################################
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-
-
-
 
 ##### TMUX AUTO ATTACH ON SSHD #############################################################################
 
@@ -388,43 +359,32 @@ pcom="$(ps -p $ppid -o command=)"
 #echo "ppid = $ppid"
 
 if [ -z "$TMUX" ] && [[ $pcom == sshd* || $pcom == *bin/login* ]]; then
-    # we're not in a tmux session
-
+	# we're not in a tmux session
 	# invoke a tmux session, if logging in through TTY
 	if [[ $pcom == *bin/login* ]]
 	then
 		tmux
 	fi
-
-    if [ ! -z "$SSH_TTY" ]; then
-        # We logged in via SSH
-
-        # if ssh auth variable is missing
-        if [ -z "$SSH_AUTH_SOCK" ]; then
-            export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
-        fi
-
-        # if socket is available create the new auth session
-        if [ ! -S "$SSH_AUTH_SOCK" ]; then
-            `ssh-agent -a $SSH_AUTH_SOCK` > /dev/null >&1
-            echo $SSH_AGENT_PID > $HOME/.ssh/.auth_pid
-        fi
-
-        # if agent isn't defined, recreate it from pid file
-        if [ -z $SSH_AGENT_PID ]; then
-            export SSH_AGENT_PID=`cat $HOME/.ssh/.auth_pid 2>/dev/null`
-        fi
-
-        # Add all default keys to ssh auth
-        ssh-add 2>/dev/null
-
-        # start tmux
-        tmux attach 2>/dev/null
-    fi
+	if [ ! -z "$SSH_TTY" ]; then
+		# We logged in via SSH
+		# if ssh auth variable is missing
+		if [ -z "$SSH_AUTH_SOCK" ]; then
+			export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
+		fi
+		# if socket is available create the new auth session
+		if [ ! -S "$SSH_AUTH_SOCK" ]; then
+			`ssh-agent -a $SSH_AUTH_SOCK` > /dev/null >&1
+			echo $SSH_AGENT_PID > $HOME/.ssh/.auth_pid
+		fi
+		# if agent isn't defined, recreate it from pid file
+		if [ -z $SSH_AGENT_PID ]; then
+			export SSH_AGENT_PID=`cat $HOME/.ssh/.auth_pid 2>/dev/null`
+		fi
+		# Add all default keys to ssh auth
+		ssh-add 2>/dev/null
+		# start tmux
+		tmux attach 2>/dev/null
+	fi
 fi
 
-
-
 ##################################<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
