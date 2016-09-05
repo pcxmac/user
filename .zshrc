@@ -283,46 +283,6 @@ export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 	# utilize powerline-daemon for quicker responses from powerline
 	powerline-daemon -q
 
-
-
-############################### FUZZY FINDER ##################################
-
-#source ~/.fzf.zsh
-
-#fzf_history() { zle -I; eval $(history 1 | fzf +s | sed 's/ *[0-9]* *//') ; };
-#fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; };
-#fzf_cd() { zle -I; DIR=$(find ${1:-*} ${1:-.??*} | fzf) && cd "$DIR" ; };
-
-#zle -N fzf_history;
-#bindkey '^F' fzf_history
-#zle -N fzf_killps;
-#bindkey '^Q' fzf_killps
-#zle -N fzf_cd;
-#bindkey '^E' fzf_cd
-
-###################################### GEN (UNTRACKED/CUSTOM) DOT FILES ##############################
-
-#if [[ ! -c $HOME/.tmux.conf ]]
-#then
-#        touch $HOME/.tmux.conf
-#        echo "source '$HOME/.powerline/powerline/bindings/tmux/powerline.conf'" >> $HOME/.tmux.conf
-#        echo "set -g default-terminal \"screen-256color\"" >> $HOME/.tmux.conf
-#fi
-
-##################################### GIT SETTINGS ###################################################
-#
-# git config --global user.email "name@host"
-# git config --global user.name "name"
-
-# git config --global core.editor "vim"
-
-# git config --global push.default "simple"
-
-# git config --global color.branch auto
-# git config --global color.diff auto
-# git config --global color.interactive auto
-# git config --global color.status auto
-
 # ZSH-HISTORY-SUBSTRING-SEARCH  ##################################################
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
