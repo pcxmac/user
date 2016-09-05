@@ -1,0 +1,16 @@
+[user]
+	email = ciaran@saturn
+	name = ciaran
+[push]
+	default = simple
+[color]
+	diff = auto
+	interactive = auto
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+#[http]
+#	proxy = http://proxy.hypokrites.me:3128
+[http "https://gitlab.hypokrites.me/"]
+	sslCAInfo = ~/.gitlab/gitlab.crt
