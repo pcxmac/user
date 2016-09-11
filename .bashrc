@@ -44,6 +44,9 @@ bind '"\eOc"':forward-word
 
 set -o emacs                          # Set emacs mode in bash (see below)
 
+# PYTHON ######################################################################
+
+export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 
 # POWERLINE ###################################################################
 
