@@ -55,6 +55,7 @@ alias pacclean="yaourt -Qdt;yaourt Scc;"
 alias pacremove="yaourt -Rdd"
 alias bdel="btrfs subvolume delete"
 alias grep="grep -n --color"
+alias gitup="git fetch --all;git submodule foreach git fetch --all;git submodule update --remote"
 
 alias df="df -Th"
 alias du="du -s --block-size=1M"
@@ -114,9 +115,6 @@ bindkey -M viins '^[[1;5d' backward-word
 bindkey -M viins '^[[1;5D' backward-word
 bindkey -M viins '^[[1;5c' forward-word
 bindkey -M viins '^[[1;5C' forward-word
-
-bindkey -M viins '^[OA' history-substring-search-up
-bindkey -M viins '^[OB' history-substring-search-down
 
 bindkey -M viins '^H' backward-kill-word
 bindkey -M viins '^[' kill-word
@@ -283,6 +281,14 @@ export PYTHONPATH=~/.local/lib64/python2.7/site-packages
 	# utilize powerline-daemon for quicker responses from powerline
 	powerline-daemon -q
 
+# Setup ZSH-AUTOSUGGESTIONS  #####################################################
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# ZSH-SYNTAX-HIGHLIGHTING #######################################################
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # ZSH-HISTORY-SUBSTRING-SEARCH  ##################################################
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -297,13 +303,10 @@ if test "${TERM#screen}" != "$TERM"; then
 	bindkey '^[[B' history-substring-search-down
 fi
 
-# Setup ZSH-AUTOSUGGESTIONS  #####################################################
+#TMUX ---
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# ZSH-SYNTAX-HIGHLIGHTING #######################################################
-
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+bindkey -M viins '^[OA' history-substring-search-up
+bindkey -M viins '^[OB' history-substring-search-down
 
 ##### TMUX AUTO ATTACH ON SSHD #############################################################################
 
