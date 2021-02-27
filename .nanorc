@@ -1,5 +1,5 @@
 set tabsize 4
-set const
+#set const
 
 ## Sample initialization file for GNU nano.
 ##
