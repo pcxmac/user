@@ -1,5 +1,6 @@
 ################################### SHELL ############################# ... test
 
+alias code='\snap run code'
 alias smart='smartctl -info'
 alias zfs='sudo zfs'
 alias syncwatch='watch grep -e Dirty: -e Writeback: /proc/meminfo'
@@ -38,7 +39,7 @@ alias copycheck="rsync -a --checksum --verbose"
 alias copynew="rsync -au --verbose"
 alias copyig="rsync -a --ignore-existing --verbose"
 alias snapr="sudo btrfs subvolume snapshot -r"
-alias snap="sudo btrfs subvolume snapshot"
+alias snaprw="sudo btrfs subvolume snapshot"
 alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
