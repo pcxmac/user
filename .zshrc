@@ -1,5 +1,6 @@
 ################################### SHELL ############################# ... test
-
+alias systemctl='sudo systemctl'
+alias apt-get='sudo apt-get'
 alias code='\snap run code'
 alias smart='smartctl -info'
 alias zfs='sudo zfs'
