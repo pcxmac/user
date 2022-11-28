@@ -1,4 +1,15 @@
 ################################### SHELL ############################# ... test
+
+
+
+zmount() { zfs list -rH -o name $1 | xargs -L 1 zfs mount }
+
+
+alias zsnap='zfs snapshot'
+alias youtube-dv='youtube-dl'
+alias youtube-da='youtube-dl -x --audio-quality 0'
+alias youtube-vpl='youtube-dl -i -f mp4 --yes-playlist'
+alias youtube-apl='youtube-dl'
 alias systemctl='sudo systemctl'
 alias apt-get='sudo apt-get'
 alias code='\snap run code'
@@ -8,7 +19,7 @@ alias syncwatch='watch grep -e Dirty: -e Writeback: /proc/meminfo'
 alias sudo='sudo mount'
 alias sudo='sudo '
 alias zsnaps="zfs list -t snapshot -o name,creation -s creation | grep "
-alias zlist="sudo zfs list -o name,creation -s creation | grep "
+alias zlist="sudo zfs list -o name,creation -s creation;zfs list -o name,creation -s creation -t snapshot"
 alias nfsports="netstat -tn | egrep '2049|Active|Proto'"
 alias revdep-rebuild="sudo revdep-rebuild"
 alias ez_install="python setup.py install --user"
@@ -24,11 +35,14 @@ alias eselect="sudo eselect"
 alias lsusb="sudo lsusb -v"
 alias lspci="sudo lspci -vvvknnD"
 alias demerge="sudo emerge -cav"
-alias emerge="sudo emerge --ask"
-alias clean="sudo emerge -av --depclean --ask;sudo eclean-dist;sudo eclean-pkg"
-alias eupdate="sudo emerge -uDN --with-bdeps=y @world --ask --verbose"
+alias remerge="sudo emerge -ea"
+alias clean="sudo emerge -av --depclean --ask;sudo eclean-dist;sudo eclean-pkg;perl-cleaner --allmodules"
+##################
+alias eupdate="sudo emerge -b -uDN --with-bdeps=y @world --ask --binpkg-respect-use=y --binpkg-changed-deps=y"
+alias emerge="sudo emerge -b --ask --usepkg"
+alias esync="sudo emerge --sync --verbose --backtrack=99;sudo eix-update"
+##################
 #alias esync="sudo emerge --sync --verbose;sudo egencache --jobs=16 --update --repo gentoo;sudo eix-update"
-alias esync="sudo emerge --sync --verbose;sudo eix-update"
 alias gputemp="nvidia-settings -q gpucoretemp -t"
 alias atigputemp="watch -n4 /opt/bin/aticonfig --adapter=all --odgt --odgc"
 alias gitlog="git log --pretty=format:'%h - %an, %ar : %s'"
@@ -45,8 +59,8 @@ alias ddd="dd if=/dev/zero bs=1G"
 alias pkgs-local=""
 alias pkgs-official=""
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
-#alias rcp="rsync --checksum -v -r -l -H -p --delete-before"
-alias rcp="rsync -v -r -l -H -p --delete-before --progress"
+alias rcp="rsync -a -r -l -H -p --info=progress2"
+alias distsync="rsync -c -a -r -l -H -p --info=progress2"
 alias pigc="pigz --best"
 alias pigd="pigz -d"
 alias temp="sensors;aticonfig --odgt"
@@ -206,6 +220,7 @@ zstyle :compinstall filename '~/.zshrc'
 #yaourt completion
 fpath=(~/.zsh/zsh-completions/src $fpath)
 fpath=(~/.zsh/gentoo-zsh-completions/src $fpath)
+fpath=(~/.zsh/lxd-completion-zsh/ $fpath)
 
 setopt completealiases
 setopt completeinword
@@ -307,6 +322,11 @@ fi
 
 #TMUX ---
 
+### GNOME TERMINAL .... NEED BETTER PARSING
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+#######
+
 bindkey -M viins '^[OA' history-substring-search-up
 bindkey -M viins '^[OB' history-substring-search-down
 
@@ -353,3 +373,9 @@ if [ -z "$TMUX" ] && [[ $pcom == sshd* || $pcom == *bin/login* ]]; then
 fi
 
 ##################################<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#PATH="/srv/sysop/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PERL5LIB="/srv/sysop/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+#PERL_LOCAL_LIB_ROOT="/srv/sysop/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+#PERL_MB_OPT="--install_base \"/srv/sysop/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/srv/sysop/perl5"; export PERL_MM_OPT;

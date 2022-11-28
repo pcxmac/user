@@ -291,7 +291,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
 " " Automatically sort python imports
-Bundle 'fisadev/vim-isort'
+"Bundle 'fisadev/vim-isort'
 
 " " Drag visual blocks arround
 Bundle 'fisadev/dragvisuals.vim'
